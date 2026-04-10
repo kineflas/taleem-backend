@@ -15,7 +15,18 @@ depends_on = None
 
 
 def upgrade() -> None:
-    # ── New enum types ──────────────────────────────────────────────────────
+    # ── Clean up partial previous run (safe — IF EXISTS) ───────────────────
+    op.execute("ALTER TABLE IF EXISTS tasks DROP COLUMN IF EXISTS curriculum_item_id")
+    op.execute("DROP TABLE IF EXISTS student_submissions CASCADE")
+    op.execute("DROP TABLE IF EXISTS student_item_progress CASCADE")
+    op.execute("DROP TABLE IF EXISTS student_enrollments CASCADE")
+    op.execute("DROP TABLE IF EXISTS curriculum_items CASCADE")
+    op.execute("DROP TABLE IF EXISTS curriculum_units CASCADE")
+    op.execute("DROP TABLE IF EXISTS curriculum_programs CASCADE")
+    for t in ["curriculumtype", "unittype", "itemtype", "enrollmentmode", "submissionstatus"]:
+        op.execute(f"DROP TYPE IF EXISTS {t}")
+
+    # ── New enum types ─────────────────────────────────────────────────────
     op.execute("CREATE TYPE curriculumtype AS ENUM ('ALPHABET_ARABE', 'QAIDA_NOURANIA', 'MEDINE_T1', 'TAJWID', 'HIFZ_REVISION')")
     op.execute("CREATE TYPE unittype AS ENUM ('CHAPTER', 'MODULE', 'LESSON', 'LETTER', 'JUZ')")
     op.execute("CREATE TYPE itemtype AS ENUM ('LETTER_FORM', 'COMBINATION', 'RULE', 'VOCABULARY', 'GRAMMAR_POINT', 'SURAH_SEGMENT', 'EXAMPLE')")
