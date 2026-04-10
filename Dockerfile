@@ -34,5 +34,5 @@ USER appuser
 
 EXPOSE 8000
 
-# Use exec form for proper signal handling
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2"]
+# Run migrations then start server
+CMD ["sh", "-c", "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 2"]
