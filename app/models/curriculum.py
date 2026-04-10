@@ -140,7 +140,7 @@ class CurriculumItem(Base):
     letter_position: Mapped[str | None] = mapped_column(String(20), nullable=True)  # isolated/initial/medial/final
 
     # Extra structured data (makharij coords, examples list, etc.)
-    metadata: Mapped[dict | None] = mapped_column(JSON, nullable=True)
+    extra_data: Mapped[dict | None] = mapped_column("metadata", JSON, nullable=True)
 
     sort_order: Mapped[int] = mapped_column(Integer, default=0)
 

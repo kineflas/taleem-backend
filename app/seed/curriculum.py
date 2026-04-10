@@ -607,7 +607,7 @@ def _seed_nourania(db, program: CurriculumProgram):
                 title_fr=it.get("title_fr"),
                 content_fr=it.get("content_fr"),
                 transliteration=it.get("transliteration"),
-                metadata=it.get("metadata"),
+                extra_data=it.get("metadata"),
                 sort_order=i,
             )
             db.add(item)
@@ -680,7 +680,7 @@ def _seed_tajwid(db, program: CurriculumProgram):
                 title_ar=it["title_ar"],
                 content_fr=it.get("content_fr"),
                 content_ar=it.get("content_ar"),
-                metadata=it.get("metadata"),
+                extra_data=it.get("metadata"),
                 sort_order=i,
             )
             db.add(item)

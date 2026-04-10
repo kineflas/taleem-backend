@@ -28,7 +28,7 @@ class CurriculumItemOut(BaseModel):
     verse_start: int | None
     verse_end: int | None
     letter_position: str | None
-    metadata: dict | None
+    extra_data: dict | None
     sort_order: int
 
     model_config = {"from_attributes": True}
