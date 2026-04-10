@@ -138,7 +138,9 @@ def seed_surahs(db=None) -> None:
 
         for row in SURAHS_DATA:
             num, ar, fr, en, verses, juz, meccan = row
-            surah = Surah(
+            if db.get(Surah, num):
+                continue
+            db.add(Surah(
                 surah_number=num,
                 surah_name_ar=ar,
                 surah_name_fr=fr,
@@ -146,8 +148,7 @@ def seed_surahs(db=None) -> None:
                 total_verses=verses,
                 juz_number=juz,
                 is_meccan=meccan,
-            )
-            db.merge(surah)  # upsert
+            ))
 
         db.commit()
         print(f"Seeded {len(SURAHS_DATA)} surahs.")
