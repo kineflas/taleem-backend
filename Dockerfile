@@ -25,8 +25,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends libpq5 \
 # Copy installed packages from builder
 COPY --from=builder /install /usr/local
 
-# Copy application code
+# Copy application code + startup script
 COPY . .
+COPY start.sh .
+RUN chmod +x start.sh
 
 # Non-root user for security
 RUN useradd -m appuser && chown -R appuser:appuser /app
@@ -34,7 +36,4 @@ USER appuser
 
 EXPOSE 8000
 
-# Startup script — waits for DB, runs migrations, starts server
-COPY start.sh .
-RUN chmod +x start.sh
 CMD ["./start.sh"]
