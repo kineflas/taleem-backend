@@ -5,7 +5,7 @@ import uuid
 from typing import Optional
 
 from ..models.curriculum import (
-    CurriculumType, UnitType, ItemType,
+    CurriculumType, ProgramCategory, UnitType, ItemType,
     EnrollmentMode, SubmissionStatus,
 )
 
@@ -56,6 +56,7 @@ class CurriculumUnitDetailOut(CurriculumUnitOut):
 class CurriculumProgramOut(BaseModel):
     id: uuid.UUID
     curriculum_type: CurriculumType
+    category: ProgramCategory
     title_ar: str
     title_fr: str
     description_fr: str | None

@@ -23,12 +23,19 @@ from ..database import Base
 
 # ── Enums ─────────────────────────────────────────────────────────────────────
 
+class ProgramCategory(str, enum.Enum):
+    APPRENDRE_A_LIRE     = "APPRENDRE_A_LIRE"
+    COMPRENDRE_ARABE     = "COMPRENDRE_ARABE"
+    CORAN                = "CORAN"
+
+
 class CurriculumType(str, enum.Enum):
-    ALPHABET_ARABE  = "ALPHABET_ARABE"
-    QAIDA_NOURANIA  = "QAIDA_NOURANIA"
-    MEDINE_T1       = "MEDINE_T1"
-    TAJWID          = "TAJWID"
-    HIFZ_REVISION   = "HIFZ_REVISION"
+    ALPHABET_ARABE       = "ALPHABET_ARABE"
+    VOYELLES_SYLLABES    = "VOYELLES_SYLLABES"
+    QAIDA_NOURANIA       = "QAIDA_NOURANIA"
+    MEDINE_T1            = "MEDINE_T1"
+    TAJWID               = "TAJWID"
+    HIFZ_REVISION        = "HIFZ_REVISION"
 
 
 class UnitType(str, enum.Enum):
@@ -69,6 +76,9 @@ class CurriculumProgram(Base):
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     curriculum_type: Mapped[CurriculumType] = mapped_column(
         Enum(CurriculumType), unique=True, nullable=False
+    )
+    category: Mapped[ProgramCategory] = mapped_column(
+        Enum(ProgramCategory), nullable=False, default=ProgramCategory.APPRENDRE_A_LIRE
     )
     title_ar: Mapped[str] = mapped_column(String(255), nullable=False)
     title_fr: Mapped[str] = mapped_column(String(255), nullable=False)

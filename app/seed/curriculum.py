@@ -7,7 +7,7 @@ Called automatically on startup (idempotent).
 from ..database import SessionLocal
 from ..models.curriculum import (
     CurriculumProgram, CurriculumUnit, CurriculumItem,
-    CurriculumType, UnitType, ItemType,
+    CurriculumType, ProgramCategory, UnitType, ItemType,
 )
 
 
@@ -597,6 +597,39 @@ def _seed_alphabet(db, program: CurriculumProgram):
     program.total_units = len(ARABIC_LETTERS)
 
 
+def _seed_voyelles_syllabes(db, program: CurriculumProgram):
+    """Seed Voyelles et Syllabes program using Nourania chapters 2-5."""
+    chapters = [ch for ch in NOURANIA_CHAPTERS if ch["number"] in (2, 3, 4, 5)]
+    for idx, chapter in enumerate(chapters):
+        unit = CurriculumUnit(
+            curriculum_program_id=program.id,
+            unit_type=UnitType.MODULE,
+            number=idx + 1,
+            title_ar=chapter["title_ar"],
+            title_fr=chapter["title_fr"],
+            description_fr=chapter["description_fr"],
+            sort_order=idx + 1,
+            total_items=len(chapter["items"]),
+        )
+        db.add(unit)
+        db.flush()
+
+        for i, it in enumerate(chapter["items"]):
+            item = CurriculumItem(
+                curriculum_unit_id=unit.id,
+                item_type=ItemType[it.get("type", "COMBINATION")],
+                number=i + 1,
+                title_ar=it["title_ar"],
+                title_fr=it.get("title_fr"),
+                content_fr=it.get("content_fr"),
+                transliteration=it.get("transliteration"),
+                extra_data=it.get("metadata"),
+                sort_order=i,
+            )
+            db.add(item)
+    program.total_units = len(chapters)
+
+
 def _seed_nourania(db, program: CurriculumProgram):
     for chapter in NOURANIA_CHAPTERS:
         unit = CurriculumUnit(
@@ -769,8 +802,10 @@ def _seed_hifz(db, program: CurriculumProgram):
 
 
 PROGRAMS_META = [
+    # ── Apprendre à lire ──────────────────────────────────────────────────
     {
         "curriculum_type": CurriculumType.ALPHABET_ARABE,
+        "category": ProgramCategory.APPRENDRE_A_LIRE,
         "title_ar": "الأبجدية العربية",
         "title_fr": "Alphabet Arabe",
         "description_fr": "Parcours progressif pour maîtriser les 28 lettres arabes dans leurs 4 positions : isolée, initiale, médiane et finale. Fondation indispensable pour tout apprenant.",
@@ -778,35 +813,50 @@ PROGRAMS_META = [
         "seeder": _seed_alphabet,
     },
     {
-        "curriculum_type": CurriculumType.QAIDA_NOURANIA,
-        "title_ar": "القاعدة النورانية",
-        "title_fr": "Qa'ida Nourania",
-        "description_fr": "Les 17 chapitres de la Qa'ida Nourania : lettres, voyelles, tanwin, sukun, madd, shadda, et toutes les règles de lecture.",
+        "curriculum_type": CurriculumType.VOYELLES_SYLLABES,
+        "category": ProgramCategory.APPRENDRE_A_LIRE,
+        "title_ar": "الحركات والمقاطع",
+        "title_fr": "Voyelles et Syllabes",
+        "description_fr": "Apprenez à combiner les lettres avec les voyelles courtes (Fatha, Kasra, Damma), la nunation (Tanwin), le Sukun et les prolongations (Madd). L'étape clé pour passer des lettres à la lecture.",
         "sort_order": 2,
-        "seeder": _seed_nourania,
+        "seeder": _seed_voyelles_syllabes,
     },
     {
+        "curriculum_type": CurriculumType.QAIDA_NOURANIA,
+        "category": ProgramCategory.APPRENDRE_A_LIRE,
+        "title_ar": "القاعدة النورانية",
+        "title_fr": "Lecture niveau 2",
+        "description_fr": "Les 17 chapitres de la Qa'ida Nourania : lettres, voyelles, tanwin, sukun, madd, shadda, et toutes les règles de lecture avancées.",
+        "sort_order": 3,
+        "seeder": _seed_nourania,
+    },
+    # ── Comprendre l'arabe ────────────────────────────────────────────────
+    {
         "curriculum_type": CurriculumType.MEDINE_T1,
+        "category": ProgramCategory.COMPRENDRE_ARABE,
         "title_ar": "سلسلة المدينة — الجزء الأول",
         "title_fr": "Médine Tome 1",
         "description_fr": "Les 23 leçons du Tome 1 de Médine : grammaire arabe fondamentale (phrase nominale, pronoms, verbes, cas) avec vocabulaire thématique en Arabe/Français.",
-        "sort_order": 3,
+        "sort_order": 4,
         "seeder": _seed_medine_t1,
     },
+    # ── Lire et Apprendre le Coran ────────────────────────────────────────
     {
         "curriculum_type": CurriculumType.TAJWID,
+        "category": ProgramCategory.CORAN,
         "title_ar": "التجويد النظري",
         "title_fr": "Tajwid Théorique",
         "description_fr": "12 modules sur les règles fondamentales du Tajwid : makhārij, sifāt, nūn sākina, mīm sākina, les madds, tafkhīm/tarqīq, waqf et ibtidā'.",
-        "sort_order": 4,
+        "sort_order": 5,
         "seeder": _seed_tajwid,
     },
     {
         "curriculum_type": CurriculumType.HIFZ_REVISION,
+        "category": ProgramCategory.CORAN,
         "title_ar": "الحفظ والمراجعة",
         "title_fr": "Hifz & Révision Coran",
         "description_fr": "Suivi précis de la mémorisation et révision du Coran. Les 30 Juz avec leurs sourates et versets. Tracking au verset près.",
-        "sort_order": 5,
+        "sort_order": 6,
         "seeder": _seed_hifz,
     },
 ]
@@ -854,6 +904,62 @@ def _update_alphabet_audio(db) -> None:
         print("  Alphabet audio_url already up to date.")
 
 
+def _update_existing_programs(db) -> None:
+    """Update existing programs: rename Nourania → Lecture niveau 2, set categories, add Voyelles et Syllabes."""
+    # Update Nourania title
+    nourania = db.query(CurriculumProgram).filter_by(
+        curriculum_type=CurriculumType.QAIDA_NOURANIA
+    ).first()
+    if nourania and nourania.title_fr != "Lecture niveau 2":
+        nourania.title_fr = "Lecture niveau 2"
+        nourania.category = ProgramCategory.APPRENDRE_A_LIRE
+        print("  ✓ Renamed Qa'ida Nourania → Lecture niveau 2")
+
+    # Set categories on existing programs
+    category_map = {
+        CurriculumType.ALPHABET_ARABE: ProgramCategory.APPRENDRE_A_LIRE,
+        CurriculumType.QAIDA_NOURANIA: ProgramCategory.APPRENDRE_A_LIRE,
+        CurriculumType.MEDINE_T1: ProgramCategory.COMPRENDRE_ARABE,
+        CurriculumType.TAJWID: ProgramCategory.CORAN,
+        CurriculumType.HIFZ_REVISION: ProgramCategory.CORAN,
+    }
+    for ctype, cat in category_map.items():
+        prog = db.query(CurriculumProgram).filter_by(curriculum_type=ctype).first()
+        if prog and prog.category != cat:
+            prog.category = cat
+
+    # Add Voyelles et Syllabes if not exists
+    vs = db.query(CurriculumProgram).filter_by(
+        curriculum_type=CurriculumType.VOYELLES_SYLLABES
+    ).first()
+    if not vs:
+        vs_meta = next(m for m in PROGRAMS_META if m["curriculum_type"] == CurriculumType.VOYELLES_SYLLABES)
+        seeder = vs_meta["seeder"]
+        meta_copy = {k: v for k, v in vs_meta.items() if k != "seeder"}
+        vs = CurriculumProgram(**meta_copy)
+        db.add(vs)
+        db.flush()
+        seeder(db, vs)
+        db.flush()
+        print(f"  ✓ Added Voyelles et Syllabes ({vs.total_units} units)")
+
+    # Update sort_order
+    order_map = {
+        CurriculumType.ALPHABET_ARABE: 1,
+        CurriculumType.VOYELLES_SYLLABES: 2,
+        CurriculumType.QAIDA_NOURANIA: 3,
+        CurriculumType.MEDINE_T1: 4,
+        CurriculumType.TAJWID: 5,
+        CurriculumType.HIFZ_REVISION: 6,
+    }
+    for ctype, order in order_map.items():
+        prog = db.query(CurriculumProgram).filter_by(curriculum_type=ctype).first()
+        if prog:
+            prog.sort_order = order
+
+    db.commit()
+
+
 def seed_curriculum(db=None) -> None:
     close_db = False
     if db is None:
@@ -863,14 +969,16 @@ def seed_curriculum(db=None) -> None:
     try:
         existing = db.query(CurriculumProgram).count()
         if existing >= 5:
-            print("Curriculum already seeded.")
+            print("Curriculum already seeded — updating...")
             _update_alphabet_audio(db)
+            _update_existing_programs(db)
             return
 
         print("Seeding curriculum programs...")
         for meta in PROGRAMS_META:
-            seeder = meta.pop("seeder")
-            program = CurriculumProgram(**meta)
+            seeder = meta["seeder"]
+            fields = {k: v for k, v in meta.items() if k != "seeder"}
+            program = CurriculumProgram(**fields)
             db.add(program)
             db.flush()
             seeder(db, program)
