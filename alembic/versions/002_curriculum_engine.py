@@ -8,6 +8,13 @@ from alembic import op
 import sqlalchemy as sa
 from sqlalchemy.dialects import postgresql
 
+# Pre-define enum types with create_type=False — we manage creation ourselves
+_curriculumtype = postgresql.ENUM("ALPHABET_ARABE", "QAIDA_NOURANIA", "MEDINE_T1", "TAJWID", "HIFZ_REVISION", name="curriculumtype", create_type=False)
+_unittype = postgresql.ENUM("CHAPTER", "MODULE", "LESSON", "LETTER", "JUZ", name="unittype", create_type=False)
+_itemtype = postgresql.ENUM("LETTER_FORM", "COMBINATION", "RULE", "VOCABULARY", "GRAMMAR_POINT", "SURAH_SEGMENT", "EXAMPLE", name="itemtype", create_type=False)
+_enrollmentmode = postgresql.ENUM("TEACHER_ASSIGNED", "STUDENT_AUTONOMOUS", name="enrollmentmode", create_type=False)
+_submissionstatus = postgresql.ENUM("PENDING_REVIEW", "APPROVED", "NEEDS_IMPROVEMENT", "REJECTED", name="submissionstatus", create_type=False)
+
 revision = "002"
 down_revision = "001"
 branch_labels = None
@@ -41,7 +48,7 @@ def upgrade() -> None:
     op.create_table(
         "curriculum_programs",
         sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True),
-        sa.Column("curriculum_type", sa.Enum("ALPHABET_ARABE", "QAIDA_NOURANIA", "MEDINE_T1", "TAJWID", "HIFZ_REVISION", name="curriculumtype", create_type=False), unique=True, nullable=False),
+        sa.Column("curriculum_type", _curriculumtype, unique=True, nullable=False),
         sa.Column("title_ar", sa.String(255), nullable=False),
         sa.Column("title_fr", sa.String(255), nullable=False),
         sa.Column("description_fr", sa.Text, nullable=True),
@@ -57,7 +64,7 @@ def upgrade() -> None:
         "curriculum_units",
         sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True),
         sa.Column("curriculum_program_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("curriculum_programs.id"), nullable=False),
-        sa.Column("unit_type", sa.Enum("CHAPTER", "MODULE", "LESSON", "LETTER", "JUZ", name="unittype", create_type=False), nullable=False),
+        sa.Column("unit_type", _unittype, nullable=False),
         sa.Column("number", sa.Integer, nullable=False),
         sa.Column("title_ar", sa.String(255), nullable=False),
         sa.Column("title_fr", sa.String(255), nullable=True),
@@ -74,7 +81,7 @@ def upgrade() -> None:
         "curriculum_items",
         sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True),
         sa.Column("curriculum_unit_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("curriculum_units.id"), nullable=False),
-        sa.Column("item_type", sa.Enum("LETTER_FORM", "COMBINATION", "RULE", "VOCABULARY", "GRAMMAR_POINT", "SURAH_SEGMENT", "EXAMPLE", name="itemtype", create_type=False), nullable=False),
+        sa.Column("item_type", _itemtype, nullable=False),
         sa.Column("number", sa.Integer, nullable=False),
         sa.Column("title_ar", sa.String(500), nullable=False),
         sa.Column("title_fr", sa.String(500), nullable=True),
@@ -99,7 +106,7 @@ def upgrade() -> None:
         sa.Column("student_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("users.id"), nullable=False),
         sa.Column("curriculum_program_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("curriculum_programs.id"), nullable=False),
         sa.Column("teacher_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("users.id"), nullable=True),
-        sa.Column("mode", sa.Enum("TEACHER_ASSIGNED", "STUDENT_AUTONOMOUS", name="enrollmentmode", create_type=False), server_default="STUDENT_AUTONOMOUS"),
+        sa.Column("mode", _enrollmentmode, server_default="STUDENT_AUTONOMOUS"),
         sa.Column("started_at", sa.Date, server_default=sa.func.current_date()),
         sa.Column("target_end_at", sa.Date, nullable=True),
         sa.Column("current_unit_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("curriculum_units.id"), nullable=True),
@@ -141,7 +148,7 @@ def upgrade() -> None:
         sa.Column("task_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("tasks.id"), nullable=True),
         sa.Column("audio_url", sa.String(1000), nullable=True),
         sa.Column("text_content", sa.Text, nullable=True),
-        sa.Column("status", sa.Enum("PENDING_REVIEW", "APPROVED", "NEEDS_IMPROVEMENT", "REJECTED", name="submissionstatus", create_type=False), server_default="PENDING_REVIEW"),
+        sa.Column("status", _submissionstatus, server_default="PENDING_REVIEW"),
         sa.Column("teacher_feedback", sa.Text, nullable=True),
         sa.Column("reviewed_at", sa.DateTime(timezone=True), nullable=True),
         sa.Column("created_at", sa.DateTime(timezone=True), server_default=sa.func.now()),
