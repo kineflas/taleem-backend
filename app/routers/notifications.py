@@ -5,7 +5,6 @@ Routes:
   GET   /notifications              — list notifications for current user
   PATCH /notifications/{id}/read    — mark one as read
   PATCH /notifications/read-all     — mark all as read
-  PUT   /notifications/fcm-token    — register/update FCM device token
 """
 import uuid
 
@@ -43,10 +42,4 @@ def mark_all_read(current_user: CurrentUser, db: DB):
         Notification.recipient_id == current_user.id,
         Notification.is_read == False,
     ).update({"is_read": True})
-    db.commit()
-
-
-@router.put("/fcm-token", status_code=204)
-def update_fcm_token(token: str, current_user: CurrentUser, db: DB):
-    current_user.fcm_token = token
     db.commit()

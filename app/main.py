@@ -2,12 +2,10 @@
 Taliem FastAPI application entry point.
 
 Startup:
-  - Firebase Admin SDK initialization (if credentials exist)
   - APScheduler cron jobs (midnight MISSED marking + evening streak warning)
-  - Surah seed data (idempotent)
+  - Surah + curriculum seed data (idempotent)
 """
 import logging
-import os
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -42,19 +40,7 @@ logging.basicConfig(
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # ── Startup ───────────────────────────────────────────────────────────────
-    # 1. Firebase Admin
-    cred_path = settings.firebase_credentials_path
-    if os.path.exists(cred_path):
-        try:
-            from .services.notification_service import _init_firebase
-            _init_firebase(cred_path)
-            logger.info("Firebase Admin SDK initialized")
-        except Exception as exc:
-            logger.warning("Firebase init failed: %s — push notifications disabled", exc)
-    else:
-        logger.warning("Firebase credentials not found at %s — push disabled", cred_path)
-
-    # 2. Seed static data (idempotent)
+    # 1. Seed static data (idempotent)
     try:
         db = SessionLocal()
         seed_surahs(db)

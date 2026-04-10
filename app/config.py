@@ -10,8 +10,6 @@ class Settings(BaseSettings):
     refresh_token_expire_days: int = 30
     parent_token_expire_minutes: int = 10
 
-    firebase_credentials_path: str = "./firebase-credentials.json"
-
     environment: str = "development"
     debug: bool = True
 

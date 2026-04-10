@@ -438,13 +438,6 @@ def teacher_enroll_student(
             f"Nouveau programme : {program.title_fr}",
             f"{teacher.full_name} t'a inscrit(e) au programme {program.title_fr}",
         )
-        if student.fcm_token:
-            from ..services.notification_service import _send_push
-            _send_push(
-                student.fcm_token,
-                f"Nouveau programme : {program.title_fr}",
-                f"{teacher.full_name} t'a inscrit(e) à ce programme",
-            )
 
     db.commit()
     db.refresh(enrollment)
@@ -530,9 +523,6 @@ def review_submission(
             f"Soumission {verdict}",
             body.teacher_feedback or f"Ton enseignant a évalué ta soumission : {verdict}",
         )
-        if student.fcm_token:
-            from ..services.notification_service import _send_push
-            _send_push(student.fcm_token, f"Soumission {verdict}", body.teacher_feedback or "")
 
     db.commit()
     db.refresh(sub)
