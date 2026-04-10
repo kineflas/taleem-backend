@@ -62,6 +62,17 @@ GLYPHS_BY_POSITION = {
     "final":    5,
 }
 
+# Map letter name_fr → audio filename (from arabicreadingcourse.com)
+LETTER_AUDIO = {
+    "Alif": "alif", "Bā": "ba", "Tā": "ta", "Thā": "tha",
+    "Jīm": "jiim", "Ḥā": "hha", "Khā": "kha", "Dāl": "daal",
+    "Dhāl": "thaal", "Rā": "ra", "Zāy": "zay", "Sīn": "siin",
+    "Shīn": "shiin", "Ṣād": "saad", "Ḍād": "daad", "Ṭā": "taa",
+    "Ẓā": "thaa", "'Ayn": "ayn", "Ghayn": "ghayn", "Fā": "fa",
+    "Qāf": "qaf", "Kāf": "kaf", "Lām": "lam", "Mīm": "miim",
+    "Nūn": "nuun", "Hā": "ha", "Wāw": "waw", "Yā": "ya",
+}
+
 
 # ══════════════════════════════════════════════════════════════════════════════
 # Program 2 — Qa'ida Nourania (17 chapters)
@@ -549,9 +560,10 @@ TAJWID_MODULES = [
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _seed_alphabet(db, program: CurriculumProgram):
-    sort_order = 0
     for letter in ARABIC_LETTERS:
         num, name_fr, isolated, initial, medial, final, translit, desc = letter
+        audio_file = LETTER_AUDIO.get(name_fr)
+        audio_url = f"/static/audio/letters/{audio_file}.mp3" if audio_file else None
         unit = CurriculumUnit(
             curriculum_program_id=program.id,
             unit_type=UnitType.LETTER,
@@ -559,6 +571,7 @@ def _seed_alphabet(db, program: CurriculumProgram):
             title_ar=isolated,
             title_fr=f"Lettre {num} — {name_fr}",
             description_fr=desc,
+            audio_url=audio_url,
             sort_order=num,
             total_items=4,
         )
@@ -577,6 +590,7 @@ def _seed_alphabet(db, program: CurriculumProgram):
                 content_fr=pos_desc,
                 transliteration=translit,
                 letter_position=pos_key,
+                audio_url=audio_url,
                 sort_order=pos_idx,
             )
             db.add(item)
@@ -798,6 +812,48 @@ PROGRAMS_META = [
 ]
 
 
+def _update_alphabet_audio(db) -> None:
+    """Backfill audio_url on existing alphabet units & items."""
+    program = db.query(CurriculumProgram).filter_by(
+        curriculum_type=CurriculumType.ALPHABET_ARABE
+    ).first()
+    if not program:
+        return
+
+    units = db.query(CurriculumUnit).filter_by(
+        curriculum_program_id=program.id
+    ).all()
+
+    updated = 0
+    for unit in units:
+        # Extract letter name from title_fr: "Lettre 1 — Alif" → "Alif"
+        parts = (unit.title_fr or "").split(" — ", 1)
+        if len(parts) < 2:
+            continue
+        name_fr = parts[1]
+        audio_file = LETTER_AUDIO.get(name_fr)
+        if not audio_file:
+            continue
+
+        audio_url = f"/static/audio/letters/{audio_file}.mp3"
+        if unit.audio_url != audio_url:
+            unit.audio_url = audio_url
+            updated += 1
+
+        items = db.query(CurriculumItem).filter_by(
+            curriculum_unit_id=unit.id
+        ).all()
+        for item in items:
+            if item.audio_url != audio_url:
+                item.audio_url = audio_url
+
+    if updated:
+        db.commit()
+        print(f"  ✓ Updated audio_url on {updated} alphabet units.")
+    else:
+        print("  Alphabet audio_url already up to date.")
+
+
 def seed_curriculum(db=None) -> None:
     close_db = False
     if db is None:
@@ -808,6 +864,7 @@ def seed_curriculum(db=None) -> None:
         existing = db.query(CurriculumProgram).count()
         if existing >= 5:
             print("Curriculum already seeded.")
+            _update_alphabet_audio(db)
             return
 
         print("Seeding curriculum programs...")

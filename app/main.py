@@ -10,6 +10,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from .config import get_settings
 from .database import SessionLocal
@@ -95,6 +96,9 @@ app.include_router(curriculum_content_router)
 app.include_router(student_curriculum_router)
 app.include_router(teacher_curriculum_router)
 
+
+# ── Static files ─────────────────────────────────────────────────────────────
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # ── Health check ──────────────────────────────────────────────────────────────
 @app.get("/health", tags=["Health"])
