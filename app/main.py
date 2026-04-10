@@ -76,6 +76,8 @@ app.add_middleware(
     allow_origins=["*"] if settings.debug else [
         "https://taliem.app",
         "https://www.taliem.app",
+        "https://taleem.cksyndic.ma",
+        "https://www.taleem.cksyndic.ma",
     ],
     allow_credentials=True,
     allow_methods=["*"],
