@@ -34,5 +34,7 @@ USER appuser
 
 EXPOSE 8000
 
-# Run migrations then start server
-CMD ["sh", "-c", "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 2"]
+# Startup script — waits for DB, runs migrations, starts server
+COPY start.sh .
+RUN chmod +x start.sh
+CMD ["./start.sh"]
