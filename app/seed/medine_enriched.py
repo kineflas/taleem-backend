@@ -1179,109 +1179,56 @@ def seed_medine_enriched(db = None) -> None:
             db.add(unit)
             db.flush()
 
-        # Create items for this lesson (explanation, examples, vocab, illustrations, quiz)
-        item_number = 1
+        # Migrate: delete any old individual items (explanation/example/vocab/quiz)
+        # that were created by the previous seed approach. We replace them with ONE
+        # bundled master item whose extra_data contains all lesson content.
+        old_items = db.query(CurriculumItem).filter(
+            CurriculumItem.curriculum_unit_id == unit.id
+        ).all()
+        has_bundled = any(
+            (i.extra_data or {}).get("explanation_sections") is not None
+            for i in old_items
+        )
+        if old_items and not has_bundled:
+            for old_item in old_items:
+                db.delete(old_item)
+            db.flush()
+            old_items = []
 
-        # 1. Explanation sections
-        for idx, section in enumerate(lesson_data.get("explanation_sections", [])):
+        # Create ONE master item per lesson with all enriched content bundled.
+        # The frontend curriculum_item_screen.dart reads metadata keys:
+        # explanation_sections, examples, vocab, illustrations, quiz
+        existing_item = db.query(CurriculumItem).filter_by(
+            curriculum_unit_id=unit.id,
+            number=1,
+        ).first()
+
+        if not existing_item:
+            # Convert vocab tuples to dicts for JSON serialisation
+            vocab_list = [
+                {"arabic": ar, "translation_fr": fr, "transliteration": tr}
+                for (ar, fr, tr) in lesson_data.get("vocab", [])
+            ]
+
             item = CurriculumItem(
                 curriculum_unit_id=unit.id,
                 item_type=ItemType.GRAMMAR_POINT,
-                number=item_number,
-                title_ar=section.get("title_ar", section.get("title_fr", "")),
-                title_fr=section["title_fr"],
-                content_ar=section.get("content_ar", ""),
-                content_fr=section["content_fr"],
+                number=1,
+                title_ar=lesson_data["title_ar"],
+                title_fr=lesson_data["title_fr"],
+                content_fr=lesson_data.get("description_fr", ""),
                 extra_data={
-                    "type": "explanation",
-                    "section_index": idx,
-                    "tip_fr": section.get("tip_fr", ""),
+                    "explanation_sections": lesson_data.get("explanation_sections", []),
+                    "examples": lesson_data.get("examples", []),
+                    "vocab": vocab_list,
+                    "illustrations": lesson_data.get("illustrations", []),
+                    "quiz": lesson_data.get("quiz", []),
                 },
-                sort_order=item_number,
+                sort_order=1,
             )
             db.add(item)
-            item_number += 1
 
-        # 2. Examples
-        for idx, example in enumerate(lesson_data.get("examples", [])):
-            item = CurriculumItem(
-                curriculum_unit_id=unit.id,
-                item_type=ItemType.EXAMPLE,
-                number=item_number,
-                title_ar=example["arabic"],
-                title_fr=example.get("translation_fr", ""),
-                content_ar=example["arabic"],
-                content_fr=example.get("breakdown_fr", ""),
-                transliteration=example.get("transliteration", ""),
-                extra_data={
-                    "type": "worked_example",
-                    "example_index": idx,
-                    "translation": example.get("translation_fr", ""),
-                    "grammatical_note": example.get("grammatical_note_fr", ""),
-                },
-                sort_order=item_number,
-            )
-            db.add(item)
-            item_number += 1
-
-        # 3. Vocabulary items
-        for idx, (arabic, fr_trans, transliteration) in enumerate(lesson_data.get("vocab", [])):
-            item = CurriculumItem(
-                curriculum_unit_id=unit.id,
-                item_type=ItemType.VOCABULARY,
-                number=item_number,
-                title_ar=arabic,
-                title_fr=fr_trans,
-                transliteration=transliteration,
-                extra_data={
-                    "type": "vocabulary",
-                    "vocab_index": idx,
-                },
-                sort_order=item_number,
-            )
-            db.add(item)
-            item_number += 1
-
-        # 4. Illustrations
-        for idx, illust in enumerate(lesson_data.get("illustrations", [])):
-            item = CurriculumItem(
-                curriculum_unit_id=unit.id,
-                item_type=ItemType.GRAMMAR_POINT,
-                number=item_number,
-                title_ar="رسم توضيحي",
-                title_fr=illust.get("title_fr", ""),
-                extra_data={
-                    "type": "illustration",
-                    "illustration_type": illust.get("type", ""),
-                    "data": illust.get("data", {}),
-                },
-                sort_order=item_number,
-            )
-            db.add(item)
-            item_number += 1
-
-        # 5. Quiz questions
-        for idx, question in enumerate(lesson_data.get("quiz", [])):
-            item = CurriculumItem(
-                curriculum_unit_id=unit.id,
-                item_type=ItemType.GRAMMAR_POINT,
-                number=item_number,
-                title_ar="سؤال",
-                title_fr=question["question_fr"],
-                extra_data={
-                    "type": "quiz",
-                    "question_index": idx,
-                    "question_type": question.get("type", "MCQ"),
-                    "choices": question.get("choices", []),
-                    "correct_index": question.get("correct_index", 0),
-                    "explanation_fr": question.get("explanation_fr", ""),
-                },
-                sort_order=item_number,
-            )
-            db.add(item)
-            item_number += 1
-
-        unit.total_items = item_number - 1
+        unit.total_items = 1
 
     db.commit()
     print(f"✓ Seeded enriched MEDINE Tome 1 curriculum with {len(all_lessons)} lessons")

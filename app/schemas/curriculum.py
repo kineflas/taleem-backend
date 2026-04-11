@@ -1,5 +1,5 @@
 from __future__ import annotations
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from datetime import date, datetime
 import uuid
 from typing import Optional
@@ -28,10 +28,11 @@ class CurriculumItemOut(BaseModel):
     verse_start: int | None
     verse_end: int | None
     letter_position: str | None
-    extra_data: dict | None
+    # Serialised as 'metadata' so the Flutter model can read j['metadata']
+    metadata: dict | None = Field(None, validation_alias='extra_data')
     sort_order: int
 
-    model_config = {"from_attributes": True}
+    model_config = {"from_attributes": True, "populate_by_name": True}
 
 
 class CurriculumUnitOut(BaseModel):
