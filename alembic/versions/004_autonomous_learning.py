@@ -33,10 +33,10 @@ depends_on = None
 
 
 def upgrade() -> None:
-    # ── Create enum types ───────────────────────────────────────────────────
-    op.execute("CREATE TYPE wordcategory AS ENUM ('PARTICLE', 'NOUN', 'VERB', 'PROPER_NOUN')")
-    op.execute("CREATE TYPE chunklevel AS ENUM ('PAIR', 'TRIPLET', 'SEGMENT')")
-    op.execute("CREATE TYPE exercisetype AS ENUM ('FLASH_RECALL', 'QCM_WORD', 'VERSE_SCAN', 'SPATIAL_VIEW', 'SPATIAL_DRAG', 'PARTICLE_FIND', 'CHUNK_IMPRINT', 'CHUNK_LEGO', 'VERSE_REBUILD', 'ROOT_DISCOVER', 'ROOT_INTRUDER', 'ROOT_GUESS', 'GUIDED_SCAN', 'COMPREHENSION')")
+    # ── Create enum types (idempotent) ────────────────────────────────────
+    op.execute("DO $$ BEGIN CREATE TYPE wordcategory AS ENUM ('PARTICLE', 'NOUN', 'VERB', 'PROPER_NOUN'); EXCEPTION WHEN duplicate_object THEN null; END $$;")
+    op.execute("DO $$ BEGIN CREATE TYPE chunklevel AS ENUM ('PAIR', 'TRIPLET', 'SEGMENT'); EXCEPTION WHEN duplicate_object THEN null; END $$;")
+    op.execute("DO $$ BEGIN CREATE TYPE exercisetype AS ENUM ('FLASH_RECALL', 'QCM_WORD', 'VERSE_SCAN', 'SPATIAL_VIEW', 'SPATIAL_DRAG', 'PARTICLE_FIND', 'CHUNK_IMPRINT', 'CHUNK_LEGO', 'VERSE_REBUILD', 'ROOT_DISCOVER', 'ROOT_INTRUDER', 'ROOT_GUESS', 'GUIDED_SCAN', 'COMPREHENSION'); EXCEPTION WHEN duplicate_object THEN null; END $$;")
 
     # ── 1. arabic_roots (created first, needed by quran_words FK) ──────────
     op.create_table(
@@ -117,7 +117,7 @@ def upgrade() -> None:
         sa.Column("updated_at", sa.DateTime(timezone=True), server_default=sa.func.now(), onupdate=sa.func.now()),
         sa.UniqueConstraint("student_id", "module", name="uq_student_module"),
     )
-    op.create_index("ix_student_module_progress_student_id", "student_module_progress", ["student_id"])
+    # index on student_id already created by index=True in column definition
 
     # ── 5. leitner_cards ────────────────────────────────────────────────────
     op.create_table(
@@ -136,7 +136,7 @@ def upgrade() -> None:
         sa.Column("updated_at", sa.DateTime(timezone=True), server_default=sa.func.now(), onupdate=sa.func.now()),
         sa.UniqueConstraint("student_id", "word_id", name="uq_leitner_student_word"),
     )
-    op.create_index("ix_leitner_cards_student_id", "leitner_cards", ["student_id"])
+    # index on student_id already created by index=True in column definition
     op.create_index("ix_leitner_review", "leitner_cards", ["student_id", "next_review_date"])
 
     # ── 6. exercise_sessions ────────────────────────────────────────────────
@@ -152,7 +152,7 @@ def upgrade() -> None:
         sa.Column("correct_count", sa.Integer, nullable=False, server_default="0"),
         sa.Column("duration_seconds", sa.Integer, nullable=True),
     )
-    op.create_index("ix_exercise_sessions_student_id", "exercise_sessions", ["student_id"])
+    # index on student_id already created by index=True in column definition
 
     # ── 7. exercise_attempts ────────────────────────────────────────────────
     op.create_table(
@@ -172,8 +172,7 @@ def upgrade() -> None:
         sa.Column("answer_data", postgresql.JSON, nullable=True),
         sa.Column("created_at", sa.DateTime(timezone=True), server_default=sa.func.now()),
     )
-    op.create_index("ix_exercise_attempts_session_id", "exercise_attempts", ["session_id"])
-    op.create_index("ix_exercise_attempts_student_id", "exercise_attempts", ["student_id"])
+    # indexes on session_id and student_id already created by index=True in column definitions
 
 
 def downgrade() -> None:

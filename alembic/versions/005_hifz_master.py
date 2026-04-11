@@ -41,11 +41,11 @@ depends_on = None
 
 
 def upgrade() -> None:
-    # ── Create enum types ───────────────────────────────────────────────────
-    op.execute("CREATE TYPE versemastery AS ENUM ('RED', 'ORANGE', 'GREEN')")
-    op.execute("CREATE TYPE goalmode AS ENUM ('QUANTITATIVE', 'TEMPORAL')")
-    op.execute("CREATE TYPE badgetype AS ENUM ('HIZB', 'SURAH_COMPLETE', 'STREAK_7', 'STREAK_30', 'STREAK_100', 'LEVEL_UP', 'FIRST_JUZ', 'RECITER_10')")
-    op.execute("CREATE TYPE studentlevel AS ENUM ('DEBUTANT', 'APPRENTI', 'HAFIZ_EN_HERBE', 'HAFIZ_CONFIRME', 'HAFIZ_EXPERT')")
+    # ── Create enum types (idempotent) ────────────────────────────────────
+    op.execute("DO $$ BEGIN CREATE TYPE versemastery AS ENUM ('RED', 'ORANGE', 'GREEN'); EXCEPTION WHEN duplicate_object THEN null; END $$;")
+    op.execute("DO $$ BEGIN CREATE TYPE goalmode AS ENUM ('QUANTITATIVE', 'TEMPORAL'); EXCEPTION WHEN duplicate_object THEN null; END $$;")
+    op.execute("DO $$ BEGIN CREATE TYPE badgetype AS ENUM ('HIZB', 'SURAH_COMPLETE', 'STREAK_7', 'STREAK_30', 'STREAK_100', 'LEVEL_UP', 'FIRST_JUZ', 'RECITER_10'); EXCEPTION WHEN duplicate_object THEN null; END $$;")
+    op.execute("DO $$ BEGIN CREATE TYPE studentlevel AS ENUM ('DEBUTANT', 'APPRENTI', 'HAFIZ_EN_HERBE', 'HAFIZ_CONFIRME', 'HAFIZ_EXPERT'); EXCEPTION WHEN duplicate_object THEN null; END $$;")
 
     # ── 1. hifz_goals ──────────────────────────────────────────────────────
     op.create_table(
@@ -66,7 +66,7 @@ def upgrade() -> None:
         sa.Column("updated_at", sa.DateTime(timezone=True), server_default=sa.func.now(), onupdate=sa.func.now()),
         sa.UniqueConstraint("student_id", "surah_number", name="uq_hifz_goal_student_surah"),
     )
-    op.create_index("ix_hifz_goals_student_id", "hifz_goals", ["student_id"])
+    # index on student_id already created by index=True in column definition
 
     # ── 2. verse_progress ──────────────────────────────────────────────────
     op.create_table(
@@ -89,7 +89,7 @@ def upgrade() -> None:
         sa.Column("updated_at", sa.DateTime(timezone=True), server_default=sa.func.now(), onupdate=sa.func.now()),
         sa.UniqueConstraint("student_id", "surah_number", "verse_number", name="uq_verse_progress"),
     )
-    op.create_index("ix_verse_progress_student_id", "verse_progress", ["student_id"])
+    # index on student_id already created by index=True in column definition
     op.create_index("ix_verse_review", "verse_progress", ["student_id", "next_review_date"])
 
     # ── 3. hifz_sessions ───────────────────────────────────────────────────
@@ -111,7 +111,7 @@ def upgrade() -> None:
         sa.Column("started_at", sa.DateTime(timezone=True), server_default=sa.func.now()),
         sa.Column("ended_at", sa.DateTime(timezone=True), nullable=True),
     )
-    op.create_index("ix_hifz_sessions_student_id", "hifz_sessions", ["student_id"])
+    # index on student_id already created by index=True in column definition
 
     # ── 4. student_xp ─────────────────────────────────────────────────────
     op.create_table(
@@ -131,7 +131,7 @@ def upgrade() -> None:
         sa.Column("created_at", sa.DateTime(timezone=True), server_default=sa.func.now()),
         sa.Column("updated_at", sa.DateTime(timezone=True), server_default=sa.func.now(), onupdate=sa.func.now()),
     )
-    op.create_index("ix_student_xp_student_id", "student_xp", ["student_id"])
+    # student_id already has unique=True constraint which creates an implicit index
 
     # ── 5. student_badges ─────────────────────────────────────────────────
     op.create_table(
@@ -143,7 +143,7 @@ def upgrade() -> None:
         sa.Column("earned_at", sa.DateTime(timezone=True), server_default=sa.func.now()),
         sa.UniqueConstraint("student_xp_id", "badge_type", "badge_detail", name="uq_student_badge"),
     )
-    op.create_index("ix_student_badges_student_xp_id", "student_badges", ["student_xp_id"])
+    # index on student_xp_id is implicitly handled by FK; no separate index needed
 
 
 def downgrade() -> None:
