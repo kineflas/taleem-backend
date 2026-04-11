@@ -45,11 +45,20 @@ from ..schemas.hifz_master import (
 router = APIRouter(prefix="/student/hifz", tags=["Hifz Master"])
 
 
-# ── Placeholder models (to be created: app/models/hifz_master.py) ────────────
-# These imports will be used once models are created:
-# from ..models.hifz_master import (
-#     HifzGoal, VerseProgress, HifzSession, StudentXP, StudentBadge
-# )
+from ..models.hifz_master import (
+    HifzGoal, VerseProgress, HifzSession, StudentXP, StudentBadge
+)
+
+# Surah verse counts (1-indexed: surah 1 = Al-Fatiha = 7 verses)
+SURAH_VERSE_COUNTS = [
+    7, 286, 200, 176, 120, 165, 206, 75, 129, 109, 123, 111, 43, 52, 99,
+    128, 111, 110, 98, 135, 112, 78, 118, 64, 77, 227, 93, 88, 69, 60,
+    34, 30, 73, 54, 45, 83, 182, 88, 75, 85, 54, 53, 89, 59, 37, 35, 38,
+    29, 18, 45, 60, 49, 62, 55, 78, 96, 29, 22, 24, 13, 14, 11, 11, 18,
+    12, 12, 30, 52, 52, 44, 28, 28, 20, 56, 40, 31, 50, 40, 46, 42, 29,
+    19, 36, 25, 22, 17, 19, 26, 30, 20, 15, 21, 11, 8, 8, 19, 5, 8, 8,
+    11, 11, 8, 3, 9, 5, 4, 7, 3, 6, 3, 5, 4, 5, 6,
+]
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -129,8 +138,6 @@ def create_hifz_goal(
 
     For TEMPORAL mode, calculated_daily_target is auto-computed.
     """
-    # TODO: Import HifzGoal model once created
-    # Placeholder validation
     if body.mode == "QUANTITATIVE" and not body.verses_per_day:
         raise HTTPException(
             status_code=400,
@@ -143,91 +150,123 @@ def create_hifz_goal(
         )
 
     # Check unique constraint
-    # existing = db.query(HifzGoal).filter(
-    #     HifzGoal.student_id == student.id,
-    #     HifzGoal.surah_number == body.surah_number,
-    # ).first()
-    # if existing:
-    #     raise HTTPException(
-    #         status_code=409,
-    #         detail="Goal for this surah already exists"
-    #     )
+    existing = db.query(HifzGoal).filter(
+        HifzGoal.student_id == student.id,
+        HifzGoal.surah_number == body.surah_number,
+    ).first()
+    if existing:
+        raise HTTPException(
+            status_code=409,
+            detail="Un objectif pour cette sourate existe déjà"
+        )
 
-    # TODO: Create and persist goal
-    # goal = HifzGoal(
-    #     student_id=student.id,
-    #     surah_number=body.surah_number,
-    #     mode=body.mode,
-    #     verses_per_day=body.verses_per_day,
-    #     target_date=body.target_date,
-    #     calculated_daily_target=(
-    #         body.verses_per_day if body.mode == "QUANTITATIVE"
-    #         else calculate_daily_target(114, body.target_date)  # placeholder total
-    #     ),
-    #     total_verses=30,  # Placeholder: fetch from Quran data
-    #     reciter_id=body.reciter_id or "Alafasy_128kbps",
-    # )
-    # db.add(goal)
-    # db.commit()
-    # db.refresh(goal)
-    # return HifzGoalOut.model_validate(goal)
+    # Get total verses for surah
+    total_verses = SURAH_VERSE_COUNTS[body.surah_number - 1] if 1 <= body.surah_number <= 114 else 7
 
-    return HifzGoalOut(
-        id=uuid.uuid4(),
+    # Calculate daily target
+    daily_target = body.verses_per_day or 1
+    if body.mode == "TEMPORAL" and body.target_date:
+        daily_target = calculate_daily_target(total_verses, body.target_date)
+
+    goal = HifzGoal(
         student_id=student.id,
         surah_number=body.surah_number,
         mode=body.mode,
         verses_per_day=body.verses_per_day,
         target_date=body.target_date,
-        calculated_daily_target=body.verses_per_day or 1,
-        total_verses=30,
-        verses_memorized=0,
-        is_completed=False,
+        calculated_daily_target=daily_target,
+        total_verses=total_verses,
         reciter_id=body.reciter_id or "Alafasy_128kbps",
-        started_at=datetime.now(timezone.utc),
-        completed_at=None,
-        updated_at=datetime.now(timezone.utc),
+    )
+    db.add(goal)
+    db.commit()
+    db.refresh(goal)
+
+    return HifzGoalOut(
+        id=goal.id,
+        student_id=goal.student_id,
+        surah_number=goal.surah_number,
+        mode=goal.mode.value,
+        verses_per_day=goal.verses_per_day,
+        target_date=goal.target_date,
+        calculated_daily_target=goal.calculated_daily_target,
+        total_verses=goal.total_verses,
+        verses_memorized=goal.verses_memorized,
+        is_completed=goal.is_completed,
+        reciter_id=goal.reciter_id,
+        started_at=goal.started_at,
+        completed_at=goal.completed_at,
+        updated_at=goal.updated_at,
     )
 
 
 @router.get("/goals", response_model=list[HifzGoalOut])
 def list_hifz_goals(student: StudentUser, db: DB):
     """List all memorization goals for the current student."""
-    # TODO: Implement query once HifzGoal model exists
-    # goals = db.query(HifzGoal).filter(
-    #     HifzGoal.student_id == student.id
-    # ).order_by(HifzGoal.created_at.desc()).all()
-    # return [HifzGoalOut.model_validate(g) for g in goals]
-    return []
+    goals = db.query(HifzGoal).filter(
+        HifzGoal.student_id == student.id
+    ).order_by(HifzGoal.started_at.desc()).all()
+
+    return [
+        HifzGoalOut(
+            id=g.id,
+            student_id=g.student_id,
+            surah_number=g.surah_number,
+            mode=g.mode.value,
+            verses_per_day=g.verses_per_day,
+            target_date=g.target_date,
+            calculated_daily_target=g.calculated_daily_target,
+            total_verses=g.total_verses,
+            verses_memorized=g.verses_memorized,
+            is_completed=g.is_completed,
+            reciter_id=g.reciter_id,
+            started_at=g.started_at,
+            completed_at=g.completed_at,
+            updated_at=g.updated_at,
+        )
+        for g in goals
+    ]
 
 
 @router.get("/goals/{goal_id}", response_model=HifzGoalOut)
 def get_hifz_goal_detail(goal_id: uuid.UUID, student: StudentUser, db: DB):
     """Get detailed goal info with verse progress."""
-    # TODO: Implement query once HifzGoal model exists
-    # goal = db.query(HifzGoal).filter(
-    #     HifzGoal.id == goal_id,
-    #     HifzGoal.student_id == student.id,
-    # ).first()
-    # if not goal:
-    #     raise HTTPException(status_code=404, detail="Goal not found")
-    # return HifzGoalOut.model_validate(goal)
-    raise HTTPException(status_code=404, detail="Goal not found")
+    goal = db.query(HifzGoal).filter(
+        HifzGoal.id == goal_id,
+        HifzGoal.student_id == student.id,
+    ).first()
+    if not goal:
+        raise HTTPException(status_code=404, detail="Objectif non trouvé")
+
+    return HifzGoalOut(
+        id=goal.id,
+        student_id=goal.student_id,
+        surah_number=goal.surah_number,
+        mode=goal.mode.value,
+        verses_per_day=goal.verses_per_day,
+        target_date=goal.target_date,
+        calculated_daily_target=goal.calculated_daily_target,
+        total_verses=goal.total_verses,
+        verses_memorized=goal.verses_memorized,
+        is_completed=goal.is_completed,
+        reciter_id=goal.reciter_id,
+        started_at=goal.started_at,
+        completed_at=goal.completed_at,
+        updated_at=goal.updated_at,
+    )
 
 
 @router.delete("/goals/{goal_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_hifz_goal(goal_id: uuid.UUID, student: StudentUser, db: DB):
     """Delete a memorization goal."""
-    # TODO: Implement deletion once HifzGoal model exists
-    # goal = db.query(HifzGoal).filter(
-    #     HifzGoal.id == goal_id,
-    #     HifzGoal.student_id == student.id,
-    # ).first()
-    # if not goal:
-    #     raise HTTPException(status_code=404, detail="Goal not found")
-    # db.delete(goal)
-    # db.commit()
-    pass
+    goal = db.query(HifzGoal).filter(
+        HifzGoal.id == goal_id,
+        HifzGoal.student_id == student.id,
+    ).first()
+    if not goal:
+        raise HTTPException(status_code=404, detail="Objectif non trouvé")
+    db.delete(goal)
+    db.commit()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
