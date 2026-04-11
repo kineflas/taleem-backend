@@ -650,19 +650,19 @@ def list_reciters(current_user: CurrentUser):
             name_en="Mishary Rashid Alafasy",
         ),
         ReciterOut(
-            id="Al-Husary_128kbps",
-            name_ar="الشيخ علي الحصري",
-            name_en="Ali Al-Husary",
+            id="Husary_128kbps",            # was: Al-Husary_128kbps (invalid on EveryAyah)
+            name_ar="الشيخ محمود خليل الحصري",
+            name_en="Mahmoud Khalil Al-Husary",
         ),
         ReciterOut(
-            id="Abdul_Basit_128kbps",
+            id="Abdul_Basit_Murattal_192kbps",  # was: Abdul_Basit_128kbps
             name_ar="الشيخ عبد الباسط عبد الصمد",
-            name_en="Abdul Basit Abdus Samad",
+            name_en="Abdul Basit Murattal",
         ),
         ReciterOut(
-            id="Menshawi_128kbps",
+            id="Menshawi_16kbps",              # was: Menshawi_128kbps
             name_ar="الشيخ محمود علي البنا",
-            name_en="Mahmoud Ali Al-Banna",
+            name_en="Mohamed Siddiq Al-Menshawi",
         ),
         ReciterOut(
             id="Shuraim_128kbps",
