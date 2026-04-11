@@ -26,8 +26,16 @@ from .routers.curriculum import (
     student_curriculum_router,
     teacher_curriculum_router,
 )
+from .routers.autonomous_learning import (
+    content_router as learn_content_router,
+    student_learn_router,
+)
+from .routers.hifz_master import hifz_router
 from .seed.surahs import seed_surahs
 from .seed.curriculum import seed_curriculum
+from .seed.autonomous_learning import seed_autonomous_learning
+from .seed.medine_enriched import seed_medine_enriched
+from .seed.nourania_enriched import seed_nourania_enriched
 
 settings = get_settings()
 logger = logging.getLogger(__name__)
@@ -46,6 +54,9 @@ async def lifespan(app: FastAPI):
         db = SessionLocal()
         seed_surahs(db)
         seed_curriculum(db)
+        seed_autonomous_learning(db)
+        seed_medine_enriched(db)
+        seed_nourania_enriched(db)
         db.close()
     except Exception as exc:
         logger.error("Seed failed: %s", exc)
@@ -95,6 +106,9 @@ app.include_router(quran_router)
 app.include_router(curriculum_content_router)
 app.include_router(student_curriculum_router)
 app.include_router(teacher_curriculum_router)
+app.include_router(learn_content_router)
+app.include_router(student_learn_router)
+app.include_router(hifz_router)
 
 
 # ── Static files ─────────────────────────────────────────────────────────────
