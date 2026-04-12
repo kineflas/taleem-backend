@@ -11,7 +11,8 @@ Endpoints:
   PATCH  /student/hifz/sessions/{session_id}/end — End session, calculate XP
   POST   /student/hifz/sessions/{session_id}/verse-known — Mark verse as known
 
-  GET    /student/hifz/verses/due            — Get verses needing review today
+  GET    /student/hifz/verses                — Get ALL memorized verses (voluntary revision)
+  GET    /student/hifz/verses/due            — Get verses needing review today (SRS)
   POST   /student/hifz/verses/review         — Review a verse (success/fail)
 
   GET    /student/hifz/xp                    — Get student XP, level, badges
@@ -46,7 +47,7 @@ router = APIRouter(prefix="/student/hifz", tags=["Hifz Master"])
 
 
 from ..models.hifz_master import (
-    HifzGoal, VerseProgress, HifzSession, StudentXP, StudentBadge
+    HifzGoal, VerseProgress, HifzSession, StudentXP, StudentBadge, VerseMastery
 )
 
 # Surah verse counts (1-indexed: surah 1 = Al-Fatiha = 7 verses)
@@ -433,24 +434,55 @@ def mark_verse_known(
 # Verse Review Endpoints
 # ══════════════════════════════════════════════════════════════════════════════
 
+@router.get("/verses", response_model=list[VerseProgressOut])
+def get_all_verses(
+    student: StudentUser,
+    db: DB,
+    limit: int = Query(200, ge=1, le=500),
+):
+    """
+    Get ALL memorized verses for the student, regardless of review date.
+    Used for voluntary revision (derniers appris / aléatoire).
+    Sorted by created_at ascending — Flutter side handles sorting for each mode.
+    """
+    verses = (
+        db.query(VerseProgress)
+        .filter(VerseProgress.student_id == student.id)
+        .order_by(VerseProgress.created_at.asc())
+        .limit(limit)
+        .all()
+    )
+    return [VerseProgressOut.model_validate(v) for v in verses]
+
+
 @router.get("/verses/due", response_model=list[VerseProgressOut])
 def get_verses_due_for_review(
     student: StudentUser,
     db: DB,
-    limit: int = Query(20, ge=1, le=100),
+    limit: int = Query(50, ge=1, le=200),
 ):
     """
     Get verses needing review today (next_review_date <= today).
-    Sorted by next_review_date ascending (oldest first).
+    Sorted by mastery priority (RED first) then by next_review_date ascending.
     """
-    # TODO: Implement query once VerseProgress model exists
-    # today = date.today()
-    # verses = db.query(VerseProgress).filter(
-    #     VerseProgress.student_id == student.id,
-    #     VerseProgress.next_review_date <= today,
-    # ).order_by(VerseProgress.next_review_date.asc()).limit(limit).all()
-    # return [VerseProgressOut.model_validate(v) for v in verses]
-    return []
+    today = date.today()
+    verses = (
+        db.query(VerseProgress)
+        .filter(
+            and_(
+                VerseProgress.student_id == student.id,
+                VerseProgress.next_review_date <= today,
+            )
+        )
+        .order_by(
+            # Ordre alphabétique desc : RED > ORANGE > GREEN ✓
+            VerseProgress.mastery.desc(),
+            VerseProgress.next_review_date.asc(),
+        )
+        .limit(limit)
+        .all()
+    )
+    return [VerseProgressOut.model_validate(v) for v in verses]
 
 
 @router.post("/verses/review", response_model=VerseProgressOut)
