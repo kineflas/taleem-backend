@@ -663,6 +663,14 @@ def _seed_nourania(db, program: CurriculumProgram):
 
 def _seed_medine_t1(db, program: CurriculumProgram):
     for lesson in MEDINE_T1_LESSONS:
+        # Guard: skip if a unit with this number already exists (idempotent)
+        existing_unit = db.query(CurriculumUnit).filter_by(
+            curriculum_program_id=program.id,
+            number=lesson["number"],
+        ).first()
+        if existing_unit:
+            continue
+
         unit = CurriculumUnit(
             curriculum_program_id=program.id,
             unit_type=UnitType.LESSON,

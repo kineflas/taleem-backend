@@ -13,6 +13,7 @@ Run: python -m app.seed.medine_enriched
 from ..database import SessionLocal
 from ..models.curriculum import (
     CurriculumProgram, CurriculumUnit, CurriculumItem,
+    StudentEnrollment, StudentItemProgress,
     ItemType, CurriculumType, UnitType,
 )
 
@@ -1129,6 +1130,89 @@ for lesson_num in range(10, 24):
     }
 
 
+def _deduplicate_medine_units(db, program) -> int:
+    """
+    Remove duplicate CurriculumUnit rows for the MEDINE programme.
+
+    The old seed_curriculum._seed_medine_t1() creates units without checking
+    for existing rows, so repeated deployments can accumulate duplicates.
+    For each lesson number we keep ONLY the unit that already carries the
+    enriched bundled item (has extra_data.explanation_sections), or the first
+    one if none is enriched yet.  Duplicate units — together with their items
+    and any student_item_progress rows — are deleted.
+    """
+    from collections import defaultdict
+    all_units = (
+        db.query(CurriculumUnit)
+        .filter(CurriculumUnit.curriculum_program_id == program.id)
+        .order_by(CurriculumUnit.number, CurriculumUnit.created_at)
+        .all()
+    )
+
+    by_number: dict[int, list] = defaultdict(list)
+    for u in all_units:
+        by_number[u.number].append(u)
+
+    removed = 0
+    for number, units in by_number.items():
+        if len(units) <= 1:
+            continue
+
+        # Prefer the unit whose items already contain the enriched bundle
+        keeper = None
+        for u in units:
+            items = db.query(CurriculumItem).filter(
+                CurriculumItem.curriculum_unit_id == u.id
+            ).all()
+            if any((i.extra_data or {}).get("explanation_sections") for i in items):
+                keeper = u
+                break
+        if keeper is None:
+            keeper = units[0]
+
+        for u in units:
+            if u.id == keeper.id:
+                continue
+            # Re-point any enrollment cursors away from the duplicate
+            db.query(StudentEnrollment).filter(
+                StudentEnrollment.current_unit_id == u.id
+            ).update(
+                {StudentEnrollment.current_unit_id: keeper.id},
+                synchronize_session="fetch",
+            )
+            # Delete progress, items, then the unit itself
+            item_ids = [
+                i.id for i in db.query(CurriculumItem.id).filter(
+                    CurriculumItem.curriculum_unit_id == u.id
+                ).all()
+            ]
+            if item_ids:
+                # Re-point enrollment item cursors to keeper's first item
+                keeper_first_item = db.query(CurriculumItem).filter(
+                    CurriculumItem.curriculum_unit_id == keeper.id
+                ).order_by(CurriculumItem.sort_order).first()
+                new_item_id = keeper_first_item.id if keeper_first_item else None
+                db.query(StudentEnrollment).filter(
+                    StudentEnrollment.current_item_id.in_(item_ids)
+                ).update(
+                    {StudentEnrollment.current_item_id: new_item_id},
+                    synchronize_session="fetch",
+                )
+                db.query(StudentItemProgress).filter(
+                    StudentItemProgress.curriculum_item_id.in_(item_ids)
+                ).delete(synchronize_session="fetch")
+                db.query(CurriculumItem).filter(
+                    CurriculumItem.curriculum_unit_id == u.id
+                ).delete(synchronize_session="fetch")
+            db.delete(u)
+            removed += 1
+
+    if removed:
+        db.flush()
+        print(f"  ⚠ Removed {removed} duplicate MEDINE unit(s)")
+    return removed
+
+
 def seed_medine_enriched(db = None) -> None:
     """
     Seed enriched MEDINE Tome 1 curriculum into database.
@@ -1155,6 +1239,9 @@ def seed_medine_enriched(db = None) -> None:
         db.add(program)
         db.flush()
 
+    # ── Deduplicate units left over from earlier seed runs ────────────────
+    _deduplicate_medine_units(db, program)
+
     # Create all 23 lessons with enriched content
     all_lessons = [LESSON_1, LESSON_2, LESSON_3, LESSON_4, LESSON_5]
     all_lessons.extend([LESSONS_6_TO_23_DATA[i] for i in range(6, 24)])
@@ -1178,6 +1265,11 @@ def seed_medine_enriched(db = None) -> None:
             )
             db.add(unit)
             db.flush()
+        else:
+            # Update title/description in case the enriched data changed
+            unit.title_ar = lesson_data["title_ar"]
+            unit.title_fr = lesson_data["title_fr"]
+            unit.description_fr = lesson_data["description_fr"]
 
         # Migrate: delete any old individual items (explanation/example/vocab/quiz)
         # that were created by the previous seed approach. We replace them with ONE
@@ -1189,11 +1281,20 @@ def seed_medine_enriched(db = None) -> None:
             (i.extra_data or {}).get("explanation_sections") is not None
             for i in old_items
         )
-        if old_items and not has_bundled:
-            for old_item in old_items:
+        # If there are old-style items (no enriched bundle), delete them all
+        # Also delete if we have BOTH old items AND a bundled item (leftover mix)
+        non_bundled = [
+            i for i in old_items
+            if not (i.extra_data or {}).get("explanation_sections")
+        ]
+        if non_bundled:
+            nb_ids = [i.id for i in non_bundled]
+            db.query(StudentItemProgress).filter(
+                StudentItemProgress.curriculum_item_id.in_(nb_ids)
+            ).delete(synchronize_session="fetch")
+            for old_item in non_bundled:
                 db.delete(old_item)
             db.flush()
-            old_items = []
 
         # Create ONE master item per lesson with all enriched content bundled.
         # The frontend curriculum_item_screen.dart reads metadata keys:
