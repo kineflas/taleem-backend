@@ -18,6 +18,15 @@ from .hifz_master import (
     StudentXP, StudentBadge,
     VerseMastery, GoalMode, BadgeType, StudentLevel,
 )
+from .diagnostic import (
+    DiagnosticQuestion, DiagnosticSession, DiagnosticResult,
+)
+from .flashcard import (
+    FlashcardCard, FlashcardProgress,
+)
+from .gamification import (
+    XPEvent, Badge, MedineBadgeUnlock,
+)
 
 __all__ = [
     "User", "TeacherStudentLink",
@@ -34,4 +43,7 @@ __all__ = [
     "HifzGoal", "VerseProgress", "HifzSession",
     "StudentXP", "StudentBadge",
     "VerseMastery", "GoalMode", "BadgeType", "StudentLevel",
+    "DiagnosticQuestion", "DiagnosticSession", "DiagnosticResult",
+    "FlashcardCard", "FlashcardProgress",
+    "XPEvent", "Badge", "MedineBadgeUnlock",
 ]

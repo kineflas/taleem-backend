@@ -33,6 +33,11 @@ class User(Base):
     # FCM token for push notifications
     fcm_token: Mapped[str | None] = mapped_column(String(500), nullable=True)
 
+    # Gamification
+    total_xp: Mapped[int] = mapped_column(Integer, default=0)
+    level: Mapped[int] = mapped_column(Integer, default=1)
+    diagnostic_completed: Mapped[bool] = mapped_column(Boolean, default=False)
+
     # Relationships
     teacher_links: Mapped[list["TeacherStudentLink"]] = relationship(
         "TeacherStudentLink",
