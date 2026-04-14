@@ -28,10 +28,10 @@ from .medine_tome1_parser import (
 
 
 # ── Path to the optimized MD file ────────────────────────────────────────────
-# Relative to the backend/ directory
+# Located in backend/data/ (copied there for Docker compatibility)
 _MD_FILENAME = "📚 Tome 1 Médine — Édition Optimisée.md"
 _BACKEND_DIR = Path(__file__).resolve().parent.parent.parent  # backend/
-_MD_PATH = _BACKEND_DIR.parent / _MD_FILENAME
+_MD_PATH = _BACKEND_DIR / "data" / _MD_FILENAME
 
 
 # ── Badge Catalogue (from TALEEM_Specifications_Techniques.docx) ─────────────
