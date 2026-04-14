@@ -13,7 +13,7 @@ Run: python -m app.seed.medine_enriched
 from ..database import SessionLocal
 from ..models.curriculum import (
     CurriculumProgram, CurriculumUnit, CurriculumItem,
-    StudentEnrollment, StudentItemProgress,
+    StudentEnrollment, StudentItemProgress, StudentSubmission,
     ItemType, CurriculumType, UnitType,
 )
 
@@ -1198,6 +1198,11 @@ def _deduplicate_medine_units(db, program) -> int:
                     {StudentEnrollment.current_item_id: new_item_id},
                     synchronize_session="fetch",
                 )
+                # Delete submissions referencing these items
+                db.query(StudentSubmission).filter(
+                    StudentSubmission.curriculum_item_id.in_(item_ids)
+                ).delete(synchronize_session="fetch")
+                # Delete progress referencing these items
                 db.query(StudentItemProgress).filter(
                     StudentItemProgress.curriculum_item_id.in_(item_ids)
                 ).delete(synchronize_session="fetch")
@@ -1289,6 +1294,20 @@ def seed_medine_enriched(db = None) -> None:
         ]
         if non_bundled:
             nb_ids = [i.id for i in non_bundled]
+            # Re-point enrollment cursors away from items about to be deleted
+            keeper_item = next(
+                (i for i in old_items if i not in non_bundled), None
+            )
+            new_item_id = keeper_item.id if keeper_item else None
+            db.query(StudentEnrollment).filter(
+                StudentEnrollment.current_item_id.in_(nb_ids)
+            ).update(
+                {StudentEnrollment.current_item_id: new_item_id},
+                synchronize_session="fetch",
+            )
+            db.query(StudentSubmission).filter(
+                StudentSubmission.curriculum_item_id.in_(nb_ids)
+            ).delete(synchronize_session="fetch")
             db.query(StudentItemProgress).filter(
                 StudentItemProgress.curriculum_item_id.in_(nb_ids)
             ).delete(synchronize_session="fetch")
