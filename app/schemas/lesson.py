@@ -45,6 +45,19 @@ class QuizQuestion(BaseModel):
     explanation: Optional[str] = None
 
 
+class DialogueLine(BaseModel):
+    """A single line of dialogue."""
+    speaker_ar: str
+    arabic: str
+    french: str = ""
+
+
+class DialogueContent(BaseModel):
+    """Structured dialogue with optional situation context."""
+    situation: Optional[str] = None
+    lines: list[DialogueLine] = []
+
+
 class LessonTheory(BaseModel):
     """Aggregated theory content for a lesson."""
     sections: list[TheorySection] = []
@@ -52,6 +65,13 @@ class LessonTheory(BaseModel):
     vocab: list[VocabItem] = []
     illustrations: list[IllustrationItem] = []
     grammar_summary: Optional[str] = None
+    # Rich prose fields from the MD parser
+    objective: Optional[str] = None
+    coin_experts: Optional[str] = None
+    dialogue: Optional[DialogueContent] = None
+    mise_en_situation: Optional[str] = None
+    exercises_md: Optional[str] = None
+    pronunciation: Optional[str] = None
 
 
 class LessonProgress(BaseModel):

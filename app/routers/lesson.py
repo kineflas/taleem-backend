@@ -46,6 +46,7 @@ from ..schemas.lesson import (
     TheorySection, ExampleItem, VocabItem, IllustrationItem,
     QuizQuestion, LessonProgress, LessonProgressUpdate,
     QuizSubmission, QuizResultResponse,
+    DialogueLine, DialogueContent,
 )
 
 router = APIRouter(prefix="/api/lessons", tags=["Lessons"])
@@ -156,12 +157,44 @@ def _extract_theory(extra_data: dict | None) -> LessonTheory:
             data=illus.get("data"),
         ))
 
+    # Parse dialogue content if present
+    dialogue_data = extra_data.get("dialogue")
+    dialogue = None
+    if dialogue_data and isinstance(dialogue_data, dict):
+        dialogue_lines = [
+            DialogueLine(
+                speaker_ar=line.get("speaker_ar", ""),
+                arabic=line.get("arabic", ""),
+                french=line.get("french", ""),
+            )
+            for line in dialogue_data.get("lines", [])
+        ]
+        dialogue = DialogueContent(
+            situation=dialogue_data.get("situation"),
+            lines=dialogue_lines,
+        )
+
+    # Parse examples from MD (examples_md field)
+    examples_md = extra_data.get("examples_md", [])
+    for ex in examples_md:
+        examples.append(ExampleItem(
+            arabic=ex.get("arabic", ""),
+            translation_fr=ex.get("translation_fr", ""),
+            grammatical_note_fr=ex.get("grammatical_note_fr"),
+        ))
+
     return LessonTheory(
         sections=sections,
         examples=examples,
         vocab=vocab,
         illustrations=illustrations,
         grammar_summary=extra_data.get("grammar"),
+        objective=extra_data.get("objective"),
+        coin_experts=extra_data.get("coin_experts"),
+        dialogue=dialogue,
+        mise_en_situation=extra_data.get("mise_en_situation"),
+        exercises_md=extra_data.get("exercises_md"),
+        pronunciation=extra_data.get("pronunciation"),
     )
 
 

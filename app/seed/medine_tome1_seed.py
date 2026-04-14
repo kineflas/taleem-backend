@@ -274,6 +274,61 @@ def _seed_quiz_to_extra_data(db, parsed_data: dict) -> int:
     return count
 
 
+def _seed_lesson_prose_content(db, md_path: str) -> int:
+    """
+    Enrich existing CurriculumItem extra_data with rich prose content
+    (theory sections, coin_experts, dialogue, examples, exercises, etc.)
+    parsed from the MD file by medine_lesson_content_parser.
+    Returns count of updated items.
+    """
+    from ..models.curriculum import CurriculumItem, CurriculumUnit, CurriculumProgram, CurriculumType
+    from .medine_lesson_content_parser import parse_lesson_content
+
+    program = db.query(CurriculumProgram).filter_by(
+        curriculum_type=CurriculumType.MEDINE_T1
+    ).first()
+    if not program:
+        return 0
+
+    lesson_content = parse_lesson_content(md_path)
+    count = 0
+
+    for lesson_num, content in lesson_content.items():
+        unit = db.query(CurriculumUnit).filter_by(
+            curriculum_program_id=program.id,
+            number=lesson_num
+        ).first()
+        if not unit:
+            continue
+
+        item = db.query(CurriculumItem).filter_by(
+            curriculum_unit_id=unit.id,
+            number=1,
+        ).first()
+        if not item:
+            continue
+
+        # Merge prose content into extra_data (preserving existing quiz data)
+        extra = dict(item.extra_data or {})
+
+        # Rich prose fields from the MD
+        extra["objective"] = content.get("objective")
+        extra["explanation_sections"] = content.get("explanation_sections", [])
+        extra["coin_experts"] = content.get("coin_experts")
+        extra["dialogue"] = content.get("dialogue")
+        extra["mise_en_situation"] = content.get("mise_en_situation")
+        extra["examples_md"] = content.get("examples_md", [])
+        extra["exercises_md"] = content.get("exercises_md")
+        extra["pronunciation"] = content.get("pronunciation")
+
+        item.extra_data = extra
+        count += 1
+
+    if count > 0:
+        db.flush()
+    return count
+
+
 # ── Main entry point ─────────────────────────────────────────────────────────
 
 def seed_medine_tome1(db=None) -> None:
@@ -302,6 +357,7 @@ def seed_medine_tome1(db=None) -> None:
     card_count = _seed_flashcard_cards(db, parsed)
     diag_count = _seed_diagnostic_questions(db, parsed)
     quiz_count = _seed_quiz_to_extra_data(db, parsed)
+    prose_count = _seed_lesson_prose_content(db, str(_MD_PATH))
 
     db.commit()
 
@@ -310,6 +366,7 @@ def seed_medine_tome1(db=None) -> None:
     print(f"  • {card_count} new flashcard cards (193 total)")
     print(f"  • {diag_count} new diagnostic questions (10 total)")
     print(f"  • {quiz_count} lessons enriched with MD quiz data")
+    print(f"  • {prose_count} lessons enriched with prose content (theory, dialogue, etc.)")
 
 
 if __name__ == "__main__":
