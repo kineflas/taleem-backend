@@ -91,7 +91,7 @@ def _normalize_quiz_alt(block: dict, header: str) -> dict:
     }
 
 
-def _normalize_flashcard_alt(block: dict, header: str) -> dict:
+def _normalize_flashcard_alt(block: dict, header: str, part_number: int = 0) -> dict:
     """
     Normalize alt flashcard format (Parts 3-7) to standard format.
     Alt: {"flashcard_set": ..., "cards": [{front, back, category}]}
@@ -106,7 +106,7 @@ def _normalize_flashcard_alt(block: dict, header: str) -> dict:
     normalized_cards = []
     for i, card in enumerate(block.get("cards", []), 1):
         normalized_cards.append({
-            "id": f"F{lesson_start}C{i}",
+            "id": f"P{part_number}F{lesson_start}C{i}",
             "front": card.get("front", ""),
             "back": card.get("back", ""),
             "arabicExample": card.get("arabicExample", ""),
@@ -234,7 +234,7 @@ def parse_tome1_md(md_path: str) -> dict[str, Any]:
         elif block_type == "flashcard_alt":
             flashcard_counter += 1
             key = f"part{flashcard_counter}"
-            result["flashcards"][key] = _normalize_flashcard_alt(data, header)
+            result["flashcards"][key] = _normalize_flashcard_alt(data, header, part_number=flashcard_counter)
         elif block_type == "diagnostic":
             result["diagnostic"] = data
         elif block_type == "exam":
