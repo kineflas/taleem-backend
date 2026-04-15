@@ -34,6 +34,7 @@ from .routers.hifz_master import hifz_router
 from .routers.lesson import router as lesson_router
 from .routers.flashcards import router as flashcards_router
 from .routers.diagnostic import router as diagnostic_router
+from .routers.medine_v2 import router as medine_v2_router
 from .seed.surahs import seed_surahs
 from .seed.curriculum import seed_curriculum
 from .seed.autonomous_learning import seed_autonomous_learning
@@ -117,6 +118,7 @@ app.include_router(hifz_router)
 app.include_router(lesson_router)
 app.include_router(flashcards_router)
 app.include_router(diagnostic_router)
+app.include_router(medine_v2_router)
 
 
 # ── Static files ─────────────────────────────────────────────────────────────
