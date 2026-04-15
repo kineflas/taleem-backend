@@ -170,20 +170,29 @@ def _parse_dialogue(dialogue_text: str) -> list[dict]:
         return []
 
     lines = []
-    # Extract situation line (> **Situation :** ... or **(context)**)
-    situation_match = re.search(r'>\s*\*\*Situation\s*:\*\*\s*(.+)', dialogue_text)
+    # Extract situation line — multiple formats:
+    #   > **Situation :** text
+    #   > **Situation :** *text*
+    #   **(context — description)**
+    situation_match = re.search(r'>\s*\*\*Situation\s*:?\*\*\s*:?\s*(.+)', dialogue_text)
     if not situation_match:
         situation_match = re.search(r'^\*\*\((.+?)\)\*\*', dialogue_text, re.MULTILINE)
     situation = situation_match.group(1).strip() if situation_match else None
 
     # Extract all **Speaker :** content lines
-    pattern = r'\*\*([^*]+)\*\*\s*:\s*(.+)'
+    # Handle both formats:
+    #   **speaker :** content   (colon inside bold)
+    #   **speaker** : content   (colon outside bold)
+    pattern = r'\*\*(.+?)\s*:?\*\*\s*:?\s*(.+)'
     raw_lines = []
     for line in dialogue_text.split('\n'):
         match = re.search(pattern, line)
         if match:
-            speaker = match.group(1).strip()
+            speaker = match.group(1).strip().rstrip(':').strip()
             content = match.group(2).strip()
+            # Skip the situation line
+            if speaker.lower().startswith('situation'):
+                continue
             raw_lines.append((speaker, content))
 
     # Try Format A first: check if any line has (*translation*) inline
