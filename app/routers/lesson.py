@@ -6,6 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from uuid import UUID
 from datetime import datetime, timezone
+from pathlib import Path
 import json
 
 from ..database import get_db
@@ -50,6 +51,18 @@ from ..schemas.lesson import (
 )
 
 router = APIRouter(prefix="/api/lessons", tags=["Lessons"])
+
+# ── Static lesson prose content (pre-generated JSON) ─────────────────────────
+_STATIC_CONTENT_PATH = Path(__file__).resolve().parent.parent / "data" / "lessons_content.json"
+_LESSON_CONTENT: dict[str, dict] = {}
+
+if _STATIC_CONTENT_PATH.exists():
+    with open(_STATIC_CONTENT_PATH, encoding="utf-8") as f:
+        _LESSON_CONTENT = json.load(f)
+    print(f"✓ Loaded static lesson content for {len(_LESSON_CONTENT)} lessons")
+else:
+    print(f"⚠ Static lesson content not found at {_STATIC_CONTENT_PATH}")
+
 
 # Part number mapping for the 23 Medine lessons
 LESSON_TO_PART = {
@@ -117,13 +130,24 @@ def _get_lesson_item(db: Session, lesson_number: int):
     return program, unit, item
 
 
-def _extract_theory(extra_data: dict | None) -> LessonTheory:
-    """Extract theory content from item's extra_data."""
-    if not extra_data:
-        return LessonTheory()
+def _extract_theory(extra_data: dict | None, lesson_number: int = 0) -> LessonTheory:
+    """Extract theory content from item's extra_data, enriched with static JSON content.
 
+    Priority: static JSON file > DB extra_data (the static file is the
+    pre-generated rich content that doesn't depend on the seed).
+    """
+    if not extra_data:
+        extra_data = {}
+
+    # ── Merge static lesson content (from lessons_content.json) ──────────
+    static = _LESSON_CONTENT.get(str(lesson_number), {})
+
+    # Use static content as base, let DB override if present
+    source = {**static, **{k: v for k, v in extra_data.items() if v}}
+
+    # ── Sections ─────────────────────────────────────────────────────────
     sections = []
-    for sec in extra_data.get("explanation_sections", []):
+    for sec in source.get("explanation_sections", []):
         sections.append(TheorySection(
             title_fr=sec.get("title_fr", ""),
             content_fr=sec.get("content_fr", ""),
@@ -131,6 +155,7 @@ def _extract_theory(extra_data: dict | None) -> LessonTheory:
             tip_fr=sec.get("tip_fr"),
         ))
 
+    # ── Examples (from enriched seed) ────────────────────────────────────
     examples = []
     for ex in extra_data.get("examples", []):
         examples.append(ExampleItem(
@@ -141,14 +166,25 @@ def _extract_theory(extra_data: dict | None) -> LessonTheory:
             grammatical_note_fr=ex.get("grammatical_note_fr"),
         ))
 
-    vocab = []
-    for (arabic, translation_fr, transliteration) in extra_data.get("vocab", []):
-        vocab.append(VocabItem(
-            arabic=arabic,
-            translation_fr=translation_fr,
-            transliteration=transliteration,
+    # ── Examples from static MD tables ───────────────────────────────────
+    for ex in source.get("examples_md", []):
+        examples.append(ExampleItem(
+            arabic=ex.get("arabic", ""),
+            translation_fr=ex.get("translation_fr", ""),
+            grammatical_note_fr=ex.get("grammatical_note_fr"),
         ))
 
+    # ── Vocab ────────────────────────────────────────────────────────────
+    vocab = []
+    for item in extra_data.get("vocab", []):
+        if isinstance(item, (list, tuple)) and len(item) >= 2:
+            vocab.append(VocabItem(
+                arabic=item[0],
+                translation_fr=item[1],
+                transliteration=item[2] if len(item) > 2 else None,
+            ))
+
+    # ── Illustrations ────────────────────────────────────────────────────
     illustrations = []
     for illus in extra_data.get("illustrations", []):
         illustrations.append(IllustrationItem(
@@ -157,8 +193,8 @@ def _extract_theory(extra_data: dict | None) -> LessonTheory:
             data=illus.get("data"),
         ))
 
-    # Parse dialogue content if present
-    dialogue_data = extra_data.get("dialogue")
+    # ── Dialogue ─────────────────────────────────────────────────────────
+    dialogue_data = source.get("dialogue")
     dialogue = None
     if dialogue_data and isinstance(dialogue_data, dict):
         dialogue_lines = [
@@ -174,27 +210,18 @@ def _extract_theory(extra_data: dict | None) -> LessonTheory:
             lines=dialogue_lines,
         )
 
-    # Parse examples from MD (examples_md field)
-    examples_md = extra_data.get("examples_md", [])
-    for ex in examples_md:
-        examples.append(ExampleItem(
-            arabic=ex.get("arabic", ""),
-            translation_fr=ex.get("translation_fr", ""),
-            grammatical_note_fr=ex.get("grammatical_note_fr"),
-        ))
-
     return LessonTheory(
         sections=sections,
         examples=examples,
         vocab=vocab,
         illustrations=illustrations,
         grammar_summary=extra_data.get("grammar"),
-        objective=extra_data.get("objective"),
-        coin_experts=extra_data.get("coin_experts"),
+        objective=source.get("objective"),
+        coin_experts=source.get("coin_experts"),
         dialogue=dialogue,
-        mise_en_situation=extra_data.get("mise_en_situation"),
-        exercises_md=extra_data.get("exercises_md"),
-        pronunciation=extra_data.get("pronunciation"),
+        mise_en_situation=source.get("mise_en_situation"),
+        exercises_md=source.get("exercises_md"),
+        pronunciation=source.get("pronunciation"),
     )
 
 
@@ -338,8 +365,8 @@ def get_lesson_detail(
                 is_completed=progress_record.is_completed,
             )
 
-    # Extract content
-    theory = _extract_theory(extra_data)
+    # Extract content (merge DB data + static JSON file)
+    theory = _extract_theory(extra_data, lesson_number=lesson_number)
     quiz_questions = _extract_quiz_questions(extra_data, "quiz")
     quiz_md_questions = _extract_quiz_questions(extra_data, "quiz_md")
 
