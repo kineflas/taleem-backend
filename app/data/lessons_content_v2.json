@@ -154,19 +154,19 @@
         "items": [
           {
             "sentence": "**\\_\\_\\_** قَلَمٌ (un stylo)",
-            "answer": ""
+            "answer": "هَذَا"
           },
           {
             "sentence": "**\\_\\_\\_** سَاعَةٌ (une montre)",
-            "answer": ""
+            "answer": "هَذِهِ"
           },
           {
             "sentence": "**\\_\\_\\_** كُرْسِيٌّ (une chaise)",
-            "answer": ""
+            "answer": "هَذَا"
           },
           {
             "sentence": "**\\_\\_\\_** غُرْفَةٌ (une chambre)",
-            "answer": ""
+            "answer": "هَذِهِ"
           }
         ]
       },
@@ -176,15 +176,15 @@
         "items": [
           {
             "prompt_fr": "Ceci est un livre",
-            "answer_ar": ""
+            "answer_ar": "هَذَا كِتَابٌ"
           },
           {
             "prompt_fr": "Ceci est une voiture",
-            "answer_ar": ""
+            "answer_ar": "هَذِهِ سَيَّارَةٌ"
           },
           {
             "prompt_fr": "Ceci est une mosquée",
-            "answer_ar": ""
+            "answer_ar": "هَذَا مَسْجِدٌ"
           }
         ]
       },
@@ -448,15 +448,15 @@
         "items": [
           {
             "sentence": "**\\_\\_\\_** هَذَا؟ (_Qu'est-ce que c'est ?_)",
-            "answer": ""
+            "answer": "مَا"
           },
           {
             "sentence": "**\\_\\_\\_** أَنْتَ؟ (_Qui es-tu ?_)",
-            "answer": ""
+            "answer": "مَنْ"
           },
           {
             "sentence": "**\\_\\_\\_** هَذَا قَلَمٌ؟ (_Est-ce un stylo ?_)",
-            "answer": ""
+            "answer": "أَ"
           }
         ]
       },
@@ -466,15 +466,15 @@
         "items": [
           {
             "prompt_fr": "Qu'est-ce que c'est ?",
-            "answer_ar": ""
+            "answer_ar": "مَا هَذَا؟"
           },
           {
             "prompt_fr": "Qui est ce professeur ?",
-            "answer_ar": ""
+            "answer_ar": "مَنْ هَذَا الْمُدَرِّسُ؟"
           },
           {
             "prompt_fr": "Est-ce une voiture ?",
-            "answer_ar": ""
+            "answer_ar": "أَهَذِهِ سَيَّارَةٌ؟"
           }
         ]
       }
@@ -749,19 +749,19 @@
         "items": [
           {
             "sentence": "**\\_\\_\\_** قَلَمٌ (le stylo)",
-            "answer": ""
+            "answer": "الـ"
           },
           {
             "sentence": "**\\_\\_\\_** مَدْرَسَةٌ (l'école)",
-            "answer": ""
+            "answer": "الـ"
           },
           {
             "sentence": "**\\_\\_\\_** دَارٌ (la maison)",
-            "answer": ""
+            "answer": "الـ"
           },
           {
             "sentence": "**\\_\\_\\_** سَيَّارَةٌ (la voiture)",
-            "answer": ""
+            "answer": "الـ"
           }
         ]
       },
@@ -771,15 +771,15 @@
         "items": [
           {
             "prompt_fr": "C'est le livre",
-            "answer_ar": ""
+            "answer_ar": "هَذَا الْكِتَابُ"
           },
           {
             "prompt_fr": "Où est la maison ?",
-            "answer_ar": ""
+            "answer_ar": "أَيْنَ الدَّارُ؟"
           },
           {
             "prompt_fr": "Je vois le stylo",
-            "answer_ar": ""
+            "answer_ar": "الْقَلَمُ"
           }
         ]
       }
@@ -1051,15 +1051,15 @@
         "items": [
           {
             "sentence": "**\\_\\_\\_** الطَّاوِلَ\\_\\_\\_ (sur la table) [compléter la voyelle]",
-            "answer": ""
+            "answer": "عَلَى"
           },
           {
             "sentence": "**\\_\\_\\_** الْمَدْرَسَ\\_\\_\\_ (dans l'école) [compléter la voyelle]",
-            "answer": ""
+            "answer": "فِي"
           },
           {
             "sentence": "**\\_\\_\\_** الْقَاعَ\\_\\_\\_ (dans le salon) [compléter la voyelle]",
-            "answer": ""
+            "answer": "فِي"
           }
         ]
       },
@@ -1069,15 +1069,15 @@
         "items": [
           {
             "prompt_fr": "Dans la maison",
-            "answer_ar": ""
+            "answer_ar": "فِي الدَّارِ"
           },
           {
             "prompt_fr": "Sur le livre",
-            "answer_ar": ""
+            "answer_ar": "عَلَى الْكِتَابِ"
           },
           {
             "prompt_fr": "Dans la mosquée",
-            "answer_ar": ""
+            "answer_ar": "فِي الْمَسْجِدِ"
           }
         ]
       }
@@ -1368,15 +1368,15 @@
         "items": [
           {
             "prompt_fr": "Le livre du professeur",
-            "answer_ar": ""
+            "answer_ar": "كِتَابُ الْمُدَرِّسِ"
           },
           {
             "prompt_fr": "La voiture du père",
-            "answer_ar": ""
+            "answer_ar": "سَيَّارَةُ الْأَبِ"
           },
           {
             "prompt_fr": "Le sac de Fatima",
-            "answer_ar": ""
+            "answer_ar": "حَقِيبَةُ فَاطِمَةَ"
           }
         ]
       },
@@ -1386,11 +1386,11 @@
         "items": [
           {
             "sentence": "بَيْتُ ******\\_****** (la maison du quartier) [اَلْحَيُّ]",
-            "answer": ""
+            "answer": "الْحَيِّ"
           },
           {
             "sentence": "دَارُ ******\\_****** (la maison de la connaissance) [الْعِلْمُ]",
-            "answer": ""
+            "answer": "الْعِلْمِ"
           }
         ]
       }
@@ -1677,15 +1677,15 @@
         "items": [
           {
             "prompt_fr": "Ceci est une belle maison",
-            "answer_ar": ""
+            "answer_ar": "هَذِهِ دَارٌ جَمِيلَةٌ"
           },
           {
             "prompt_fr": "La chambre est spacieuse",
-            "answer_ar": ""
+            "answer_ar": "الْغُرْفَةُ وَاسِعَةٌ"
           },
           {
             "prompt_fr": "Dans une école grande",
-            "answer_ar": ""
+            "answer_ar": "فِي مَدْرَسَةٍ كَبِيرَةٍ"
           }
         ]
       }
@@ -1962,15 +1962,15 @@
         "items": [
           {
             "prompt_fr": "Cet homme là-bas",
-            "answer_ar": ""
+            "answer_ar": "ذَلِكَ الرَّجُلُ"
           },
           {
             "prompt_fr": "Cette maison là-bas",
-            "answer_ar": ""
+            "answer_ar": "تِلْكَ الدَّارُ"
           },
           {
             "prompt_fr": "Ces enfants là-bas",
-            "answer_ar": ""
+            "answer_ar": "أُولَئِكَ الْأَوْلَادُ"
           }
         ]
       }
@@ -2231,15 +2231,15 @@
         "items": [
           {
             "prompt_fr": "Un livre grand et intéressant",
-            "answer_ar": ""
+            "answer_ar": "كِتَابٌ كَبِيرٌ وَمُفِيدٌ"
           },
           {
             "prompt_fr": "La maison vieille est belle",
-            "answer_ar": ""
+            "answer_ar": "الدَّارُ الْقَدِيمَةُ جَمِيلَةٌ"
           },
           {
             "prompt_fr": "Une école propre et ordonnée",
-            "answer_ar": ""
+            "answer_ar": "مَدْرَسَةٌ نَظِيفَةٌ وَمُرَتَّبَةٌ"
           }
         ]
       }
