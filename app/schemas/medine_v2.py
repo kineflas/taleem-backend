@@ -135,3 +135,96 @@ class QuizResultV2(BaseModel):
     stars: int
     xp_earned: int
     results: list[dict] = []
+
+
+# ── Boss Quiz ───────────────────────────────────────────────────────────────
+
+class BossQuizQuestion(BaseModel):
+    id: str
+    question: str
+    options: list[str]
+    correct: int
+    explanation: str | None = None
+
+
+class BossQuizContent(BaseModel):
+    part_number: int
+    title: str
+    lessons_covered: list[int]
+    time_limit: int = 15
+    passing_score: int = 70
+    questions: list[BossQuizQuestion]
+
+
+class BossQuizResult(BaseModel):
+    score: float
+    total: int
+    correct: int
+    stars: int
+    xp_earned: int
+    passed: bool
+    results: list[dict] = []
+
+
+# ── Final Exam ──────────────────────────────────────────────────────────────
+
+class FinalExamContent(BaseModel):
+    exam_title: str
+    time_limit: int
+    passing_score: int
+    total_questions: int
+    questions: list[BossQuizQuestion]
+
+
+class FinalExamResult(BaseModel):
+    score: float
+    total: int
+    correct: int
+    stars: int
+    xp_earned: int
+    passed: bool
+    results: list[dict] = []
+
+
+# ── Diagnostic CAT ──────────────────────────────────────────────────────────
+
+class DiagnosticQuestion(BaseModel):
+    id: str
+    lesson_target: str
+    difficulty: int
+    skill_tested: str
+    question: str
+    options: list[str]
+    correct: int
+    explanation: str | None = None
+    adaptive_hint: str | None = None
+
+
+class DiagnosticContent(BaseModel):
+    test_name: str
+    total_questions: int
+    estimated_time: str
+    questions: list[DiagnosticQuestion]
+
+
+class DiagnosticSubmit(BaseModel):
+    answers: list[dict]  # [{"question_id": "Q1", "selected": 0}, ...]
+    time_ms: int = 0
+
+
+class CompetencyScore(BaseModel):
+    id: str
+    name: str
+    score: float  # 0.0 to 1.0
+
+
+class DiagnosticResult(BaseModel):
+    score: float
+    total: int
+    correct: int
+    level: str
+    start_at_lesson: int
+    start_at_part: int
+    message: str
+    competencies: list[CompetencyScore] = []
+    results: list[dict] = []

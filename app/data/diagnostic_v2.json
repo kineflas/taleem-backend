@@ -1,0 +1,136 @@
+{
+  "test_name": "Test de Placement Adaptatif - Tome 1 Médine",
+  "test_version": "2.0",
+  "total_questions": 10,
+  "estimated_time": "10-12 minutes",
+  "diagnostic_logic": {
+    "0-2": {"level": "Débutant Absolu", "start_at": 1, "start_part": 1, "message": "Vous commencez votre apprentissage de l'arabe. Nous vous recommandons de commencer avec la Leçon 1 (Démonstratifs et phrase nominale) pour maîtriser les fondations."},
+    "3-4": {"level": "Débutant", "start_at": 5, "start_part": 2, "message": "Vous avez les bases. Commencez à la Leçon 5 pour explorer l'Idāfa et les prépositions."},
+    "5-6": {"level": "Intermédiaire", "start_at": 12, "start_part": 4, "message": "Vous maîtrisez les structures nominales. Avancez à la Leçon 12 pour étudier les nombres et le Muthannā."},
+    "7-8": {"level": "Avancé", "start_at": 19, "start_part": 6, "message": "Excellentes connaissances. Commencez à la Leçon 19 (Diptotes) puis passez au verbe présent."},
+    "9-10": {"level": "Maîtrise", "start_at": 23, "start_part": 7, "message": "Félicitations ! Vous avez maîtrisé le Tome 1. Progressez au Tome 2 pour études plus avancées."}
+  },
+  "competencies": [
+    {"id": "demonstratifs", "name": "Démonstratifs", "questions": ["Q1"]},
+    {"id": "idafa", "name": "Annexion (Idāfa)", "questions": ["Q2", "Q5"]},
+    {"id": "prepositions", "name": "Prépositions", "questions": ["Q3"]},
+    {"id": "accord", "name": "Accord adjectif", "questions": ["Q4"]},
+    {"id": "muthanna", "name": "Duel (Muthannā)", "questions": ["Q5"]},
+    {"id": "pluriel", "name": "Pluriel", "questions": ["Q6"]},
+    {"id": "nombres", "name": "Nombres 3-10", "questions": ["Q7"]},
+    {"id": "diptotes", "name": "Diptotes", "questions": ["Q8"]},
+    {"id": "verbe", "name": "Verbe présent", "questions": ["Q9", "Q10"]}
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson_target": "1-3",
+      "difficulty": 1,
+      "skill_tested": "Démonstratifs et phrase nominale",
+      "question": "Complétez : 'Ce livre est grand' en arabe :",
+      "options": ["هَذَا الْكِتَابُ كَبِيرٌ", "هَذِهِ الْكِتَابُ كَبِيرَةٌ", "ذَاكَ الْكِتَابَ كَبِيرًا", "تِلْكَ الْكِتَابُ كَبِيرٌ"],
+      "correct": 0,
+      "explanation": "Démonstratif masc (هَذَا) + nom masc (الْكِتَابُ) + adjectif masc (كَبِيرٌ). Tous au Marfū'.",
+      "adaptive_hint": "Si erreur → Leçon 1 (Démonstratifs) et Leçon 3 (Qualifiant)"
+    },
+    {
+      "id": "Q2",
+      "lesson_target": "4",
+      "difficulty": 1,
+      "skill_tested": "Annexion (Idāfa)",
+      "question": "'بَيْتُ الْوَلَدِ' (la maison du garçon) : l'Idāfa exige que le 2e nom soit au :",
+      "options": ["Marfū' (nominatif)", "Majrūr (génitif — Kasra)", "Mansūb (accusatif)", "Aucun cas spécifique"],
+      "correct": 1,
+      "explanation": "En Idāfa, le 2e mot (مَضَاف إِلَيْهِ) est TOUJOURS au Majrūr.",
+      "adaptive_hint": "Si erreur → Leçon 4 (Idāfa et possession)"
+    },
+    {
+      "id": "Q3",
+      "lesson_target": "6",
+      "difficulty": 1,
+      "skill_tested": "Prépositions et cas Majrūr",
+      "question": "La préposition فِي met le nom au cas :",
+      "options": ["Marfū'", "Mansūb", "Majrūr (Kasra)", "Pas de changement"],
+      "correct": 2,
+      "explanation": "Toutes les prépositions → Majrūr (Kasra ـِ).",
+      "adaptive_hint": "Si erreur → Leçon 6 (Prépositions et Majrūr)"
+    },
+    {
+      "id": "Q4",
+      "lesson_target": "7-9",
+      "difficulty": 2,
+      "skill_tested": "Accord adjectif et pluriel féminin",
+      "question": "Accordez 'grand' (كَبِيرٌ) avec 'écoles' (مَدَارِسُ — pluriel fém) :",
+      "options": ["مَدَارِسُ كَبِيرَةٌ", "مَدَارِسُ كِبَارٌ", "مَدَارِسُ كَبِيرٌ", "مَدَارِسُ كَبِيرًا"],
+      "correct": 0,
+      "explanation": "Pluriel objet (inanimé) → adjectif au fém sing (كَبِيرَةٌ).",
+      "adaptive_hint": "Si erreur → Leçon 7 (Accord) et Leçon 8 (Pluriel)"
+    },
+    {
+      "id": "Q5",
+      "lesson_target": "10-11",
+      "difficulty": 2,
+      "skill_tested": "Muthannā (Duel) et Idāfa",
+      "question": "'Les deux livres du maître' en arabe :",
+      "options": ["الْكِتَابَانِ الْمُعَلِّمِ", "كِتَابَا الْمُعَلِّمِ", "الْكِتَابَيْنِ الْمُعَلِّمِ", "الْكِتَابُونَ الْمُعَلِّمِ"],
+      "correct": 1,
+      "explanation": "Idāfa + Muthannā : كِتَابَا (duel sans ال) + الْمُعَلِّمِ (Majrūr).",
+      "adaptive_hint": "Si erreur → Leçon 4 (Idāfa) et Leçon 10-11 (Muthannā)"
+    },
+    {
+      "id": "Q6",
+      "lesson_target": "12",
+      "difficulty": 2,
+      "skill_tested": "Pluriel masculin régulier",
+      "question": "Au pluriel masculin nominatif (Marfū'), le suffixe est :",
+      "options": ["ـِينَ", "ـُون", "ـَاتٌ", "ـِي"],
+      "correct": 1,
+      "explanation": "Pluriel masc. Marfū' = ـُون. مُعَلِّمُونَ.",
+      "adaptive_hint": "Si erreur → Leçon 12 (Pluriel masculin)"
+    },
+    {
+      "id": "Q7",
+      "lesson_target": "18-20",
+      "difficulty": 2,
+      "skill_tested": "Nombres 3-10 et polarité",
+      "question": "'Cinq stylos' en arabe (nombres 3-10) :",
+      "options": ["خَمْسَةُ أَقْلَامٍ", "خَمْسَ قَلَمٍ", "خَمْسَةٌ قِلَامٌ", "خَمْسِينَ أَقْلَام"],
+      "correct": 0,
+      "explanation": "Polarité : nombre masc. (خَمْسَةُ) + nom pluriel génitif (أَقْلَامٍ).",
+      "adaptive_hint": "Si erreur → Leçon 18-20 (Nombres et polarité)"
+    },
+    {
+      "id": "Q8",
+      "lesson_target": "21",
+      "difficulty": 2,
+      "skill_tested": "Diptotes",
+      "question": "Un nom diptote en Majrūr prend quelle voyelle ?",
+      "options": ["Kasra (ـِ)", "Fatha (ـَ)", "Damma (ـُ)", "Sukūn (ـْ)"],
+      "correct": 1,
+      "explanation": "Diptotes : Fatha en Majrūr. مِنْ أَحْمَدَ.",
+      "adaptive_hint": "Si erreur → Leçon 21 (Diptotes)"
+    },
+    {
+      "id": "Q9",
+      "lesson_target": "22",
+      "difficulty": 2,
+      "skill_tested": "Verbe présent — préfixes",
+      "question": "Quel préfixe pour 'je' au présent ?",
+      "options": ["نَـ", "تَـ", "أَـ", "يَـ"],
+      "correct": 2,
+      "explanation": "ANAYTU : أَـ (je — Ana). أَذْهَبُ (je vais).",
+      "adaptive_hint": "Si erreur → Leçon 22 (Présent — Mudāri')"
+    },
+    {
+      "id": "Q10",
+      "lesson_target": "23",
+      "difficulty": 3,
+      "skill_tested": "Présent pluriel féminin + synthèse",
+      "question": "Les filles écrivent des lettres. Complétez :",
+      "options": ["الْبَنَاتُ تَكْتُبُونَ الرَّسَائِلَ", "الْبَنَاتُ يَكْتُبْنَ الرَّسَائِلَ", "الْبَنَاتُ تَكْتُبُ الرَّسَائِلَ", "الْبَنَاتُ يَكْتُبُونَ الرَّسَائِلَ"],
+      "correct": 1,
+      "explanation": "Sujet fém. pluriel → يَـ + ـْنَ. يَكْتُبْنَ.",
+      "adaptive_hint": "Si erreur → Leçon 23 (Pluriel fém. au présent)"
+    }
+  ]
+}

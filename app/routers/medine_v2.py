@@ -17,6 +17,14 @@ from ..database import get_db
 from ..models.medine_v2 import MedineV2Progress
 from ..models.user import User
 from ..schemas.medine_v2 import (
+    BossQuizContent,
+    BossQuizResult,
+    CompetencyScore,
+    DiagnosticContent,
+    DiagnosticResult,
+    DiagnosticSubmit,
+    FinalExamContent,
+    FinalExamResult,
     LessonContentV2,
     LessonListItemV2,
     LessonProgressV2,
@@ -31,8 +39,16 @@ router = APIRouter(prefix="/api/v2", tags=["Médine V2"])
 
 # ── Load static content at module level ──────────────────────────────────────
 
-_CONTENT_PATH = Path(__file__).resolve().parent.parent / "data" / "lessons_content_v2.json"
+_DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+_CONTENT_PATH = _DATA_DIR / "lessons_content_v2.json"
+_BOSS_QUIZZES_PATH = _DATA_DIR / "boss_quizzes_v2.json"
+_FINAL_EXAM_PATH = _DATA_DIR / "final_exam_v2.json"
+_DIAGNOSTIC_PATH = _DATA_DIR / "diagnostic_v2.json"
+
 _LESSONS: dict[str, dict] = {}
+_BOSS_QUIZZES: dict[str, dict] = {}
+_FINAL_EXAM: dict = {}
+_DIAGNOSTIC: dict = {}
 
 if _CONTENT_PATH.exists():
     with open(_CONTENT_PATH, encoding="utf-8") as f:
@@ -40,6 +56,21 @@ if _CONTENT_PATH.exists():
     logger.info("Médine V2: loaded %d lessons from %s", len(_LESSONS), _CONTENT_PATH.name)
 else:
     logger.warning("Médine V2: %s not found — endpoints will return empty data", _CONTENT_PATH)
+
+if _BOSS_QUIZZES_PATH.exists():
+    with open(_BOSS_QUIZZES_PATH, encoding="utf-8") as f:
+        _BOSS_QUIZZES = json.load(f).get("parts", {})
+    logger.info("Médine V2: loaded %d boss quizzes", len(_BOSS_QUIZZES))
+
+if _FINAL_EXAM_PATH.exists():
+    with open(_FINAL_EXAM_PATH, encoding="utf-8") as f:
+        _FINAL_EXAM = json.load(f)
+    logger.info("Médine V2: loaded final exam (%d questions)", len(_FINAL_EXAM.get("questions", [])))
+
+if _DIAGNOSTIC_PATH.exists():
+    with open(_DIAGNOSTIC_PATH, encoding="utf-8") as f:
+        _DIAGNOSTIC = json.load(f)
+    logger.info("Médine V2: loaded diagnostic test (%d questions)", len(_DIAGNOSTIC.get("questions", [])))
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
@@ -321,3 +352,263 @@ def get_student_stats(current_user: CurrentUser, db: DB):
         "total_xp": total_xp,
         "current_level": current_user.level or 1,
     }
+
+
+# ── Boss Quiz endpoints ────────────────────────────────────────────────────
+
+@router.get("/parts/{part_number}/quiz", response_model=BossQuizContent)
+def get_boss_quiz(part_number: int, current_user: CurrentUser):
+    """Get the boss quiz for a specific part."""
+    quiz_data = _BOSS_QUIZZES.get(str(part_number))
+    if not quiz_data:
+        raise HTTPException(status_code=404, detail=f"No boss quiz for part {part_number}")
+    return BossQuizContent(**quiz_data)
+
+
+@router.post("/parts/{part_number}/quiz/submit", response_model=BossQuizResult)
+def submit_boss_quiz(
+    part_number: int,
+    body: QuizSubmitV2,
+    current_user: CurrentUser,
+    db: DB,
+):
+    """Submit boss quiz answers and return scored result."""
+    quiz_data = _BOSS_QUIZZES.get(str(part_number))
+    if not quiz_data:
+        raise HTTPException(status_code=404, detail=f"No boss quiz for part {part_number}")
+
+    questions = quiz_data.get("questions", [])
+    total = len(questions)
+    if total == 0:
+        raise HTTPException(status_code=400, detail="No questions in this boss quiz")
+
+    correct_count = 0
+    results = []
+    for ans in body.answers:
+        q_id = str(ans.get("question_id", ""))
+        selected = ans.get("selected", -1)
+
+        question = None
+        for q in questions:
+            if str(q["id"]) == q_id:
+                question = q
+                break
+
+        if question:
+            is_correct = selected == question["correct"]
+            if is_correct:
+                correct_count += 1
+            results.append({
+                "question_id": q_id,
+                "selected": selected,
+                "correct": question["correct"],
+                "is_correct": is_correct,
+                "explanation": question.get("explanation"),
+            })
+
+    score = (correct_count / total * 100) if total > 0 else 0
+    passed = score >= quiz_data.get("passing_score", 70)
+
+    if score >= 85:
+        stars = 3
+    elif score >= 60:
+        stars = 2
+    else:
+        stars = 1
+
+    # XP: 8 per correct for boss quiz (higher than regular)
+    xp = correct_count * 8
+    if passed:
+        xp += 20  # Bonus for passing
+
+    # Mark all lessons in this part as having the boss quiz passed
+    # by updating XP on user
+    _update_xp_on_user(db, current_user, xp)
+    db.commit()
+
+    return BossQuizResult(
+        score=score,
+        total=total,
+        correct=correct_count,
+        stars=stars,
+        xp_earned=xp,
+        passed=passed,
+        results=results,
+    )
+
+
+# ── Final Exam endpoints ───────────────────────────────────────────────────
+
+@router.get("/exam", response_model=FinalExamContent)
+def get_final_exam(current_user: CurrentUser):
+    """Get the final comprehensive exam."""
+    if not _FINAL_EXAM or not _FINAL_EXAM.get("questions"):
+        raise HTTPException(status_code=404, detail="Final exam not available")
+    return FinalExamContent(**_FINAL_EXAM)
+
+
+@router.post("/exam/submit", response_model=FinalExamResult)
+def submit_final_exam(
+    body: QuizSubmitV2,
+    current_user: CurrentUser,
+    db: DB,
+):
+    """Submit final exam answers and return scored result."""
+    if not _FINAL_EXAM or not _FINAL_EXAM.get("questions"):
+        raise HTTPException(status_code=404, detail="Final exam not available")
+
+    questions = _FINAL_EXAM["questions"]
+    total = len(questions)
+
+    correct_count = 0
+    results = []
+    for ans in body.answers:
+        q_id = str(ans.get("question_id", ""))
+        selected = ans.get("selected", -1)
+
+        question = None
+        for q in questions:
+            if str(q["id"]) == q_id:
+                question = q
+                break
+
+        if question:
+            is_correct = selected == question["correct"]
+            if is_correct:
+                correct_count += 1
+            results.append({
+                "question_id": q_id,
+                "selected": selected,
+                "correct": question["correct"],
+                "is_correct": is_correct,
+                "explanation": question.get("explanation"),
+            })
+
+    score = (correct_count / total * 100) if total > 0 else 0
+    passed = score >= _FINAL_EXAM.get("passing_score", 70)
+
+    if score >= 85:
+        stars = 3
+    elif score >= 60:
+        stars = 2
+    else:
+        stars = 1
+
+    # XP: 10 per correct for final exam (highest value)
+    xp = correct_count * 10
+    if passed:
+        xp += 50  # Big bonus for passing final
+
+    _update_xp_on_user(db, current_user, xp)
+    db.commit()
+
+    return FinalExamResult(
+        score=score,
+        total=total,
+        correct=correct_count,
+        stars=stars,
+        xp_earned=xp,
+        passed=passed,
+        results=results,
+    )
+
+
+# ── Diagnostic CAT endpoints ──────────────────────────────────────────────
+
+@router.get("/diagnostic", response_model=DiagnosticContent)
+def get_diagnostic(current_user: CurrentUser):
+    """Get the adaptive diagnostic placement test."""
+    if not _DIAGNOSTIC or not _DIAGNOSTIC.get("questions"):
+        raise HTTPException(status_code=404, detail="Diagnostic test not available")
+    return DiagnosticContent(
+        test_name=_DIAGNOSTIC["test_name"],
+        total_questions=_DIAGNOSTIC["total_questions"],
+        estimated_time=_DIAGNOSTIC["estimated_time"],
+        questions=_DIAGNOSTIC["questions"],
+    )
+
+
+@router.post("/diagnostic/submit", response_model=DiagnosticResult)
+def submit_diagnostic(
+    body: DiagnosticSubmit,
+    current_user: CurrentUser,
+    db: DB,
+):
+    """Submit diagnostic answers and return placement result with competency radar."""
+    if not _DIAGNOSTIC or not _DIAGNOSTIC.get("questions"):
+        raise HTTPException(status_code=404, detail="Diagnostic test not available")
+
+    questions = _DIAGNOSTIC["questions"]
+    total = len(questions)
+
+    correct_count = 0
+    results = []
+    correct_ids = set()
+
+    for ans in body.answers:
+        q_id = str(ans.get("question_id", ""))
+        selected = ans.get("selected", -1)
+
+        question = None
+        for q in questions:
+            if str(q["id"]) == q_id:
+                question = q
+                break
+
+        if question:
+            is_correct = selected == question["correct"]
+            if is_correct:
+                correct_count += 1
+                correct_ids.add(q_id)
+            results.append({
+                "question_id": q_id,
+                "selected": selected,
+                "correct": question["correct"],
+                "is_correct": is_correct,
+                "explanation": question.get("explanation"),
+                "adaptive_hint": question.get("adaptive_hint"),
+                "skill_tested": question.get("skill_tested"),
+            })
+
+    # Determine level based on score
+    score = (correct_count / total * 100) if total > 0 else 0
+    logic = _DIAGNOSTIC.get("diagnostic_logic", {})
+
+    # Find the right level bracket
+    level_info = logic.get("0-2", {})  # default
+    if correct_count >= 9:
+        level_info = logic.get("9-10", level_info)
+    elif correct_count >= 7:
+        level_info = logic.get("7-8", level_info)
+    elif correct_count >= 5:
+        level_info = logic.get("5-6", level_info)
+    elif correct_count >= 3:
+        level_info = logic.get("3-4", level_info)
+
+    # Calculate competency scores for radar chart
+    competencies_def = _DIAGNOSTIC.get("competencies", [])
+    competency_scores = []
+    for comp in competencies_def:
+        comp_questions = comp.get("questions", [])
+        if comp_questions:
+            comp_correct = sum(1 for qid in comp_questions if qid in correct_ids)
+            comp_score = comp_correct / len(comp_questions)
+        else:
+            comp_score = 0.0
+        competency_scores.append(CompetencyScore(
+            id=comp["id"],
+            name=comp["name"],
+            score=comp_score,
+        ))
+
+    return DiagnosticResult(
+        score=score,
+        total=total,
+        correct=correct_count,
+        level=level_info.get("level", "Débutant"),
+        start_at_lesson=level_info.get("start_at", 1),
+        start_at_part=level_info.get("start_part", 1),
+        message=level_info.get("message", ""),
+        competencies=competency_scores,
+        results=results,
+    )
