@@ -27,6 +27,7 @@ from .flashcard import (
 from .gamification import (
     XPEvent, Badge, MedineBadgeUnlock,
 )
+from .medine_v2 import MedineV2Progress
 
 __all__ = [
     "User", "TeacherStudentLink",
@@ -46,4 +47,5 @@ __all__ = [
     "DiagnosticQuestion", "DiagnosticSession", "DiagnosticResult",
     "FlashcardCard", "FlashcardProgress",
     "XPEvent", "Badge", "MedineBadgeUnlock",
+    "MedineV2Progress",
 ]

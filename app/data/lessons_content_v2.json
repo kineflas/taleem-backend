@@ -2486,7 +2486,94 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "الْكَبِيرُ",
+          "الرَّجُلُ"
+        ],
+        "answer": [
+          "الرَّجُلُ",
+          "الْكَبِيرُ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Accordez l'adjectif (défini ou indéfini) :",
+        "items": [
+          {
+            "sentence": "كِتَابٌ **\\_\\_\\_** (nouveau)",
+            "answer": "جَدِيدٌ"
+          },
+          {
+            "sentence": "الْفَتَاةُ **\\_\\_\\_** (belle)",
+            "answer": "الْجَمِيلَةُ"
+          },
+          {
+            "sentence": "بَيْتٌ **\\_\\_\\_** (grand)",
+            "answer": "كَبِيرٌ"
+          },
+          {
+            "sentence": "الْمَدْرَسَةُ **\\_\\_\\_** (grande)",
+            "answer": "الْكَبِيرَةُ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "Un livre nouveau",
+            "answer_ar": "كِتَابٌ جَدِيدٌ"
+          },
+          {
+            "prompt_fr": "La belle fille",
+            "answer_ar": "الْفَتَاةُ الْجَمِيلَةُ"
+          },
+          {
+            "prompt_fr": "Une maison grande",
+            "answer_ar": "بَيْتٌ كَبِيرٌ"
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFY",
+        "prompt_fr": "Classez : accord défini ou indéfini ?",
+        "categories": [
+          "Défini (avec الـ)",
+          "Indéfini (avec tanwīn)"
+        ],
+        "items": [
+          {
+            "word": "الرَّجُلُ الْكَبِيرُ",
+            "category": "Défini (avec الـ)"
+          },
+          {
+            "word": "كِتَابٌ جَدِيدٌ",
+            "category": "Indéfini (avec tanwīn)"
+          },
+          {
+            "word": "الطَّالِبَةُ الذَّكِيَّةُ",
+            "category": "Défini (avec الـ)"
+          },
+          {
+            "word": "بَيْتٌ صَغِيرٌ",
+            "category": "Indéfini (avec tanwīn)"
+          },
+          {
+            "word": "الْقَلَمُ الْجَمِيلُ",
+            "category": "Défini (avec الـ)"
+          },
+          {
+            "word": "سَيَّارَةٌ كَبِيرَةٌ",
+            "category": "Indéfini (avec tanwīn)"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 1,
@@ -2862,7 +2949,60 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "كِتَابِي",
+          "هَذَا"
+        ],
+        "answer": [
+          "هَذَا",
+          "كِتَابِي"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Complétez avec le pronom attaché correct (ـِي، ـكَ، ـهُ، ـهَا) :",
+        "items": [
+          {
+            "sentence": "كِتَاب**\\_\\_\\_** (mon livre)",
+            "answer": "ـِي"
+          },
+          {
+            "sentence": "سَيَّارَت**\\_\\_\\_** (ta voiture)",
+            "answer": "ـكَ"
+          },
+          {
+            "sentence": "مَكْتَب**\\_\\_\\_** (son bureau — à lui)",
+            "answer": "ـهُ"
+          },
+          {
+            "sentence": "شَجَرَت**\\_\\_\\_** (son arbre — à elle)",
+            "answer": "ـهَا"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "Mon livre",
+            "answer_ar": "كِتَابِي"
+          },
+          {
+            "prompt_fr": "Ta voiture",
+            "answer_ar": "سَيَّارَتُكَ"
+          },
+          {
+            "prompt_fr": "Son bureau (à lui)",
+            "answer_ar": "مَكْتَبُهُ"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 4,
@@ -3162,7 +3302,94 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "كِتَابٌ",
+          "عِنْدِي"
+        ],
+        "answer": [
+          "عِنْدِي",
+          "كِتَابٌ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Complétez avec عِنْدِي، عِنْدَكَ، عِنْدَهُ ou عِنْدَهَا :",
+        "items": [
+          {
+            "sentence": "**\\_\\_\\_** سَيَّارَةٌ (j'ai une voiture)",
+            "answer": "عِنْدِي"
+          },
+          {
+            "sentence": "**\\_\\_\\_** قَلَمٌ (tu as un stylo)",
+            "answer": "عِنْدَكَ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** بَيْتٌ (il a une maison)",
+            "answer": "عِنْدَهُ"
+          },
+          {
+            "sentence": "مَا **\\_\\_\\_** سَاعَةٌ (elle n'a pas de montre)",
+            "answer": "عِنْدَهَا"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "J'ai un livre",
+            "answer_ar": "عِنْدِي كِتَابٌ"
+          },
+          {
+            "prompt_fr": "Il a une voiture",
+            "answer_ar": "عِنْدَهُ سَيَّارَةٌ"
+          },
+          {
+            "prompt_fr": "Je n'ai pas de stylo",
+            "answer_ar": "مَا عِنْدِي قَلَمٌ"
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFY",
+        "prompt_fr": "Classez : عِنْدَ (possession) ou لِـ (parenté) ?",
+        "categories": [
+          "عِنْدَ (possession)",
+          "لِـ (parenté)"
+        ],
+        "items": [
+          {
+            "word": "عِنْدِي سَيَّارَةٌ",
+            "category": "عِنْدَ (possession)"
+          },
+          {
+            "word": "لِي أَخٌ",
+            "category": "لِـ (parenté)"
+          },
+          {
+            "word": "عِنْدَهُ كِتَابٌ",
+            "category": "عِنْدَ (possession)"
+          },
+          {
+            "word": "لَهَا أُخْتٌ",
+            "category": "لِـ (parenté)"
+          },
+          {
+            "word": "عِنْدَنَا بَيْتٌ",
+            "category": "عِنْدَ (possession)"
+          },
+          {
+            "word": "لَهُمْ أَبٌ",
+            "category": "لِـ (parenté)"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 7,
@@ -3514,7 +3741,60 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre (phrase verbale) :",
+        "words": [
+          "الطَّالِبُ",
+          "ذَهَبَ"
+        ],
+        "answer": [
+          "ذَهَبَ",
+          "الطَّالِبُ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Mettez le verbe au féminin passé :",
+        "items": [
+          {
+            "sentence": "**\\_\\_\\_** الطَّالِبَةُ (elle est allée)",
+            "answer": "ذَهَبَتْ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** الْمُعَلِّمَةُ (elle est sortie)",
+            "answer": "خَرَجَتْ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** الْبِنْتُ (elle s'est assise)",
+            "answer": "جَلَسَتْ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** فَاطِمَةُ (elle a écrit)",
+            "answer": "كَتَبَتْ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "L'étudiant est allé",
+            "answer_ar": "ذَهَبَ الطَّالِبُ"
+          },
+          {
+            "prompt_fr": "Le professeur est sorti de la classe",
+            "answer_ar": "خَرَجَ الْمُدَرِّسُ مِنَ الْفَصْلِ"
+          },
+          {
+            "prompt_fr": "L'étudiante s'est assise",
+            "answer_ar": "جَلَسَتِ الطَّالِبَةُ"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 1,
@@ -3736,7 +4016,60 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "طُلَّابٌ",
+          "هَؤُلَاءِ"
+        ],
+        "answer": [
+          "هَؤُلَاءِ",
+          "طُلَّابٌ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Donnez le pluriel correct :",
+        "items": [
+          {
+            "sentence": "مُدَرِّسٌ → **\\_\\_\\_** (pluriel régulier masc.)",
+            "answer": "مُدَرِّسُونَ"
+          },
+          {
+            "sentence": "طَالِبٌ → **\\_\\_\\_** (pluriel brisé)",
+            "answer": "طُلَّابٌ"
+          },
+          {
+            "sentence": "رَجُلٌ → **\\_\\_\\_** (pluriel brisé)",
+            "answer": "رِجَالٌ"
+          },
+          {
+            "sentence": "وَلَدٌ → **\\_\\_\\_** (pluriel brisé)",
+            "answer": "أَوْلَادٌ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "Ce sont des étudiants (proches)",
+            "answer_ar": "هَؤُلَاءِ طُلَّابٌ"
+          },
+          {
+            "prompt_fr": "Les professeurs sont allés",
+            "answer_ar": "ذَهَبَ الْمُدَرِّسُونَ"
+          },
+          {
+            "prompt_fr": "Ceux-là sont des hommes (lointains)",
+            "answer_ar": "أُولَئِكَ رِجَالٌ"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 4,
@@ -3998,7 +4331,94 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "طَالِبَاتٌ",
+          "هَؤُلَاءِ"
+        ],
+        "answer": [
+          "هَؤُلَاءِ",
+          "طَالِبَاتٌ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Donnez le pluriel féminin régulier :",
+        "items": [
+          {
+            "sentence": "طَالِبَةٌ → **\\_\\_\\_**",
+            "answer": "طَالِبَاتٌ"
+          },
+          {
+            "sentence": "مُعَلِّمَةٌ → **\\_\\_\\_**",
+            "answer": "مُعَلِّمَاتٌ"
+          },
+          {
+            "sentence": "مُهَنْدِسَةٌ → **\\_\\_\\_**",
+            "answer": "مُهَنْدِسَاتٌ"
+          },
+          {
+            "sentence": "طَبِيبَةٌ → **\\_\\_\\_**",
+            "answer": "طَبِيبَاتٌ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "Ce sont des étudiantes",
+            "answer_ar": "هَؤُلَاءِ طَالِبَاتٌ"
+          },
+          {
+            "prompt_fr": "Elles sont doctoresses",
+            "answer_ar": "هُنَّ طَبِيبَاتٌ"
+          },
+          {
+            "prompt_fr": "Les enseignantes sont sorties",
+            "answer_ar": "خَرَجَتِ الْمُعَلِّمَاتُ"
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFY",
+        "prompt_fr": "Classez : pluriel masculin ou féminin ?",
+        "categories": [
+          "Pluriel Masculin",
+          "Pluriel Féminin"
+        ],
+        "items": [
+          {
+            "word": "مُدَرِّسُونَ",
+            "category": "Pluriel Masculin"
+          },
+          {
+            "word": "طَالِبَاتٌ",
+            "category": "Pluriel Féminin"
+          },
+          {
+            "word": "طُلَّابٌ",
+            "category": "Pluriel Masculin"
+          },
+          {
+            "word": "مُعَلِّمَاتٌ",
+            "category": "Pluriel Féminin"
+          },
+          {
+            "word": "رِجَالٌ",
+            "category": "Pluriel Masculin"
+          },
+          {
+            "word": "طَبِيبَاتٌ",
+            "category": "Pluriel Féminin"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 7,
@@ -4262,7 +4682,60 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "رِجَالٌ",
+          "أُولَئِكَ"
+        ],
+        "answer": [
+          "أُولَئِكَ",
+          "رِجَالٌ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Complétez avec هَؤُلَاءِ (proche) ou أُولَئِكَ (lointain) :",
+        "items": [
+          {
+            "sentence": "**\\_\\_\\_** طُلَّابٌ (ces étudiants ici)",
+            "answer": "هَؤُلَاءِ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** مُدَرِّسُونَ (ces profs là-bas)",
+            "answer": "أُولَئِكَ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** طَالِبَاتٌ (ces étudiantes ici)",
+            "answer": "هَؤُلَاءِ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** أَطْفَالٌ (ces enfants là-bas)",
+            "answer": "أُولَئِكَ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "Ceux-là sont des professeurs",
+            "answer_ar": "أُولَئِكَ مُدَرِّسُونَ"
+          },
+          {
+            "prompt_fr": "Ces étudiants-ci",
+            "answer_ar": "هَؤُلَاءِ الطُّلَّابُ"
+          },
+          {
+            "prompt_fr": "Elles sont là-bas",
+            "answer_ar": "هُنَّ هُنَاكَ"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 1,
@@ -4610,7 +5083,60 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "جَمِيلَةٌ",
+          "الْكُتُبُ"
+        ],
+        "answer": [
+          "الْكُتُبُ",
+          "جَمِيلَةٌ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Accordez l'adjectif avec un pluriel non-humain (féminin singulier) :",
+        "items": [
+          {
+            "sentence": "الْكُتُبُ **\\_\\_\\_** (les livres sont nouveaux)",
+            "answer": "الْجَدِيدَةُ"
+          },
+          {
+            "sentence": "الْبُيُوتُ **\\_\\_\\_** (les maisons sont grandes)",
+            "answer": "الْكَبِيرَةُ"
+          },
+          {
+            "sentence": "السَّيَّارَاتُ **\\_\\_\\_** (les voitures sont belles)",
+            "answer": "الْجَمِيلَةُ"
+          },
+          {
+            "sentence": "الْأَقْلَامُ **\\_\\_\\_** (les stylos sont petits)",
+            "answer": "الصَّغِيرَةُ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe (attention à l'accord !) :",
+        "items": [
+          {
+            "prompt_fr": "Les livres sont beaux (= belle au fém. sing.)",
+            "answer_ar": "الْكُتُبُ جَمِيلَةٌ"
+          },
+          {
+            "prompt_fr": "Les maisons sont grandes",
+            "answer_ar": "الْبُيُوتُ كَبِيرَةٌ"
+          },
+          {
+            "prompt_fr": "Ces stylos-ci sont nouveaux",
+            "answer_ar": "هَذِهِ الْأَقْلَامُ جَدِيدَةٌ"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 1,
@@ -4864,7 +5390,94 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "الْمَكْتَبِ",
+          "أَمَامَ"
+        ],
+        "answer": [
+          "أَمَامَ",
+          "الْمَكْتَبِ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Complétez avec أَمَامَ، خَلْفَ، تَحْتَ ou فَوْقَ :",
+        "items": [
+          {
+            "sentence": "الْكِتَابُ **\\_\\_\\_** الطَّاوِلَةِ (le livre est sur la table)",
+            "answer": "فَوْقَ"
+          },
+          {
+            "sentence": "الْقَلَمُ **\\_\\_\\_** الْكُرْسِيِّ (le stylo est sous la chaise)",
+            "answer": "تَحْتَ"
+          },
+          {
+            "sentence": "الطَّالِبُ **\\_\\_\\_** الْمُدَرِّسِ (l'étudiant est devant le prof)",
+            "answer": "أَمَامَ"
+          },
+          {
+            "sentence": "الشَّجَرَةُ **\\_\\_\\_** الْبَيْتِ (l'arbre est derrière la maison)",
+            "answer": "خَلْفَ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "Devant la mosquée",
+            "answer_ar": "أَمَامَ الْمَسْجِدِ"
+          },
+          {
+            "prompt_fr": "Sous la table",
+            "answer_ar": "تَحْتَ الطَّاوِلَةِ"
+          },
+          {
+            "prompt_fr": "Au-dessus du livre",
+            "answer_ar": "فَوْقَ الْكِتَابِ"
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFY",
+        "prompt_fr": "Classez par direction :",
+        "categories": [
+          "Devant/Dessus",
+          "Derrière/Dessous"
+        ],
+        "items": [
+          {
+            "word": "أَمَامَ",
+            "category": "Devant/Dessus"
+          },
+          {
+            "word": "خَلْفَ",
+            "category": "Derrière/Dessous"
+          },
+          {
+            "word": "فَوْقَ",
+            "category": "Devant/Dessus"
+          },
+          {
+            "word": "تَحْتَ",
+            "category": "Derrière/Dessous"
+          },
+          {
+            "word": "بَيْنَ",
+            "category": "Devant/Dessus"
+          },
+          {
+            "word": "وَرَاءَ",
+            "category": "Derrière/Dessous"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 4,
@@ -5128,7 +5741,60 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "جَدِيدَانِ",
+          "كِتَابَانِ"
+        ],
+        "answer": [
+          "كِتَابَانِ",
+          "جَدِيدَانِ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Mettez au duel (nominatif ـَانِ) :",
+        "items": [
+          {
+            "sentence": "كِتَابٌ → **\\_\\_\\_**",
+            "answer": "كِتَابَانِ"
+          },
+          {
+            "sentence": "طَالِبٌ → **\\_\\_\\_**",
+            "answer": "طَالِبَانِ"
+          },
+          {
+            "sentence": "مُدَرِّسَةٌ → **\\_\\_\\_**",
+            "answer": "مُدَرِّسَتَانِ"
+          },
+          {
+            "sentence": "سَيَّارَةٌ → **\\_\\_\\_**",
+            "answer": "سَيَّارَتَانِ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "Deux livres (nominatif)",
+            "answer_ar": "كِتَابَانِ"
+          },
+          {
+            "prompt_fr": "Deux étudiantes (nominatif)",
+            "answer_ar": "طَالِبَتَانِ"
+          },
+          {
+            "prompt_fr": "J'ai deux stylos",
+            "answer_ar": "عِنْدِي قَلَمَانِ"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 7,
@@ -5397,7 +6063,60 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "كُتُبٍ",
+          "ثَلَاثَةُ"
+        ],
+        "answer": [
+          "ثَلَاثَةُ",
+          "كُتُبٍ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Complétez avec le nombre correct (forme féminine pour noms masculins) :",
+        "items": [
+          {
+            "sentence": "**\\_\\_\\_** طُلَّابٍ (3 étudiants)",
+            "answer": "ثَلَاثَةُ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** كُتُبٍ (5 livres)",
+            "answer": "خَمْسَةُ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** رِجَالٍ (7 hommes)",
+            "answer": "سَبْعَةُ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** أَقْلَامٍ (10 stylos)",
+            "answer": "عَشَرَةُ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "Trois livres",
+            "answer_ar": "ثَلَاثَةُ كُتُبٍ"
+          },
+          {
+            "prompt_fr": "Cinq étudiants",
+            "answer_ar": "خَمْسَةُ طُلَّابٍ"
+          },
+          {
+            "prompt_fr": "Dix hommes",
+            "answer_ar": "عَشَرَةُ رِجَالٍ"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 1,
@@ -5686,7 +6405,60 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "سَيَّارَاتٍ",
+          "ثَلَاثُ"
+        ],
+        "answer": [
+          "ثَلَاثُ",
+          "سَيَّارَاتٍ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Complétez avec le nombre correct (forme masculine pour noms féminins) :",
+        "items": [
+          {
+            "sentence": "**\\_\\_\\_** طَالِبَاتٍ (3 étudiantes)",
+            "answer": "ثَلَاثُ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** سَاعَاتٍ (5 heures)",
+            "answer": "خَمْسُ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** غُرَفٍ (7 chambres)",
+            "answer": "سَبْعُ"
+          },
+          {
+            "sentence": "**\\_\\_\\_** مُعَلِّمَاتٍ (10 enseignantes)",
+            "answer": "عَشْرُ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "Trois voitures",
+            "answer_ar": "ثَلَاثُ سَيَّارَاتٍ"
+          },
+          {
+            "prompt_fr": "Cinq heures",
+            "answer_ar": "خَمْسُ سَاعَاتٍ"
+          },
+          {
+            "prompt_fr": "Dix enseignantes",
+            "answer_ar": "عَشْرُ مُعَلِّمَاتٍ"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 6,
@@ -5985,7 +6757,80 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "إِبْرَاهِيمَ",
+          "ذَهَبَ",
+          "إِلَى",
+          "مَكَّةَ"
+        ],
+        "answer": [
+          "ذَهَبَ",
+          "إِبْرَاهِيمَ",
+          "إِلَى",
+          "مَكَّةَ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Complétez la terminaison : diptote = pas de tanwīn, fathah au génitif :",
+        "items": [
+          {
+            "sentence": "ذَهَبْتُ إِلَى مَكَّ**\\_\\_\\_** (je suis allé à La Mecque)",
+            "answer": "ـةَ"
+          },
+          {
+            "sentence": "رَأَيْتُ أَحْمَ**\\_\\_\\_** (j'ai vu Ahmad)",
+            "answer": "ـدَ"
+          },
+          {
+            "sentence": "هَذَا كِتَابُ عُمَ**\\_\\_\\_** (c'est le livre d'Omar)",
+            "answer": "ـرَ"
+          },
+          {
+            "sentence": "الْقَمِيصُ أَحْمَ**\\_\\_\\_** (la chemise est rouge)",
+            "answer": "ـرُ"
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFY",
+        "prompt_fr": "Classez : diptote ou triptote ?",
+        "categories": [
+          "Diptote (pas de tanwīn)",
+          "Triptote (avec tanwīn)"
+        ],
+        "items": [
+          {
+            "word": "أَحْمَدُ",
+            "category": "Diptote (pas de tanwīn)"
+          },
+          {
+            "word": "كِتَابٌ",
+            "category": "Triptote (avec tanwīn)"
+          },
+          {
+            "word": "مَكَّةُ",
+            "category": "Diptote (pas de tanwīn)"
+          },
+          {
+            "word": "طَالِبٌ",
+            "category": "Triptote (avec tanwīn)"
+          },
+          {
+            "word": "أَحْمَرُ",
+            "category": "Diptote (pas de tanwīn)"
+          },
+          {
+            "word": "بَيْتٌ",
+            "category": "Triptote (avec tanwīn)"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 1,
@@ -6307,7 +7152,60 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "الْعَرَبِيَّةَ",
+          "أَدْرُسُ"
+        ],
+        "answer": [
+          "أَدْرُسُ",
+          "الْعَرَبِيَّةَ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Conjuguez au présent avec le bon préfixe (أَـ، نَـ، يَـ، تَـ) :",
+        "items": [
+          {
+            "sentence": "**\\_\\_\\_**ـذْهَبُ (je vais)",
+            "answer": "أَ"
+          },
+          {
+            "sentence": "**\\_\\_\\_**ـذْهَبُ (il va)",
+            "answer": "يَ"
+          },
+          {
+            "sentence": "**\\_\\_\\_**ـذْهَبُ (tu vas)",
+            "answer": "تَ"
+          },
+          {
+            "sentence": "**\\_\\_\\_**ـذْهَبُ (nous allons)",
+            "answer": "نَ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "J'étudie l'arabe",
+            "answer_ar": "أَدْرُسُ الْعَرَبِيَّةَ"
+          },
+          {
+            "prompt_fr": "Il va à l'école",
+            "answer_ar": "يَذْهَبُ إِلَى الْمَدْرَسَةِ"
+          },
+          {
+            "prompt_fr": "Nous écrivons",
+            "answer_ar": "نَكْتُبُ"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 1,
@@ -6637,7 +7535,94 @@
         }
       ]
     },
-    "exercises": [],
+    "exercises": [
+      {
+        "type": "REORDER",
+        "prompt_fr": "Remettez dans l'ordre :",
+        "words": [
+          "الْعَرَبِيَّةَ",
+          "يَدْرُسُونَ"
+        ],
+        "answer": [
+          "يَدْرُسُونَ",
+          "الْعَرَبِيَّةَ"
+        ]
+      },
+      {
+        "type": "FILL_BLANK",
+        "prompt_fr": "Conjuguez au présent pluriel :",
+        "items": [
+          {
+            "sentence": "هُمْ **\\_\\_\\_** (ils étudient)",
+            "answer": "يَدْرُسُونَ"
+          },
+          {
+            "sentence": "هُنَّ **\\_\\_\\_** (elles étudient)",
+            "answer": "يَدْرُسْنَ"
+          },
+          {
+            "sentence": "أَنْتُمْ **\\_\\_\\_** (vous [m.] écrivez)",
+            "answer": "تَكْتُبُونَ"
+          },
+          {
+            "sentence": "أَنْتُنَّ **\\_\\_\\_** (vous [f.] écrivez)",
+            "answer": "تَكْتُبْنَ"
+          }
+        ]
+      },
+      {
+        "type": "TRANSLATE",
+        "prompt_fr": "Traduisez en arabe :",
+        "items": [
+          {
+            "prompt_fr": "Ils étudient l'arabe",
+            "answer_ar": "يَدْرُسُونَ الْعَرَبِيَّةَ"
+          },
+          {
+            "prompt_fr": "Elles vont à l'école",
+            "answer_ar": "يَذْهَبْنَ إِلَى الْمَدْرَسَةِ"
+          },
+          {
+            "prompt_fr": "Vous (m.) lisez le livre",
+            "answer_ar": "تَقْرَؤُونَ الْكِتَابَ"
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFY",
+        "prompt_fr": "Classez : masculin pluriel ou féminin pluriel ?",
+        "categories": [
+          "Masculin Pluriel (ـُونَ)",
+          "Féminin Pluriel (ـْنَ)"
+        ],
+        "items": [
+          {
+            "word": "يَدْرُسُونَ",
+            "category": "Masculin Pluriel (ـُونَ)"
+          },
+          {
+            "word": "يَدْرُسْنَ",
+            "category": "Féminin Pluriel (ـْنَ)"
+          },
+          {
+            "word": "تَكْتُبُونَ",
+            "category": "Masculin Pluriel (ـُونَ)"
+          },
+          {
+            "word": "تَكْتُبْنَ",
+            "category": "Féminin Pluriel (ـْنَ)"
+          },
+          {
+            "word": "يَذْهَبُونَ",
+            "category": "Masculin Pluriel (ـُونَ)"
+          },
+          {
+            "word": "يَذْهَبْنَ",
+            "category": "Féminin Pluriel (ـْنَ)"
+          }
+        ]
+      }
+    ],
     "quiz_questions": [
       {
         "id": 1,
