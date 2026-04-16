@@ -276,11 +276,51 @@
     "flashcards": [
       {
         "id": "fc_p1_1",
-        "front_ar": "",
-        "back_fr": "",
-        "category": null,
-        "example_ar": null,
-        "example_fr": null
+        "front_ar": "هَذَا",
+        "back_fr": "Ceci (masculin) — utilisé pour pointer un objet masculin proche. Ex : هَذَا كِتَابٌ (Ceci est un livre).",
+        "category": "Démonstratifs"
+      },
+      {
+        "id": "fc_p1_2",
+        "front_ar": "هَذِهِ",
+        "back_fr": "Ceci (féminin) — utilisé pour pointer un objet féminin proche. Ex : هَذِهِ سَيَّارَةٌ (Ceci est une voiture).",
+        "category": "Démonstratifs"
+      },
+      {
+        "id": "fc_p1_3",
+        "front_ar": "كِتَابٌ",
+        "back_fr": "Un livre — nom masculin indéfini. Le tanwīn (ٌ) marque l'indéfini.",
+        "category": "Vocabulaire"
+      },
+      {
+        "id": "fc_p1_4",
+        "front_ar": "سَيَّارَةٌ",
+        "back_fr": "Une voiture — nom féminin (terminaison ـَة = tā' marbūta). Indéfini avec tanwīn.",
+        "category": "Vocabulaire"
+      },
+      {
+        "id": "fc_p1_5",
+        "front_ar": "مَسْجِدٌ",
+        "back_fr": "Une mosquée — nom masculin indéfini. هَذَا مَسْجِدٌ = Ceci est une mosquée.",
+        "category": "Vocabulaire"
+      },
+      {
+        "id": "fc_p1_6",
+        "front_ar": "قَلَمٌ",
+        "back_fr": "Un stylo — nom masculin indéfini. هَذَا قَلَمٌ = Ceci est un stylo.",
+        "category": "Vocabulaire"
+      },
+      {
+        "id": "fc_p1_7",
+        "front_ar": "بَيْتٌ",
+        "back_fr": "Une maison — nom masculin indéfini. هَذَا بَيْتٌ = Ceci est une maison.",
+        "category": "Vocabulaire"
+      },
+      {
+        "id": "fc_p1_8",
+        "front_ar": "Comment reconnaître le féminin ?",
+        "back_fr": "La plupart des noms féminins se terminent par ـَة (tā' marbūta) : سَيَّارَة، غُرْفَة، طَاوِلَة. Mais certains sont féminins sans ـَة.",
+        "category": "Règle"
       }
     ]
   },
@@ -531,12 +571,40 @@
     ],
     "flashcards": [
       {
-        "id": "fc_p1_2",
-        "front_ar": "",
-        "back_fr": "",
-        "category": null,
-        "example_ar": null,
-        "example_fr": null
+        "id": "fc_p1_9",
+        "front_ar": "مَا هَذَا؟",
+        "back_fr": "Qu'est-ce que c'est ? — مَا = quoi (pour les choses). Réponse : هَذَا كِتَابٌ.",
+        "category": "Interrogatifs"
+      },
+      {
+        "id": "fc_p1_10",
+        "front_ar": "مَنْ هَذَا؟",
+        "back_fr": "Qui est-ce ? — مَنْ = qui (pour les personnes). Réponse : هَذَا مُدَرِّسٌ.",
+        "category": "Interrogatifs"
+      },
+      {
+        "id": "fc_p1_11",
+        "front_ar": "أَهَذَا قَلَمٌ؟",
+        "back_fr": "Est-ce un stylo ? — أَ (hamza interrogative) transforme une phrase en question oui/non. Réponse : نَعَمْ ou لَا.",
+        "category": "Interrogatifs"
+      },
+      {
+        "id": "fc_p1_12",
+        "front_ar": "نَعَمْ / لَا",
+        "back_fr": "Oui / Non — نَعَمْ = oui (affirmatif), لَا = non (négatif).",
+        "category": "Vocabulaire"
+      },
+      {
+        "id": "fc_p1_13",
+        "front_ar": "مُدَرِّسٌ",
+        "back_fr": "Un professeur — nom masculin. مَنْ هَذَا؟ هَذَا مُدَرِّسٌ.",
+        "category": "Vocabulaire"
+      },
+      {
+        "id": "fc_p1_14",
+        "front_ar": "طَالِبٌ",
+        "back_fr": "Un étudiant — nom masculin. أَهَذَا طَالِبٌ؟ نَعَمْ.",
+        "category": "Vocabulaire"
       }
     ]
   },
@@ -836,12 +904,40 @@
     ],
     "flashcards": [
       {
-        "id": "fc_p1_3",
-        "front_ar": "",
-        "back_fr": "",
-        "category": null,
-        "example_ar": null,
-        "example_fr": null
+        "id": "fc_p1_15",
+        "front_ar": "الْكِتَابُ",
+        "back_fr": "Le livre — الـ (al-) est l'article défini. Il rend le nom déterminé. Le tanwīn disparaît.",
+        "category": "Article Défini"
+      },
+      {
+        "id": "fc_p1_16",
+        "front_ar": "Lettres solaires vs lunaires",
+        "back_fr": "Solaires (ت، ث، د، ذ، ر، ز، س، ش، ص، ض، ط، ظ، ن، ل) : le لام ne se prononce pas → assimilation. Lunaires : le لام se prononce.",
+        "category": "Règle"
+      },
+      {
+        "id": "fc_p1_17",
+        "front_ar": "الشَّمْسُ",
+        "back_fr": "Le soleil — lettre solaire (ش). Le لام de الـ s'assimile : on prononce 'ash-shamsu', pas 'al-shamsu'.",
+        "category": "Lettres Solaires"
+      },
+      {
+        "id": "fc_p1_18",
+        "front_ar": "الْقَمَرُ",
+        "back_fr": "La lune — lettre lunaire (ق). Le لام se prononce normalement : 'al-qamar'.",
+        "category": "Lettres Lunaires"
+      },
+      {
+        "id": "fc_p1_19",
+        "front_ar": "كِتَابٌ → الْكِتَابُ",
+        "back_fr": "Indéfini → Défini. Le tanwīn (ٌ) est remplacé par une simple damma (ُ) quand on ajoute الـ.",
+        "category": "Article Défini"
+      },
+      {
+        "id": "fc_p1_20",
+        "front_ar": "الْمَدْرَسَةُ",
+        "back_fr": "L'école — nom féminin défini. مَدْرَسَةٌ (indéfini) → الْمَدْرَسَةُ (défini).",
+        "category": "Article Défini"
       }
     ]
   },
@@ -1158,12 +1254,40 @@
     ],
     "flashcards": [
       {
-        "id": "fc_p1_4",
-        "front_ar": "",
-        "back_fr": "",
-        "category": null,
-        "example_ar": null,
-        "example_fr": null
+        "id": "fc_p1_21",
+        "front_ar": "فِي",
+        "back_fr": "Dans — préposition de lieu. فِي الْبَيْتِ = dans la maison. Le nom après prend le cas majrūr (kasra).",
+        "category": "Prépositions"
+      },
+      {
+        "id": "fc_p1_22",
+        "front_ar": "عَلَى",
+        "back_fr": "Sur — préposition de lieu. عَلَى الطَّاوِلَةِ = sur la table. Cas majrūr (kasra).",
+        "category": "Prépositions"
+      },
+      {
+        "id": "fc_p1_23",
+        "front_ar": "مِنْ",
+        "back_fr": "De / depuis — préposition. مِنَ الْمَسْجِدِ = de la mosquée. Cas majrūr.",
+        "category": "Prépositions"
+      },
+      {
+        "id": "fc_p1_24",
+        "front_ar": "إِلَى",
+        "back_fr": "Vers / à — préposition de direction. إِلَى الْمَدْرَسَةِ = vers l'école. Cas majrūr.",
+        "category": "Prépositions"
+      },
+      {
+        "id": "fc_p1_25",
+        "front_ar": "Le cas Majrūr",
+        "back_fr": "Après une préposition, le nom prend la kasra (ِ). Indéfini : كِتَابٍ. Défini : الْكِتَابِ. C'est le cas génitif.",
+        "category": "Règle"
+      },
+      {
+        "id": "fc_p1_26",
+        "front_ar": "فِي الْبَيْتِ",
+        "back_fr": "Dans la maison — البَيْتُ (nominatif) devient الْبَيْتِ (majrūr/génitif) après فِي.",
+        "category": "Prépositions"
       }
     ]
   },
@@ -1448,11 +1572,39 @@
     "flashcards": [
       {
         "id": "fc_p2_1",
-        "front_ar": "",
-        "back_fr": "",
-        "category": null,
-        "example_ar": null,
-        "example_fr": null
+        "front_ar": "كِتَابُ الْمُدَرِّسِ",
+        "back_fr": "Le livre du professeur — Idāfa (annexion). Le 1er mot (مُضَاف) perd son tanwīn, le 2e (مُضَاف إِلَيْهِ) prend le majrūr.",
+        "category": "Idāfa"
+      },
+      {
+        "id": "fc_p2_2",
+        "front_ar": "بَيْتُ أَحْمَدَ",
+        "back_fr": "La maison d'Ahmad — le مُضَاف ne prend jamais الـ ni tanwīn. Le nom propre est automatiquement au majrūr.",
+        "category": "Idāfa"
+      },
+      {
+        "id": "fc_p2_3",
+        "front_ar": "Règle de l'Idāfa",
+        "back_fr": "Possession sans préposition : Nom1 + Nom2. Nom1 perd tanwīn et الـ. Nom2 prend le cas majrūr (kasra). L'ensemble est défini si Nom2 est défini.",
+        "category": "Règle"
+      },
+      {
+        "id": "fc_p2_4",
+        "front_ar": "حَقِيبَةُ فَاطِمَةَ",
+        "back_fr": "Le sac de Fatima — la tā' marbūta du مُضَاف se prononce 't' en annexion : 'haqībatu fātimata'.",
+        "category": "Idāfa"
+      },
+      {
+        "id": "fc_p2_5",
+        "front_ar": "سَيَّارَةُ الْأَبِ",
+        "back_fr": "La voiture du père — Idāfa avec الـ sur le 2e terme. L'ensemble est défini (= LA voiture DU père).",
+        "category": "Idāfa"
+      },
+      {
+        "id": "fc_p2_6",
+        "front_ar": "مِفْتَاحُ الْبَابِ",
+        "back_fr": "La clé de la porte — deux noms définis liés par l'annexion. مِفْتَاح perd son tanwīn.",
+        "category": "Idāfa"
       }
     ]
   },
@@ -1742,12 +1894,40 @@
     ],
     "flashcards": [
       {
-        "id": "fc_p2_2",
-        "front_ar": "",
-        "back_fr": "",
-        "category": null,
-        "example_ar": null,
-        "example_fr": null
+        "id": "fc_p2_7",
+        "front_ar": "ـَة (تَاء مَرْبُوطَة)",
+        "back_fr": "Tā' Marbūta — marque du féminin. Se prononce 'a' en pause, 't' en liaison. غُرْفَة، مَدْرَسَة، سَيَّارَة.",
+        "category": "Féminin"
+      },
+      {
+        "id": "fc_p2_8",
+        "front_ar": "كَبِيرٌ / كَبِيرَةٌ",
+        "back_fr": "Grand (m.) / Grande (f.) — l'adjectif s'accorde en genre avec le nom : بَيْتٌ كَبِيرٌ / غُرْفَةٌ كَبِيرَةٌ.",
+        "category": "Accord Adjectif"
+      },
+      {
+        "id": "fc_p2_9",
+        "front_ar": "جَمِيلٌ / جَمِيلَةٌ",
+        "back_fr": "Beau / Belle — même schème d'accord : مَسْجِدٌ جَمِيلٌ (m.) / مَدْرَسَةٌ جَمِيلَةٌ (f.).",
+        "category": "Accord Adjectif"
+      },
+      {
+        "id": "fc_p2_10",
+        "front_ar": "صَغِيرٌ / صَغِيرَةٌ",
+        "back_fr": "Petit / Petite — قَلَمٌ صَغِيرٌ (un petit stylo) / سَاعَةٌ صَغِيرَةٌ (une petite montre).",
+        "category": "Accord Adjectif"
+      },
+      {
+        "id": "fc_p2_11",
+        "front_ar": "Accord de l'adjectif (indéfini)",
+        "back_fr": "Nom + Adjectif : les deux indéfinis avec tanwīn, même genre. كِتَابٌ جَدِيدٌ (un nouveau livre).",
+        "category": "Règle"
+      },
+      {
+        "id": "fc_p2_12",
+        "front_ar": "هَذِهِ دَارٌ جَمِيلَةٌ",
+        "back_fr": "Ceci est une belle maison — هَذِهِ (fém.) + دَارٌ (maison, fém.) + جَمِيلَةٌ (belle, fém.).",
+        "category": "Exemple"
       }
     ]
   },
@@ -2027,12 +2207,40 @@
     ],
     "flashcards": [
       {
-        "id": "fc_p2_3",
-        "front_ar": "",
-        "back_fr": "",
-        "category": null,
-        "example_ar": null,
-        "example_fr": null
+        "id": "fc_p2_13",
+        "front_ar": "ذَلِكَ",
+        "back_fr": "Cela / celui-là (masculin lointain) — pour pointer un objet masculin éloigné. ذَلِكَ الْبَيْتُ = cette maison là-bas.",
+        "category": "Démonstratifs Lointains"
+      },
+      {
+        "id": "fc_p2_14",
+        "front_ar": "تِلْكَ",
+        "back_fr": "Celle-là (féminin lointain) — pour pointer un objet féminin éloigné. تِلْكَ السَّيَّارَةُ = cette voiture là-bas.",
+        "category": "Démonstratifs Lointains"
+      },
+      {
+        "id": "fc_p2_15",
+        "front_ar": "هَذَا vs ذَلِكَ",
+        "back_fr": "Proche vs Lointain (masc.) — هَذَا الْكِتَابُ (ce livre-ci) vs ذَلِكَ الْكِتَابُ (ce livre là-bas).",
+        "category": "Comparaison"
+      },
+      {
+        "id": "fc_p2_16",
+        "front_ar": "هَذِهِ vs تِلْكَ",
+        "back_fr": "Proche vs Lointain (fém.) — هَذِهِ الْمَدْرَسَةُ (cette école-ci) vs تِلْكَ الْمَدْرَسَةُ (cette école là-bas).",
+        "category": "Comparaison"
+      },
+      {
+        "id": "fc_p2_17",
+        "front_ar": "ذَلِكَ الرَّجُلُ مُدَرِّسٌ",
+        "back_fr": "Cet homme là-bas est professeur — phrase nominale avec démonstratif lointain + nom défini + attribut.",
+        "category": "Exemple"
+      },
+      {
+        "id": "fc_p2_18",
+        "front_ar": "أُولَئِكَ",
+        "back_fr": "Ceux-là / celles-là (pluriel lointain) — pour les humains éloignés, masculin et féminin. أُولَئِكَ الرِّجَالُ.",
+        "category": "Démonstratifs Lointains"
       }
     ]
   },
@@ -2320,12 +2528,40 @@
     ],
     "flashcards": [
       {
-        "id": "fc_p2_4",
-        "front_ar": "",
-        "back_fr": "",
-        "category": null,
-        "example_ar": null,
-        "example_fr": null
+        "id": "fc_p2_19",
+        "front_ar": "الْكِتَابُ الْجَدِيدُ",
+        "back_fr": "Le nouveau livre — Nom défini + Adjectif défini = groupe nominal (النَّعْت). Les deux ont الـ.",
+        "category": "Accord Défini"
+      },
+      {
+        "id": "fc_p2_20",
+        "front_ar": "الْمَدْرَسَةُ الْكَبِيرَةُ",
+        "back_fr": "La grande école — accord défini féminin. Les deux mots portent الـ et sont féminins.",
+        "category": "Accord Défini"
+      },
+      {
+        "id": "fc_p2_21",
+        "front_ar": "Phrase nominale vs Groupe nominal",
+        "back_fr": "الْبَيْتُ كَبِيرٌ = la maison EST grande (phrase). الْبَيْتُ الْكَبِيرُ = la GRANDE maison (groupe). L'adjectif avec الـ = épithète.",
+        "category": "Règle"
+      },
+      {
+        "id": "fc_p2_22",
+        "front_ar": "كِتَابٌ كَبِيرٌ وَمُفِيدٌ",
+        "back_fr": "Un livre grand et utile — وَ (wa) lie deux adjectifs. Tous indéfinis avec tanwīn, masculins.",
+        "category": "Coordination"
+      },
+      {
+        "id": "fc_p2_23",
+        "front_ar": "الدَّارُ الْقَدِيمَةُ جَمِيلَةٌ",
+        "back_fr": "La vieille maison est belle — الْقَدِيمَةُ (épithète, défini) + جَمِيلَةٌ (attribut, indéfini).",
+        "category": "Exemple"
+      },
+      {
+        "id": "fc_p2_24",
+        "front_ar": "Accord : genre + définition",
+        "back_fr": "L'adjectif doit accorder le nom en genre (m/f) ET en définition (الـ ou tanwīn). Les deux doivent correspondre.",
+        "category": "Règle"
       }
     ]
   },
