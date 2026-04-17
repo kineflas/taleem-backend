@@ -18,8 +18,8 @@ FROM python:3.11-slim AS runtime
 
 WORKDIR /app
 
-# Runtime PostgreSQL client library
-RUN apt-get update && apt-get install -y --no-install-recommends libpq5 \
+# Runtime deps: PostgreSQL client + ffmpeg (audio conversion for admin recorder)
+RUN apt-get update && apt-get install -y --no-install-recommends libpq5 ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy installed packages from builder
@@ -29,6 +29,9 @@ COPY --from=builder /install /usr/local
 COPY . .
 COPY start.sh .
 RUN chmod +x start.sh
+
+# Ensure audio upload directory exists
+RUN mkdir -p /app/static/audio
 
 # Non-root user for security
 RUN useradd -m appuser && chown -R appuser:appuser /app
