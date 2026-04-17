@@ -1,0 +1,6772 @@
+{
+  "1": {
+    "lesson_number": 1,
+    "title_fr": "Les Pionniers : Bā, Mīm, Nūn",
+    "title_ar": "الرواد",
+    "phase_number": 1,
+    "phase_name": "Les Sons Familiers",
+    "objective": "Aujourd'hui tu apprends 3 lettres dont les sons existent déjà en français (B, M, N) et tu les combines avec les 3 voyelles courtes pour lire tes premières syllabes arabes !",
+    "letters": [
+      {
+        "id": "ba",
+        "glyph": "ب",
+        "name_fr": "Bā",
+        "name_ar": "باء",
+        "mnemonique_visuelle": "Le Bā ressemble à un Bateau vu de côté posé sur l'eau, avec un point en dessous comme une ancre qui le retient au port.",
+        "conseil_anatomique": "Son bilabial identique au B français : les deux lèvres se touchent puis s'ouvrent d'un coup en libérant l'air. Aucune difficulté pour un francophone.",
+        "audio_id": "ba",
+        "famille": "ba_ta_tha",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ب",
+          "debut": "بـ",
+          "milieu": "ـبـ",
+          "fin": "ـب"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "بَ",
+            "son": "Ba",
+            "audio_id": "ba_fatha"
+          },
+          "damma": {
+            "glyph": "بُ",
+            "son": "Bou",
+            "audio_id": "ba_damma"
+          },
+          "kasra": {
+            "glyph": "بِ",
+            "son": "Bi",
+            "audio_id": "ba_kasra"
+          }
+        }
+      },
+      {
+        "id": "mim",
+        "glyph": "م",
+        "name_fr": "Mīm",
+        "name_ar": "ميم",
+        "mnemonique_visuelle": "Le Mīm ressemble à une petite Montagne arrondie avec une queue qui descend, comme un toboggan.",
+        "conseil_anatomique": "Son nasal identique au M français : les lèvres se ferment et l'air passe par le nez. Vibration ressentie sur les lèvres.",
+        "audio_id": "mim",
+        "famille": "mim",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "م",
+          "debut": "مـ",
+          "milieu": "ـمـ",
+          "fin": "ـم"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "مَ",
+            "son": "Ma",
+            "audio_id": "mim_fatha"
+          },
+          "damma": {
+            "glyph": "مُ",
+            "son": "Mou",
+            "audio_id": "mim_damma"
+          },
+          "kasra": {
+            "glyph": "مِ",
+            "son": "Mi",
+            "audio_id": "mim_kasra"
+          }
+        }
+      },
+      {
+        "id": "nun",
+        "glyph": "ن",
+        "name_fr": "Nūn",
+        "name_ar": "نون",
+        "mnemonique_visuelle": "Le Nūn ressemble à un Nid d'oiseau arrondi avec un point au-dessus comme un œuf en équilibre.",
+        "conseil_anatomique": "Son nasal identique au N français : la pointe de la langue touche la crête alvéolaire (juste derrière les dents du haut). L'air passe par le nez.",
+        "audio_id": "nun",
+        "famille": "ba_ta_tha",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ن",
+          "debut": "نـ",
+          "milieu": "ـنـ",
+          "fin": "ـن"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "نَ",
+            "son": "Na",
+            "audio_id": "nun_fatha"
+          },
+          "damma": {
+            "glyph": "نُ",
+            "son": "Nou",
+            "audio_id": "nun_damma"
+          },
+          "kasra": {
+            "glyph": "نِ",
+            "son": "Ni",
+            "audio_id": "nun_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "Ferme les yeux et écoute attentivement. Tu vas entendre 9 sons : chaque lettre avec ses 3 voyelles. Répète chaque son à voix haute.",
+      "sequence": [
+        {
+          "audio_id": "ba_fatha",
+          "label": "بَ = Ba"
+        },
+        {
+          "audio_id": "ba_damma",
+          "label": "بُ = Bou"
+        },
+        {
+          "audio_id": "ba_kasra",
+          "label": "بِ = Bi"
+        },
+        {
+          "audio_id": "mim_fatha",
+          "label": "مَ = Ma"
+        },
+        {
+          "audio_id": "mim_damma",
+          "label": "مُ = Mou"
+        },
+        {
+          "audio_id": "mim_kasra",
+          "label": "مِ = Mi"
+        },
+        {
+          "audio_id": "nun_fatha",
+          "label": "نَ = Na"
+        },
+        {
+          "audio_id": "nun_damma",
+          "label": "نُ = Nou"
+        },
+        {
+          "audio_id": "nun_kasra",
+          "label": "نِ = Ni"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "ba",
+          "zone": "levres",
+          "description": "Les deux lèvres se touchent puis s'ouvrent"
+        },
+        {
+          "lettre_id": "mim",
+          "zone": "levres_nez",
+          "description": "Les lèvres se ferment, l'air passe par le nez"
+        },
+        {
+          "lettre_id": "nun",
+          "zone": "langue_alveoles",
+          "description": "La langue touche juste derrière les dents du haut"
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Glisse la lettre dans la machine, puis ajoute la voyelle pour produire le son !",
+        "items": [
+          {
+            "lettre": "ب",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "بَ",
+            "son": "Ba",
+            "audio_id": "ba_fatha"
+          },
+          {
+            "lettre": "ب",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "بُ",
+            "son": "Bou",
+            "audio_id": "ba_damma"
+          },
+          {
+            "lettre": "ب",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "بِ",
+            "son": "Bi",
+            "audio_id": "ba_kasra"
+          },
+          {
+            "lettre": "م",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "مَ",
+            "son": "Ma",
+            "audio_id": "mim_fatha"
+          },
+          {
+            "lettre": "م",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "مُ",
+            "son": "Mou",
+            "audio_id": "mim_damma"
+          },
+          {
+            "lettre": "ن",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "نِ",
+            "son": "Ni",
+            "audio_id": "nun_kasra"
+          }
+        ]
+      },
+      {
+        "type": "POINTS",
+        "prompt_fr": "Place le(s) point(s) au bon endroit pour former la lettre demandée !",
+        "items": [
+          {
+            "forme_base": "ٮ",
+            "cible": "ب",
+            "nom_cible": "Bā",
+            "points": 1,
+            "position": "dessous"
+          },
+          {
+            "forme_base": "ٮ",
+            "cible": "ن",
+            "nom_cible": "Nūn",
+            "points": 1,
+            "position": "dessus"
+          },
+          {
+            "forme_base": "ٮ",
+            "cible": "ت",
+            "nom_cible": "Tā (aperçu)",
+            "points": 2,
+            "position": "dessus"
+          },
+          {
+            "forme_base": "ٮ",
+            "cible": "ث",
+            "nom_cible": "Thā (aperçu)",
+            "points": 3,
+            "position": "dessus"
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "Écoute le son et choisis la bonne lettre !",
+        "items": [
+          {
+            "audio_id": "ba_fatha",
+            "son": "Ba",
+            "options": [
+              "ب",
+              "م",
+              "ن"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "mim_damma",
+            "son": "Mou",
+            "options": [
+              "ن",
+              "ب",
+              "م"
+            ],
+            "correct": 2
+          },
+          {
+            "audio_id": "nun_kasra",
+            "son": "Ni",
+            "options": [
+              "م",
+              "ن",
+              "ب"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "ba_kasra",
+            "son": "Bi",
+            "options": [
+              "م",
+              "ن",
+              "ب"
+            ],
+            "correct": 2
+          },
+          {
+            "audio_id": "mim_fatha",
+            "son": "Ma",
+            "options": [
+              "م",
+              "ب",
+              "ن"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "nun_fatha",
+            "son": "Na",
+            "options": [
+              "ب",
+              "م",
+              "ن"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "type": "COMPLETER_SYLLABE",
+        "prompt_fr": "Quelle voyelle faut-il ajouter pour obtenir ce son ?",
+        "items": [
+          {
+            "lettre": "ب",
+            "son_cible": "Ba",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 0
+          },
+          {
+            "lettre": "م",
+            "son_cible": "Mou",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 1
+          },
+          {
+            "lettre": "ن",
+            "son_cible": "Ni",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 2
+          },
+          {
+            "lettre": "ب",
+            "son_cible": "Bou",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Lis ces syllabes en suivant le rythme ! Les syllabes s'allument quand c'est ton tour.",
+      "items": [
+        {
+          "text": "بَ",
+          "son": "Ba",
+          "audio_id": "ba_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "مُ",
+          "son": "Mou",
+          "audio_id": "mim_damma",
+          "delay_ms": 1000
+        },
+        {
+          "text": "نِ",
+          "son": "Ni",
+          "audio_id": "nun_kasra",
+          "delay_ms": 2000
+        },
+        {
+          "text": "مَ",
+          "son": "Ma",
+          "audio_id": "mim_fatha",
+          "delay_ms": 3000
+        },
+        {
+          "text": "بِ",
+          "son": "Bi",
+          "audio_id": "ba_kasra",
+          "delay_ms": 4000
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L1Q1",
+        "question": "Quelle lettre fait le son 'B' ?",
+        "options": [
+          "م",
+          "ب",
+          "ن",
+          "ت"
+        ],
+        "correct": 1,
+        "explanation": "Le ب (Bā) fait le son B, comme dans 'Bateau'."
+      },
+      {
+        "id": "L1Q2",
+        "question": "Que produit بَ ?",
+        "options": [
+          "Bi",
+          "Bou",
+          "Ba",
+          "Ma"
+        ],
+        "correct": 2,
+        "explanation": "La Fatha (petit trait au-dessus) donne le son 'a'. بَ = Ba."
+      },
+      {
+        "id": "L1Q3",
+        "question": "Comment s'appelle la voyelle qui fait le son 'ou' ?",
+        "options": [
+          "Fatha",
+          "Kasra",
+          "Damma",
+          "Soukoun"
+        ],
+        "correct": 2,
+        "explanation": "La Damma (petit و au-dessus) produit le son 'ou'."
+      },
+      {
+        "id": "L1Q4",
+        "question": "Que produit نِ ?",
+        "options": [
+          "Na",
+          "Ni",
+          "Nou",
+          "Bi"
+        ],
+        "correct": 1,
+        "explanation": "La Kasra (petit trait en dessous) donne le son 'i'. نِ = Ni."
+      },
+      {
+        "id": "L1Q5",
+        "question": "Quelle lettre a un point EN DESSOUS ?",
+        "options": [
+          "ن",
+          "ت",
+          "ب",
+          "م"
+        ],
+        "correct": 2,
+        "explanation": "Le ب a un point en dessous (comme une ancre sous le bateau)."
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL1_ba",
+        "front_ar": "ب",
+        "back_fr": "Bā — Ba/Bou/Bi",
+        "category": "Phase 1",
+        "example_ar": "بَ بُ بِ",
+        "example_fr": "Ba, Bou, Bi"
+      },
+      {
+        "id": "FL1_mim",
+        "front_ar": "م",
+        "back_fr": "Mīm — Ma/Mou/Mi",
+        "category": "Phase 1",
+        "example_ar": "مَ مُ مِ",
+        "example_fr": "Ma, Mou, Mi"
+      },
+      {
+        "id": "FL1_nun",
+        "front_ar": "ن",
+        "back_fr": "Nūn — Na/Nou/Ni",
+        "category": "Phase 1",
+        "example_ar": "نَ نُ نِ",
+        "example_fr": "Na, Nou, Ni"
+      }
+    ]
+  },
+  "2": {
+    "lesson_number": 2,
+    "title_fr": "Le Camp avance : Tā, Dāl, Rā",
+    "title_ar": "تقدّم القافلة",
+    "phase_number": 1,
+    "phase_name": "Les Sons Familiers",
+    "objective": "3 nouvelles lettres (T, D, R) et un défi : distinguer les lettres de la famille ب ت ث ن grâce à leurs points !",
+    "letters": [
+      {
+        "id": "ta",
+        "glyph": "ت",
+        "name_fr": "Tā",
+        "name_ar": "تاء",
+        "mnemonique_visuelle": "Le Tā a la même forme que le Bā (le Bateau) mais avec deux points au-dessus comme deux mouettes qui volent au-dessus du navire.",
+        "conseil_anatomique": "Son dental identique au T français : la pointe de la langue touche les dents du haut puis se relâche brusquement. C'est un T léger, non emphatique (contrairement au ط).",
+        "audio_id": "ta",
+        "famille": "ba_ta_tha",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ت",
+          "debut": "تـ",
+          "milieu": "ـتـ",
+          "fin": "ـت"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "تَ",
+            "son": "Ta",
+            "audio_id": "ta_fatha"
+          },
+          "damma": {
+            "glyph": "تُ",
+            "son": "Tou",
+            "audio_id": "ta_damma"
+          },
+          "kasra": {
+            "glyph": "تِ",
+            "son": "Ti",
+            "audio_id": "ta_kasra"
+          }
+        }
+      },
+      {
+        "id": "dal",
+        "glyph": "د",
+        "name_fr": "Dāl",
+        "name_ar": "دال",
+        "mnemonique_visuelle": "Le Dāl ressemble à une petite Dune de sable vue de profil, ou à un dos courbé.",
+        "conseil_anatomique": "Son dental identique au D français : la langue touche la crête alvéolaire. C'est un D léger, non emphatique (contrairement au ض). Pas de difficulté.",
+        "audio_id": "dal",
+        "famille": "dal_dhal",
+        "connectante": false,
+        "formes_positionnelles": {
+          "isolee": "د",
+          "debut": "د",
+          "milieu": "ـد",
+          "fin": "ـد"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "دَ",
+            "son": "Da",
+            "audio_id": "dal_fatha"
+          },
+          "damma": {
+            "glyph": "دُ",
+            "son": "Dou",
+            "audio_id": "dal_damma"
+          },
+          "kasra": {
+            "glyph": "دِ",
+            "son": "Di",
+            "audio_id": "dal_kasra"
+          }
+        }
+      },
+      {
+        "id": "ra",
+        "glyph": "ر",
+        "name_fr": "Rā",
+        "name_ar": "راء",
+        "mnemonique_visuelle": "Le Rā ressemble au Dāl mais avec une queue qui plonge sous la ligne, comme un Roseau qui plie dans le courant.",
+        "conseil_anatomique": "R roulé : la pointe de la langue vibre contre la crête alvéolaire (comme le R espagnol ou italien). JAMAIS le R grasseyé parisien. Exercice : dire 'brrr' quand on a froid, c'est la même vibration.",
+        "audio_id": "ra",
+        "famille": "dal_dhal",
+        "connectante": false,
+        "formes_positionnelles": {
+          "isolee": "ر",
+          "debut": "ر",
+          "milieu": "ـر",
+          "fin": "ـر"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "رَ",
+            "son": "Ra",
+            "audio_id": "ra_fatha"
+          },
+          "damma": {
+            "glyph": "رُ",
+            "son": "Rou",
+            "audio_id": "ra_damma"
+          },
+          "kasra": {
+            "glyph": "رِ",
+            "son": "Ri",
+            "audio_id": "ra_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "Écoute les 9 nouveaux sons. Attention au Rā : c'est un R roulé, pas le R français !",
+      "sequence": [
+        {
+          "audio_id": "ta_fatha",
+          "label": "تَ = Ta"
+        },
+        {
+          "audio_id": "ta_damma",
+          "label": "تُ = Tou"
+        },
+        {
+          "audio_id": "ta_kasra",
+          "label": "تِ = Ti"
+        },
+        {
+          "audio_id": "dal_fatha",
+          "label": "دَ = Da"
+        },
+        {
+          "audio_id": "dal_damma",
+          "label": "دُ = Dou"
+        },
+        {
+          "audio_id": "dal_kasra",
+          "label": "دِ = Di"
+        },
+        {
+          "audio_id": "ra_fatha",
+          "label": "رَ = Ra"
+        },
+        {
+          "audio_id": "ra_damma",
+          "label": "رُ = Rou"
+        },
+        {
+          "audio_id": "ra_kasra",
+          "label": "رِ = Ri"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "ta",
+          "zone": "dents_haut",
+          "description": "La langue touche les dents du haut (T léger)"
+        },
+        {
+          "lettre_id": "dal",
+          "zone": "alveoles",
+          "description": "La langue touche la crête alvéolaire (D léger)"
+        },
+        {
+          "lettre_id": "ra",
+          "zone": "alveoles_vibration",
+          "description": "La langue VIBRE contre les alvéoles — R roulé comme en espagnol"
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Combine les nouvelles lettres avec les voyelles !",
+        "items": [
+          {
+            "lettre": "ت",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "تَ",
+            "son": "Ta",
+            "audio_id": "ta_fatha"
+          },
+          {
+            "lettre": "د",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "دُ",
+            "son": "Dou",
+            "audio_id": "dal_damma"
+          },
+          {
+            "lettre": "ر",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "رَ",
+            "son": "Ra",
+            "audio_id": "ra_fatha"
+          },
+          {
+            "lettre": "ت",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "تِ",
+            "son": "Ti",
+            "audio_id": "ta_kasra"
+          },
+          {
+            "lettre": "ر",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "رُ",
+            "son": "Rou",
+            "audio_id": "ra_damma"
+          }
+        ]
+      },
+      {
+        "type": "POINTS",
+        "prompt_fr": "La famille ب ت ث ن partage la même forme. Place les points pour former la bonne lettre !",
+        "items": [
+          {
+            "forme_base": "ٮ",
+            "cible": "ب",
+            "nom_cible": "Bā",
+            "points": 1,
+            "position": "dessous"
+          },
+          {
+            "forme_base": "ٮ",
+            "cible": "ت",
+            "nom_cible": "Tā",
+            "points": 2,
+            "position": "dessus"
+          },
+          {
+            "forme_base": "ٮ",
+            "cible": "ن",
+            "nom_cible": "Nūn",
+            "points": 1,
+            "position": "dessus"
+          },
+          {
+            "forme_base": "ٮ",
+            "cible": "ث",
+            "nom_cible": "Thā (aperçu)",
+            "points": 3,
+            "position": "dessus"
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "6 lettres apprises ! Écoute et identifie la bonne.",
+        "items": [
+          {
+            "audio_id": "ta_fatha",
+            "son": "Ta",
+            "options": [
+              "ت",
+              "د",
+              "ر",
+              "ب"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ra_fatha",
+            "son": "Ra",
+            "options": [
+              "د",
+              "ر",
+              "ن",
+              "م"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "dal_kasra",
+            "son": "Di",
+            "options": [
+              "ر",
+              "ت",
+              "د",
+              "ب"
+            ],
+            "correct": 2
+          },
+          {
+            "audio_id": "ba_damma",
+            "son": "Bou",
+            "options": [
+              "ب",
+              "ت",
+              "ن",
+              "م"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "mim_fatha",
+            "son": "Ma",
+            "options": [
+              "ن",
+              "م",
+              "ب",
+              "ر"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "nun_damma",
+            "son": "Nou",
+            "options": [
+              "م",
+              "ب",
+              "ن",
+              "ت"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "type": "CAMELEON",
+        "prompt_fr": "Le Dāl et le Rā sont des lettres 'rebelles' : elles ne se connectent jamais à gauche ! Identifie la bonne forme.",
+        "items": [
+          {
+            "lettre": "د",
+            "position": "isolee",
+            "options": [
+              "د",
+              "دـ",
+              "ـدـ",
+              "ـد"
+            ],
+            "correct": 0
+          },
+          {
+            "lettre": "ر",
+            "position": "fin",
+            "options": [
+              "ر",
+              "رـ",
+              "ـر",
+              "ـرـ"
+            ],
+            "correct": 2
+          },
+          {
+            "lettre": "ت",
+            "position": "debut",
+            "options": [
+              "ت",
+              "تـ",
+              "ـت",
+              "ـتـ"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Lis ces syllabes. Tu connais déjà 6 lettres !",
+      "items": [
+        {
+          "text": "تَ",
+          "son": "Ta",
+          "audio_id": "ta_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "مَ",
+          "son": "Ma",
+          "audio_id": "mim_fatha",
+          "delay_ms": 800
+        },
+        {
+          "text": "رَ",
+          "son": "Ra",
+          "audio_id": "ra_fatha",
+          "delay_ms": 1600
+        },
+        {
+          "text": "دَ",
+          "son": "Da",
+          "audio_id": "dal_fatha",
+          "delay_ms": 2400
+        },
+        {
+          "text": "رُ",
+          "son": "Rou",
+          "audio_id": "ra_damma",
+          "delay_ms": 3200
+        },
+        {
+          "text": "بِ",
+          "son": "Bi",
+          "audio_id": "ba_kasra",
+          "delay_ms": 4000
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L2Q1",
+        "question": "Le Tā (ت) a combien de points au-dessus ?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ],
+        "correct": 1,
+        "explanation": "Le ت a 2 points au-dessus. Le ب en a 1 dessous, le ث en a 3 dessus."
+      },
+      {
+        "id": "L2Q2",
+        "question": "Que produit رَ ?",
+        "options": [
+          "Da",
+          "Ra",
+          "Ri",
+          "Rou"
+        ],
+        "correct": 1,
+        "explanation": "رَ = Rā avec Fatha = Ra (R roulé + a)."
+      },
+      {
+        "id": "L2Q3",
+        "question": "Quelle lettre est 'non-connectante' (ne se lie pas à gauche) ?",
+        "options": [
+          "ت",
+          "م",
+          "د",
+          "ب"
+        ],
+        "correct": 2,
+        "explanation": "Le د (Dāl) est non-connectant : il ne donne jamais la main à la lettre suivante."
+      },
+      {
+        "id": "L2Q4",
+        "question": "Comment se prononce le Rā arabe ?",
+        "options": [
+          "Comme le R français",
+          "Comme un R roulé (espagnol)",
+          "Comme le L",
+          "Comme le N"
+        ],
+        "correct": 1,
+        "explanation": "Le ر est un R roulé : la pointe de la langue vibre contre le palais, comme en espagnol ou italien."
+      },
+      {
+        "id": "L2Q5",
+        "question": "Que produit تُ ?",
+        "options": [
+          "Ta",
+          "Ti",
+          "Tou",
+          "Da"
+        ],
+        "correct": 2,
+        "explanation": "La Damma donne le son 'ou'. تُ = Tou."
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL2_ta",
+        "front_ar": "ت",
+        "back_fr": "Tā — Ta/Tou/Ti",
+        "category": "Phase 1",
+        "example_ar": "تَ تُ تِ",
+        "example_fr": "Ta, Tou, Ti"
+      },
+      {
+        "id": "FL2_dal",
+        "front_ar": "د",
+        "back_fr": "Dāl — Da/Dou/Di",
+        "category": "Phase 1",
+        "example_ar": "دَ دُ دِ",
+        "example_fr": "Da, Dou, Di"
+      },
+      {
+        "id": "FL2_ra",
+        "front_ar": "ر",
+        "back_fr": "Rā — Ra/Rou/Ri",
+        "category": "Phase 1",
+        "example_ar": "رَ رُ رِ",
+        "example_fr": "Ra, Rou, Ri"
+      }
+    ]
+  },
+  "3": {
+    "lesson_number": 3,
+    "title_fr": "Les Sifflantes : Sīn, Shīn, Zāy",
+    "title_ar": "الصفيرية",
+    "phase_number": 1,
+    "phase_name": "Les Sons Familiers",
+    "objective": "3 lettres sifflantes (S, CH, Z) et un exercice d'écoute comparative pour les distinguer. 9 lettres au compteur !",
+    "letters": [
+      {
+        "id": "sin",
+        "glyph": "س",
+        "name_fr": "Sīn",
+        "name_ar": "سين",
+        "mnemonique_visuelle": "Le Sīn a trois petites dents comme un Serpent qui montre ses crocs. La ligne horizontale est le corps du serpent.",
+        "conseil_anatomique": "S sifflant identique au S français (comme dans 'sac'). L'air passe entre la langue et les alvéoles en produisant un sifflement aigu. Version légère (non emphatique, contrairement au ص).",
+        "audio_id": "sin",
+        "famille": "sin_shin",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "س",
+          "debut": "سـ",
+          "milieu": "ـسـ",
+          "fin": "ـس"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "سَ",
+            "son": "Sa",
+            "audio_id": "sin_fatha"
+          },
+          "damma": {
+            "glyph": "سُ",
+            "son": "Sou",
+            "audio_id": "sin_damma"
+          },
+          "kasra": {
+            "glyph": "سِ",
+            "son": "Si",
+            "audio_id": "sin_kasra"
+          }
+        }
+      },
+      {
+        "id": "shin",
+        "glyph": "ش",
+        "name_fr": "Shīn",
+        "name_ar": "شين",
+        "mnemonique_visuelle": "Le Shīn est comme le Sīn (le Serpent) mais avec trois points au-dessus qui forment une couronne — c'est le roi des serpents qui Chuchote.",
+        "conseil_anatomique": "Son identique au CH français (comme dans 'chat'). La langue se soulève vers le palais et l'air passe en produisant un souffle chaud. Aucune difficulté.",
+        "audio_id": "shin",
+        "famille": "sin_shin",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ش",
+          "debut": "شـ",
+          "milieu": "ـشـ",
+          "fin": "ـش"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "شَ",
+            "son": "Sha",
+            "audio_id": "shin_fatha"
+          },
+          "damma": {
+            "glyph": "شُ",
+            "son": "Shou",
+            "audio_id": "shin_damma"
+          },
+          "kasra": {
+            "glyph": "شِ",
+            "son": "Shi",
+            "audio_id": "shin_kasra"
+          }
+        }
+      },
+      {
+        "id": "zay",
+        "glyph": "ز",
+        "name_fr": "Zāy",
+        "name_ar": "زاي",
+        "mnemonique_visuelle": "Le Zāy ressemble au Rā avec un point au-dessus, comme un Zéro posé sur un toboggan.",
+        "conseil_anatomique": "Z sonore identique au Z français (comme dans 'zoo'). C'est le S mais avec vibration des cordes vocales. Posez la main sur votre gorge : vous sentez la vibration.",
+        "audio_id": "zay",
+        "famille": "dal_dhal",
+        "connectante": false,
+        "formes_positionnelles": {
+          "isolee": "ز",
+          "debut": "ز",
+          "milieu": "ـز",
+          "fin": "ـز"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "زَ",
+            "son": "Za",
+            "audio_id": "zay_fatha"
+          },
+          "damma": {
+            "glyph": "زُ",
+            "son": "Zou",
+            "audio_id": "zay_damma"
+          },
+          "kasra": {
+            "glyph": "زِ",
+            "son": "Zi",
+            "audio_id": "zay_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "Écoute ces 3 sons de près. Le Sīn siffle comme un serpent, le Shīn souffle comme le vent, le Zāy bourdonne comme un bourdon.",
+      "sequence": [
+        {
+          "audio_id": "sin_fatha",
+          "label": "سَ = Sa"
+        },
+        {
+          "audio_id": "sin_damma",
+          "label": "سُ = Sou"
+        },
+        {
+          "audio_id": "sin_kasra",
+          "label": "سِ = Si"
+        },
+        {
+          "audio_id": "shin_fatha",
+          "label": "شَ = Sha"
+        },
+        {
+          "audio_id": "shin_damma",
+          "label": "شُ = Shou"
+        },
+        {
+          "audio_id": "shin_kasra",
+          "label": "شِ = Shi"
+        },
+        {
+          "audio_id": "zay_fatha",
+          "label": "زَ = Za"
+        },
+        {
+          "audio_id": "zay_damma",
+          "label": "زُ = Zou"
+        },
+        {
+          "audio_id": "zay_kasra",
+          "label": "زِ = Zi"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "sin",
+          "zone": "dents_sifflement",
+          "description": "L'air siffle entre la langue et les alvéoles (S aigu)"
+        },
+        {
+          "lettre_id": "shin",
+          "zone": "palais_souffle",
+          "description": "La langue se soulève vers le palais (souffle chaud, comme CH)"
+        },
+        {
+          "lettre_id": "zay",
+          "zone": "dents_vibration",
+          "description": "Comme le S mais avec vibration des cordes vocales (Z sonore)"
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Fusionne les sifflantes avec les voyelles !",
+        "items": [
+          {
+            "lettre": "س",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "سَ",
+            "son": "Sa",
+            "audio_id": "sin_fatha"
+          },
+          {
+            "lettre": "ش",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "شُ",
+            "son": "Shou",
+            "audio_id": "shin_damma"
+          },
+          {
+            "lettre": "ز",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "زِ",
+            "son": "Zi",
+            "audio_id": "zay_kasra"
+          },
+          {
+            "lettre": "ش",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "شَ",
+            "son": "Sha",
+            "audio_id": "shin_fatha"
+          },
+          {
+            "lettre": "س",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "سِ",
+            "son": "Si",
+            "audio_id": "sin_kasra"
+          }
+        ]
+      },
+      {
+        "type": "ECOUTE_COMPARATIVE",
+        "prompt_fr": "Entends-tu le serpent (S) ou le vent dans les arbres (CH) ?",
+        "items": [
+          {
+            "audio_id": "sin_fatha",
+            "label": "Son 1",
+            "question": "C'est le serpent (S) ou le vent (CH) ?",
+            "options": [
+              "Serpent (س)",
+              "Vent (ش)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "shin_fatha",
+            "label": "Son 2",
+            "question": "C'est le serpent (S) ou le vent (CH) ?",
+            "options": [
+              "Serpent (س)",
+              "Vent (ش)"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "zay_fatha",
+            "label": "Son 3",
+            "question": "C'est le serpent (S) ou le bourdon (Z) ?",
+            "options": [
+              "Serpent (س)",
+              "Bourdon (ز)"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "sin_damma",
+            "label": "Son 4",
+            "question": "C'est le serpent (S) ou le bourdon (Z) ?",
+            "options": [
+              "Serpent (س)",
+              "Bourdon (ز)"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "9 lettres au compteur ! Écoute et choisis.",
+        "items": [
+          {
+            "audio_id": "shin_kasra",
+            "son": "Shi",
+            "options": [
+              "س",
+              "ش",
+              "ز",
+              "ر"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "zay_fatha",
+            "son": "Za",
+            "options": [
+              "ز",
+              "س",
+              "د",
+              "ر"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "sin_damma",
+            "son": "Sou",
+            "options": [
+              "ش",
+              "ز",
+              "س",
+              "ت"
+            ],
+            "correct": 2
+          },
+          {
+            "audio_id": "ta_kasra",
+            "son": "Ti",
+            "options": [
+              "ت",
+              "د",
+              "ر",
+              "ن"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ba_fatha",
+            "son": "Ba",
+            "options": [
+              "م",
+              "ن",
+              "ب",
+              "ت"
+            ],
+            "correct": 2
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Lis ces syllabes — tu maîtrises déjà 9 lettres !",
+      "items": [
+        {
+          "text": "سَ",
+          "son": "Sa",
+          "audio_id": "sin_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "شَ",
+          "son": "Sha",
+          "audio_id": "shin_fatha",
+          "delay_ms": 800
+        },
+        {
+          "text": "زِ",
+          "son": "Zi",
+          "audio_id": "zay_kasra",
+          "delay_ms": 1600
+        },
+        {
+          "text": "بُ",
+          "son": "Bou",
+          "audio_id": "ba_damma",
+          "delay_ms": 2400
+        },
+        {
+          "text": "رَ",
+          "son": "Ra",
+          "audio_id": "ra_fatha",
+          "delay_ms": 3200
+        },
+        {
+          "text": "نِ",
+          "son": "Ni",
+          "audio_id": "nun_kasra",
+          "delay_ms": 4000
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L3Q1",
+        "question": "Le Sīn (س) et le Shīn (ش) se distinguent comment ?",
+        "options": [
+          "Le Shīn a un point",
+          "Le Shīn a 3 points au-dessus",
+          "Le Sīn a des points",
+          "Ils sont identiques"
+        ],
+        "correct": 1,
+        "explanation": "Le ش a 3 points au-dessus du س. Le Sīn = serpent, le Shīn = serpent couronné."
+      },
+      {
+        "id": "L3Q2",
+        "question": "Le Zāy (ز) est un son...",
+        "options": [
+          "Sourd (sans vibration)",
+          "Sonore (avec vibration)",
+          "Nasal",
+          "Roulé"
+        ],
+        "correct": 1,
+        "explanation": "Le ز est la version sonore du س. Posez la main sur la gorge : elle vibre !"
+      },
+      {
+        "id": "L3Q3",
+        "question": "Que produit شُ ?",
+        "options": [
+          "Sha",
+          "Shi",
+          "Shou",
+          "Sou"
+        ],
+        "correct": 2,
+        "explanation": "شُ = Shīn + Damma = Shou."
+      },
+      {
+        "id": "L3Q4",
+        "question": "Quelle lettre est non-connectante parmi celles-ci ?",
+        "options": [
+          "س",
+          "ش",
+          "ز",
+          "م"
+        ],
+        "correct": 2,
+        "explanation": "Le ز est non-connectant (comme le ر et le د). Il ne donne pas la main à gauche."
+      },
+      {
+        "id": "L3Q5",
+        "question": "Combien de lettres as-tu apprises jusqu'ici ?",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "correct": 3,
+        "explanation": "L1: ب م ن (3) + L2: ت د ر (3) + L3: س ش ز (3) = 9 lettres !"
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL3_sin",
+        "front_ar": "س",
+        "back_fr": "Sīn — Sa/Sou/Si",
+        "category": "Phase 1",
+        "example_ar": "سَ سُ سِ",
+        "example_fr": "Sa, Sou, Si"
+      },
+      {
+        "id": "FL3_shin",
+        "front_ar": "ش",
+        "back_fr": "Shīn — Sha/Shou/Shi",
+        "category": "Phase 1",
+        "example_ar": "شَ شُ شِ",
+        "example_fr": "Sha, Shou, Shi"
+      },
+      {
+        "id": "FL3_zay",
+        "front_ar": "ز",
+        "back_fr": "Zāy — Za/Zou/Zi",
+        "category": "Phase 1",
+        "example_ar": "زَ زُ زِ",
+        "example_fr": "Za, Zou, Zi"
+      }
+    ]
+  },
+  "4": {
+    "lesson_number": 4,
+    "title_fr": "Les Explorateurs : Fā, Kāf, Lām",
+    "title_ar": "المستكشفون",
+    "phase_number": 1,
+    "phase_name": "Les Sons Familiers",
+    "objective": "3 nouvelles lettres (F, K, L) et ton premier défi lecture : lire des mots de 2 syllabes en mode Karaoké !",
+    "letters": [
+      {
+        "id": "fa",
+        "glyph": "ف",
+        "name_fr": "Fā",
+        "name_ar": "فاء",
+        "mnemonique_visuelle": "Le Fā ressemble à une spirale avec un point au-dessus, comme une Fleur vue de côté dont la tige s'enroule.",
+        "conseil_anatomique": "F identique au français : les dents du haut touchent la lèvre inférieure, l'air s'échappe en frottant. Son labiodental sourd.",
+        "audio_id": "fa",
+        "famille": "fa_qaf",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ف",
+          "debut": "فـ",
+          "milieu": "ـفـ",
+          "fin": "ـف"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "فَ",
+            "son": "Fa",
+            "audio_id": "fa_fatha"
+          },
+          "damma": {
+            "glyph": "فُ",
+            "son": "Fou",
+            "audio_id": "fa_damma"
+          },
+          "kasra": {
+            "glyph": "فِ",
+            "son": "Fi",
+            "audio_id": "fa_kasra"
+          }
+        }
+      },
+      {
+        "id": "kaf",
+        "glyph": "ك",
+        "name_fr": "Kāf",
+        "name_ar": "كاف",
+        "mnemonique_visuelle": "Le Kāf ressemble à une main ouverte qui frappe — le K est un son percussif, comme un 'Clap'.",
+        "conseil_anatomique": "K identique au français (comme dans 'kayak'). Le dos de la langue touche le palais dur puis se relâche. Version légère (le ق se fait à la luette, beaucoup plus profond).",
+        "audio_id": "kaf",
+        "famille": "fa_qaf",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ك",
+          "debut": "كـ",
+          "milieu": "ـكـ",
+          "fin": "ـك"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "كَ",
+            "son": "Ka",
+            "audio_id": "kaf_fatha"
+          },
+          "damma": {
+            "glyph": "كُ",
+            "son": "Kou",
+            "audio_id": "kaf_damma"
+          },
+          "kasra": {
+            "glyph": "كِ",
+            "son": "Ki",
+            "audio_id": "kaf_kasra"
+          }
+        }
+      },
+      {
+        "id": "lam",
+        "glyph": "ل",
+        "name_fr": "Lām",
+        "name_ar": "لام",
+        "mnemonique_visuelle": "Le Lām est une grande boucle élégante qui monte vers le ciel, comme un Lasso lancé en l'air.",
+        "conseil_anatomique": "L identique au français : la pointe de la langue touche la crête alvéolaire et l'air s'échappe sur les côtés. Son latéral sans difficulté.",
+        "audio_id": "lam",
+        "famille": "lam",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ل",
+          "debut": "لـ",
+          "milieu": "ـلـ",
+          "fin": "ـل"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "لَ",
+            "son": "La",
+            "audio_id": "lam_fatha"
+          },
+          "damma": {
+            "glyph": "لُ",
+            "son": "Lou",
+            "audio_id": "lam_damma"
+          },
+          "kasra": {
+            "glyph": "لِ",
+            "son": "Li",
+            "audio_id": "lam_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "Écoute les 9 sons. Ces lettres sont faciles — elles se prononcent comme en français !",
+      "sequence": [
+        {
+          "audio_id": "fa_fatha",
+          "label": "فَ = Fa"
+        },
+        {
+          "audio_id": "fa_damma",
+          "label": "فُ = Fou"
+        },
+        {
+          "audio_id": "fa_kasra",
+          "label": "فِ = Fi"
+        },
+        {
+          "audio_id": "kaf_fatha",
+          "label": "كَ = Ka"
+        },
+        {
+          "audio_id": "kaf_damma",
+          "label": "كُ = Kou"
+        },
+        {
+          "audio_id": "kaf_kasra",
+          "label": "كِ = Ki"
+        },
+        {
+          "audio_id": "lam_fatha",
+          "label": "لَ = La"
+        },
+        {
+          "audio_id": "lam_damma",
+          "label": "لُ = Lou"
+        },
+        {
+          "audio_id": "lam_kasra",
+          "label": "لِ = Li"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "fa",
+          "zone": "dents_levre",
+          "description": "Les dents du haut touchent la lèvre inférieure (F labiodental)"
+        },
+        {
+          "lettre_id": "kaf",
+          "zone": "palais",
+          "description": "Le dos de la langue touche le palais dur (K léger)"
+        },
+        {
+          "lettre_id": "lam",
+          "zone": "alveoles_lateral",
+          "description": "La langue touche les alvéoles, l'air passe sur les côtés (L latéral)"
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Les 3 nouvelles lettres dans le Laboratoire de Fusion !",
+        "items": [
+          {
+            "lettre": "ف",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "فَ",
+            "son": "Fa",
+            "audio_id": "fa_fatha"
+          },
+          {
+            "lettre": "ك",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "كُ",
+            "son": "Kou",
+            "audio_id": "kaf_damma"
+          },
+          {
+            "lettre": "ل",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "لِ",
+            "son": "Li",
+            "audio_id": "lam_kasra"
+          },
+          {
+            "lettre": "ف",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "فِ",
+            "son": "Fi",
+            "audio_id": "fa_kasra"
+          },
+          {
+            "lettre": "ك",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "كَ",
+            "son": "Ka",
+            "audio_id": "kaf_fatha"
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "12 lettres ! Retrouve la bonne parmi toutes celles apprises.",
+        "items": [
+          {
+            "audio_id": "fa_fatha",
+            "son": "Fa",
+            "options": [
+              "ف",
+              "ك",
+              "ل",
+              "ب"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "kaf_kasra",
+            "son": "Ki",
+            "options": [
+              "ل",
+              "ك",
+              "ت",
+              "ف"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "lam_damma",
+            "son": "Lou",
+            "options": [
+              "ن",
+              "م",
+              "ل",
+              "ر"
+            ],
+            "correct": 2
+          },
+          {
+            "audio_id": "shin_fatha",
+            "son": "Sha",
+            "options": [
+              "س",
+              "ز",
+              "ش",
+              "ف"
+            ],
+            "correct": 2
+          },
+          {
+            "audio_id": "dal_fatha",
+            "son": "Da",
+            "options": [
+              "ر",
+              "د",
+              "ت",
+              "ن"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "type": "COMPLETER_SYLLABE",
+        "prompt_fr": "Mélange des 12 lettres — choisis la bonne voyelle !",
+        "items": [
+          {
+            "lettre": "ف",
+            "son_cible": "Fou",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 1
+          },
+          {
+            "lettre": "ل",
+            "son_cible": "La",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 0
+          },
+          {
+            "lettre": "ك",
+            "son_cible": "Ki",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 2
+          },
+          {
+            "lettre": "س",
+            "son_cible": "Sa",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 0
+          },
+          {
+            "lettre": "ر",
+            "son_cible": "Rou",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Tes premiers vrais mots arabes ! Suis les syllabes qui s'allument.",
+      "items": [
+        {
+          "text": "فَ",
+          "son": "Fa",
+          "audio_id": "fa_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "مُ",
+          "son": "Mou",
+          "audio_id": "mim_damma",
+          "delay_ms": 700
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1800
+        },
+        {
+          "text": "كَ",
+          "son": "Ka",
+          "audio_id": "kaf_fatha",
+          "delay_ms": 2200
+        },
+        {
+          "text": "لَ",
+          "son": "La",
+          "audio_id": "lam_fatha",
+          "delay_ms": 2900
+        },
+        {
+          "text": "مَ",
+          "son": "Ma",
+          "audio_id": "mim_fatha",
+          "delay_ms": 3600
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L4Q1",
+        "question": "Que lit-on quand on combine فَ + مُ ?",
+        "options": [
+          "Famou",
+          "Koula",
+          "Firmi",
+          "Bani"
+        ],
+        "correct": 0,
+        "explanation": "فَمُ se lit 'Fa-Mou', qui signifie 'bouche' en arabe !"
+      },
+      {
+        "id": "L4Q2",
+        "question": "Quel son fait le Kāf (ك) ?",
+        "options": [
+          "G",
+          "K",
+          "Q",
+          "L"
+        ],
+        "correct": 1,
+        "explanation": "Le ك fait le son K (comme dans 'kayak'). Le ق est le K profond."
+      },
+      {
+        "id": "L4Q3",
+        "question": "Quelle lettre ressemble à un Lasso ?",
+        "options": [
+          "ف",
+          "ك",
+          "ل",
+          "د"
+        ],
+        "correct": 2,
+        "explanation": "Le ل (Lām) monte en boucle comme un lasso lancé en l'air."
+      },
+      {
+        "id": "L4Q4",
+        "question": "Que produit لُ ?",
+        "options": [
+          "La",
+          "Li",
+          "Lou",
+          "Fa"
+        ],
+        "correct": 2,
+        "explanation": "لُ = Lām + Damma = Lou."
+      },
+      {
+        "id": "L4Q5",
+        "question": "Combien de lettres as-tu apprises au total ?",
+        "options": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "correct": 3,
+        "explanation": "3+3+3+3 = 12 lettres ! Plus que 4 pour finir la Phase 1."
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL4_fa",
+        "front_ar": "ف",
+        "back_fr": "Fā — Fa/Fou/Fi",
+        "category": "Phase 1",
+        "example_ar": "فَ فُ فِ",
+        "example_fr": "Fa, Fou, Fi"
+      },
+      {
+        "id": "FL4_kaf",
+        "front_ar": "ك",
+        "back_fr": "Kāf — Ka/Kou/Ki",
+        "category": "Phase 1",
+        "example_ar": "كَ كُ كِ",
+        "example_fr": "Ka, Kou, Ki"
+      },
+      {
+        "id": "FL4_lam",
+        "front_ar": "ل",
+        "back_fr": "Lām — La/Lou/Li",
+        "category": "Phase 1",
+        "example_ar": "لَ لُ لِ",
+        "example_fr": "La, Lou, Li"
+      }
+    ]
+  },
+  "5": {
+    "lesson_number": 5,
+    "title_fr": "Les Supports : Wāw, Yā, Alif",
+    "title_ar": "الحروف الداعمة",
+    "phase_number": 1,
+    "phase_name": "Les Sons Familiers",
+    "objective": "Les 3 dernières lettres de Phase 1 — ce sont aussi les supports des voyelles longues ! Récap de 16 lettres pour le Boss Quiz.",
+    "letters": [
+      {
+        "id": "waw",
+        "glyph": "و",
+        "name_fr": "Wāw",
+        "name_ar": "واو",
+        "mnemonique_visuelle": "Le Wāw ressemble à un petit 'o' avec une queue — comme le chiffre 9 retourné. Il porte le son 'Ou' qu'il produit quand il est support vocalique.",
+        "conseil_anatomique": "W comme dans 'oui' en français. Les lèvres s'arrondissent en formant un petit cercle. Aussi utilisé comme support pour la voyelle longue 'ū' (ou prolongé).",
+        "audio_id": "waw",
+        "famille": "waw",
+        "connectante": false,
+        "formes_positionnelles": {
+          "isolee": "و",
+          "debut": "و",
+          "milieu": "ـو",
+          "fin": "ـو"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "وَ",
+            "son": "Wa",
+            "audio_id": "waw_fatha"
+          },
+          "damma": {
+            "glyph": "وُ",
+            "son": "Wou",
+            "audio_id": "waw_damma"
+          },
+          "kasra": {
+            "glyph": "وِ",
+            "son": "Wi",
+            "audio_id": "waw_kasra"
+          }
+        }
+      },
+      {
+        "id": "ya",
+        "glyph": "ي",
+        "name_fr": "Yā",
+        "name_ar": "ياء",
+        "mnemonique_visuelle": "Le Yā ressemble à un bras qui se tend vers la droite avec deux points en dessous — il dit 'Yes !' en pointant du doigt.",
+        "conseil_anatomique": "Y comme dans 'yeux' en français. La langue se rapproche du palais sans le toucher. Aussi support pour la voyelle longue 'ī' (i prolongé).",
+        "audio_id": "ya",
+        "famille": "ba_ta_tha",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ي",
+          "debut": "يـ",
+          "milieu": "ـيـ",
+          "fin": "ـي"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "يَ",
+            "son": "Ya",
+            "audio_id": "ya_fatha"
+          },
+          "damma": {
+            "glyph": "يُ",
+            "son": "You",
+            "audio_id": "ya_damma"
+          },
+          "kasra": {
+            "glyph": "يِ",
+            "son": "Yi",
+            "audio_id": "ya_kasra"
+          }
+        }
+      },
+      {
+        "id": "alif",
+        "glyph": "ا",
+        "name_fr": "Alif",
+        "name_ar": "ألف",
+        "mnemonique_visuelle": "L'Alif est un trait vertical droit et fier, comme un bâton planté dans le sol — c'est le pilier de l'alphabet, la première lettre.",
+        "conseil_anatomique": "L'Alif n'est pas une consonne à proprement parler : c'est un support vocalique. Seul, il porte le son 'A' long. Avec une hamza (أ), il porte un coup de glotte (comme le début de 'ah !').",
+        "audio_id": "alif",
+        "famille": "alif",
+        "connectante": false,
+        "formes_positionnelles": {
+          "isolee": "ا",
+          "debut": "ا",
+          "milieu": "ـا",
+          "fin": "ـا"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "اَ",
+            "son": "A",
+            "audio_id": "alif_fatha"
+          },
+          "damma": {
+            "glyph": "اُ",
+            "son": "Ou",
+            "audio_id": "alif_damma"
+          },
+          "kasra": {
+            "glyph": "اِ",
+            "son": "I",
+            "audio_id": "alif_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "Ces 3 lettres sont spéciales : elles servent aussi de support pour allonger les voyelles. Écoute leurs sons.",
+      "sequence": [
+        {
+          "audio_id": "waw_fatha",
+          "label": "وَ = Wa"
+        },
+        {
+          "audio_id": "waw_damma",
+          "label": "وُ = Wou"
+        },
+        {
+          "audio_id": "waw_kasra",
+          "label": "وِ = Wi"
+        },
+        {
+          "audio_id": "ya_fatha",
+          "label": "يَ = Ya"
+        },
+        {
+          "audio_id": "ya_damma",
+          "label": "يُ = You"
+        },
+        {
+          "audio_id": "ya_kasra",
+          "label": "يِ = Yi"
+        },
+        {
+          "audio_id": "alif_fatha",
+          "label": "اَ = A"
+        },
+        {
+          "audio_id": "alif_damma",
+          "label": "اُ = Ou"
+        },
+        {
+          "audio_id": "alif_kasra",
+          "label": "اِ = I"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "waw",
+          "zone": "levres_arrondies",
+          "description": "Les lèvres s'arrondissent (comme pour dire 'Oui')"
+        },
+        {
+          "lettre_id": "ya",
+          "zone": "palais_rapprochement",
+          "description": "La langue se rapproche du palais sans le toucher (Y de 'yeux')"
+        },
+        {
+          "lettre_id": "alif",
+          "zone": "glotte",
+          "description": "Support vocalique — pas de son propre, porte la voyelle"
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Les supports vocaliques dans le Laboratoire de Fusion !",
+        "items": [
+          {
+            "lettre": "و",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "وَ",
+            "son": "Wa",
+            "audio_id": "waw_fatha"
+          },
+          {
+            "lettre": "ي",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "يَ",
+            "son": "Ya",
+            "audio_id": "ya_fatha"
+          },
+          {
+            "lettre": "و",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "وِ",
+            "son": "Wi",
+            "audio_id": "waw_kasra"
+          },
+          {
+            "lettre": "ي",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "يُ",
+            "son": "You",
+            "audio_id": "ya_damma"
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "Grand récap : 16 lettres ! Identifie la bonne.",
+        "items": [
+          {
+            "audio_id": "waw_fatha",
+            "son": "Wa",
+            "options": [
+              "و",
+              "ي",
+              "ا",
+              "ل"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ya_kasra",
+            "son": "Yi",
+            "options": [
+              "و",
+              "ب",
+              "ي",
+              "ن"
+            ],
+            "correct": 2
+          },
+          {
+            "audio_id": "fa_damma",
+            "son": "Fou",
+            "options": [
+              "ف",
+              "ك",
+              "ل",
+              "و"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "sin_kasra",
+            "son": "Si",
+            "options": [
+              "ش",
+              "ز",
+              "س",
+              "ت"
+            ],
+            "correct": 2
+          },
+          {
+            "audio_id": "ra_damma",
+            "son": "Rou",
+            "options": [
+              "ر",
+              "ز",
+              "د",
+              "ن"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "mim_fatha",
+            "son": "Ma",
+            "options": [
+              "ن",
+              "م",
+              "ب",
+              "ت"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "Classe ces lettres : Connectantes ou Non-connectantes ?",
+        "categories": [
+          "Connectantes",
+          "Non-connectantes"
+        ],
+        "items": [
+          {
+            "word": "ب",
+            "category": "Connectantes"
+          },
+          {
+            "word": "د",
+            "category": "Non-connectantes"
+          },
+          {
+            "word": "ر",
+            "category": "Non-connectantes"
+          },
+          {
+            "word": "س",
+            "category": "Connectantes"
+          },
+          {
+            "word": "و",
+            "category": "Non-connectantes"
+          },
+          {
+            "word": "ز",
+            "category": "Non-connectantes"
+          },
+          {
+            "word": "ل",
+            "category": "Connectantes"
+          },
+          {
+            "word": "ا",
+            "category": "Non-connectantes"
+          }
+        ]
+      },
+      {
+        "type": "MUR_INVISIBLE",
+        "prompt_fr": "Les lettres 'Rebelles' ne donnent jamais la main à gauche ! Identifie-les.",
+        "items": [
+          {
+            "lettre": "و",
+            "connectante": false,
+            "animation": "rebond"
+          },
+          {
+            "lettre": "ي",
+            "connectante": true,
+            "animation": "connexion"
+          },
+          {
+            "lettre": "ا",
+            "connectante": false,
+            "animation": "rebond"
+          },
+          {
+            "lettre": "د",
+            "connectante": false,
+            "animation": "rebond"
+          },
+          {
+            "lettre": "ب",
+            "connectante": true,
+            "animation": "connexion"
+          },
+          {
+            "lettre": "ر",
+            "connectante": false,
+            "animation": "rebond"
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Tes premiers vrais mots avec les 16 lettres apprises !",
+      "items": [
+        {
+          "text": "وَ",
+          "son": "Wa",
+          "audio_id": "waw_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "لَ",
+          "son": "La",
+          "audio_id": "lam_fatha",
+          "delay_ms": 700
+        },
+        {
+          "text": "دَ",
+          "son": "Da",
+          "audio_id": "dal_fatha",
+          "delay_ms": 1400
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 2200
+        },
+        {
+          "text": "يَ",
+          "son": "Ya",
+          "audio_id": "ya_fatha",
+          "delay_ms": 2800
+        },
+        {
+          "text": "دُ",
+          "son": "Dou",
+          "audio_id": "dal_damma",
+          "delay_ms": 3500
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L5Q1",
+        "question": "Le Wāw (و) sert aussi de support pour quelle voyelle longue ?",
+        "options": [
+          "A long (ā)",
+          "Ou long (ū)",
+          "I long (ī)",
+          "Aucune"
+        ],
+        "correct": 1,
+        "explanation": "Le و porte la voyelle longue 'ū' (ou prolongé). L'Alif porte 'ā', le Yā porte 'ī'."
+      },
+      {
+        "id": "L5Q2",
+        "question": "L'Alif (ا) est-il connectant ?",
+        "options": [
+          "Oui",
+          "Non"
+        ],
+        "correct": 1,
+        "explanation": "L'Alif est non-connectant. Il ne se lie jamais à la lettre suivante."
+      },
+      {
+        "id": "L5Q3",
+        "question": "Que produit يَ ?",
+        "options": [
+          "Wi",
+          "You",
+          "Ya",
+          "Yi"
+        ],
+        "correct": 2,
+        "explanation": "يَ = Yā + Fatha = Ya."
+      },
+      {
+        "id": "L5Q4",
+        "question": "Combien de lettres non-connectantes as-tu apprises ?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "correct": 2,
+        "explanation": "د ر ز و ا = 5 lettres non-connectantes sur les 16 apprises."
+      },
+      {
+        "id": "L5Q5",
+        "question": "Combien de lettres maîtrises-tu maintenant ?",
+        "options": [
+          "12",
+          "14",
+          "15",
+          "16"
+        ],
+        "correct": 3,
+        "explanation": "Phase 1 complète : 3+3+3+3+3 = 15 lettres + le Alif = 16 !"
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL5_waw",
+        "front_ar": "و",
+        "back_fr": "Wāw — Wa/Wou/Wi",
+        "category": "Phase 1",
+        "example_ar": "وَ وُ وِ",
+        "example_fr": "Wa, Wou, Wi"
+      },
+      {
+        "id": "FL5_ya",
+        "front_ar": "ي",
+        "back_fr": "Yā — Ya/You/Yi",
+        "category": "Phase 1",
+        "example_ar": "يَ يُ يِ",
+        "example_fr": "Ya, You, Yi"
+      },
+      {
+        "id": "FL5_alif",
+        "front_ar": "ا",
+        "back_fr": "Alif — A/Ou/I",
+        "category": "Phase 1",
+        "example_ar": "اَ اُ اِ",
+        "example_fr": "A, Ou, I"
+      }
+    ]
+  },
+  "6": {
+    "lesson_number": 6,
+    "title_fr": "Langue entre les dents : Thā, Dhāl",
+    "title_ar": "بين الأسنان",
+    "phase_number": 2,
+    "phase_name": "Les Sons Nouveaux",
+    "objective": "2 lettres avec un son qui n'existe pas en français : le TH anglais ! Plus l'introduction du Soukoun (absence de voyelle).",
+    "letters": [
+      {
+        "id": "tha",
+        "glyph": "ث",
+        "name_fr": "Thā",
+        "name_ar": "ثاء",
+        "mnemonique_visuelle": "Le Thā est le troisième frère du Bateau (ب ت ث) avec trois points au-dessus, comme trois étoiles dans le ciel nocturne au-dessus du navire.",
+        "conseil_anatomique": "TH sourd anglais (comme dans 'think'). Placez la pointe de la langue ENTRE les dents du haut et du bas, puis soufflez doucement. L'air frotte contre la langue. Ne dites PAS 'S' — la langue doit être visible entre les dents.",
+        "audio_id": "tha",
+        "famille": "ba_ta_tha",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ث",
+          "debut": "ثـ",
+          "milieu": "ـثـ",
+          "fin": "ـث"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "ثَ",
+            "son": "Tha",
+            "audio_id": "tha_fatha"
+          },
+          "damma": {
+            "glyph": "ثُ",
+            "son": "Thou",
+            "audio_id": "tha_damma"
+          },
+          "kasra": {
+            "glyph": "ثِ",
+            "son": "Thi",
+            "audio_id": "tha_kasra"
+          }
+        }
+      },
+      {
+        "id": "dhal",
+        "glyph": "ذ",
+        "name_fr": "Dhāl",
+        "name_ar": "ذال",
+        "mnemonique_visuelle": "Le Dhāl ressemble au Dāl (la Dune) avec un point au-dessus, comme un petit drapeau planté au sommet de la dune.",
+        "conseil_anatomique": "TH sonore anglais (comme dans 'the', 'this'). Même position que le ث (langue entre les dents) MAIS avec vibration des cordes vocales. Posez la main sur la gorge : vous devez sentir la vibration.",
+        "audio_id": "dhal",
+        "famille": "dal_dhal",
+        "connectante": false,
+        "formes_positionnelles": {
+          "isolee": "ذ",
+          "debut": "ذ",
+          "milieu": "ـذ",
+          "fin": "ـذ"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "ذَ",
+            "son": "Dha",
+            "audio_id": "dhal_fatha"
+          },
+          "damma": {
+            "glyph": "ذُ",
+            "son": "Dhou",
+            "audio_id": "dhal_damma"
+          },
+          "kasra": {
+            "glyph": "ذِ",
+            "son": "Dhi",
+            "audio_id": "dhal_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "Attention : ces sons n'existent pas en français ! Place ta langue ENTRE tes dents et souffle. Écoute bien la différence entre le ث (sourd) et le ذ (sonore).",
+      "sequence": [
+        {
+          "audio_id": "tha_fatha",
+          "label": "ثَ = Tha"
+        },
+        {
+          "audio_id": "tha_damma",
+          "label": "ثُ = Thou"
+        },
+        {
+          "audio_id": "tha_kasra",
+          "label": "ثِ = Thi"
+        },
+        {
+          "audio_id": "dhal_fatha",
+          "label": "ذَ = Dha"
+        },
+        {
+          "audio_id": "dhal_damma",
+          "label": "ذُ = Dhou"
+        },
+        {
+          "audio_id": "dhal_kasra",
+          "label": "ذِ = Dhi"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "tha",
+          "zone": "langue_entre_dents",
+          "description": "Langue entre les dents, souffle SANS vibration (comme 'think' en anglais)"
+        },
+        {
+          "lettre_id": "dhal",
+          "zone": "langue_entre_dents_vibrante",
+          "description": "Même position mais AVEC vibration des cordes vocales (comme 'the' en anglais)"
+        }
+      ],
+      "harakat_intro": {
+        "nom": "Soukoun",
+        "symbole": "ْ",
+        "description": "Le Soukoun (petit cercle au-dessus) signifie l'ABSENCE de voyelle. La consonne est muette, elle ferme la syllabe. Exemple : بَابْ (bāb) — le dernier ب n'a pas de voyelle.",
+        "exemple": {
+          "text": "بَابْ",
+          "transcription": "bāb",
+          "traduction": "porte"
+        }
+      }
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Les sons 'TH' dans le Laboratoire de Fusion !",
+        "items": [
+          {
+            "lettre": "ث",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "ثَ",
+            "son": "Tha",
+            "audio_id": "tha_fatha"
+          },
+          {
+            "lettre": "ذ",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "ذَ",
+            "son": "Dha",
+            "audio_id": "dhal_fatha"
+          },
+          {
+            "lettre": "ث",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "ثُ",
+            "son": "Thou",
+            "audio_id": "tha_damma"
+          },
+          {
+            "lettre": "ذ",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "ذِ",
+            "son": "Dhi",
+            "audio_id": "dhal_kasra"
+          }
+        ]
+      },
+      {
+        "type": "ECOUTE_COMPARATIVE",
+        "prompt_fr": "Paires minimales : ث vs س, ذ vs ز — même famille, sons différents !",
+        "items": [
+          {
+            "audio_id": "tha_fatha",
+            "label": "Son A",
+            "question": "C'est ث (langue entre les dents) ou س (sifflement) ?",
+            "options": [
+              "ث (entre les dents)",
+              "س (sifflement)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "sin_fatha",
+            "label": "Son B",
+            "question": "C'est ث (entre les dents) ou س (sifflement) ?",
+            "options": [
+              "ث (entre les dents)",
+              "س (sifflement)"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "dhal_fatha",
+            "label": "Son C",
+            "question": "C'est ذ (entre les dents, sonore) ou ز (bourdon) ?",
+            "options": [
+              "ذ (entre les dents)",
+              "ز (bourdon)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "zay_fatha",
+            "label": "Son D",
+            "question": "C'est ذ (entre les dents, sonore) ou ز (bourdon) ?",
+            "options": [
+              "ذ (entre les dents)",
+              "ز (bourdon)"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "Distingue les 18 lettres apprises !",
+        "items": [
+          {
+            "audio_id": "tha_kasra",
+            "son": "Thi",
+            "options": [
+              "ث",
+              "ت",
+              "ذ",
+              "س"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "dhal_damma",
+            "son": "Dhou",
+            "options": [
+              "د",
+              "ذ",
+              "ز",
+              "ر"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "ba_fatha",
+            "son": "Ba",
+            "options": [
+              "ب",
+              "ت",
+              "ث",
+              "ن"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "kaf_fatha",
+            "son": "Ka",
+            "options": [
+              "ك",
+              "ل",
+              "ف",
+              "ت"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Lis ces mots avec le Soukoun — la dernière consonne est muette !",
+      "items": [
+        {
+          "text": "ثَ",
+          "son": "Tha",
+          "audio_id": "tha_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "لَ",
+          "son": "La",
+          "audio_id": "lam_fatha",
+          "delay_ms": 600
+        },
+        {
+          "text": "ثْ",
+          "son": "(muet)",
+          "audio_id": "tha_soukoun",
+          "delay_ms": 1200
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1800
+        },
+        {
+          "text": "ذَ",
+          "son": "Dha",
+          "audio_id": "dhal_fatha",
+          "delay_ms": 2400
+        },
+        {
+          "text": "هَ",
+          "son": "Ha",
+          "audio_id": "ha_light_fatha",
+          "delay_ms": 3000
+        },
+        {
+          "text": "بَ",
+          "son": "Ba",
+          "audio_id": "ba_fatha",
+          "delay_ms": 3600
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L6Q1",
+        "question": "Comment prononce-t-on le ث ?",
+        "options": [
+          "Comme le T français",
+          "Comme le TH anglais de 'think'",
+          "Comme le S français",
+          "Comme le D français"
+        ],
+        "correct": 1,
+        "explanation": "Le ث se prononce en plaçant la langue entre les dents et en soufflant, comme le TH de 'think'."
+      },
+      {
+        "id": "L6Q2",
+        "question": "Quelle est la différence entre ث et ذ ?",
+        "options": [
+          "La forme",
+          "Le nombre de points",
+          "La vibration des cordes vocales",
+          "Aucune"
+        ],
+        "correct": 2,
+        "explanation": "Le ث est sourd (sans vibration) et le ذ est sonore (avec vibration). Même position de la langue."
+      },
+      {
+        "id": "L6Q3",
+        "question": "Que signifie le Soukoun (ْ) ?",
+        "options": [
+          "Voyelle 'a'",
+          "Voyelle 'ou'",
+          "Absence de voyelle",
+          "Voyelle longue"
+        ],
+        "correct": 2,
+        "explanation": "Le Soukoun indique que la consonne n'a PAS de voyelle. Elle est muette et ferme la syllabe."
+      },
+      {
+        "id": "L6Q4",
+        "question": "Le ذ est-il connectant ?",
+        "options": [
+          "Oui",
+          "Non"
+        ],
+        "correct": 1,
+        "explanation": "Le ذ est non-connectant (comme le د dont il dérive). Il ne se lie pas à gauche."
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL6_tha",
+        "front_ar": "ث",
+        "back_fr": "Thā — Tha/Thou/Thi",
+        "category": "Phase 2",
+        "example_ar": "ثَ ثُ ثِ",
+        "example_fr": "Tha, Thou, Thi"
+      },
+      {
+        "id": "FL6_dhal",
+        "front_ar": "ذ",
+        "back_fr": "Dhāl — Dha/Dhou/Dhi",
+        "category": "Phase 2",
+        "example_ar": "ذَ ذُ ذِ",
+        "example_fr": "Dha, Dhou, Dhi"
+      }
+    ]
+  },
+  "7": {
+    "lesson_number": 7,
+    "title_fr": "Le Crochet et le Souffle : Jīm, Hā",
+    "title_ar": "الخطاف والنفس",
+    "phase_number": 2,
+    "phase_name": "Les Sons Nouveaux",
+    "objective": "2 nouvelles lettres : le Jīm (DJ) et le Hā léger (souffle chaud). Lecture de mots avec soukoun !",
+    "letters": [
+      {
+        "id": "jim",
+        "glyph": "ج",
+        "name_fr": "Jīm",
+        "name_ar": "جيم",
+        "mnemonique_visuelle": "Le Jīm ressemble à un hameçon avec un point au milieu — il attrape les sons comme un pêcheur attrape un poisson.",
+        "conseil_anatomique": "DJ comme dans 'Djibouti' ou le J anglais de 'jungle'. La langue touche le palais puis se relâche en produisant une friction. Plus fort que le J français (qui est 'JH').",
+        "audio_id": "jim",
+        "famille": "jim_ha_kha",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ج",
+          "debut": "جـ",
+          "milieu": "ـجـ",
+          "fin": "ـج"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "جَ",
+            "son": "Dja",
+            "audio_id": "jim_fatha"
+          },
+          "damma": {
+            "glyph": "جُ",
+            "son": "Djou",
+            "audio_id": "jim_damma"
+          },
+          "kasra": {
+            "glyph": "جِ",
+            "son": "Dji",
+            "audio_id": "jim_kasra"
+          }
+        }
+      },
+      {
+        "id": "ha_light",
+        "glyph": "ه",
+        "name_fr": "Hā",
+        "name_ar": "هاء",
+        "mnemonique_visuelle": "Le Hā ressemble à deux petits cercles empilés, comme les lunettes d'un sage — il fait le son du souffle chaud 'H' qu'on utilise pour nettoyer ses lunettes.",
+        "conseil_anatomique": "H expiré léger, comme quand on souffle sur une vitre pour faire de la buée, ou le H de 'hello' en anglais. Pas de friction dans la gorge (ça c'est le ح). C'est le H le plus facile.",
+        "audio_id": "ha_light",
+        "famille": "ha",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ه",
+          "debut": "هـ",
+          "milieu": "ـهـ",
+          "fin": "ـه"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "هَ",
+            "son": "Ha",
+            "audio_id": "ha_light_fatha"
+          },
+          "damma": {
+            "glyph": "هُ",
+            "son": "Hou",
+            "audio_id": "ha_light_damma"
+          },
+          "kasra": {
+            "glyph": "هِ",
+            "son": "Hi",
+            "audio_id": "ha_light_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "Le Jīm est un DJ fort. Le Hā est un souffle léger comme quand tu souffles sur une vitre. Écoute bien !",
+      "sequence": [
+        {
+          "audio_id": "jim_fatha",
+          "label": "جَ = Dja"
+        },
+        {
+          "audio_id": "jim_damma",
+          "label": "جُ = Djou"
+        },
+        {
+          "audio_id": "jim_kasra",
+          "label": "جِ = Dji"
+        },
+        {
+          "audio_id": "ha_light_fatha",
+          "label": "هَ = Ha"
+        },
+        {
+          "audio_id": "ha_light_damma",
+          "label": "هُ = Hou"
+        },
+        {
+          "audio_id": "ha_light_kasra",
+          "label": "هِ = Hi"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "jim",
+          "zone": "palais_friction",
+          "description": "La langue touche le palais puis se relâche avec friction (DJ, comme 'Djibouti')"
+        },
+        {
+          "lettre_id": "ha_light",
+          "zone": "glotte_souffle",
+          "description": "Souffle léger depuis la glotte — comme buée sur une vitre. PAS de friction dans la gorge."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Le Crochet et le Souffle dans le Labo !",
+        "items": [
+          {
+            "lettre": "ج",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "جَ",
+            "son": "Dja",
+            "audio_id": "jim_fatha"
+          },
+          {
+            "lettre": "ه",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "هَ",
+            "son": "Ha",
+            "audio_id": "ha_light_fatha"
+          },
+          {
+            "lettre": "ج",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "جُ",
+            "son": "Djou",
+            "audio_id": "jim_damma"
+          },
+          {
+            "lettre": "ه",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "هِ",
+            "son": "Hi",
+            "audio_id": "ha_light_kasra"
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "20 lettres au compteur ! Identifie le son.",
+        "items": [
+          {
+            "audio_id": "jim_fatha",
+            "son": "Dja",
+            "options": [
+              "ج",
+              "ز",
+              "ش",
+              "د"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ha_light_damma",
+            "son": "Hou",
+            "options": [
+              "ه",
+              "و",
+              "ي",
+              "ا"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "tha_fatha",
+            "son": "Tha",
+            "options": [
+              "ت",
+              "ث",
+              "ذ",
+              "س"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "lam_kasra",
+            "son": "Li",
+            "options": [
+              "ل",
+              "ن",
+              "ب",
+              "ي"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "type": "COMPLETER_SYLLABE",
+        "prompt_fr": "Choisis la bonne voyelle !",
+        "items": [
+          {
+            "lettre": "ج",
+            "son_cible": "Dji",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 2
+          },
+          {
+            "lettre": "ه",
+            "son_cible": "Ha",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 0
+          },
+          {
+            "lettre": "ج",
+            "son_cible": "Djou",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 1
+          },
+          {
+            "lettre": "ه",
+            "son_cible": "Hi",
+            "options": [
+              "َ Fatha",
+              "ُ Damma",
+              "ِ Kasra"
+            ],
+            "correct": 2
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Lecture avec Soukoun — les consonnes muettes ferment les syllabes !",
+      "items": [
+        {
+          "text": "جَ",
+          "son": "Dja",
+          "audio_id": "jim_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "مَ",
+          "son": "Ma",
+          "audio_id": "mim_fatha",
+          "delay_ms": 600
+        },
+        {
+          "text": "لْ",
+          "son": "(muet)",
+          "audio_id": "lam_soukoun",
+          "delay_ms": 1200
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1800
+        },
+        {
+          "text": "هَ",
+          "son": "Ha",
+          "audio_id": "ha_light_fatha",
+          "delay_ms": 2400
+        },
+        {
+          "text": "وَ",
+          "son": "Wa",
+          "audio_id": "waw_fatha",
+          "delay_ms": 3000
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L7Q1",
+        "question": "Comment se prononce le Jīm (ج) ?",
+        "options": [
+          "Comme le J français",
+          "Comme DJ (Djibouti)",
+          "Comme le G dur",
+          "Comme le CH"
+        ],
+        "correct": 1,
+        "explanation": "Le ج se prononce DJ, plus fort que le J français (qui est JH)."
+      },
+      {
+        "id": "L7Q2",
+        "question": "Le Hā (ه) se prononce comme...",
+        "options": [
+          "Le H de 'hello' en anglais",
+          "Le son de gorge profond",
+          "Le CH espagnol",
+          "Le R français"
+        ],
+        "correct": 0,
+        "explanation": "Le ه est un H léger, expiré, comme souffler sur une vitre. Pas de friction profonde."
+      },
+      {
+        "id": "L7Q3",
+        "question": "Dans جَمَلْ, que fait le Soukoun sur le لْ ?",
+        "options": [
+          "Il allonge le son",
+          "Il rend le L muet",
+          "Il double le L",
+          "Il ajoute un N"
+        ],
+        "correct": 1,
+        "explanation": "Le Soukoun rend la consonne muette. جَمَلْ se lit 'Djamal' avec le L final muet."
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL7_jim",
+        "front_ar": "ج",
+        "back_fr": "Jīm — Dja/Djou/Dji",
+        "category": "Phase 2",
+        "example_ar": "جَ جُ جِ",
+        "example_fr": "Dja, Djou, Dji"
+      },
+      {
+        "id": "FL7_ha_light",
+        "front_ar": "ه",
+        "back_fr": "Hā — Ha/Hou/Hi",
+        "category": "Phase 2",
+        "example_ar": "هَ هُ هِ",
+        "example_fr": "Ha, Hou, Hi"
+      }
+    ]
+  },
+  "8": {
+    "lesson_number": 8,
+    "title_fr": "Les Gutturales : Khā, Ghayn",
+    "title_ar": "الحلقية",
+    "phase_number": 2,
+    "phase_name": "Les Sons Nouveaux",
+    "objective": "2 sons profonds (KH et GH) et l'introduction de la Shadda (consonne doublée) !",
+    "letters": [
+      {
+        "id": "kha",
+        "glyph": "خ",
+        "name_fr": "Khā",
+        "name_ar": "خاء",
+        "mnemonique_visuelle": "Le Khā est le frère du Jīm (ج) et du Hā profond (ح) mais avec un point AU-DESSUS — comme une étoile qui brille dans la nuit froide (le son Kh évoque le froid).",
+        "conseil_anatomique": "Jota espagnole (comme dans 'Juan') ou CH allemand (comme dans 'Bach'). Le dos de la langue se rapproche du palais mou (voile du palais) et l'air frotte en passant. Exercice : dites 'K' très lentement et ne relâchez pas la langue — le son de friction est le خ.",
+        "audio_id": "kha",
+        "famille": "jim_ha_kha",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "خ",
+          "debut": "خـ",
+          "milieu": "ـخـ",
+          "fin": "ـخ"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "خَ",
+            "son": "Kha",
+            "audio_id": "kha_fatha"
+          },
+          "damma": {
+            "glyph": "خُ",
+            "son": "Khou",
+            "audio_id": "kha_damma"
+          },
+          "kasra": {
+            "glyph": "خِ",
+            "son": "Khi",
+            "audio_id": "kha_kasra"
+          }
+        }
+      },
+      {
+        "id": "ghayn",
+        "glyph": "غ",
+        "name_fr": "Ghayn",
+        "name_ar": "غين",
+        "mnemonique_visuelle": "Le Ghayn est comme le Ayn (ع) mais avec un point au-dessus — c'est le Gargouillement profond de la gorge.",
+        "conseil_anatomique": "Proche du R grasseyé parisien mais plus profond et plus guttural. La luette vibre contre le fond de la langue. Exercice : dites 'R' à la parisienne puis poussez le son un peu plus en arrière dans la gorge — vous obtenez le غ.",
+        "audio_id": "ghayn",
+        "famille": "ayn_ghayn",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "غ",
+          "debut": "غـ",
+          "milieu": "ـغـ",
+          "fin": "ـغ"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "غَ",
+            "son": "Gha",
+            "audio_id": "ghayn_fatha"
+          },
+          "damma": {
+            "glyph": "غُ",
+            "son": "Ghou",
+            "audio_id": "ghayn_damma"
+          },
+          "kasra": {
+            "glyph": "غِ",
+            "son": "Ghi",
+            "audio_id": "ghayn_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "Ces sons viennent du fond de la gorge. Le Khā racle (comme la jota espagnole), le Ghayn roule (comme un R parisien profond). Utilise le Thermomètre de la Gorge !",
+      "sequence": [
+        {
+          "audio_id": "kha_fatha",
+          "label": "خَ = Kha"
+        },
+        {
+          "audio_id": "kha_damma",
+          "label": "خُ = Khou"
+        },
+        {
+          "audio_id": "kha_kasra",
+          "label": "خِ = Khi"
+        },
+        {
+          "audio_id": "ghayn_fatha",
+          "label": "غَ = Gha"
+        },
+        {
+          "audio_id": "ghayn_damma",
+          "label": "غُ = Ghou"
+        },
+        {
+          "audio_id": "ghayn_kasra",
+          "label": "غِ = Ghi"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "kha",
+          "zone": "palais_mou",
+          "description": "Le dos de la langue frotte contre le palais mou (voile). Friction sourde."
+        },
+        {
+          "lettre_id": "ghayn",
+          "zone": "luette",
+          "description": "La luette vibre (comme un R grasseyé parisien mais plus profond)."
+        }
+      ],
+      "harakat_intro": {
+        "nom": "Shadda",
+        "symbole": "ّ",
+        "description": "La Shadda (petit W au-dessus) DOUBLE la consonne. سَمَعَ (samaʿa = il a entendu) vs سَمَّعَ (sammaʿa = il a fait écouter). La Shadda change le sens !",
+        "exemple": {
+          "text": "سَمَّعَ",
+          "transcription": "sammaʿa",
+          "traduction": "il a fait écouter"
+        }
+      }
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Les gutturales dans le Labo — sens la profondeur du son !",
+        "items": [
+          {
+            "lettre": "خ",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "خَ",
+            "son": "Kha",
+            "audio_id": "kha_fatha"
+          },
+          {
+            "lettre": "غ",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "غَ",
+            "son": "Gha",
+            "audio_id": "ghayn_fatha"
+          },
+          {
+            "lettre": "خ",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "خُ",
+            "son": "Khou",
+            "audio_id": "kha_damma"
+          },
+          {
+            "lettre": "غ",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "غِ",
+            "son": "Ghi",
+            "audio_id": "ghayn_kasra"
+          }
+        ]
+      },
+      {
+        "type": "THERMOMETRE",
+        "prompt_fr": "Le Thermomètre de la Gorge — place le curseur au bon endroit ! Haut = bouche, Bas = gorge profonde.",
+        "items": [
+          {
+            "audio_id": "kaf_fatha",
+            "lettre": "ك",
+            "zone_correcte": "palais_dur",
+            "profondeur": 0.3,
+            "label": "Ka (palais dur, haut)"
+          },
+          {
+            "audio_id": "kha_fatha",
+            "lettre": "خ",
+            "zone_correcte": "palais_mou",
+            "profondeur": 0.6,
+            "label": "Kha (palais mou, milieu)"
+          },
+          {
+            "audio_id": "ghayn_fatha",
+            "lettre": "غ",
+            "zone_correcte": "luette",
+            "profondeur": 0.8,
+            "label": "Gha (luette, profond)"
+          },
+          {
+            "audio_id": "ha_light_fatha",
+            "lettre": "ه",
+            "zone_correcte": "glotte",
+            "profondeur": 0.4,
+            "label": "Ha (glotte, léger)"
+          }
+        ]
+      },
+      {
+        "type": "ECOUTE_COMPARATIVE",
+        "prompt_fr": "Distingue les sons de gorge : خ vs ك, غ vs ر français",
+        "items": [
+          {
+            "audio_id": "kha_fatha",
+            "label": "Son 1",
+            "question": "C'est خ (profond, raclé) ou ك (palais, léger) ?",
+            "options": [
+              "خ (profond)",
+              "ك (léger)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "kaf_fatha",
+            "label": "Son 2",
+            "question": "C'est خ (profond, raclé) ou ك (palais, léger) ?",
+            "options": [
+              "خ (profond)",
+              "ك (léger)"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "ghayn_fatha",
+            "label": "Son 3",
+            "question": "C'est غ (luette) ou ه (souffle léger) ?",
+            "options": [
+              "غ (luette)",
+              "ه (souffle)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ha_light_fatha",
+            "label": "Son 4",
+            "question": "C'est غ (luette) ou ه (souffle léger) ?",
+            "options": [
+              "غ (luette)",
+              "ه (souffle)"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Lecture avec les gutturales et la Shadda !",
+      "items": [
+        {
+          "text": "خُ",
+          "son": "Khou",
+          "audio_id": "kha_damma",
+          "delay_ms": 0
+        },
+        {
+          "text": "بْ",
+          "son": "(muet)",
+          "audio_id": "ba_soukoun",
+          "delay_ms": 600
+        },
+        {
+          "text": "زُ",
+          "son": "Zou",
+          "audio_id": "zay_damma",
+          "delay_ms": 1200
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1800
+        },
+        {
+          "text": "غَ",
+          "son": "Gha",
+          "audio_id": "ghayn_fatha",
+          "delay_ms": 2400
+        },
+        {
+          "text": "يْ",
+          "son": "(muet)",
+          "audio_id": "ya_soukoun",
+          "delay_ms": 3000
+        },
+        {
+          "text": "مُ",
+          "son": "Mou",
+          "audio_id": "mim_damma",
+          "delay_ms": 3600
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L8Q1",
+        "question": "Le Khā (خ) se prononce comme...",
+        "options": [
+          "Le K français",
+          "La Jota espagnole",
+          "Le R français",
+          "Le G dur"
+        ],
+        "correct": 1,
+        "explanation": "Le خ est une friction au palais mou, comme la Jota espagnole (Juan) ou le CH allemand (Bach)."
+      },
+      {
+        "id": "L8Q2",
+        "question": "Que fait la Shadda (ّ) ?",
+        "options": [
+          "Elle supprime la voyelle",
+          "Elle allonge la voyelle",
+          "Elle double la consonne",
+          "Elle adoucit le son"
+        ],
+        "correct": 2,
+        "explanation": "La Shadda double la consonne. مَّ = mm (on entend deux M)."
+      },
+      {
+        "id": "L8Q3",
+        "question": "Où le son du Ghayn (غ) est-il produit ?",
+        "options": [
+          "Les lèvres",
+          "Les dents",
+          "Le palais dur",
+          "La luette"
+        ],
+        "correct": 3,
+        "explanation": "Le غ est produit par la vibration de la luette — comme un R grasseyé mais plus profond."
+      },
+      {
+        "id": "L8Q4",
+        "question": "Parmi خ ج ح, lequel a un point AU-DESSUS ?",
+        "options": [
+          "ج",
+          "ح",
+          "خ",
+          "Aucun"
+        ],
+        "correct": 2,
+        "explanation": "خ a un point au-dessus, ج a un point au milieu, ح n'a pas de point."
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL8_kha",
+        "front_ar": "خ",
+        "back_fr": "Khā — Kha/Khou/Khi",
+        "category": "Phase 2",
+        "example_ar": "خَ خُ خِ",
+        "example_fr": "Kha, Khou, Khi"
+      },
+      {
+        "id": "FL8_ghayn",
+        "front_ar": "غ",
+        "back_fr": "Ghayn — Gha/Ghou/Ghi",
+        "category": "Phase 2",
+        "example_ar": "غَ غُ غِ",
+        "example_fr": "Gha, Ghou, Ghi"
+      }
+    ]
+  },
+  "9": {
+    "lesson_number": 9,
+    "title_fr": "Le Profond : Qāf",
+    "title_ar": "العميق",
+    "phase_number": 2,
+    "phase_name": "Les Sons Nouveaux",
+    "objective": "Le Qāf, le K le plus profond — produit à la luette. Exercice de dictée audio pour distinguer Q et K !",
+    "letters": [
+      {
+        "id": "qaf",
+        "glyph": "ق",
+        "name_fr": "Qāf",
+        "name_ar": "قاف",
+        "mnemonique_visuelle": "Le Qāf ressemble au Fā (ف) mais avec DEUX points au-dessus — c'est le grand frère plus profond, celui qui parle du fond de la gorge.",
+        "conseil_anatomique": "K uvulaire : le dos de la langue touche la LUETTE (pas le palais comme le ك). C'est le son le plus profond de la famille des K. Exercice : dites 'K' puis reculez progressivement le point de contact de la langue vers la gorge — quand ça touche la luette, c'est le ق.",
+        "audio_id": "qaf",
+        "famille": "fa_qaf",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ق",
+          "debut": "قـ",
+          "milieu": "ـقـ",
+          "fin": "ـق"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "قَ",
+            "son": "Qa",
+            "audio_id": "qaf_fatha"
+          },
+          "damma": {
+            "glyph": "قُ",
+            "son": "Qou",
+            "audio_id": "qaf_damma"
+          },
+          "kasra": {
+            "glyph": "قِ",
+            "son": "Qi",
+            "audio_id": "qaf_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "Le Qāf est comme un K mais beaucoup plus profond. Le ك touche le palais, le ق touche la LUETTE. Écoute la différence !",
+      "sequence": [
+        {
+          "audio_id": "qaf_fatha",
+          "label": "قَ = Qa"
+        },
+        {
+          "audio_id": "qaf_damma",
+          "label": "قُ = Qou"
+        },
+        {
+          "audio_id": "qaf_kasra",
+          "label": "قِ = Qi"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "qaf",
+          "zone": "luette",
+          "description": "Le dos de la langue touche la LUETTE (pas le palais). C'est le K le plus profond. Exercice : dites K puis reculez le point de contact vers la gorge."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Le K profond dans le Labo !",
+        "items": [
+          {
+            "lettre": "ق",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "قَ",
+            "son": "Qa",
+            "audio_id": "qaf_fatha"
+          },
+          {
+            "lettre": "ق",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "قُ",
+            "son": "Qou",
+            "audio_id": "qaf_damma"
+          },
+          {
+            "lettre": "ق",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "قِ",
+            "son": "Qi",
+            "audio_id": "qaf_kasra"
+          }
+        ]
+      },
+      {
+        "type": "ECOUTE_COMPARATIVE",
+        "prompt_fr": "Q ou K ? La dictée des sons profonds !",
+        "items": [
+          {
+            "audio_id": "qaf_fatha",
+            "label": "Son 1",
+            "question": "C'est ق (luette, profond) ou ك (palais, léger) ?",
+            "options": [
+              "ق (profond)",
+              "ك (léger)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "kaf_fatha",
+            "label": "Son 2",
+            "question": "C'est ق (luette, profond) ou ك (palais, léger) ?",
+            "options": [
+              "ق (profond)",
+              "ك (léger)"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "qaf_damma",
+            "label": "Son 3",
+            "question": "C'est ق (profond) ou ك (léger) ?",
+            "options": [
+              "ق (profond)",
+              "ك (léger)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "kaf_damma",
+            "label": "Son 4",
+            "question": "C'est ق (profond) ou ك (léger) ?",
+            "options": [
+              "ق (profond)",
+              "ك (léger)"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "type": "THERMOMETRE",
+        "prompt_fr": "Place ces 4 sons sur le Thermomètre — du plus haut au plus profond !",
+        "items": [
+          {
+            "audio_id": "kaf_fatha",
+            "lettre": "ك",
+            "zone_correcte": "palais_dur",
+            "profondeur": 0.3,
+            "label": "Ka — palais dur"
+          },
+          {
+            "audio_id": "kha_fatha",
+            "lettre": "خ",
+            "zone_correcte": "palais_mou",
+            "profondeur": 0.5,
+            "label": "Kha — palais mou"
+          },
+          {
+            "audio_id": "qaf_fatha",
+            "lettre": "ق",
+            "zone_correcte": "luette",
+            "profondeur": 0.7,
+            "label": "Qa — luette"
+          },
+          {
+            "audio_id": "ghayn_fatha",
+            "lettre": "غ",
+            "zone_correcte": "luette_vibration",
+            "profondeur": 0.8,
+            "label": "Gha — luette vibrante"
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "23 lettres ! Quiz général.",
+        "items": [
+          {
+            "audio_id": "qaf_kasra",
+            "son": "Qi",
+            "options": [
+              "ق",
+              "ك",
+              "غ",
+              "خ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ghayn_damma",
+            "son": "Ghou",
+            "options": [
+              "غ",
+              "خ",
+              "ق",
+              "ك"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "jim_fatha",
+            "son": "Dja",
+            "options": [
+              "ج",
+              "ز",
+              "ذ",
+              "د"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "tha_kasra",
+            "son": "Thi",
+            "options": [
+              "ذ",
+              "ث",
+              "ت",
+              "س"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Lis ces mots avec le Qāf !",
+      "items": [
+        {
+          "text": "قَ",
+          "son": "Qa",
+          "audio_id": "qaf_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "مَ",
+          "son": "Ma",
+          "audio_id": "mim_fatha",
+          "delay_ms": 600
+        },
+        {
+          "text": "رُ",
+          "son": "Rou",
+          "audio_id": "ra_damma",
+          "delay_ms": 1200
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1800
+        },
+        {
+          "text": "قُ",
+          "son": "Qou",
+          "audio_id": "qaf_damma",
+          "delay_ms": 2400
+        },
+        {
+          "text": "رْ",
+          "son": "(muet)",
+          "audio_id": "ra_soukoun",
+          "delay_ms": 3000
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L9Q1",
+        "question": "Où le Qāf (ق) est-il produit ?",
+        "options": [
+          "Les lèvres",
+          "Le palais dur",
+          "La luette",
+          "Le pharynx"
+        ],
+        "correct": 2,
+        "explanation": "Le ق est produit à la luette — le point le plus profond de la famille K."
+      },
+      {
+        "id": "L9Q2",
+        "question": "Le ق a combien de points ?",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correct": 2,
+        "explanation": "Le ق a 2 points au-dessus. Le ف n'en a qu'1."
+      },
+      {
+        "id": "L9Q3",
+        "question": "Que lit-on dans قَمَرُ ?",
+        "options": [
+          "Kamarou",
+          "Qamarou",
+          "Ghamarou",
+          "Khamarou"
+        ],
+        "correct": 1,
+        "explanation": "قَمَرُ = Qa-ma-rou. C'est le mot 'lune' en arabe !"
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL9_qaf",
+        "front_ar": "ق",
+        "back_fr": "Qāf — Qa/Qou/Qi",
+        "category": "Phase 2",
+        "example_ar": "قَ قُ قِ",
+        "example_fr": "Qa, Qou, Qi"
+      }
+    ]
+  },
+  "10": {
+    "lesson_number": 10,
+    "title_fr": "Le Grand Récap : 23 lettres !",
+    "title_ar": "المراجعة الكبرى",
+    "phase_number": 2,
+    "phase_name": "Les Sons Nouveaux",
+    "objective": "Révision de toutes les lettres apprises. Lecture de 10 vrais mots arabes voyellés. Speed Round pour les plus rapides !",
+    "letters": [],
+    "ecoute": {
+      "instruction": "Récap audio : écoute ces 10 sons mélangés et identifie chaque lettre.",
+      "sequence": [
+        {
+          "audio_id": "qaf_fatha",
+          "label": "?"
+        },
+        {
+          "audio_id": "kha_damma",
+          "label": "?"
+        },
+        {
+          "audio_id": "shin_kasra",
+          "label": "?"
+        },
+        {
+          "audio_id": "tha_fatha",
+          "label": "?"
+        },
+        {
+          "audio_id": "ghayn_kasra",
+          "label": "?"
+        },
+        {
+          "audio_id": "jim_damma",
+          "label": "?"
+        },
+        {
+          "audio_id": "dhal_fatha",
+          "label": "?"
+        },
+        {
+          "audio_id": "ba_kasra",
+          "label": "?"
+        },
+        {
+          "audio_id": "lam_fatha",
+          "label": "?"
+        },
+        {
+          "audio_id": "waw_damma",
+          "label": "?"
+        }
+      ],
+      "anatomie": []
+    },
+    "exercises": [
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "Grand quiz audio — 23 lettres en jeu !",
+        "items": [
+          {
+            "audio_id": "qaf_fatha",
+            "son": "Qa",
+            "options": [
+              "ق",
+              "ك",
+              "غ",
+              "خ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "kha_damma",
+            "son": "Khou",
+            "options": [
+              "خ",
+              "غ",
+              "ق",
+              "ك"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "dhal_kasra",
+            "son": "Dhi",
+            "options": [
+              "ذ",
+              "د",
+              "ث",
+              "ز"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "jim_fatha",
+            "son": "Dja",
+            "options": [
+              "ج",
+              "ز",
+              "د",
+              "غ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ha_light_kasra",
+            "son": "Hi",
+            "options": [
+              "ه",
+              "خ",
+              "ح",
+              "غ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "shin_fatha",
+            "son": "Sha",
+            "options": [
+              "ش",
+              "س",
+              "ص",
+              "ز"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "fa_kasra",
+            "son": "Fi",
+            "options": [
+              "ف",
+              "ق",
+              "ك",
+              "ل"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "nun_damma",
+            "son": "Nou",
+            "options": [
+              "ن",
+              "م",
+              "ب",
+              "ت"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "type": "SPEED_ROUND",
+        "prompt_fr": "Speed Round ! Identifie un maximum de lettres en 30 secondes !",
+        "time_limit_seconds": 30,
+        "items": [
+          {
+            "glyph": "ب",
+            "name": "Bā"
+          },
+          {
+            "glyph": "ت",
+            "name": "Tā"
+          },
+          {
+            "glyph": "ث",
+            "name": "Thā"
+          },
+          {
+            "glyph": "ج",
+            "name": "Jīm"
+          },
+          {
+            "glyph": "خ",
+            "name": "Khā"
+          },
+          {
+            "glyph": "د",
+            "name": "Dāl"
+          },
+          {
+            "glyph": "ذ",
+            "name": "Dhāl"
+          },
+          {
+            "glyph": "ر",
+            "name": "Rā"
+          },
+          {
+            "glyph": "ز",
+            "name": "Zāy"
+          },
+          {
+            "glyph": "س",
+            "name": "Sīn"
+          },
+          {
+            "glyph": "ش",
+            "name": "Shīn"
+          },
+          {
+            "glyph": "ف",
+            "name": "Fā"
+          },
+          {
+            "glyph": "ق",
+            "name": "Qāf"
+          },
+          {
+            "glyph": "ك",
+            "name": "Kāf"
+          },
+          {
+            "glyph": "ل",
+            "name": "Lām"
+          },
+          {
+            "glyph": "م",
+            "name": "Mīm"
+          },
+          {
+            "glyph": "ن",
+            "name": "Nūn"
+          },
+          {
+            "glyph": "ه",
+            "name": "Hā"
+          },
+          {
+            "glyph": "و",
+            "name": "Wāw"
+          },
+          {
+            "glyph": "ي",
+            "name": "Yā"
+          },
+          {
+            "glyph": "غ",
+            "name": "Ghayn"
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "Classe les sons : Gorge profonde ou Bouche ?",
+        "categories": [
+          "Gorge profonde",
+          "Bouche / Lèvres"
+        ],
+        "items": [
+          {
+            "word": "خ",
+            "category": "Gorge profonde"
+          },
+          {
+            "word": "غ",
+            "category": "Gorge profonde"
+          },
+          {
+            "word": "ق",
+            "category": "Gorge profonde"
+          },
+          {
+            "word": "ك",
+            "category": "Bouche / Lèvres"
+          },
+          {
+            "word": "ف",
+            "category": "Bouche / Lèvres"
+          },
+          {
+            "word": "ب",
+            "category": "Bouche / Lèvres"
+          },
+          {
+            "word": "ه",
+            "category": "Bouche / Lèvres"
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "10 vrais mots arabes ! Lis-les syllabe par syllabe.",
+      "items": [
+        {
+          "text": "كَ",
+          "son": "Ka",
+          "audio_id": "kaf_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "تَ",
+          "son": "Ta",
+          "audio_id": "ta_fatha",
+          "delay_ms": 500
+        },
+        {
+          "text": "بَ",
+          "son": "Ba",
+          "audio_id": "ba_fatha",
+          "delay_ms": 1000
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1600
+        },
+        {
+          "text": "بَ",
+          "son": "Ba",
+          "audio_id": "ba_fatha",
+          "delay_ms": 2100
+        },
+        {
+          "text": "يْ",
+          "son": "(muet)",
+          "audio_id": "ya_soukoun",
+          "delay_ms": 2600
+        },
+        {
+          "text": "تُ",
+          "son": "Tou",
+          "audio_id": "ta_damma",
+          "delay_ms": 3100
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 3700
+        },
+        {
+          "text": "قَ",
+          "son": "Qa",
+          "audio_id": "qaf_fatha",
+          "delay_ms": 4200
+        },
+        {
+          "text": "لَ",
+          "son": "La",
+          "audio_id": "lam_fatha",
+          "delay_ms": 4700
+        },
+        {
+          "text": "مُ",
+          "son": "Mou",
+          "audio_id": "mim_damma",
+          "delay_ms": 5200
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L10Q1",
+        "question": "Combien de lettres as-tu apprises en Phase 1 + Phase 2 ?",
+        "options": [
+          "16",
+          "20",
+          "23",
+          "28"
+        ],
+        "correct": 2,
+        "explanation": "Phase 1 : 16 lettres + Phase 2 : 7 nouvelles (ث ذ ج ه خ غ ق) = 23 lettres."
+      },
+      {
+        "id": "L10Q2",
+        "question": "Combien de harakat connais-tu ?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "correct": 2,
+        "explanation": "Fatha (a), Damma (ou), Kasra (i), Soukoun (silence), Shadda (double) = 5 harakat."
+      },
+      {
+        "id": "L10Q3",
+        "question": "Que lit-on dans كَتَبَ ?",
+        "options": [
+          "Qamaroun",
+          "Kataba",
+          "Djamal",
+          "Khalaba"
+        ],
+        "correct": 1,
+        "explanation": "كَتَبَ = Ka-ta-ba. C'est le verbe 'il a écrit' en arabe !"
+      },
+      {
+        "id": "L10Q4",
+        "question": "Quel mot signifie 'lune' ?",
+        "options": [
+          "قَمَرُ",
+          "كَتَبَ",
+          "بَيْتُ",
+          "شَمْسُ"
+        ],
+        "correct": 0,
+        "explanation": "قَمَرُ (qamarou) = lune. Le ق au début lui donne sa profondeur caractéristique."
+      },
+      {
+        "id": "L10Q5",
+        "question": "Quelle paire de lettres se prononce 'langue entre les dents' ?",
+        "options": [
+          "س ش",
+          "ث ذ",
+          "خ غ",
+          "ت د"
+        ],
+        "correct": 1,
+        "explanation": "ث et ذ se prononcent avec la langue entre les dents (TH anglais)."
+      }
+    ],
+    "flashcards": []
+  },
+  "11": {
+    "lesson_number": 11,
+    "title_fr": "Les Emphatiques S/D : Ṣād, Ḍād",
+    "title_ar": "المفخّمة",
+    "phase_number": 3,
+    "phase_name": "Les Sons Profonds",
+    "objective": "Les emphatiques — les sons les plus typiquement arabes ! Apprends à bomber ta langue vers le palais pour 'épaissir' le son.",
+    "letters": [
+      {
+        "id": "sad",
+        "glyph": "ص",
+        "name_fr": "Ṣād",
+        "name_ar": "صاد",
+        "mnemonique_visuelle": "Le Ṣād ressemble au Sīn (س) mais avec une boucle fermée — c'est le S qui a gonflé ses joues pour parler plus gravement.",
+        "conseil_anatomique": "S emphatique : même sifflement que le س MAIS la langue se bombe vers le palais (rétroflexion) et l'arrière de la bouche se rétrécit. Le son sort plus grave, plus 'lourd'. Exercice : dites 'S' en bombant la langue vers le haut et en ouvrant la gorge — le timbre change.",
+        "audio_id": "sad",
+        "famille": "sad_dad",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ص",
+          "debut": "صـ",
+          "milieu": "ـصـ",
+          "fin": "ـص"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "صَ",
+            "son": "Ṣa",
+            "audio_id": "sad_fatha"
+          },
+          "damma": {
+            "glyph": "صُ",
+            "son": "Ṣou",
+            "audio_id": "sad_damma"
+          },
+          "kasra": {
+            "glyph": "صِ",
+            "son": "Ṣi",
+            "audio_id": "sad_kasra"
+          }
+        }
+      },
+      {
+        "id": "dad",
+        "glyph": "ض",
+        "name_fr": "Ḍād",
+        "name_ar": "ضاد",
+        "mnemonique_visuelle": "Le Ḍād est le Ṣād avec un point au-dessus — c'est la lettre la plus unique de l'arabe, celle qui donne son surnom à la langue ('la langue du Ḍād').",
+        "conseil_anatomique": "D emphatique : même mécanisme que le ص mais sonore (avec vibration des cordes vocales). La langue se bombe vers le palais, les bords de la langue touchent les molaires supérieures. Son très distinctif, plus 'lourd' que le د normal.",
+        "audio_id": "dad",
+        "famille": "sad_dad",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ض",
+          "debut": "ضـ",
+          "milieu": "ـضـ",
+          "fin": "ـض"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "ضَ",
+            "son": "Ḍa",
+            "audio_id": "dad_fatha"
+          },
+          "damma": {
+            "glyph": "ضُ",
+            "son": "Ḍou",
+            "audio_id": "dad_damma"
+          },
+          "kasra": {
+            "glyph": "ضِ",
+            "son": "Ḍi",
+            "audio_id": "dad_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "Écoute la DIFFÉRENCE entre le S léger (س) et le S emphatique (ص), puis entre le D léger (د) et le D emphatique (ض). La langue se bombe vers le palais !",
+      "sequence": [
+        {
+          "audio_id": "sad_fatha",
+          "label": "صَ = Ṣa"
+        },
+        {
+          "audio_id": "sad_damma",
+          "label": "صُ = Ṣou"
+        },
+        {
+          "audio_id": "sad_kasra",
+          "label": "صِ = Ṣi"
+        },
+        {
+          "audio_id": "dad_fatha",
+          "label": "ضَ = Ḍa"
+        },
+        {
+          "audio_id": "dad_damma",
+          "label": "ضُ = Ḍou"
+        },
+        {
+          "audio_id": "dad_kasra",
+          "label": "ضِ = Ḍi"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "sad",
+          "zone": "langue_bombee_palais",
+          "description": "Comme le س mais la langue se BOMBE vers le palais. La cavité buccale se rétrécit → son plus grave, plus 'lourd'."
+        },
+        {
+          "lettre_id": "dad",
+          "zone": "langue_bombee_palais_sonore",
+          "description": "Comme le د mais la langue se bombe. Les bords de la langue touchent les molaires. Son unique à l'arabe !"
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Les emphatiques dans le Labo — sens la différence avec les légères !",
+        "items": [
+          {
+            "lettre": "ص",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "صَ",
+            "son": "Ṣa",
+            "audio_id": "sad_fatha"
+          },
+          {
+            "lettre": "ض",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "ضَ",
+            "son": "Ḍa",
+            "audio_id": "dad_fatha"
+          },
+          {
+            "lettre": "ص",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "صُ",
+            "son": "Ṣou",
+            "audio_id": "sad_damma"
+          },
+          {
+            "lettre": "ض",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "ضِ",
+            "son": "Ḍi",
+            "audio_id": "dad_kasra"
+          }
+        ]
+      },
+      {
+        "type": "ECOUTE_COMPARATIVE",
+        "prompt_fr": "Emphatique ou léger ? Écoute attentivement !",
+        "items": [
+          {
+            "audio_id": "sad_fatha",
+            "label": "Son 1",
+            "question": "C'est ص (emphatique, grave) ou س (léger, aigu) ?",
+            "options": [
+              "ص (emphatique)",
+              "س (léger)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "sin_fatha",
+            "label": "Son 2",
+            "question": "C'est ص (emphatique, grave) ou س (léger, aigu) ?",
+            "options": [
+              "ص (emphatique)",
+              "س (léger)"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "dad_fatha",
+            "label": "Son 3",
+            "question": "C'est ض (emphatique) ou د (léger) ?",
+            "options": [
+              "ض (emphatique)",
+              "د (léger)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "dal_fatha",
+            "label": "Son 4",
+            "question": "C'est ض (emphatique) ou د (léger) ?",
+            "options": [
+              "ض (emphatique)",
+              "د (léger)"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "Classe les lettres : Emphatiques vs Légères",
+        "categories": [
+          "Emphatiques (lourdes)",
+          "Légères"
+        ],
+        "items": [
+          {
+            "word": "ص",
+            "category": "Emphatiques (lourdes)"
+          },
+          {
+            "word": "ض",
+            "category": "Emphatiques (lourdes)"
+          },
+          {
+            "word": "س",
+            "category": "Légères"
+          },
+          {
+            "word": "د",
+            "category": "Légères"
+          },
+          {
+            "word": "ت",
+            "category": "Légères"
+          },
+          {
+            "word": "ز",
+            "category": "Légères"
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Lecture avec les emphatiques — sens la gravité du son !",
+      "items": [
+        {
+          "text": "صَ",
+          "son": "Ṣa",
+          "audio_id": "sad_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "بَ",
+          "son": "Ba",
+          "audio_id": "ba_fatha",
+          "delay_ms": 600
+        },
+        {
+          "text": "رَ",
+          "son": "Ra",
+          "audio_id": "ra_fatha",
+          "delay_ms": 1200
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1800
+        },
+        {
+          "text": "ضَ",
+          "son": "Ḍa",
+          "audio_id": "dad_fatha",
+          "delay_ms": 2400
+        },
+        {
+          "text": "وْ",
+          "son": "(muet)",
+          "audio_id": "waw_soukoun",
+          "delay_ms": 3000
+        },
+        {
+          "text": "ءُ",
+          "son": "'ou",
+          "audio_id": "hamza_damma",
+          "delay_ms": 3600
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L11Q1",
+        "question": "Qu'est-ce qui rend un son 'emphatique' ?",
+        "options": [
+          "Les lèvres s'arrondissent",
+          "La langue se bombe vers le palais",
+          "L'air passe par le nez",
+          "Les cordes vocales vibrent"
+        ],
+        "correct": 1,
+        "explanation": "L'emphase vient du bombement de la langue vers le palais, qui rétrécit la cavité buccale et 'alourdit' le son."
+      },
+      {
+        "id": "L11Q2",
+        "question": "Le ض est unique à l'arabe. Il est...",
+        "options": [
+          "Le S emphatique",
+          "Le D emphatique",
+          "Le T emphatique",
+          "Le Z emphatique"
+        ],
+        "correct": 1,
+        "explanation": "Le ض (Ḍād) est le D emphatique. C'est la lettre la plus distinctive de l'arabe."
+      },
+      {
+        "id": "L11Q3",
+        "question": "Que lit-on dans صَبَرَ ?",
+        "options": [
+          "Ṣabara",
+          "Sabara",
+          "Dabara",
+          "Ḍabara"
+        ],
+        "correct": 0,
+        "explanation": "صَبَرَ = Ṣa-ba-ra (avec S emphatique). C'est le verbe 'patienter' en arabe."
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL11_sad",
+        "front_ar": "ص",
+        "back_fr": "Ṣād — Ṣa/Ṣou/Ṣi",
+        "category": "Phase 3",
+        "example_ar": "صَ صُ صِ",
+        "example_fr": "Ṣa, Ṣou, Ṣi"
+      },
+      {
+        "id": "FL11_dad",
+        "front_ar": "ض",
+        "back_fr": "Ḍād — Ḍa/Ḍou/Ḍi",
+        "category": "Phase 3",
+        "example_ar": "ضَ ضُ ضِ",
+        "example_fr": "Ḍa, Ḍou, Ḍi"
+      }
+    ]
+  },
+  "12": {
+    "lesson_number": 12,
+    "title_fr": "Les Emphatiques T/DH : Ṭā, Ẓā",
+    "title_ar": "المفخّمة الثقيلة",
+    "phase_number": 3,
+    "phase_name": "Les Sons Profonds",
+    "objective": "2 emphatiques de plus : Ṭā (T lourd) et Ẓā (DH lourd). Paires minimales systématiques avec leurs versions légères.",
+    "letters": [
+      {
+        "id": "tah",
+        "glyph": "ط",
+        "name_fr": "Ṭā",
+        "name_ar": "طاء",
+        "mnemonique_visuelle": "Le Ṭā ressemble à un grand cercle avec un bâton vertical — comme un Tambour vu de côté avec sa baguette. Le son est effectivement plus 'percussif' et grave.",
+        "conseil_anatomique": "T emphatique : même position que le ت MAIS la langue se bombe vers le palais. Le son sort plus grave, plus 'rond'. Exercice : dites 'T' puis bombez la langue vers le haut et ouvrez la gorge — vous entendrez la différence.",
+        "audio_id": "tah",
+        "famille": "tah_dhah",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ط",
+          "debut": "طـ",
+          "milieu": "ـطـ",
+          "fin": "ـط"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "طَ",
+            "son": "Ṭa",
+            "audio_id": "tah_fatha"
+          },
+          "damma": {
+            "glyph": "طُ",
+            "son": "Ṭou",
+            "audio_id": "tah_damma"
+          },
+          "kasra": {
+            "glyph": "طِ",
+            "son": "Ṭi",
+            "audio_id": "tah_kasra"
+          }
+        }
+      },
+      {
+        "id": "dhah",
+        "glyph": "ظ",
+        "name_fr": "Ẓā",
+        "name_ar": "ظاء",
+        "mnemonique_visuelle": "Le Ẓā est le Ṭā avec un point au-dessus — c'est le même tambour mais qui résonne encore plus profondément.",
+        "conseil_anatomique": "DH emphatique : comme le ذ (langue entre les dents) MAIS avec la langue bombée vers le palais. Le son est plus grave, plus 'épais'. C'est la version emphatique du ذ.",
+        "audio_id": "dhah",
+        "famille": "tah_dhah",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ظ",
+          "debut": "ظـ",
+          "milieu": "ـظـ",
+          "fin": "ـظ"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "ظَ",
+            "son": "Ẓa",
+            "audio_id": "dhah_fatha"
+          },
+          "damma": {
+            "glyph": "ظُ",
+            "son": "Ẓou",
+            "audio_id": "dhah_damma"
+          },
+          "kasra": {
+            "glyph": "ظِ",
+            "son": "Ẓi",
+            "audio_id": "dhah_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "ت vs ط, ذ vs ظ — même position de la langue, mais avec ou sans emphase. Écoute la différence de 'poids' !",
+      "sequence": [
+        {
+          "audio_id": "tah_fatha",
+          "label": "طَ = Ṭa"
+        },
+        {
+          "audio_id": "tah_damma",
+          "label": "طُ = Ṭou"
+        },
+        {
+          "audio_id": "tah_kasra",
+          "label": "طِ = Ṭi"
+        },
+        {
+          "audio_id": "dhah_fatha",
+          "label": "ظَ = Ẓa"
+        },
+        {
+          "audio_id": "dhah_damma",
+          "label": "ظُ = Ẓou"
+        },
+        {
+          "audio_id": "dhah_kasra",
+          "label": "ظِ = Ẓi"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "tah",
+          "zone": "langue_bombee_dents",
+          "description": "Comme le ت mais la langue se bombe vers le palais. T plus grave, plus 'rond'."
+        },
+        {
+          "lettre_id": "dhah",
+          "zone": "langue_entre_dents_bombee",
+          "description": "Comme le ذ (langue entre les dents) mais avec la langue bombée. DH plus grave."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Les emphatiques T et DH !",
+        "items": [
+          {
+            "lettre": "ط",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "طَ",
+            "son": "Ṭa",
+            "audio_id": "tah_fatha"
+          },
+          {
+            "lettre": "ظ",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "ظَ",
+            "son": "Ẓa",
+            "audio_id": "dhah_fatha"
+          },
+          {
+            "lettre": "ط",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "طِ",
+            "son": "Ṭi",
+            "audio_id": "tah_kasra"
+          },
+          {
+            "lettre": "ظ",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "ظُ",
+            "son": "Ẓou",
+            "audio_id": "dhah_damma"
+          }
+        ]
+      },
+      {
+        "type": "ECOUTE_COMPARATIVE",
+        "prompt_fr": "Paires minimales : emphatique ou léger ?",
+        "items": [
+          {
+            "audio_id": "tah_fatha",
+            "label": "Son 1",
+            "question": "ط (T emphatique) ou ت (T léger) ?",
+            "options": [
+              "ط (emphatique)",
+              "ت (léger)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ta_fatha",
+            "label": "Son 2",
+            "question": "ط (T emphatique) ou ت (T léger) ?",
+            "options": [
+              "ط (emphatique)",
+              "ت (léger)"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "dhah_fatha",
+            "label": "Son 3",
+            "question": "ظ (DH emphatique) ou ذ (DH léger) ?",
+            "options": [
+              "ظ (emphatique)",
+              "ذ (léger)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "dhal_fatha",
+            "label": "Son 4",
+            "question": "ظ (DH emphatique) ou ذ (DH léger) ?",
+            "options": [
+              "ظ (emphatique)",
+              "ذ (léger)"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "4 paires emphatique/léger — classe-les !",
+        "categories": [
+          "Emphatiques",
+          "Légères"
+        ],
+        "items": [
+          {
+            "word": "ط",
+            "category": "Emphatiques"
+          },
+          {
+            "word": "ت",
+            "category": "Légères"
+          },
+          {
+            "word": "ظ",
+            "category": "Emphatiques"
+          },
+          {
+            "word": "ذ",
+            "category": "Légères"
+          },
+          {
+            "word": "ص",
+            "category": "Emphatiques"
+          },
+          {
+            "word": "س",
+            "category": "Légères"
+          },
+          {
+            "word": "ض",
+            "category": "Emphatiques"
+          },
+          {
+            "word": "د",
+            "category": "Légères"
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Lecture avec les 4 emphatiques !",
+      "items": [
+        {
+          "text": "طَ",
+          "son": "Ṭa",
+          "audio_id": "tah_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "يْ",
+          "son": "(muet)",
+          "audio_id": "ya_soukoun",
+          "delay_ms": 600
+        },
+        {
+          "text": "رُ",
+          "son": "Rou",
+          "audio_id": "ra_damma",
+          "delay_ms": 1200
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1800
+        },
+        {
+          "text": "ظِ",
+          "son": "Ẓi",
+          "audio_id": "dhah_kasra",
+          "delay_ms": 2400
+        },
+        {
+          "text": "لَّ",
+          "son": "Lla",
+          "audio_id": "lam_shadda_fatha",
+          "delay_ms": 3000
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L12Q1",
+        "question": "Le ط est la version emphatique de...",
+        "options": [
+          "ت",
+          "د",
+          "ذ",
+          "ث"
+        ],
+        "correct": 0,
+        "explanation": "ط est le T emphatique, ت est le T léger."
+      },
+      {
+        "id": "L12Q2",
+        "question": "Combien de paires emphatique/léger connais-tu maintenant ?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct": 2,
+        "explanation": "ص/س, ض/د, ط/ت, ظ/ذ = 4 paires emphatiques."
+      },
+      {
+        "id": "L12Q3",
+        "question": "Que lit-on dans طَيْرُ ?",
+        "options": [
+          "Ṭayrou",
+          "Tayrou",
+          "Ḍayrou",
+          "Dhayrou"
+        ],
+        "correct": 0,
+        "explanation": "طَيْرُ = Ṭay-rou (avec T emphatique). C'est le mot 'oiseau' en arabe."
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL12_tah",
+        "front_ar": "ط",
+        "back_fr": "Ṭā — Ṭa/Ṭou/Ṭi",
+        "category": "Phase 3",
+        "example_ar": "طَ طُ طِ",
+        "example_fr": "Ṭa, Ṭou, Ṭi"
+      },
+      {
+        "id": "FL12_dhah",
+        "front_ar": "ظ",
+        "back_fr": "Ẓā — Ẓa/Ẓou/Ẓi",
+        "category": "Phase 3",
+        "example_ar": "ظَ ظُ ظِ",
+        "example_fr": "Ẓa, Ẓou, Ẓi"
+      }
+    ]
+  },
+  "13": {
+    "lesson_number": 13,
+    "title_fr": "Les Pharyngales : Ḥā, ʿAyn",
+    "title_ar": "الحرفان العميقان",
+    "phase_number": 3,
+    "phase_name": "Les Sons Profonds",
+    "objective": "Les 2 sons les plus difficiles pour un francophone : le H profond et le ʿAyn. L'Écho de la Caverne t'aidera !",
+    "letters": [
+      {
+        "id": "ha_deep",
+        "glyph": "ح",
+        "name_fr": "Ḥā",
+        "name_ar": "حاء",
+        "mnemonique_visuelle": "Le Ḥā est le frère du Jīm (ج) et du Khā (خ) mais SANS point — il est nu, ouvert, comme la gorge ouverte qui produit son souffle profond.",
+        "conseil_anatomique": "H pharyngal profond : l'air frotte au niveau du pharynx (le fond de la gorge, là où ça fait mal quand on a une angine). Exercice : ouvrez grand la bouche, imaginez que vous soufflez de la buée mais depuis le FOND de la gorge, pas depuis la bouche. Très différent du ه qui est léger.",
+        "audio_id": "ha_deep",
+        "famille": "jim_ha_kha",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ح",
+          "debut": "حـ",
+          "milieu": "ـحـ",
+          "fin": "ـح"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "حَ",
+            "son": "Ḥa",
+            "audio_id": "ha_deep_fatha"
+          },
+          "damma": {
+            "glyph": "حُ",
+            "son": "Ḥou",
+            "audio_id": "ha_deep_damma"
+          },
+          "kasra": {
+            "glyph": "حِ",
+            "son": "Ḥi",
+            "audio_id": "ha_deep_kasra"
+          }
+        }
+      },
+      {
+        "id": "ayn",
+        "glyph": "ع",
+        "name_fr": "ʿAyn",
+        "name_ar": "عين",
+        "mnemonique_visuelle": "Le ʿAyn ressemble à un petit crochet ouvert — comme une bouche grande ouverte vue de côté qui produit ce son si particulier venu du fond de la gorge.",
+        "conseil_anatomique": "AUCUN équivalent en français. C'est une contraction du pharynx (la gorge se serre puis se relâche). Exercice guidé : (1) ouvrez grand la bouche comme pour bâiller, (2) contractez les muscles du fond de la gorge comme si vous alliez vomir, (3) relâchez en laissant sortir le son 'A'. Ce son guttural est le ع. Avec la pratique, il deviendra naturel.",
+        "audio_id": "ayn",
+        "famille": "ayn_ghayn",
+        "connectante": true,
+        "formes_positionnelles": {
+          "isolee": "ع",
+          "debut": "عـ",
+          "milieu": "ـعـ",
+          "fin": "ـع"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "عَ",
+            "son": "ʿA",
+            "audio_id": "ayn_fatha"
+          },
+          "damma": {
+            "glyph": "عُ",
+            "son": "ʿOu",
+            "audio_id": "ayn_damma"
+          },
+          "kasra": {
+            "glyph": "عِ",
+            "son": "ʿI",
+            "audio_id": "ayn_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "Le Ḥā est un souffle PROFOND depuis le pharynx (pas comme le ه léger !). Le ʿAyn est une CONTRACTION du pharynx. Écoute l'Écho de la Caverne !",
+      "sequence": [
+        {
+          "audio_id": "ha_deep_fatha",
+          "label": "حَ = Ḥa"
+        },
+        {
+          "audio_id": "ha_deep_damma",
+          "label": "حُ = Ḥou"
+        },
+        {
+          "audio_id": "ha_deep_kasra",
+          "label": "حِ = Ḥi"
+        },
+        {
+          "audio_id": "ayn_fatha",
+          "label": "عَ = ʿA"
+        },
+        {
+          "audio_id": "ayn_damma",
+          "label": "عُ = ʿOu"
+        },
+        {
+          "audio_id": "ayn_kasra",
+          "label": "عِ = ʿI"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "ha_deep",
+          "zone": "pharynx_friction",
+          "description": "Friction au niveau du pharynx (fond de la gorge). Comme souffler de la buée mais depuis la GORGE, pas la bouche. Très différent du ه !"
+        },
+        {
+          "lettre_id": "ayn",
+          "zone": "pharynx_contraction",
+          "description": "CONTRACTION du pharynx. (1) Ouvrez grand la bouche, (2) contractez le fond de la gorge comme pour un bâillement inversé, (3) relâchez en laissant sortir le son."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Les pharyngales dans le Labo — les plus profondes !",
+        "items": [
+          {
+            "lettre": "ح",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "حَ",
+            "son": "Ḥa",
+            "audio_id": "ha_deep_fatha"
+          },
+          {
+            "lettre": "ع",
+            "haraka": "َ",
+            "haraka_nom": "Fatha",
+            "resultat": "عَ",
+            "son": "ʿA",
+            "audio_id": "ayn_fatha"
+          },
+          {
+            "lettre": "ح",
+            "haraka": "ُ",
+            "haraka_nom": "Damma",
+            "resultat": "حُ",
+            "son": "Ḥou",
+            "audio_id": "ha_deep_damma"
+          },
+          {
+            "lettre": "ع",
+            "haraka": "ِ",
+            "haraka_nom": "Kasra",
+            "resultat": "عِ",
+            "son": "ʿI",
+            "audio_id": "ayn_kasra"
+          }
+        ]
+      },
+      {
+        "type": "THERMOMETRE",
+        "prompt_fr": "L'Écho de la Caverne — place les 4 sons du H sur le thermomètre, du plus léger au plus profond !",
+        "items": [
+          {
+            "audio_id": "ha_light_fatha",
+            "lettre": "ه",
+            "zone_correcte": "glotte",
+            "profondeur": 0.3,
+            "label": "Ha léger (glotte)"
+          },
+          {
+            "audio_id": "ha_deep_fatha",
+            "lettre": "ح",
+            "zone_correcte": "pharynx",
+            "profondeur": 0.7,
+            "label": "Ḥa profond (pharynx)"
+          },
+          {
+            "audio_id": "ayn_fatha",
+            "lettre": "ع",
+            "zone_correcte": "pharynx_contraction",
+            "profondeur": 0.9,
+            "label": "ʿAyn (contraction pharyngale)"
+          },
+          {
+            "audio_id": "kha_fatha",
+            "lettre": "خ",
+            "zone_correcte": "velaire",
+            "profondeur": 0.5,
+            "label": "Kha (palais mou)"
+          }
+        ]
+      },
+      {
+        "type": "ECOUTE_COMPARATIVE",
+        "prompt_fr": "Distingue les sons de gorge : ه vs ح vs ع",
+        "items": [
+          {
+            "audio_id": "ha_light_fatha",
+            "label": "Son 1",
+            "question": "C'est ه (léger), ح (profond) ou ع (contraction) ?",
+            "options": [
+              "ه (léger)",
+              "ح (profond)",
+              "ع (contraction)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ha_deep_fatha",
+            "label": "Son 2",
+            "question": "C'est ه (léger), ح (profond) ou ع (contraction) ?",
+            "options": [
+              "ه (léger)",
+              "ح (profond)",
+              "ع (contraction)"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "ayn_fatha",
+            "label": "Son 3",
+            "question": "C'est ه (léger), ح (profond) ou ع (contraction) ?",
+            "options": [
+              "ه (léger)",
+              "ح (profond)",
+              "ع (contraction)"
+            ],
+            "correct": 2
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Les mots les plus arabes de tous !",
+      "items": [
+        {
+          "text": "حَ",
+          "son": "Ḥa",
+          "audio_id": "ha_deep_fatha",
+          "delay_ms": 0
+        },
+        {
+          "text": "مْ",
+          "son": "(muet)",
+          "audio_id": "mim_soukoun",
+          "delay_ms": 600
+        },
+        {
+          "text": "دُ",
+          "son": "Dou",
+          "audio_id": "dal_damma",
+          "delay_ms": 1200
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1800
+        },
+        {
+          "text": "عَ",
+          "son": "ʿA",
+          "audio_id": "ayn_fatha",
+          "delay_ms": 2400
+        },
+        {
+          "text": "يْ",
+          "son": "(muet)",
+          "audio_id": "ya_soukoun",
+          "delay_ms": 3000
+        },
+        {
+          "text": "نُ",
+          "son": "Nou",
+          "audio_id": "nun_damma",
+          "delay_ms": 3600
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L13Q1",
+        "question": "Le ʿAyn (ع) est produit par...",
+        "options": [
+          "La vibration de la luette",
+          "La friction des lèvres",
+          "La contraction du pharynx",
+          "Le sifflement des dents"
+        ],
+        "correct": 2,
+        "explanation": "Le ʿAyn est une contraction unique du pharynx — on serre le fond de la gorge puis on relâche."
+      },
+      {
+        "id": "L13Q2",
+        "question": "La différence entre ه et ح ?",
+        "options": [
+          "ه a un point",
+          "ح est plus profond (pharynx)",
+          "Aucune différence",
+          "ه est plus profond"
+        ],
+        "correct": 1,
+        "explanation": "ه = souffle léger (glotte). ح = souffle profond (pharynx). Même concept, profondeur différente."
+      },
+      {
+        "id": "L13Q3",
+        "question": "Que signifie حَمْدُ ?",
+        "options": [
+          "Patience",
+          "Louange",
+          "Oiseau",
+          "Lune"
+        ],
+        "correct": 1,
+        "explanation": "حَمْدُ = Ḥam-dou = louange. Comme dans 'Alhamdulillah' !"
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL13_ha_deep",
+        "front_ar": "ح",
+        "back_fr": "Ḥā — Ḥa/Ḥou/Ḥi",
+        "category": "Phase 3",
+        "example_ar": "حَ حُ حِ",
+        "example_fr": "Ḥa, Ḥou, Ḥi"
+      },
+      {
+        "id": "FL13_ayn",
+        "front_ar": "ع",
+        "back_fr": "ʿAyn — ʿA/ʿOu/ʿI",
+        "category": "Phase 3",
+        "example_ar": "عَ عُ عِ",
+        "example_fr": "ʿA, ʿOu, ʿI"
+      }
+    ]
+  },
+  "14": {
+    "lesson_number": 14,
+    "title_fr": "La Hamza et les Voyelles Longues",
+    "title_ar": "الهمزة والمدود",
+    "phase_number": 3,
+    "phase_name": "Les Sons Profonds",
+    "objective": "La Hamza (coup de glotte), le Tanwin (le 'n' final), et les voyelles longues avec les supports Alif/Waw/Ya !",
+    "letters": [
+      {
+        "id": "hamza",
+        "glyph": "ء",
+        "name_fr": "Hamza",
+        "name_ar": "همزة",
+        "mnemonique_visuelle": "La Hamza est un petit crochet qui flotte seul, comme une apostrophe arabe — elle représente le petit 'clic' dans la gorge qu'on fait naturellement en français au début de certains mots.",
+        "conseil_anatomique": "Coup de glotte : c'est l'arrêt brusque de l'air au niveau de la glotte (les cordes vocales se ferment puis s'ouvrent). En français, on le fait sans le savoir quand on dit 'Ah !' avec surprise — le petit 'clic' avant le A, c'est une hamza.",
+        "audio_id": "hamza",
+        "famille": "hamza",
+        "connectante": false,
+        "formes_positionnelles": {
+          "isolee": "ء",
+          "debut": "ء",
+          "milieu": "ء",
+          "fin": "ء"
+        },
+        "syllabes": {
+          "fatha": {
+            "glyph": "أَ",
+            "son": "'A",
+            "audio_id": "hamza_fatha"
+          },
+          "damma": {
+            "glyph": "أُ",
+            "son": "'Ou",
+            "audio_id": "hamza_damma"
+          },
+          "kasra": {
+            "glyph": "إِ",
+            "son": "'I",
+            "audio_id": "hamza_kasra"
+          }
+        }
+      }
+    ],
+    "ecoute": {
+      "instruction": "La Hamza est un petit 'clic' dans la gorge. Tu le fais déjà en français sans le savoir ! Écoute aussi les voyelles LONGUES.",
+      "sequence": [
+        {
+          "audio_id": "hamza_fatha",
+          "label": "أَ = 'A"
+        },
+        {
+          "audio_id": "hamza_damma",
+          "label": "أُ = 'Ou"
+        },
+        {
+          "audio_id": "hamza_kasra",
+          "label": "إِ = 'I"
+        }
+      ],
+      "anatomie": [
+        {
+          "lettre_id": "hamza",
+          "zone": "glotte_arret",
+          "description": "Arrêt brusque de l'air à la glotte. Les cordes vocales se ferment puis s'ouvrent. En français, c'est le petit 'clic' avant le 'Ah !' de surprise."
+        }
+      ],
+      "harakat_intro": {
+        "nom": "Tanwin et Voyelles longues",
+        "symbole": "ً ٌ ٍ / ا و ي",
+        "description": "Le TANWIN ajoute un 'n' final : بًا (ban), بٌ (boun), بٍ (bin). Les VOYELLES LONGUES utilisent ا و ي comme supports : بَا (bā), بُو (bū), بِي (bī). Le Laboratoire de Fusion évolue pour les intégrer !",
+        "exemple": {
+          "text": "كِتَابٌ",
+          "transcription": "kitāboun",
+          "traduction": "un livre"
+        }
+      }
+    },
+    "exercises": [
+      {
+        "type": "FUSION",
+        "prompt_fr": "Le Labo de Fusion ÉVOLUÉ ! Maintenant avec les voyelles longues : lettre + voyelle + support !",
+        "items": [
+          {
+            "lettre": "ب",
+            "haraka": "َا",
+            "haraka_nom": "Fatha + Alif",
+            "resultat": "بَا",
+            "son": "Bā (long)",
+            "audio_id": "ba_fatha_long"
+          },
+          {
+            "lettre": "ب",
+            "haraka": "ُو",
+            "haraka_nom": "Damma + Waw",
+            "resultat": "بُو",
+            "son": "Bū (long)",
+            "audio_id": "ba_damma_long"
+          },
+          {
+            "lettre": "ب",
+            "haraka": "ِي",
+            "haraka_nom": "Kasra + Ya",
+            "resultat": "بِي",
+            "son": "Bī (long)",
+            "audio_id": "ba_kasra_long"
+          },
+          {
+            "lettre": "ك",
+            "haraka": "َا",
+            "haraka_nom": "Fatha + Alif",
+            "resultat": "كَا",
+            "son": "Kā (long)",
+            "audio_id": "kaf_fatha_long"
+          },
+          {
+            "lettre": "ن",
+            "haraka": "ُو",
+            "haraka_nom": "Damma + Waw",
+            "resultat": "نُو",
+            "son": "Nū (long)",
+            "audio_id": "nun_damma_long"
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "Court ou long ? Identifie le type de voyelle.",
+        "items": [
+          {
+            "audio_id": "ba_fatha",
+            "son": "Ba (court)",
+            "options": [
+              "بَ (court)",
+              "بَا (long)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ba_fatha_long",
+            "son": "Bā (long)",
+            "options": [
+              "بَ (court)",
+              "بَا (long)"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "nun_damma",
+            "son": "Nou (court)",
+            "options": [
+              "نُ (court)",
+              "نُو (long)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "nun_damma_long",
+            "son": "Nū (long)",
+            "options": [
+              "نُ (court)",
+              "نُو (long)"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "type": "COMPLETER_SYLLABE",
+        "prompt_fr": "Tanwin : quel 'n' final entends-tu ?",
+        "items": [
+          {
+            "lettre": "كِتَابٌ",
+            "son_cible": "kitāboun",
+            "options": [
+              "ً (an)",
+              "ٌ (oun)",
+              "ٍ (in)"
+            ],
+            "correct": 1
+          },
+          {
+            "lettre": "سَمَاءً",
+            "son_cible": "samā'an",
+            "options": [
+              "ً (an)",
+              "ٌ (oun)",
+              "ٍ (in)"
+            ],
+            "correct": 0
+          },
+          {
+            "lettre": "بَيْتٍ",
+            "son_cible": "baytin",
+            "options": [
+              "ً (an)",
+              "ٌ (oun)",
+              "ٍ (in)"
+            ],
+            "correct": 2
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Lecture avec voyelles longues et tanwin !",
+      "items": [
+        {
+          "text": "كِ",
+          "son": "Ki",
+          "audio_id": "kaf_kasra",
+          "delay_ms": 0
+        },
+        {
+          "text": "تَا",
+          "son": "Tā",
+          "audio_id": "ta_fatha_long",
+          "delay_ms": 600
+        },
+        {
+          "text": "بٌ",
+          "son": "Boun",
+          "audio_id": "ba_tanwin_damma",
+          "delay_ms": 1200
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1800
+        },
+        {
+          "text": "سَ",
+          "son": "Sa",
+          "audio_id": "sin_fatha",
+          "delay_ms": 2400
+        },
+        {
+          "text": "مَا",
+          "son": "Mā",
+          "audio_id": "mim_fatha_long",
+          "delay_ms": 3000
+        },
+        {
+          "text": "ءُ",
+          "son": "'ou",
+          "audio_id": "hamza_damma",
+          "delay_ms": 3600
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L14Q1",
+        "question": "La Hamza (ء) est un...",
+        "options": [
+          "Son nasal",
+          "Coup de glotte",
+          "Son emphatique",
+          "Son guttural"
+        ],
+        "correct": 1,
+        "explanation": "La Hamza est un arrêt brusque à la glotte — comme le petit 'clic' avant 'Ah !' de surprise."
+      },
+      {
+        "id": "L14Q2",
+        "question": "Le Tanwin ٌ ajoute quel son ?",
+        "options": [
+          "Un 'n' final (oun)",
+          "Un 'm' final",
+          "Une voyelle longue",
+          "Rien"
+        ],
+        "correct": 0,
+        "explanation": "Le Tanwin ٌ (dammatan) ajoute le son 'oun' final. C'est le marqueur d'indétermination."
+      },
+      {
+        "id": "L14Q3",
+        "question": "Comment s'écrit le son long 'ā' ?",
+        "options": [
+          "Fatha seule",
+          "Fatha + Alif",
+          "Damma + Waw",
+          "Kasra + Ya"
+        ],
+        "correct": 1,
+        "explanation": "La voyelle longue 'ā' = Fatha + Alif (ا) comme support. Ex: كَا = Kā."
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "FL14_hamza",
+        "front_ar": "ء",
+        "back_fr": "Hamza — 'A/'Ou/'I",
+        "category": "Phase 3",
+        "example_ar": "أَ أُ إِ",
+        "example_fr": "'A, 'Ou, 'I"
+      }
+    ]
+  },
+  "15": {
+    "lesson_number": 15,
+    "title_fr": "28 Lettres : Le Grand Défi",
+    "title_ar": "التحدي الكبير",
+    "phase_number": 3,
+    "phase_name": "Les Sons Profonds",
+    "objective": "Tu connais les 28 lettres + tous les harakat ! Défi : lire 20 mots voyellés. Speed Round avancé.",
+    "letters": [],
+    "ecoute": {
+      "instruction": "Récap final : 28 lettres, toutes les voyelles, le soukoun, la shadda, le tanwin, les voyelles longues. Prêt ?",
+      "sequence": [
+        {
+          "audio_id": "sad_fatha",
+          "label": "?"
+        },
+        {
+          "audio_id": "ayn_fatha",
+          "label": "?"
+        },
+        {
+          "audio_id": "ha_deep_damma",
+          "label": "?"
+        },
+        {
+          "audio_id": "tah_kasra",
+          "label": "?"
+        },
+        {
+          "audio_id": "dhah_fatha",
+          "label": "?"
+        },
+        {
+          "audio_id": "dad_kasra",
+          "label": "?"
+        },
+        {
+          "audio_id": "hamza_fatha",
+          "label": "?"
+        },
+        {
+          "audio_id": "qaf_damma",
+          "label": "?"
+        }
+      ],
+      "anatomie": []
+    },
+    "exercises": [
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "Le quiz ultime — toutes les 28 lettres !",
+        "items": [
+          {
+            "audio_id": "ayn_fatha",
+            "son": "ʿA",
+            "options": [
+              "ع",
+              "ح",
+              "غ",
+              "خ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ha_deep_kasra",
+            "son": "Ḥi",
+            "options": [
+              "ح",
+              "ه",
+              "خ",
+              "ع"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "sad_damma",
+            "son": "Ṣou",
+            "options": [
+              "ص",
+              "س",
+              "ض",
+              "ش"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "tah_fatha",
+            "son": "Ṭa",
+            "options": [
+              "ط",
+              "ت",
+              "ظ",
+              "ذ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "dad_fatha",
+            "son": "Ḍa",
+            "options": [
+              "ض",
+              "د",
+              "ص",
+              "ظ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "dhah_kasra",
+            "son": "Ẓi",
+            "options": [
+              "ظ",
+              "ذ",
+              "ط",
+              "ث"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "hamza_fatha",
+            "son": "'A",
+            "options": [
+              "ء",
+              "ع",
+              "ا",
+              "ه"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ghayn_damma",
+            "son": "Ghou",
+            "options": [
+              "غ",
+              "خ",
+              "ع",
+              "ح"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "type": "SPEED_ROUND",
+        "prompt_fr": "Speed Round AVANCÉ — les 28 lettres en 30 secondes !",
+        "time_limit_seconds": 30,
+        "items": [
+          {
+            "glyph": "ب",
+            "name": "Bā"
+          },
+          {
+            "glyph": "ت",
+            "name": "Tā"
+          },
+          {
+            "glyph": "ث",
+            "name": "Thā"
+          },
+          {
+            "glyph": "ج",
+            "name": "Jīm"
+          },
+          {
+            "glyph": "ح",
+            "name": "Ḥā"
+          },
+          {
+            "glyph": "خ",
+            "name": "Khā"
+          },
+          {
+            "glyph": "د",
+            "name": "Dāl"
+          },
+          {
+            "glyph": "ذ",
+            "name": "Dhāl"
+          },
+          {
+            "glyph": "ر",
+            "name": "Rā"
+          },
+          {
+            "glyph": "ز",
+            "name": "Zāy"
+          },
+          {
+            "glyph": "س",
+            "name": "Sīn"
+          },
+          {
+            "glyph": "ش",
+            "name": "Shīn"
+          },
+          {
+            "glyph": "ص",
+            "name": "Ṣād"
+          },
+          {
+            "glyph": "ض",
+            "name": "Ḍād"
+          },
+          {
+            "glyph": "ط",
+            "name": "Ṭā"
+          },
+          {
+            "glyph": "ظ",
+            "name": "Ẓā"
+          },
+          {
+            "glyph": "ع",
+            "name": "ʿAyn"
+          },
+          {
+            "glyph": "غ",
+            "name": "Ghayn"
+          },
+          {
+            "glyph": "ف",
+            "name": "Fā"
+          },
+          {
+            "glyph": "ق",
+            "name": "Qāf"
+          },
+          {
+            "glyph": "ك",
+            "name": "Kāf"
+          },
+          {
+            "glyph": "ل",
+            "name": "Lām"
+          },
+          {
+            "glyph": "م",
+            "name": "Mīm"
+          },
+          {
+            "glyph": "ن",
+            "name": "Nūn"
+          },
+          {
+            "glyph": "ه",
+            "name": "Hā"
+          },
+          {
+            "glyph": "و",
+            "name": "Wāw"
+          },
+          {
+            "glyph": "ي",
+            "name": "Yā"
+          },
+          {
+            "glyph": "ء",
+            "name": "Hamza"
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "Classe les 4 familles de sons difficiles !",
+        "categories": [
+          "Emphatiques",
+          "Pharyngales",
+          "Gutturales",
+          "Interdentales"
+        ],
+        "items": [
+          {
+            "word": "ص",
+            "category": "Emphatiques"
+          },
+          {
+            "word": "ض",
+            "category": "Emphatiques"
+          },
+          {
+            "word": "ط",
+            "category": "Emphatiques"
+          },
+          {
+            "word": "ظ",
+            "category": "Emphatiques"
+          },
+          {
+            "word": "ح",
+            "category": "Pharyngales"
+          },
+          {
+            "word": "ع",
+            "category": "Pharyngales"
+          },
+          {
+            "word": "خ",
+            "category": "Gutturales"
+          },
+          {
+            "word": "غ",
+            "category": "Gutturales"
+          },
+          {
+            "word": "ث",
+            "category": "Interdentales"
+          },
+          {
+            "word": "ذ",
+            "category": "Interdentales"
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "20 mots voyellés — le grand défi final de Phase 3 !",
+      "items": [
+        {
+          "text": "كِ",
+          "son": "Ki",
+          "audio_id": "kaf_kasra",
+          "delay_ms": 0
+        },
+        {
+          "text": "تَا",
+          "son": "Tā",
+          "audio_id": "ta_fatha_long",
+          "delay_ms": 500
+        },
+        {
+          "text": "بٌ",
+          "son": "Boun",
+          "audio_id": "ba_tanwin_damma",
+          "delay_ms": 1000
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1600
+        },
+        {
+          "text": "عَ",
+          "son": "ʿA",
+          "audio_id": "ayn_fatha",
+          "delay_ms": 2100
+        },
+        {
+          "text": "يْ",
+          "son": "(muet)",
+          "audio_id": "ya_soukoun",
+          "delay_ms": 2600
+        },
+        {
+          "text": "نٌ",
+          "son": "Noun",
+          "audio_id": "nun_tanwin_damma",
+          "delay_ms": 3100
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 3700
+        },
+        {
+          "text": "حَ",
+          "son": "Ḥa",
+          "audio_id": "ha_deep_fatha",
+          "delay_ms": 4200
+        },
+        {
+          "text": "مْ",
+          "son": "(muet)",
+          "audio_id": "mim_soukoun",
+          "delay_ms": 4700
+        },
+        {
+          "text": "دُ",
+          "son": "Dou",
+          "audio_id": "dal_damma",
+          "delay_ms": 5200
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L15Q1",
+        "question": "Combien de lettres arabes as-tu apprises ?",
+        "options": [
+          "24",
+          "26",
+          "28",
+          "30"
+        ],
+        "correct": 2,
+        "explanation": "28 lettres ! L'alphabet arabe est complet."
+      },
+      {
+        "id": "L15Q2",
+        "question": "Combien de types de harakat connais-tu ?",
+        "options": [
+          "3",
+          "5",
+          "7",
+          "9"
+        ],
+        "correct": 2,
+        "explanation": "Fatha, Damma, Kasra, Soukoun, Shadda, Tanwin (3 formes), Voyelles longues (3 formes) = 7 catégories."
+      },
+      {
+        "id": "L15Q3",
+        "question": "عَيْنٌ se lit...",
+        "options": [
+          "Ḥayoun",
+          "ʿAynoun",
+          "Ghaynoun",
+          "Khaynoun"
+        ],
+        "correct": 1,
+        "explanation": "عَيْنٌ = ʿAy-noun = œil. Le ع au début donne ce son pharyngal caractéristique."
+      },
+      {
+        "id": "L15Q4",
+        "question": "Quelle paire de sons est pharyngale ?",
+        "options": [
+          "خ غ",
+          "ح ع",
+          "ص ض",
+          "ث ذ"
+        ],
+        "correct": 1,
+        "explanation": "ح et ع sont les pharyngales — sons produits dans le pharynx (fond de la gorge)."
+      },
+      {
+        "id": "L15Q5",
+        "question": "Quelle lettre est surnommée 'la lettre de l'arabe' ?",
+        "options": [
+          "ع",
+          "ض",
+          "ح",
+          "ق"
+        ],
+        "correct": 1,
+        "explanation": "Le ض (Ḍād) est unique à l'arabe. On appelle l'arabe 'la langue du Ḍād' !"
+      }
+    ],
+    "flashcards": []
+  },
+  "16": {
+    "lesson_number": 16,
+    "title_fr": "Le Caméléon : Formes Positionnelles",
+    "title_ar": "الحرباء",
+    "phase_number": 4,
+    "phase_name": "Lire pour de vrai",
+    "objective": "Chaque lettre change de forme selon sa position dans le mot ! Apprends à reconnaître les 4 formes et découvre les lettres 'rebelles'.",
+    "letters": [],
+    "ecoute": {
+      "instruction": "Regarde comment la même lettre change de forme selon sa position dans le mot : isolée, début, milieu, fin.",
+      "sequence": [],
+      "anatomie": []
+    },
+    "exercises": [
+      {
+        "type": "CAMELEON",
+        "prompt_fr": "Le Caméléon — la lettre est au centre. Clique sur sa forme dans la position demandée !",
+        "items": [
+          {
+            "lettre": "ب",
+            "position": "debut",
+            "options": [
+              "ب",
+              "بـ",
+              "ـبـ",
+              "ـب"
+            ],
+            "correct": 1
+          },
+          {
+            "lettre": "ب",
+            "position": "milieu",
+            "options": [
+              "ب",
+              "بـ",
+              "ـبـ",
+              "ـب"
+            ],
+            "correct": 2
+          },
+          {
+            "lettre": "ب",
+            "position": "fin",
+            "options": [
+              "ب",
+              "بـ",
+              "ـبـ",
+              "ـب"
+            ],
+            "correct": 3
+          },
+          {
+            "lettre": "ع",
+            "position": "debut",
+            "options": [
+              "ع",
+              "عـ",
+              "ـعـ",
+              "ـع"
+            ],
+            "correct": 1
+          },
+          {
+            "lettre": "ع",
+            "position": "milieu",
+            "options": [
+              "ع",
+              "عـ",
+              "ـعـ",
+              "ـع"
+            ],
+            "correct": 2
+          },
+          {
+            "lettre": "ك",
+            "position": "fin",
+            "options": [
+              "ك",
+              "كـ",
+              "ـكـ",
+              "ـك"
+            ],
+            "correct": 3
+          },
+          {
+            "lettre": "ه",
+            "position": "milieu",
+            "options": [
+              "ه",
+              "هـ",
+              "ـهـ",
+              "ـه"
+            ],
+            "correct": 2
+          },
+          {
+            "lettre": "ي",
+            "position": "debut",
+            "options": [
+              "ي",
+              "يـ",
+              "ـيـ",
+              "ـي"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "type": "MUR_INVISIBLE",
+        "prompt_fr": "Les 6 lettres 'Rebelles' ne se connectent JAMAIS à gauche. Identifie-les !",
+        "items": [
+          {
+            "lettre": "ا",
+            "connectante": false,
+            "animation": "rebond"
+          },
+          {
+            "lettre": "د",
+            "connectante": false,
+            "animation": "rebond"
+          },
+          {
+            "lettre": "ذ",
+            "connectante": false,
+            "animation": "rebond"
+          },
+          {
+            "lettre": "ر",
+            "connectante": false,
+            "animation": "rebond"
+          },
+          {
+            "lettre": "ز",
+            "connectante": false,
+            "animation": "rebond"
+          },
+          {
+            "lettre": "و",
+            "connectante": false,
+            "animation": "rebond"
+          },
+          {
+            "lettre": "ب",
+            "connectante": true,
+            "animation": "connexion"
+          },
+          {
+            "lettre": "س",
+            "connectante": true,
+            "animation": "connexion"
+          },
+          {
+            "lettre": "ع",
+            "connectante": true,
+            "animation": "connexion"
+          },
+          {
+            "lettre": "ل",
+            "connectante": true,
+            "animation": "connexion"
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "Classe : Rebelles (non-connectantes) ou Normales (connectantes) ?",
+        "categories": [
+          "Rebelles",
+          "Normales"
+        ],
+        "items": [
+          {
+            "word": "ا",
+            "category": "Rebelles"
+          },
+          {
+            "word": "د",
+            "category": "Rebelles"
+          },
+          {
+            "word": "ذ",
+            "category": "Rebelles"
+          },
+          {
+            "word": "ر",
+            "category": "Rebelles"
+          },
+          {
+            "word": "ز",
+            "category": "Rebelles"
+          },
+          {
+            "word": "و",
+            "category": "Rebelles"
+          },
+          {
+            "word": "ب",
+            "category": "Normales"
+          },
+          {
+            "word": "ن",
+            "category": "Normales"
+          },
+          {
+            "word": "ع",
+            "category": "Normales"
+          },
+          {
+            "word": "ل",
+            "category": "Normales"
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Lis ces mots en cursive — chaque lettre est dans sa forme positionnelle !",
+      "items": [
+        {
+          "text": "كَتَبَ",
+          "son": "Ka-ta-ba",
+          "audio_id": "kataba",
+          "delay_ms": 0
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 1200
+        },
+        {
+          "text": "بَيْتٌ",
+          "son": "Bay-toun",
+          "audio_id": "baytoun",
+          "delay_ms": 2000
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 3200
+        },
+        {
+          "text": "قَلَمٌ",
+          "son": "Qa-la-moun",
+          "audio_id": "qalamoun",
+          "delay_ms": 4000
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L16Q1",
+        "question": "Combien de lettres 'rebelles' (non-connectantes) y a-t-il ?",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "correct": 2,
+        "explanation": "6 rebelles : ا د ذ ر ز و. Elles ne se lient jamais à la lettre suivante."
+      },
+      {
+        "id": "L16Q2",
+        "question": "Combien de formes une lettre connectante peut-elle avoir ?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct": 2,
+        "explanation": "4 formes : isolée, début, milieu, fin. Les rebelles n'en ont que 2 (isolée/fin)."
+      },
+      {
+        "id": "L16Q3",
+        "question": "Dans le mot كَتَبَ, quelle forme a le تَ ?",
+        "options": [
+          "Isolée",
+          "Début",
+          "Milieu",
+          "Fin"
+        ],
+        "correct": 2,
+        "explanation": "Le تَ est au milieu du mot كَتَبَ, donc il prend sa forme médiane (ـتـ)."
+      }
+    ],
+    "flashcards": []
+  },
+  "17": {
+    "lesson_number": 17,
+    "title_fr": "Découpage en Syllabes",
+    "title_ar": "تقطيع المقاطع",
+    "phase_number": 4,
+    "phase_name": "Lire pour de vrai",
+    "objective": "Apprends à décomposer un mot en syllabes colorées puis à les assembler. Karaoké complet avec mots de 3+ syllabes !",
+    "letters": [],
+    "ecoute": {
+      "instruction": "Écoute ces mots découpés en syllabes. Chaque couleur = une syllabe.",
+      "sequence": [
+        {
+          "audio_id": "ka_ta_ba",
+          "label": "كَ-تَ-بَ (3 syllabes)"
+        },
+        {
+          "audio_id": "mad_ra_sa_toun",
+          "label": "مَدْ-رَ-سَ-تٌ (4 syllabes)"
+        },
+        {
+          "audio_id": "mus_ta_sha_fan",
+          "label": "مُسْ-تَشْ-فًى (3 syllabes)"
+        }
+      ],
+      "anatomie": []
+    },
+    "exercises": [
+      {
+        "type": "DICTEE",
+        "prompt_fr": "Dictée syllabique — écoute le mot et sélectionne les bonnes syllabes dans l'ordre !",
+        "items": [
+          {
+            "audio_id": "kataba",
+            "mot": "كَتَبَ",
+            "syllabes_correctes": [
+              "كَ",
+              "تَ",
+              "بَ"
+            ],
+            "distracteurs": [
+              "بَ",
+              "كِ",
+              "نَ",
+              "تُ"
+            ]
+          },
+          {
+            "audio_id": "djamal",
+            "mot": "جَمَلٌ",
+            "syllabes_correctes": [
+              "جَ",
+              "مَ",
+              "لٌ"
+            ],
+            "distracteurs": [
+              "حَ",
+              "مُ",
+              "لَ",
+              "نٌ"
+            ]
+          },
+          {
+            "audio_id": "qamar",
+            "mot": "قَمَرٌ",
+            "syllabes_correctes": [
+              "قَ",
+              "مَ",
+              "رٌ"
+            ],
+            "distracteurs": [
+              "كَ",
+              "مُ",
+              "رَ",
+              "دٌ"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "Quel mot entends-tu ?",
+        "items": [
+          {
+            "audio_id": "kataba",
+            "son": "Kataba",
+            "options": [
+              "كَتَبَ",
+              "كَبَتَ",
+              "تَكَبَ",
+              "بَكَتَ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "djamal",
+            "son": "Djamal",
+            "options": [
+              "حَمَلٌ",
+              "جَمَلٌ",
+              "خَمَلٌ",
+              "جَمَعٌ"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "baytoun",
+            "son": "Baytoun",
+            "options": [
+              "بَيْتٌ",
+              "تَيْبٌ",
+              "بِنْتٌ",
+              "يَبْتٌ"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Karaoké de mots complets — les syllabes s'allument une par une !",
+      "items": [
+        {
+          "text": "مَدْ",
+          "son": "Mad",
+          "audio_id": "mad",
+          "delay_ms": 0
+        },
+        {
+          "text": "رَ",
+          "son": "Ra",
+          "audio_id": "ra_fatha",
+          "delay_ms": 600
+        },
+        {
+          "text": "سَ",
+          "son": "Sa",
+          "audio_id": "sin_fatha",
+          "delay_ms": 1100
+        },
+        {
+          "text": "تٌ",
+          "son": "Toun",
+          "audio_id": "ta_tanwin",
+          "delay_ms": 1600
+        },
+        {
+          "text": " — ",
+          "son": "",
+          "audio_id": " — _audio",
+          "delay_ms": 2200
+        },
+        {
+          "text": "كَ",
+          "son": "Ka",
+          "audio_id": "kaf_fatha",
+          "delay_ms": 2800
+        },
+        {
+          "text": "لِ",
+          "son": "Li",
+          "audio_id": "lam_kasra",
+          "delay_ms": 3300
+        },
+        {
+          "text": "مَا",
+          "son": "Mā",
+          "audio_id": "mim_fatha_long",
+          "delay_ms": 3800
+        },
+        {
+          "text": "تٌ",
+          "son": "Toun",
+          "audio_id": "ta_tanwin",
+          "delay_ms": 4400
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L17Q1",
+        "question": "Combien de syllabes dans مَدْرَسَتٌ ?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct": 2,
+        "explanation": "مَدْ-رَ-سَ-تٌ = 4 syllabes. Le soukoun ferme la première syllabe."
+      },
+      {
+        "id": "L17Q2",
+        "question": "Que signifie كِتَابٌ ?",
+        "options": [
+          "Stylo",
+          "École",
+          "Livre",
+          "Table"
+        ],
+        "correct": 2,
+        "explanation": "كِتَابٌ = kitāboun = un livre."
+      },
+      {
+        "id": "L17Q3",
+        "question": "Dans مَكْتَبٌ, où est le soukoun ?",
+        "options": [
+          "Sur le م",
+          "Sur le ك",
+          "Sur le ت",
+          "Sur le ب"
+        ],
+        "correct": 1,
+        "explanation": "مَكْتَبٌ : le ك porte un soukoun (مَكْ = mak). Ça ferme la première syllabe."
+      }
+    ],
+    "flashcards": []
+  },
+  "18": {
+    "lesson_number": 18,
+    "title_fr": "Lire des Phrases Voyellées",
+    "title_ar": "قراءة الجمل",
+    "phase_number": 4,
+    "phase_name": "Lire pour de vrai",
+    "objective": "L'aboutissement : lire des phrases arabes complètes ! Introduction de l'Alif Maqsura (ى) et de la Hamza sur Alif. Objectif final : déchiffrer un verset coranique voyellé.",
+    "letters": [],
+    "ecoute": {
+      "instruction": "Écoute ces phrases courtes. Tu vas les lire toi-même dans quelques minutes !",
+      "sequence": [
+        {
+          "audio_id": "hadha_kitaboun",
+          "label": "هَذَا كِتَابٌ"
+        },
+        {
+          "audio_id": "alhamdu_lillah",
+          "label": "الحَمْدُ لِلَّهِ"
+        },
+        {
+          "audio_id": "bismillah",
+          "label": "بِسْمِ اللَّهِ"
+        }
+      ],
+      "anatomie": [],
+      "harakat_intro": {
+        "nom": "Alif Maqsura et Hamza sur Alif",
+        "symbole": "ى / أ إ",
+        "description": "L'Alif Maqsura (ى) se prononce comme un 'a' long final (عَلَى = ʿalā). La Hamza peut se poser sur l'Alif (أَ = 'a, إِ = 'i) ou sous lui.",
+        "exemple": {
+          "text": "عَلَى",
+          "transcription": "ʿalā",
+          "traduction": "sur"
+        }
+      }
+    },
+    "exercises": [
+      {
+        "type": "DICTEE",
+        "prompt_fr": "Dictée de phrases — reconstitue la phrase mot par mot !",
+        "items": [
+          {
+            "audio_id": "hadha_kitaboun",
+            "mot": "هَذَا كِتَابٌ",
+            "syllabes_correctes": [
+              "هَذَا",
+              "كِتَابٌ"
+            ],
+            "distracteurs": [
+              "هَذِهِ",
+              "كَتَبَ",
+              "قَلَمٌ"
+            ]
+          },
+          {
+            "audio_id": "hadhi_madrasatoun",
+            "mot": "هَذِهِ مَدْرَسَةٌ",
+            "syllabes_correctes": [
+              "هَذِهِ",
+              "مَدْرَسَةٌ"
+            ],
+            "distracteurs": [
+              "هَذَا",
+              "مَكْتَبٌ",
+              "بَيْتٌ"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "Quiz final — lis et comprends !",
+        "items": [
+          {
+            "audio_id": "hadha_kitaboun",
+            "son": "Hādhā kitāboun",
+            "options": [
+              "هَذَا كِتَابٌ",
+              "هَذِهِ كِتَابٌ",
+              "هَذَا قَلَمٌ",
+              "هَذَا بَيْتٌ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "bismillah",
+            "son": "Bismillāh",
+            "options": [
+              "بِسْمِ اللَّهِ",
+              "الحَمْدُ لِلَّهِ",
+              "سُبْحَانَ اللَّهِ",
+              "لَا إِلَهَ"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "type": "CAMELEON",
+        "prompt_fr": "Reconnaissance finale — identifie les lettres dans ces mots complets !",
+        "items": [
+          {
+            "lettre": "ك",
+            "position": "debut",
+            "options": [
+              "ك",
+              "كـ",
+              "ـكـ",
+              "ـك"
+            ],
+            "correct": 1
+          },
+          {
+            "lettre": "ت",
+            "position": "milieu",
+            "options": [
+              "ت",
+              "تـ",
+              "ـتـ",
+              "ـت"
+            ],
+            "correct": 2
+          },
+          {
+            "lettre": "ب",
+            "position": "fin",
+            "options": [
+              "ب",
+              "بـ",
+              "ـبـ",
+              "ـب"
+            ],
+            "correct": 3
+          },
+          {
+            "lettre": "ع",
+            "position": "debut",
+            "options": [
+              "ع",
+              "عـ",
+              "ـعـ",
+              "ـع"
+            ],
+            "correct": 1
+          },
+          {
+            "lettre": "م",
+            "position": "milieu",
+            "options": [
+              "م",
+              "مـ",
+              "ـمـ",
+              "ـم"
+            ],
+            "correct": 2
+          }
+        ]
+      }
+    ],
+    "mini_lecture": {
+      "type": "KARAOKE",
+      "instruction": "Le moment ultime : lis ces phrases complètes !",
+      "items": [
+        {
+          "text": "بِسْمِ",
+          "son": "Bismi",
+          "audio_id": "bismi",
+          "delay_ms": 0
+        },
+        {
+          "text": " ",
+          "son": "",
+          "audio_id": " _audio",
+          "delay_ms": 800
+        },
+        {
+          "text": "اللَّهِ",
+          "son": "Llāhi",
+          "audio_id": "allahi",
+          "delay_ms": 1200
+        },
+        {
+          "text": " ",
+          "son": "",
+          "audio_id": " _audio",
+          "delay_ms": 2000
+        },
+        {
+          "text": "الرَّحْمَنِ",
+          "son": "Rraḥmāni",
+          "audio_id": "arrahmaani",
+          "delay_ms": 2400
+        },
+        {
+          "text": " ",
+          "son": "",
+          "audio_id": " _audio",
+          "delay_ms": 3600
+        },
+        {
+          "text": "الرَّحِيمِ",
+          "son": "Rraḥīmi",
+          "audio_id": "arrahiimi",
+          "delay_ms": 4000
+        }
+      ]
+    },
+    "quiz_questions": [
+      {
+        "id": "L18Q1",
+        "question": "L'Alif Maqsura (ى) se prononce comme...",
+        "options": [
+          "Un 'i' long",
+          "Un 'ou' long",
+          "Un 'a' long",
+          "Un 'e' muet"
+        ],
+        "correct": 2,
+        "explanation": "L'Alif Maqsura (ى) est un 'a' long en fin de mot. عَلَى = ʿalā."
+      },
+      {
+        "id": "L18Q2",
+        "question": "Que signifie بِسْمِ اللَّهِ ?",
+        "options": [
+          "Louange à Dieu",
+          "Au nom de Dieu",
+          "Gloire à Dieu",
+          "Dieu est grand"
+        ],
+        "correct": 1,
+        "explanation": "بِسْمِ اللَّهِ = 'Au nom de Dieu' — la Basmala, la formule la plus récitée en arabe."
+      },
+      {
+        "id": "L18Q3",
+        "question": "Tu as terminé L'Odyssée des Lettres ! Tu peux maintenant...",
+        "options": [
+          "Écrire un roman en arabe",
+          "Lire n'importe quel texte arabe",
+          "Déchiffrer lentement tout mot arabe voyellé",
+          "Parler arabe couramment"
+        ],
+        "correct": 2,
+        "explanation": "Tu peux déchiffrer lentement tout mot arabe voyellé. C'est la clé qui ouvre la porte du Coran, du Tome de Médine, et de toute lecture arabe !"
+      },
+      {
+        "id": "L18Q4",
+        "question": "Combien de lettres et harakat maîtrises-tu ?",
+        "options": [
+          "28 lettres + 3 harakat",
+          "28 lettres + 7 types de harakat",
+          "26 lettres + 5 harakat",
+          "28 lettres + 10 harakat"
+        ],
+        "correct": 1,
+        "explanation": "28 lettres + 7 catégories de harakat (Fatha, Damma, Kasra, Soukoun, Shadda, Tanwin, Voyelles longues). Bravo !"
+      }
+    ],
+    "flashcards": []
+  }
+}
