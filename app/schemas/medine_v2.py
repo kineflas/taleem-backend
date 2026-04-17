@@ -1,7 +1,7 @@
 """Pydantic schemas for Médine Tome 1 — V2 module."""
 from __future__ import annotations
 
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 
 
 # ── Discovery Cards ──────────────────────────────────────────────────────────
@@ -64,6 +64,11 @@ class QuizQuestionV2(BaseModel):
     correct: int
     explanation: str | None = None
 
+    @field_validator("id", mode="before")
+    @classmethod
+    def coerce_id_to_str(cls, v: object) -> str:
+        return str(v)
+
 
 # ── Flashcards ───────────────────────────────────────────────────────────────
 
@@ -74,6 +79,11 @@ class FlashcardV2(BaseModel):
     category: str | None = None
     example_ar: str | None = None
     example_fr: str | None = None
+
+    @field_validator("id", mode="before")
+    @classmethod
+    def coerce_id_to_str(cls, v: object) -> str | None:
+        return str(v) if v is not None else None
 
 
 # ── Lesson Content ───────────────────────────────────────────────────────────
@@ -145,6 +155,11 @@ class BossQuizQuestion(BaseModel):
     options: list[str]
     correct: int
     explanation: str | None = None
+
+    @field_validator("id", mode="before")
+    @classmethod
+    def coerce_id_to_str(cls, v: object) -> str:
+        return str(v)
 
 
 class BossQuizContent(BaseModel):
