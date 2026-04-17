@@ -137,6 +137,73 @@ def _extract_audio_ids_from_json() -> dict[str, list[dict]]:
             if entries:
                 results[group] = entries
 
+    # --- Médine V2 (Tomes de Médine) ---
+    medine_path = DATA_DIR / "lessons_content_v2.json"
+    if medine_path.exists():
+        with open(medine_path, "r", encoding="utf-8") as f:
+            med_data = json.load(f)
+
+        for lesson_key, lesson in med_data.items():
+            group = f"medine/lesson_{lesson_key}"
+            entries = []
+
+            # Discovery cards: pronunciation items + examples
+            for card in lesson.get("discovery_cards", []):
+                if card.get("type") == "pronunciation":
+                    for item in card.get("items", []):
+                        if item.get("audio_id"):
+                            entries.append({
+                                "audio_id": item["audio_id"],
+                                "context": f"Prononciation: {item.get('translit', '')}",
+                                "text_ar": item.get("ar", ""),
+                            })
+                for ex in card.get("examples", []):
+                    if ex.get("audio_id"):
+                        entries.append({
+                            "audio_id": ex["audio_id"],
+                            "context": f"Exemple: {ex.get('fr', '')[:60]}",
+                            "text_ar": ex.get("ar", ""),
+                        })
+
+            # Dialogue lines
+            dialogue = lesson.get("dialogue", {})
+            if dialogue:
+                for line in dialogue.get("lines", []):
+                    if line.get("audio_id"):
+                        entries.append({
+                            "audio_id": line["audio_id"],
+                            "context": f"Dialogue ({line.get('speaker_ar', '')}): {line.get('french', '')[:50]}",
+                            "text_ar": line.get("arabic", ""),
+                        })
+
+            # Flashcards
+            for fc in lesson.get("flashcards", []):
+                if fc.get("audio_id"):
+                    entries.append({
+                        "audio_id": fc["audio_id"],
+                        "context": f"Flashcard: {fc.get('front_fr', fc.get('front', ''))}",
+                        "text_ar": fc.get("front_ar", ""),
+                    })
+                if fc.get("example_audio_id"):
+                    entries.append({
+                        "audio_id": fc["example_audio_id"],
+                        "context": f"Flashcard exemple",
+                        "text_ar": fc.get("example_ar", ""),
+                    })
+
+            # Exercise words
+            for ex in lesson.get("exercises", []):
+                for w in ex.get("words", []):
+                    if isinstance(w, dict) and w.get("audio_id"):
+                        entries.append({
+                            "audio_id": w["audio_id"],
+                            "context": f"Exercice mot",
+                            "text_ar": w.get("ar", w.get("word", "")),
+                        })
+
+            if entries:
+                results[group] = entries
+
     return results
 
 

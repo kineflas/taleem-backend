@@ -16,7 +16,8 @@
           {
             "ar": "هَذَا بَيْتٌ",
             "fr": "_C'est une maison_",
-            "translit": null
+            "translit": null,
+            "audio_id": "med1_ex_9e544cdd"
           }
         ]
       },
@@ -36,7 +37,8 @@
           {
             "ar": "بَيْتٌ",
             "fr": "Bayt**un**",
-            "translit": null
+            "translit": null,
+            "audio_id": "med1_ex_d4c49c94"
           }
         ]
       },
@@ -51,27 +53,32 @@
           {
             "ar": "هَذَا",
             "translit": "",
-            "note": "Hā-dhā, le \"dh\" se prononce comme le \"th\" anglais de \"this\""
+            "note": "Hā-dhā, le \"dh\" se prononce comme le \"th\" anglais de \"this\"",
+            "audio_id": "med1_pron_222f6bf2"
           },
           {
             "ar": "هَذِهِ",
             "translit": "",
-            "note": "Hā-dhi-hi, trois syllabes distinctes"
+            "note": "Hā-dhi-hi, trois syllabes distinctes",
+            "audio_id": "med1_pron_2a65a7ff"
           },
           {
             "ar": "بَيْتٌ",
             "translit": "",
-            "note": "Bay-tun, le tanwin \"un\" est bien audible"
+            "note": "Bay-tun, le tanwin \"un\" est bien audible",
+            "audio_id": "med1_pron_d4c49c94"
           },
           {
             "ar": "كِتَابٌ",
             "translit": "",
-            "note": "Ki-tā-bun, le \"ā\" est allongé"
+            "note": "Ki-tā-bun, le \"ā\" est allongé",
+            "audio_id": "med1_pron_e07c3c41"
           },
           {
             "ar": "سَيَّارَةٌ",
             "translit": "",
-            "note": "Say-yā-ra-tun, la shadda double le \"y\""
+            "note": "Say-yā-ra-tun, la shadda double le \"y\"",
+            "audio_id": "med1_pron_05b80b6e"
           }
         ]
       },
@@ -111,27 +118,32 @@
         {
           "speaker_ar": "الأُسْتَاذُ",
           "arabic": "هَذَا فَصْلٌ",
-          "french": "_Ceci est une salle de classe._"
+          "french": "_Ceci est une salle de classe._",
+          "audio_id": "med1_dial_8df053f2"
         },
         {
           "speaker_ar": "أَحْمَدُ",
           "arabic": "وَهَذَا؟",
-          "french": "_Et ceci ?_"
+          "french": "_Et ceci ?_",
+          "audio_id": "med1_dial_64ba97c1"
         },
         {
           "speaker_ar": "الأُسْتَاذُ",
           "arabic": "هَذَا كِتَابٌ",
-          "french": "_Ceci est un livre._"
+          "french": "_Ceci est un livre._",
+          "audio_id": "med1_dial_0fa5d53f"
         },
         {
           "speaker_ar": "أَحْمَدُ",
           "arabic": "وَهَذِهِ؟",
-          "french": "_Et ceci ?_ [pointant un objet féminin]"
+          "french": "_Et ceci ?_ [pointant un objet féminin]",
+          "audio_id": "med1_dial_69bb0ac8"
         },
         {
           "speaker_ar": "الأُسْتَاذُ",
           "arabic": "هَذِهِ طَاوِلَةٌ",
-          "french": "_Ceci est une table._"
+          "french": "_Ceci est une table._",
+          "audio_id": "med1_dial_475c316e"
         }
       ]
     },
@@ -278,49 +290,57 @@
         "id": "fc_p1_1",
         "front_ar": "هَذَا",
         "back_fr": "Ceci (masculin) — utilisé pour pointer un objet masculin proche. Ex : هَذَا كِتَابٌ (Ceci est un livre).",
-        "category": "Démonstratifs"
+        "category": "Démonstratifs",
+        "audio_id": "med1_fc_222f6bf2"
       },
       {
         "id": "fc_p1_2",
         "front_ar": "هَذِهِ",
         "back_fr": "Ceci (féminin) — utilisé pour pointer un objet féminin proche. Ex : هَذِهِ سَيَّارَةٌ (Ceci est une voiture).",
-        "category": "Démonstratifs"
+        "category": "Démonstratifs",
+        "audio_id": "med1_fc_2a65a7ff"
       },
       {
         "id": "fc_p1_3",
         "front_ar": "كِتَابٌ",
         "back_fr": "Un livre — nom masculin indéfini. Le tanwīn (ٌ) marque l'indéfini.",
-        "category": "Vocabulaire"
+        "category": "Vocabulaire",
+        "audio_id": "med1_fc_e07c3c41"
       },
       {
         "id": "fc_p1_4",
         "front_ar": "سَيَّارَةٌ",
         "back_fr": "Une voiture — nom féminin (terminaison ـَة = tā' marbūta). Indéfini avec tanwīn.",
-        "category": "Vocabulaire"
+        "category": "Vocabulaire",
+        "audio_id": "med1_fc_05b80b6e"
       },
       {
         "id": "fc_p1_5",
         "front_ar": "مَسْجِدٌ",
         "back_fr": "Une mosquée — nom masculin indéfini. هَذَا مَسْجِدٌ = Ceci est une mosquée.",
-        "category": "Vocabulaire"
+        "category": "Vocabulaire",
+        "audio_id": "med1_fc_7c9fb301"
       },
       {
         "id": "fc_p1_6",
         "front_ar": "قَلَمٌ",
         "back_fr": "Un stylo — nom masculin indéfini. هَذَا قَلَمٌ = Ceci est un stylo.",
-        "category": "Vocabulaire"
+        "category": "Vocabulaire",
+        "audio_id": "med1_fc_891a85ce"
       },
       {
         "id": "fc_p1_7",
         "front_ar": "بَيْتٌ",
         "back_fr": "Une maison — nom masculin indéfini. هَذَا بَيْتٌ = Ceci est une maison.",
-        "category": "Vocabulaire"
+        "category": "Vocabulaire",
+        "audio_id": "med1_fc_d4c49c94"
       },
       {
         "id": "fc_p1_8",
         "front_ar": "Comment reconnaître le féminin ?",
         "back_fr": "La plupart des noms féminins se terminent par ـَة (tā' marbūta) : سَيَّارَة، غُرْفَة، طَاوِلَة. Mais certains sont féminins sans ـَة.",
-        "category": "Règle"
+        "category": "Règle",
+        "audio_id": "med1_fc_62e24d4c"
       }
     ]
   },
@@ -355,17 +375,20 @@
           {
             "ar": "أَ",
             "fr": "ne change pas la phrase — elle marque juste une question. Elle est extrêmement courte et facile à ignorer au premier abord.",
-            "translit": null
+            "translit": null,
+            "audio_id": "med2_ex_1e0b8ca9"
           },
           {
             "ar": "هَذَا كِتَابٌ",
             "fr": "_Ceci est un livre_",
-            "translit": null
+            "translit": null,
+            "audio_id": "med2_ex_0fa5d53f"
           },
           {
             "ar": "أَهَذَا كِتَابٌ؟",
             "fr": "_Est-ce un livre ?_",
-            "translit": null
+            "translit": null,
+            "audio_id": "med2_ex_1e1d4047"
           }
         ]
       },
@@ -380,27 +403,32 @@
           {
             "ar": "مَا",
             "translit": "",
-            "note": "Mā, court et incisif"
+            "note": "Mā, court et incisif",
+            "audio_id": "med2_pron_6ed51b77"
           },
           {
             "ar": "مَنْ",
             "translit": "",
-            "note": "Man, similaire au français \"manne\""
+            "note": "Man, similaire au français \"manne\"",
+            "audio_id": "med2_pron_cbbf08df"
           },
           {
             "ar": "أَ",
             "translit": "",
-            "note": "A, un simple coup glottal très discret"
+            "note": "A, un simple coup glottal très discret",
+            "audio_id": "med2_pron_1e0b8ca9"
           },
           {
             "ar": "هَذَا",
             "translit": "",
-            "note": "Hā-dhā en contexte de question"
+            "note": "Hā-dhā en contexte de question",
+            "audio_id": "med2_pron_222f6bf2"
           },
           {
             "ar": "كِتَابٌ",
             "translit": "",
-            "note": "Ki-tā-bun en contexte de question"
+            "note": "Ki-tā-bun en contexte de question",
+            "audio_id": "med2_pron_e07c3c41"
           }
         ]
       },
@@ -445,27 +473,32 @@
         {
           "speaker_ar": "العَامِلُ",
           "arabic": "مَرْحَباً!",
-          "french": "_Bonjour !_"
+          "french": "_Bonjour !_",
+          "audio_id": "med2_dial_57a2883e"
         },
         {
           "speaker_ar": "العَمِيلُ",
           "arabic": "مَا هَذَا؟",
-          "french": "_Qu'est-ce que c'est ?_"
+          "french": "_Qu'est-ce que c'est ?_",
+          "audio_id": "med2_dial_1905011c"
         },
         {
           "speaker_ar": "العَامِلُ",
           "arabic": "هَذَا تُفَّاحٌ",
-          "french": "_C'est une pomme._"
+          "french": "_C'est une pomme._",
+          "audio_id": "med2_dial_f83b98aa"
         },
         {
           "speaker_ar": "العَمِيلُ",
           "arabic": "وَمَنْ صَاحِبُ الدُّكَّانِ؟",
-          "french": "_Et qui est le propriétaire du magasin ?_"
+          "french": "_Et qui est le propriétaire du magasin ?_",
+          "audio_id": "med2_dial_6c7495e6"
         },
         {
           "speaker_ar": "العَامِلُ",
           "arabic": "أَنَا! هَلْ تُرِيدُ تُفَّاحَةً؟",
-          "french": "_C'est moi! Veux-tu une pomme ?_"
+          "french": "_C'est moi! Veux-tu une pomme ?_",
+          "audio_id": "med2_dial_98051866"
         }
       ]
     },
@@ -574,37 +607,43 @@
         "id": "fc_p1_9",
         "front_ar": "مَا هَذَا؟",
         "back_fr": "Qu'est-ce que c'est ? — مَا = quoi (pour les choses). Réponse : هَذَا كِتَابٌ.",
-        "category": "Interrogatifs"
+        "category": "Interrogatifs",
+        "audio_id": "med2_fc_1905011c"
       },
       {
         "id": "fc_p1_10",
         "front_ar": "مَنْ هَذَا؟",
         "back_fr": "Qui est-ce ? — مَنْ = qui (pour les personnes). Réponse : هَذَا مُدَرِّسٌ.",
-        "category": "Interrogatifs"
+        "category": "Interrogatifs",
+        "audio_id": "med2_fc_26275054"
       },
       {
         "id": "fc_p1_11",
         "front_ar": "أَهَذَا قَلَمٌ؟",
         "back_fr": "Est-ce un stylo ? — أَ (hamza interrogative) transforme une phrase en question oui/non. Réponse : نَعَمْ ou لَا.",
-        "category": "Interrogatifs"
+        "category": "Interrogatifs",
+        "audio_id": "med2_fc_6f14a6c8"
       },
       {
         "id": "fc_p1_12",
         "front_ar": "نَعَمْ / لَا",
         "back_fr": "Oui / Non — نَعَمْ = oui (affirmatif), لَا = non (négatif).",
-        "category": "Vocabulaire"
+        "category": "Vocabulaire",
+        "audio_id": "med2_fc_16a0a1e2"
       },
       {
         "id": "fc_p1_13",
         "front_ar": "مُدَرِّسٌ",
         "back_fr": "Un professeur — nom masculin. مَنْ هَذَا؟ هَذَا مُدَرِّسٌ.",
-        "category": "Vocabulaire"
+        "category": "Vocabulaire",
+        "audio_id": "med2_fc_ea0972bc"
       },
       {
         "id": "fc_p1_14",
         "front_ar": "طَالِبٌ",
         "back_fr": "Un étudiant — nom masculin. أَهَذَا طَالِبٌ؟ نَعَمْ.",
-        "category": "Vocabulaire"
+        "category": "Vocabulaire",
+        "audio_id": "med2_fc_94a80283"
       }
     ]
   },
@@ -632,37 +671,44 @@
           {
             "ar": "الـ",
             "fr": "s'attache à un mot commençant par certaines lettres, le **ل** de **الـ** disparaît de la prononciation !",
-            "translit": null
+            "translit": null,
+            "audio_id": "med3_ex_e60c8a5c"
           },
           {
             "ar": "الـ",
             "fr": "se joint à une lettre solaire, le **ل** se prononce comme faisant partie de cette lettre. On le",
-            "translit": null
+            "translit": null,
+            "audio_id": "med3_ex_e60c8a5c"
           },
           {
             "ar": "التَّاجُ",
             "fr": "la couronne",
-            "translit": null
+            "translit": null,
+            "audio_id": "med3_ex_47d8f61d"
           },
           {
             "ar": "الـ",
             "fr": "se joint à une lettre lunaire, le **ل** se prononce normalement.",
-            "translit": null
+            "translit": null,
+            "audio_id": "med3_ex_e60c8a5c"
           },
           {
             "ar": "الْقَلَمُ",
             "fr": "le stylo",
-            "translit": null
+            "translit": null,
+            "audio_id": "med3_ex_8d2bf29c"
           },
           {
             "ar": "الشَّمْس",
             "fr": "le soleil",
-            "translit": null
+            "translit": null,
+            "audio_id": "med3_ex_9ff48807"
           },
           {
             "ar": "الْقَمَرُ",
             "fr": "la lune",
-            "translit": null
+            "translit": null,
+            "audio_id": "med3_ex_1f08ecd5"
           }
         ]
       },
@@ -684,27 +730,32 @@
           {
             "ar": "الـ",
             "translit": "",
-            "note": "Al, le son \"a\" suivi d'un \"l\" qui se fusionne avec la lettre suivante"
+            "note": "Al, le son \"a\" suivi d'un \"l\" qui se fusionne avec la lettre suivante",
+            "audio_id": "med3_pron_e60c8a5c"
           },
           {
             "ar": "التَّاجُ",
             "translit": "",
-            "note": "At-tāj, notez la fusion du \"l\" dans le \"t\""
+            "note": "At-tāj, notez la fusion du \"l\" dans le \"t\"",
+            "audio_id": "med3_pron_47d8f61d"
           },
           {
             "ar": "الدّارُ",
             "translit": "",
-            "note": "Ad-dār, fusion similaire avec le \"d\""
+            "note": "Ad-dār, fusion similaire avec le \"d\"",
+            "audio_id": "med3_pron_c77ca7ed"
           },
           {
             "ar": "الْقَلَمُ",
             "translit": "",
-            "note": "Al-qalam, le \"l\" se prononce normalement (lettre lunaire)"
+            "note": "Al-qalam, le \"l\" se prononce normalement (lettre lunaire)",
+            "audio_id": "med3_pron_8d2bf29c"
           },
           {
             "ar": "الْمَدْرَسَةُ",
             "translit": "",
-            "note": "Al-madrasa, \"l\" clair (lettre lunaire)"
+            "note": "Al-madrasa, \"l\" clair (lettre lunaire)",
+            "audio_id": "med3_pron_5f3ba7d9"
           }
         ]
       },
@@ -774,27 +825,32 @@
         {
           "speaker_ar": "الأَمِينَةُ",
           "arabic": "مَرْحَباً!",
-          "french": "_Bonjour !_"
+          "french": "_Bonjour !_",
+          "audio_id": "med3_dial_57a2883e"
         },
         {
           "speaker_ar": "الطِّفْلَةُ",
           "arabic": "هَلْ عِنْدَكِ الْكِتَابُ؟",
-          "french": "_As-tu le livre ?_"
+          "french": "_As-tu le livre ?_",
+          "audio_id": "med3_dial_7431d7ef"
         },
         {
           "speaker_ar": "الأَمِينَةُ",
           "arabic": "أَيُّ كِتَابٍ؟ مِهْنَاكَ كِتُبٌ كَثِيرَةٌ",
-          "french": "_Quel livre? Voici beaucoup de livres._"
+          "french": "_Quel livre? Voici beaucoup de livres._",
+          "audio_id": "med3_dial_71307099"
         },
         {
           "speaker_ar": "الطِّفْلَةُ",
           "arabic": "الْقِصَّةُ الطَّوِيلَةُ!",
-          "french": "_La longue histoire !_"
+          "french": "_La longue histoire !_",
+          "audio_id": "med3_dial_97990320"
         },
         {
           "speaker_ar": "الأَمِينَةُ",
           "arabic": "آهْ! هَذَا الْكِتَابُ الْأَزْرَقُ؟",
-          "french": "_Ah! Ce livre bleu ?_"
+          "french": "_Ah! Ce livre bleu ?_",
+          "audio_id": "med3_dial_ddf83e17"
         }
       ]
     },
@@ -907,37 +963,43 @@
         "id": "fc_p1_15",
         "front_ar": "الْكِتَابُ",
         "back_fr": "Le livre — الـ (al-) est l'article défini. Il rend le nom déterminé. Le tanwīn disparaît.",
-        "category": "Article Défini"
+        "category": "Article Défini",
+        "audio_id": "med3_fc_30ce8cc0"
       },
       {
         "id": "fc_p1_16",
         "front_ar": "Lettres solaires vs lunaires",
         "back_fr": "Solaires (ت، ث، د، ذ، ر، ز، س، ش، ص، ض، ط، ظ، ن، ل) : le لام ne se prononce pas → assimilation. Lunaires : le لام se prononce.",
-        "category": "Règle"
+        "category": "Règle",
+        "audio_id": "med3_fc_7f34600d"
       },
       {
         "id": "fc_p1_17",
         "front_ar": "الشَّمْسُ",
         "back_fr": "Le soleil — lettre solaire (ش). Le لام de الـ s'assimile : on prononce 'ash-shamsu', pas 'al-shamsu'.",
-        "category": "Lettres Solaires"
+        "category": "Lettres Solaires",
+        "audio_id": "med3_fc_3a4eb19b"
       },
       {
         "id": "fc_p1_18",
         "front_ar": "الْقَمَرُ",
         "back_fr": "La lune — lettre lunaire (ق). Le لام se prononce normalement : 'al-qamar'.",
-        "category": "Lettres Lunaires"
+        "category": "Lettres Lunaires",
+        "audio_id": "med3_fc_1f08ecd5"
       },
       {
         "id": "fc_p1_19",
         "front_ar": "كِتَابٌ → الْكِتَابُ",
         "back_fr": "Indéfini → Défini. Le tanwīn (ٌ) est remplacé par une simple damma (ُ) quand on ajoute الـ.",
-        "category": "Article Défini"
+        "category": "Article Défini",
+        "audio_id": "med3_fc_53ad6b39"
       },
       {
         "id": "fc_p1_20",
         "front_ar": "الْمَدْرَسَةُ",
         "back_fr": "L'école — nom féminin défini. مَدْرَسَةٌ (indéfini) → الْمَدْرَسَةُ (défini).",
-        "category": "Article Défini"
+        "category": "Article Défini",
+        "audio_id": "med3_fc_5f3ba7d9"
       }
     ]
   },
@@ -958,7 +1020,8 @@
           {
             "ar": "فِي الْبَيْتِ",
             "fr": "_Dans la maison_",
-            "translit": null
+            "translit": null,
+            "audio_id": "med4_ex_5922daeb"
           }
         ]
       },
@@ -971,27 +1034,32 @@
           {
             "ar": "الْبَيْتُ",
             "fr": "le sujet",
-            "translit": null
+            "translit": null,
+            "audio_id": "med4_ex_0f52d578"
           },
           {
             "ar": "الْبَيْتَ",
             "fr": "l'objet direct",
-            "translit": null
+            "translit": null,
+            "audio_id": "med4_ex_be8383f6"
           },
           {
             "ar": "الْبَيْتِ",
             "fr": "après une préposition",
-            "translit": null
+            "translit": null,
+            "audio_id": "med4_ex_b2b4cdd2"
           },
           {
             "ar": "الْبَيْتُ",
             "fr": "Nominatif",
-            "translit": null
+            "translit": null,
+            "audio_id": "med4_ex_0f52d578"
           },
           {
             "ar": "فِي الْبَيْتِ",
             "fr": "Majrūr",
-            "translit": null
+            "translit": null,
+            "audio_id": "med4_ex_5922daeb"
           }
         ]
       },
@@ -1004,17 +1072,20 @@
           {
             "ar": "ــُ",
             "fr": "Damma =",
-            "translit": null
+            "translit": null,
+            "audio_id": "med4_ex_14e53e7a"
           },
           {
             "ar": "ــَ",
             "fr": "Fatha =",
-            "translit": null
+            "translit": null,
+            "audio_id": "med4_ex_8099741c"
           },
           {
             "ar": "ــِ",
             "fr": "Kasra =",
-            "translit": null
+            "translit": null,
+            "audio_id": "med4_ex_9d025920"
           }
         ]
       },
@@ -1029,27 +1100,32 @@
           {
             "ar": "فِي",
             "translit": "",
-            "note": "Fī, le \"i\" long est essentiel"
+            "note": "Fī, le \"i\" long est essentiel",
+            "audio_id": "med4_pron_5f6b019f"
           },
           {
             "ar": "عَلَى",
             "translit": "",
-            "note": "ʿAlā, accent sur le \"ā\" long"
+            "note": "ʿAlā, accent sur le \"ā\" long",
+            "audio_id": "med4_pron_56774bf6"
           },
           {
             "ar": "الْبَيْتِ",
             "translit": "",
-            "note": "Al-bay-ti, notez le \"i\" final (Majrūr)"
+            "note": "Al-bay-ti, notez le \"i\" final (Majrūr)",
+            "audio_id": "med4_pron_b2b4cdd2"
           },
           {
             "ar": "فِي الْبَيْتِ",
             "translit": "",
-            "note": "Fī al-bay-ti, deux mots fluides"
+            "note": "Fī al-bay-ti, deux mots fluides",
+            "audio_id": "med4_pron_5922daeb"
           },
           {
             "ar": "عَلَى الطَّاوِلَةِ",
             "translit": "",
-            "note": "ʿAlā al-tā-wi-la-ti, le \"i\" final (Majrūr)"
+            "note": "ʿAlā al-tā-wi-la-ti, le \"i\" final (Majrūr)",
+            "audio_id": "med4_pron_c6bdfe13"
           }
         ]
       },
@@ -1099,32 +1175,38 @@
         {
           "speaker_ar": "الأُمُّ",
           "arabic": "أَيْنَ الْقَلَمُ؟",
-          "french": "_Où est le stylo ?_"
+          "french": "_Où est le stylo ?_",
+          "audio_id": "med4_dial_1f058e62"
         },
         {
           "speaker_ar": "الطِّفْلُ",
           "arabic": "هُوَ فِي الْغُرْفَةِ",
-          "french": "_Il est dans la chambre._"
+          "french": "_Il est dans la chambre._",
+          "audio_id": "med4_dial_a35992d3"
         },
         {
           "speaker_ar": "الأُمُّ",
           "arabic": "وَأَيْنَ الْكِتَابُ؟",
-          "french": "_Et où est le livre ?_"
+          "french": "_Et où est le livre ?_",
+          "audio_id": "med4_dial_43795ef7"
         },
         {
           "speaker_ar": "الطِّفْلُ",
           "arabic": "عَلَى الطَّاوِلَةِ!",
-          "french": "_Sur la table !_"
+          "french": "_Sur la table !_",
+          "audio_id": "med4_dial_e36502ec"
         },
         {
           "speaker_ar": "الأُمُّ",
           "arabic": "حَسَناً. الْآنَ، أَيْنَ حَقِيبَتُكَ؟",
-          "french": "_D'accord. Maintenant, où est ton sac ?_"
+          "french": "_D'accord. Maintenant, où est ton sac ?_",
+          "audio_id": "med4_dial_7f01591f"
         },
         {
           "speaker_ar": "الطِّفْلُ",
           "arabic": "فِي الْقَاعَةِ",
-          "french": "_Dans le salon._"
+          "french": "_Dans le salon._",
+          "audio_id": "med4_dial_ac557a07"
         }
       ]
     },
@@ -1257,37 +1339,43 @@
         "id": "fc_p1_21",
         "front_ar": "فِي",
         "back_fr": "Dans — préposition de lieu. فِي الْبَيْتِ = dans la maison. Le nom après prend le cas majrūr (kasra).",
-        "category": "Prépositions"
+        "category": "Prépositions",
+        "audio_id": "med4_fc_5f6b019f"
       },
       {
         "id": "fc_p1_22",
         "front_ar": "عَلَى",
         "back_fr": "Sur — préposition de lieu. عَلَى الطَّاوِلَةِ = sur la table. Cas majrūr (kasra).",
-        "category": "Prépositions"
+        "category": "Prépositions",
+        "audio_id": "med4_fc_56774bf6"
       },
       {
         "id": "fc_p1_23",
         "front_ar": "مِنْ",
         "back_fr": "De / depuis — préposition. مِنَ الْمَسْجِدِ = de la mosquée. Cas majrūr.",
-        "category": "Prépositions"
+        "category": "Prépositions",
+        "audio_id": "med4_fc_0457b362"
       },
       {
         "id": "fc_p1_24",
         "front_ar": "إِلَى",
         "back_fr": "Vers / à — préposition de direction. إِلَى الْمَدْرَسَةِ = vers l'école. Cas majrūr.",
-        "category": "Prépositions"
+        "category": "Prépositions",
+        "audio_id": "med4_fc_1fdea00c"
       },
       {
         "id": "fc_p1_25",
         "front_ar": "Le cas Majrūr",
         "back_fr": "Après une préposition, le nom prend la kasra (ِ). Indéfini : كِتَابٍ. Défini : الْكِتَابِ. C'est le cas génitif.",
-        "category": "Règle"
+        "category": "Règle",
+        "audio_id": "med4_fc_a7b4e6a6"
       },
       {
         "id": "fc_p1_26",
         "front_ar": "فِي الْبَيْتِ",
         "back_fr": "Dans la maison — البَيْتُ (nominatif) devient الْبَيْتِ (majrūr/génitif) après فِي.",
-        "category": "Prépositions"
+        "category": "Prépositions",
+        "audio_id": "med4_fc_5922daeb"
       }
     ]
   },
@@ -1308,17 +1396,20 @@
           {
             "ar": "كِتَابُ أَحْمَدَ",
             "fr": "littéralement",
-            "translit": null
+            "translit": null,
+            "audio_id": "med5_ex_7d527888"
           },
           {
             "ar": "كِتَابٌ",
             "fr": "un livre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med5_ex_e07c3c41"
           },
           {
             "ar": "كِتَابُ أَحْمَدَ",
             "fr": "le livre d'Ahmed",
-            "translit": null
+            "translit": null,
+            "audio_id": "med5_ex_7d527888"
           }
         ]
       },
@@ -1331,17 +1422,20 @@
           {
             "ar": "كِتَابٌ",
             "fr": ", mais **كِتَابُ**.",
-            "translit": null
+            "translit": null,
+            "audio_id": "med5_ex_e07c3c41"
           },
           {
             "ar": "كِتَابُ أَحْمَدَ",
             "fr": "oui",
-            "translit": null
+            "translit": null,
+            "audio_id": "med5_ex_7d527888"
           },
           {
             "ar": "أَحْمَدَ كِتَابُ",
             "fr": "non, mauvais ordre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med5_ex_adfe42c5"
           }
         ]
       },
@@ -1354,22 +1448,26 @@
           {
             "ar": "مَدْرَسَةٌ",
             "fr": "une école",
-            "translit": null
+            "translit": null,
+            "audio_id": "med5_ex_44d7a851"
           },
           {
             "ar": "الْحَيِّ",
             "fr": "le quartier",
-            "translit": null
+            "translit": null,
+            "audio_id": "med5_ex_057a06b7"
           },
           {
             "ar": "مَدْرَسَةُ الْحَيِّ",
             "fr": "l'école du quartier",
-            "translit": null
+            "translit": null,
+            "audio_id": "med5_ex_d21361c9"
           },
           {
             "ar": "الْحَيِّ",
             "fr": "porte l'article, et cela suffit à rendre **مَدْرَسَةُ** définie aussi.",
-            "translit": null
+            "translit": null,
+            "audio_id": "med5_ex_057a06b7"
           }
         ]
       },
@@ -1384,27 +1482,32 @@
           {
             "ar": "كِتَابُ",
             "translit": "",
-            "note": "Ki-tā-bu, sans tanwin (comparé à **كِتَابٌ** avec tanwin)"
+            "note": "Ki-tā-bu, sans tanwin (comparé à **كِتَابٌ** avec tanwin)",
+            "audio_id": "med5_pron_1ef84b80"
           },
           {
             "ar": "كِتَابُ أَحْمَدَ",
             "translit": "",
-            "note": "Ki-tā-bu Aḥ-mad, deux mots fusionnés"
+            "note": "Ki-tā-bu Aḥ-mad, deux mots fusionnés",
+            "audio_id": "med5_pron_7d527888"
           },
           {
             "ar": "بَيْتُ الْمُعَلِّمِ",
             "translit": "",
-            "note": "Bay-tu al-mu-ʿal-li-mi, \"le maître\" en Majrūr"
+            "note": "Bay-tu al-mu-ʿal-li-mi, \"le maître\" en Majrūr",
+            "audio_id": "med5_pron_291990f8"
           },
           {
             "ar": "سَيَّارَةُ الْأَبِ",
             "translit": "",
-            "note": "Say-yā-ra-tu al-ab, \"le père\" en Majrūr"
+            "note": "Say-yā-ra-tu al-ab, \"le père\" en Majrūr",
+            "audio_id": "med5_pron_3263b521"
           },
           {
             "ar": "حَقِيبَةُ الْحَاجِّ",
             "translit": "",
-            "note": "Ha-qī-ba-tu al-ḥāj-ji, \"le pèlerin\" en Majrūr"
+            "note": "Ha-qī-ba-tu al-ḥāj-ji, \"le pèlerin\" en Majrūr",
+            "audio_id": "med5_pron_4f62b81e"
           }
         ]
       },
@@ -1449,27 +1552,32 @@
         {
           "speaker_ar": "الْمُوَظَّفُ",
           "arabic": "اسْمُكَ؟",
-          "french": "_Ton nom ?_"
+          "french": "_Ton nom ?_",
+          "audio_id": "med5_dial_681aa728"
         },
         {
           "speaker_ar": "الرَّاكِبُ",
           "arabic": "سَالِمٌ. وَأَنَا أَفْتَقِدُ حَقِيبَتِي",
-          "french": "_Je suis Salim. Je recherche mon sac._"
+          "french": "_Je suis Salim. Je recherche mon sac._",
+          "audio_id": "med5_dial_314d2903"
         },
         {
           "speaker_ar": "الْمُوَظَّفُ",
           "arabic": "كَيْفَ تَبْدُو حَقِيبَةُ سَالِمٍ؟",
-          "french": "_À quoi ressemble le sac de Salim ?_"
+          "french": "_À quoi ressemble le sac de Salim ?_",
+          "audio_id": "med5_dial_de388a09"
         },
         {
           "speaker_ar": "الرَّاكِبُ",
           "arabic": "حَقِيبَةٌ سَوْدَاءُ، كَبِيرَةٌ جِدّاً",
-          "french": "_Un grand sac noir._"
+          "french": "_Un grand sac noir._",
+          "audio_id": "med5_dial_64ef7d41"
         },
         {
           "speaker_ar": "الْمُوَظَّفُ",
           "arabic": "آهْ! هَذِهِ حَقِيبَةُ الرَّاكِبِ!",
-          "french": "_Ah! C'est le sac du passager !_"
+          "french": "_Ah! C'est le sac du passager !_",
+          "audio_id": "med5_dial_b49ee7b1"
         }
       ]
     },
@@ -1574,37 +1682,43 @@
         "id": "fc_p2_1",
         "front_ar": "كِتَابُ الْمُدَرِّسِ",
         "back_fr": "Le livre du professeur — Idāfa (annexion). Le 1er mot (مُضَاف) perd son tanwīn, le 2e (مُضَاف إِلَيْهِ) prend le majrūr.",
-        "category": "Idāfa"
+        "category": "Idāfa",
+        "audio_id": "med5_fc_c086456d"
       },
       {
         "id": "fc_p2_2",
         "front_ar": "بَيْتُ أَحْمَدَ",
         "back_fr": "La maison d'Ahmad — le مُضَاف ne prend jamais الـ ni tanwīn. Le nom propre est automatiquement au majrūr.",
-        "category": "Idāfa"
+        "category": "Idāfa",
+        "audio_id": "med5_fc_076a25d9"
       },
       {
         "id": "fc_p2_3",
         "front_ar": "Règle de l'Idāfa",
         "back_fr": "Possession sans préposition : Nom1 + Nom2. Nom1 perd tanwīn et الـ. Nom2 prend le cas majrūr (kasra). L'ensemble est défini si Nom2 est défini.",
-        "category": "Règle"
+        "category": "Règle",
+        "audio_id": "med5_fc_1d7096ab"
       },
       {
         "id": "fc_p2_4",
         "front_ar": "حَقِيبَةُ فَاطِمَةَ",
         "back_fr": "Le sac de Fatima — la tā' marbūta du مُضَاف se prononce 't' en annexion : 'haqībatu fātimata'.",
-        "category": "Idāfa"
+        "category": "Idāfa",
+        "audio_id": "med5_fc_b206713f"
       },
       {
         "id": "fc_p2_5",
         "front_ar": "سَيَّارَةُ الْأَبِ",
         "back_fr": "La voiture du père — Idāfa avec الـ sur le 2e terme. L'ensemble est défini (= LA voiture DU père).",
-        "category": "Idāfa"
+        "category": "Idāfa",
+        "audio_id": "med5_fc_3263b521"
       },
       {
         "id": "fc_p2_6",
         "front_ar": "مِفْتَاحُ الْبَابِ",
         "back_fr": "La clé de la porte — deux noms définis liés par l'annexion. مِفْتَاح perd son tanwīn.",
-        "category": "Idāfa"
+        "category": "Idāfa",
+        "audio_id": "med5_fc_6c52911e"
       }
     ]
   },
@@ -1625,22 +1739,26 @@
           {
             "ar": "حُجْرَةٌ",
             "fr": "une chambre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_9ba37e24"
           },
           {
             "ar": "الْحُجْرَةُ",
             "fr": "la chambre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_fd94552c"
           },
           {
             "ar": "حُجْرَةَ",
             "fr": "une chambre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_f29f3863"
           },
           {
             "ar": "فِي حُجْرَةٍ",
             "fr": "dans une chambre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_7f7f445f"
           }
         ]
       },
@@ -1653,17 +1771,20 @@
           {
             "ar": "مَدْرَسَةٌ",
             "fr": "madrasa-tun",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_44d7a851"
           },
           {
             "ar": "مَدْرَسَةً",
             "fr": "madrasa-ta",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_a8d9d89e"
           },
           {
             "ar": "فِي مَدْرَسَةٍ",
             "fr": "fī madrasa-tin",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_ea6c4b6e"
           }
         ]
       },
@@ -1676,37 +1797,44 @@
           {
             "ar": "مَدْرَسَةٌ",
             "fr": "une école",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_44d7a851"
           },
           {
             "ar": "سَيَّارَةٌ",
             "fr": "une voiture",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_05b80b6e"
           },
           {
             "ar": "طَاوِلَةٌ",
             "fr": "une table",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_fc40278e"
           },
           {
             "ar": "كُرْسِيَّةٌ",
             "fr": "une chaise",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_0c59af1b"
           },
           {
             "ar": "نَافِذَةٌ",
             "fr": "une fenêtre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_45428f59"
           },
           {
             "ar": "غُرْفَةٌ",
             "fr": "une chambre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_0716ae7d"
           },
           {
             "ar": "مَكْتَبَةٌ",
             "fr": "une bibliothèque",
-            "translit": null
+            "translit": null,
+            "audio_id": "med6_ex_ff67a651"
           }
         ]
       },
@@ -1721,27 +1849,32 @@
           {
             "ar": "مَدْرَسَةٌ",
             "translit": "",
-            "note": "Mad-ra-sa-tun, la ة sonne comme \"ta\""
+            "note": "Mad-ra-sa-tun, la ة sonne comme \"ta\"",
+            "audio_id": "med6_pron_44d7a851"
           },
           {
             "ar": "الْمَدْرَسَةُ",
             "translit": "",
-            "note": "Al-mad-ra-sa-tu, défini, son \"u\" avant la ة"
+            "note": "Al-mad-ra-sa-tu, défini, son \"u\" avant la ة",
+            "audio_id": "med6_pron_5f3ba7d9"
           },
           {
             "ar": "فِي مَدْرَسَةٍ",
             "translit": "",
-            "note": "Fī mad-ra-sa-tin, Majrūr, la ة sonne \"ti\""
+            "note": "Fī mad-ra-sa-tin, Majrūr, la ة sonne \"ti\"",
+            "audio_id": "med6_pron_ea6c4b6e"
           },
           {
             "ar": "سَيَّارَةٌ",
             "translit": "",
-            "note": "Say-yā-ra-tun, la shadda sur le ya, ة finale"
+            "note": "Say-yā-ra-tun, la shadda sur le ya, ة finale",
+            "audio_id": "med6_pron_05b80b6e"
           },
           {
             "ar": "كُرْسِيَّةٌ",
             "translit": "",
-            "note": "Kur-si-ya-tun, y allongé, puis ة"
+            "note": "Kur-si-ya-tun, y allongé, puis ة",
+            "audio_id": "med6_pron_0c59af1b"
           }
         ]
       },
@@ -1786,27 +1919,32 @@
         {
           "speaker_ar": "الطَّبِيبَةُ",
           "arabic": "مَا هِيَ الْمُشْكِلَةُ؟",
-          "french": "_Quel est le problème ?_"
+          "french": "_Quel est le problème ?_",
+          "audio_id": "med6_dial_7ac06dd7"
         },
         {
           "speaker_ar": "الْمُمَرِّضَةُ",
           "arabic": "الْمَرِيضَةُ لَدَيْهَا حُمَّى",
-          "french": "_La patiente a de la fièvre._"
+          "french": "_La patiente a de la fièvre._",
+          "audio_id": "med6_dial_d0b94b83"
         },
         {
           "speaker_ar": "الطَّبِيبَةُ",
           "arabic": "كَمْ هِيَ دَرَجَةُ الْحَرَارَةِ؟",
-          "french": "_Quel est la température ?_"
+          "french": "_Quel est la température ?_",
+          "audio_id": "med6_dial_5625eb34"
         },
         {
           "speaker_ar": "الْمُمَرِّضَةُ",
           "arabic": "39 دَرَجَةً. وَأَيْضاً، لَدَيْهَا آلَامٌ فِي الرَّأْسِ",
-          "french": "_39 degrés. Et elle a aussi des maux de tête._"
+          "french": "_39 degrés. Et elle a aussi des maux de tête._",
+          "audio_id": "med6_dial_ab69ecf4"
         },
         {
           "speaker_ar": "الطَّبِيبَةُ",
           "arabic": "حَسَناً. سَتَأْخُذُ أَدْوِيَةً",
-          "french": "_D'accord. Elle prendra des médicaments._"
+          "french": "_D'accord. Elle prendra des médicaments._",
+          "audio_id": "med6_dial_5c1eb9cd"
         }
       ]
     },
@@ -1897,37 +2035,43 @@
         "id": "fc_p2_7",
         "front_ar": "ـَة (تَاء مَرْبُوطَة)",
         "back_fr": "Tā' Marbūta — marque du féminin. Se prononce 'a' en pause, 't' en liaison. غُرْفَة، مَدْرَسَة، سَيَّارَة.",
-        "category": "Féminin"
+        "category": "Féminin",
+        "audio_id": "med6_fc_4cb97177"
       },
       {
         "id": "fc_p2_8",
         "front_ar": "كَبِيرٌ / كَبِيرَةٌ",
         "back_fr": "Grand (m.) / Grande (f.) — l'adjectif s'accorde en genre avec le nom : بَيْتٌ كَبِيرٌ / غُرْفَةٌ كَبِيرَةٌ.",
-        "category": "Accord Adjectif"
+        "category": "Accord Adjectif",
+        "audio_id": "med6_fc_f03ce86d"
       },
       {
         "id": "fc_p2_9",
         "front_ar": "جَمِيلٌ / جَمِيلَةٌ",
         "back_fr": "Beau / Belle — même schème d'accord : مَسْجِدٌ جَمِيلٌ (m.) / مَدْرَسَةٌ جَمِيلَةٌ (f.).",
-        "category": "Accord Adjectif"
+        "category": "Accord Adjectif",
+        "audio_id": "med6_fc_befcc73c"
       },
       {
         "id": "fc_p2_10",
         "front_ar": "صَغِيرٌ / صَغِيرَةٌ",
         "back_fr": "Petit / Petite — قَلَمٌ صَغِيرٌ (un petit stylo) / سَاعَةٌ صَغِيرَةٌ (une petite montre).",
-        "category": "Accord Adjectif"
+        "category": "Accord Adjectif",
+        "audio_id": "med6_fc_3246c90e"
       },
       {
         "id": "fc_p2_11",
         "front_ar": "Accord de l'adjectif (indéfini)",
         "back_fr": "Nom + Adjectif : les deux indéfinis avec tanwīn, même genre. كِتَابٌ جَدِيدٌ (un nouveau livre).",
-        "category": "Règle"
+        "category": "Règle",
+        "audio_id": "med6_fc_ac0922b8"
       },
       {
         "id": "fc_p2_12",
         "front_ar": "هَذِهِ دَارٌ جَمِيلَةٌ",
         "back_fr": "Ceci est une belle maison — هَذِهِ (fém.) + دَارٌ (maison, fém.) + جَمِيلَةٌ (belle, fém.).",
-        "category": "Exemple"
+        "category": "Exemple",
+        "audio_id": "med6_fc_f06b9381"
       }
     ]
   },
@@ -1948,17 +2092,20 @@
           {
             "ar": "هَذَا",
             "fr": "masculin",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_222f6bf2"
           },
           {
             "ar": "هَذِهِ",
             "fr": "féminin",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_2a65a7ff"
           },
           {
             "ar": "ذَلِكَ بَيْتٌ",
             "fr": "_C'est une maison là-bas_",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_b412db2f"
           }
         ]
       },
@@ -1971,27 +2118,32 @@
           {
             "ar": "هَذَا",
             "fr": "Hādhā",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_222f6bf2"
           },
           {
             "ar": "ذَلِكَ",
             "fr": "Dhālik",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_671c7145"
           },
           {
             "ar": "هَذِهِ",
             "fr": "Hādhihi",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_2a65a7ff"
           },
           {
             "ar": "تِلْكَ",
             "fr": "Tilka",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_18f013e2"
           },
           {
             "ar": "ـهـ",
             "fr": "hā",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_0c4fa696"
           }
         ]
       },
@@ -2004,22 +2156,26 @@
           {
             "ar": "ذَلِكَ",
             "fr": "Masculin singulier",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_671c7145"
           },
           {
             "ar": "تِلْكَ",
             "fr": "Féminin singulier",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_18f013e2"
           },
           {
             "ar": "أُولَئِكَ",
             "fr": "Pluriel humain lointain",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_a10497b7"
           },
           {
             "ar": "تِلْكَ",
             "fr": "Pluriel non-humain féminin",
-            "translit": null
+            "translit": null,
+            "audio_id": "med7_ex_18f013e2"
           }
         ]
       },
@@ -2034,27 +2190,32 @@
           {
             "ar": "ذَلِكَ",
             "translit": "",
-            "note": "Dhā-lik, le \"dh\" est distinctif du proche"
+            "note": "Dhā-lik, le \"dh\" est distinctif du proche",
+            "audio_id": "med7_pron_671c7145"
           },
           {
             "ar": "تِلْكَ",
             "translit": "",
-            "note": "Til-ka, le \"t\" initial marque le féminin"
+            "note": "Til-ka, le \"t\" initial marque le féminin",
+            "audio_id": "med7_pron_18f013e2"
           },
           {
             "ar": "ذَلِكَ الْبَيْتُ",
             "translit": "",
-            "note": "Dhā-lik al-bay-tu, deux unités"
+            "note": "Dhā-lik al-bay-tu, deux unités",
+            "audio_id": "med7_pron_081b3c30"
           },
           {
             "ar": "تِلْكَ الْمَدْرَسَةُ",
             "translit": "",
-            "note": "Til-ka al-mad-ra-sa-tu, féminin lointain"
+            "note": "Til-ka al-mad-ra-sa-tu, féminin lointain",
+            "audio_id": "med7_pron_b3f38035"
           },
           {
             "ar": "أُولَئِكَ الرِّجَالُ",
             "translit": "",
-            "note": "U-lā-i-ka al-ri-jāl, pluriel lointain humain"
+            "note": "U-lā-i-ka al-ri-jāl, pluriel lointain humain",
+            "audio_id": "med7_pron_4a8869a7"
           }
         ]
       },
@@ -2099,27 +2260,32 @@
         {
           "speaker_ar": "الْجَدُّ",
           "arabic": "مَاذَا تَرَى؟",
-          "french": "_Qu'est-ce que tu vois ?_"
+          "french": "_Qu'est-ce que tu vois ?_",
+          "audio_id": "med7_dial_e79d3644"
         },
         {
           "speaker_ar": "الطِّفْلَةُ",
           "arabic": "أَرَى مَسْجِداً",
-          "french": "_Je vois une mosquée._"
+          "french": "_Je vois une mosquée._",
+          "audio_id": "med7_dial_1bc8a091"
         },
         {
           "speaker_ar": "الْجَدُّ",
           "arabic": "ذَاكَ الْمَسْجِدُ قَدِيمٌ جِدّاً",
-          "french": "_Cette mosquée là-bas est très ancienne._"
+          "french": "_Cette mosquée là-bas est très ancienne._",
+          "audio_id": "med7_dial_b91c1f23"
         },
         {
           "speaker_ar": "الطِّفْلَةُ",
           "arabic": "وَتِلْكَ؟ الدَّارُ الصَّفْرَاءُ؟",
-          "french": "_Et celle-là? La maison jaune?_"
+          "french": "_Et celle-là? La maison jaune?_",
+          "audio_id": "med7_dial_573719c9"
         },
         {
           "speaker_ar": "الْجَدُّ",
           "arabic": "تِلْكَ دَارُ خَالِكِ!",
-          "french": "_Cette maison là-bas est celle de ton oncle!_"
+          "french": "_Cette maison là-bas est celle de ton oncle!_",
+          "audio_id": "med7_dial_11c19068"
         }
       ]
     },
@@ -2210,37 +2376,43 @@
         "id": "fc_p2_13",
         "front_ar": "ذَلِكَ",
         "back_fr": "Cela / celui-là (masculin lointain) — pour pointer un objet masculin éloigné. ذَلِكَ الْبَيْتُ = cette maison là-bas.",
-        "category": "Démonstratifs Lointains"
+        "category": "Démonstratifs Lointains",
+        "audio_id": "med7_fc_671c7145"
       },
       {
         "id": "fc_p2_14",
         "front_ar": "تِلْكَ",
         "back_fr": "Celle-là (féminin lointain) — pour pointer un objet féminin éloigné. تِلْكَ السَّيَّارَةُ = cette voiture là-bas.",
-        "category": "Démonstratifs Lointains"
+        "category": "Démonstratifs Lointains",
+        "audio_id": "med7_fc_18f013e2"
       },
       {
         "id": "fc_p2_15",
         "front_ar": "هَذَا vs ذَلِكَ",
         "back_fr": "Proche vs Lointain (masc.) — هَذَا الْكِتَابُ (ce livre-ci) vs ذَلِكَ الْكِتَابُ (ce livre là-bas).",
-        "category": "Comparaison"
+        "category": "Comparaison",
+        "audio_id": "med7_fc_adea74d8"
       },
       {
         "id": "fc_p2_16",
         "front_ar": "هَذِهِ vs تِلْكَ",
         "back_fr": "Proche vs Lointain (fém.) — هَذِهِ الْمَدْرَسَةُ (cette école-ci) vs تِلْكَ الْمَدْرَسَةُ (cette école là-bas).",
-        "category": "Comparaison"
+        "category": "Comparaison",
+        "audio_id": "med7_fc_af49cafb"
       },
       {
         "id": "fc_p2_17",
         "front_ar": "ذَلِكَ الرَّجُلُ مُدَرِّسٌ",
         "back_fr": "Cet homme là-bas est professeur — phrase nominale avec démonstratif lointain + nom défini + attribut.",
-        "category": "Exemple"
+        "category": "Exemple",
+        "audio_id": "med7_fc_925725de"
       },
       {
         "id": "fc_p2_18",
         "front_ar": "أُولَئِكَ",
         "back_fr": "Ceux-là / celles-là (pluriel lointain) — pour les humains éloignés, masculin et féminin. أُولَئِكَ الرِّجَالُ.",
-        "category": "Démonstratifs Lointains"
+        "category": "Démonstratifs Lointains",
+        "audio_id": "med7_fc_a10497b7"
       }
     ]
   },
@@ -2261,22 +2433,26 @@
           {
             "ar": "هَذَا كِتَابٌ",
             "fr": "Ceci est un livre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med8_ex_0fa5d53f"
           },
           {
             "ar": "هَذَا الْكِتَابُ كَبِيرٌ",
             "fr": "Ce livre-ci est grand",
-            "translit": null
+            "translit": null,
+            "audio_id": "med8_ex_47c9d3f1"
           },
           {
             "ar": "كِتَابٌ",
             "fr": "est prédicat (attribut",
-            "translit": null
+            "translit": null,
+            "audio_id": "med8_ex_e07c3c41"
           },
           {
             "ar": "الْكِتَابُ",
             "fr": "est un groupe nominal déjà complet, et **كَبِيرٌ** donne une **propriété** de ce livre. Il répond à",
-            "translit": null
+            "translit": null,
+            "audio_id": "med8_ex_30ce8cc0"
           }
         ]
       },
@@ -2289,22 +2465,26 @@
           {
             "ar": "كِتَابٌ كَبِيرٌ",
             "fr": "un grand livre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med8_ex_0e8cdbe9"
           },
           {
             "ar": "الْكِتَابُ الْكَبِيرُ",
             "fr": "le grand livre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med8_ex_d9780755"
           },
           {
             "ar": "مَدْرَسَةٌ جَمِيلَةٌ",
             "fr": "une belle école",
-            "translit": null
+            "translit": null,
+            "audio_id": "med8_ex_d5f0ce53"
           },
           {
             "ar": "الْمَدْرَسَةُ الْجَمِيلَةُ",
             "fr": "la belle école",
-            "translit": null
+            "translit": null,
+            "audio_id": "med8_ex_76829b51"
           }
         ]
       },
@@ -2326,27 +2506,32 @@
           {
             "ar": "كَبِيرٌ",
             "translit": "",
-            "note": "Ka-bīr-un, l'adjectif au nominatif indéfini"
+            "note": "Ka-bīr-un, l'adjectif au nominatif indéfini",
+            "audio_id": "med8_pron_54049fdf"
           },
           {
             "ar": "الْكَبِيرُ",
             "translit": "",
-            "note": "Al-ka-bīr-u, l'adjectif au nominatif défini"
+            "note": "Al-ka-bīr-u, l'adjectif au nominatif défini",
+            "audio_id": "med8_pron_e949ea49"
           },
           {
             "ar": "جَمِيلَةٌ",
             "translit": "",
-            "note": "Ja-mī-la-tun, l'adjectif féminin au nominatif"
+            "note": "Ja-mī-la-tun, l'adjectif féminin au nominatif",
+            "audio_id": "med8_pron_c783af8c"
           },
           {
             "ar": "الْجَمِيلَةُ",
             "translit": "",
-            "note": "Al-ja-mī-la-tu, l'adjectif féminin défini"
+            "note": "Al-ja-mī-la-tu, l'adjectif féminin défini",
+            "audio_id": "med8_pron_c6e0c966"
           },
           {
             "ar": "الْكِتَابُ الْكَبِيرُ",
             "translit": "",
-            "note": "Al-ki-tāb al-ka-bīr-u, deux mots accordés"
+            "note": "Al-ki-tāb al-ka-bīr-u, deux mots accordés",
+            "audio_id": "med8_pron_d9780755"
           }
         ]
       },
@@ -2396,27 +2581,32 @@
         {
           "speaker_ar": "الْعَاقِدُ",
           "arabic": "مَرْحَباً. تُرِيدُ بَيْتاً؟",
-          "french": "_Bienvenue. Cherchez-vous une maison ?_"
+          "french": "_Bienvenue. Cherchez-vous une maison ?_",
+          "audio_id": "med8_dial_c334e460"
         },
         {
           "speaker_ar": "الْعَمِيلُ",
           "arabic": "نَعَمْ. بَيْتٌ كَبِيرٌ",
-          "french": "_Oui. Une grande maison._"
+          "french": "_Oui. Une grande maison._",
+          "audio_id": "med8_dial_3e77c9e5"
         },
         {
           "speaker_ar": "الْعَاقِدُ",
           "arabic": "هَذَا الْبَيْتُ كَبِيرٌ جِدّاً! ثَلَاثُ غُرَفٍ",
-          "french": "_Cette maison est très grande! Trois chambres._"
+          "french": "_Cette maison est très grande! Trois chambres._",
+          "audio_id": "med8_dial_2ac11d03"
         },
         {
           "speaker_ar": "الْعَمِيلُ",
           "arabic": "الْغُرَفُ جَمِيلَةٌ؟",
-          "french": "_Les chambres sont belles ?_"
+          "french": "_Les chambres sont belles ?_",
+          "audio_id": "med8_dial_bc3a88ff"
         },
         {
           "speaker_ar": "الْعَاقِدُ",
           "arabic": "نَعَمْ! الْغُرَفُ جَمِيلَةٌ وَنَظِيفَةٌ",
-          "french": "_Oui! Les chambres sont belles et propres._"
+          "french": "_Oui! Les chambres sont belles et propres._",
+          "audio_id": "med8_dial_2c09c570"
         }
       ]
     },
@@ -2531,37 +2721,43 @@
         "id": "fc_p2_19",
         "front_ar": "الْكِتَابُ الْجَدِيدُ",
         "back_fr": "Le nouveau livre — Nom défini + Adjectif défini = groupe nominal (النَّعْت). Les deux ont الـ.",
-        "category": "Accord Défini"
+        "category": "Accord Défini",
+        "audio_id": "med8_fc_dfaa7709"
       },
       {
         "id": "fc_p2_20",
         "front_ar": "الْمَدْرَسَةُ الْكَبِيرَةُ",
         "back_fr": "La grande école — accord défini féminin. Les deux mots portent الـ et sont féminins.",
-        "category": "Accord Défini"
+        "category": "Accord Défini",
+        "audio_id": "med8_fc_dcdfddb0"
       },
       {
         "id": "fc_p2_21",
         "front_ar": "Phrase nominale vs Groupe nominal",
         "back_fr": "الْبَيْتُ كَبِيرٌ = la maison EST grande (phrase). الْبَيْتُ الْكَبِيرُ = la GRANDE maison (groupe). L'adjectif avec الـ = épithète.",
-        "category": "Règle"
+        "category": "Règle",
+        "audio_id": "med8_fc_0a911d6c"
       },
       {
         "id": "fc_p2_22",
         "front_ar": "كِتَابٌ كَبِيرٌ وَمُفِيدٌ",
         "back_fr": "Un livre grand et utile — وَ (wa) lie deux adjectifs. Tous indéfinis avec tanwīn, masculins.",
-        "category": "Coordination"
+        "category": "Coordination",
+        "audio_id": "med8_fc_74139a62"
       },
       {
         "id": "fc_p2_23",
         "front_ar": "الدَّارُ الْقَدِيمَةُ جَمِيلَةٌ",
         "back_fr": "La vieille maison est belle — الْقَدِيمَةُ (épithète, défini) + جَمِيلَةٌ (attribut, indéfini).",
-        "category": "Exemple"
+        "category": "Exemple",
+        "audio_id": "med8_fc_326a4d1b"
       },
       {
         "id": "fc_p2_24",
         "front_ar": "Accord : genre + définition",
         "back_fr": "L'adjectif doit accorder le nom en genre (m/f) ET en définition (الـ ou tanwīn). Les deux doivent correspondre.",
-        "category": "Règle"
+        "category": "Règle",
+        "audio_id": "med8_fc_16f37293"
       }
     ]
   },
@@ -2582,12 +2778,14 @@
           {
             "ar": "بَيْتٌ كَبِيرٌ",
             "fr": "*Une grande maison*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med9_ex_22ac07df"
           },
           {
             "ar": "سَيَّارَةٌ كَبِيرَةٌ",
             "fr": "*Une grande voiture*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med9_ex_6ba4c068"
           }
         ]
       },
@@ -2600,27 +2798,32 @@
           {
             "ar": "الـ",
             "fr": ":",
-            "translit": null
+            "translit": null,
+            "audio_id": "med9_ex_e60c8a5c"
           },
           {
             "ar": "السَّيَّارَةُ كَبِيرَةٌ",
             "fr": "*La voiture est grande*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med9_ex_7548ac71"
           },
           {
             "ar": "الـ",
             "fr": "et le deuxième a le son **OUN**. C'est une phrase.",
-            "translit": null
+            "translit": null,
+            "audio_id": "med9_ex_e60c8a5c"
           },
           {
             "ar": "السَّيَّارَةُ الْكَبِيرَةُ",
             "fr": "*La grande voiture...*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med9_ex_7b704b92"
           },
           {
             "ar": "الـ",
             "fr": ". Ce n'est pas une phrase complète, on attend la suite.",
-            "translit": null
+            "translit": null,
+            "audio_id": "med9_ex_e60c8a5c"
           }
         ]
       },
@@ -2633,7 +2836,8 @@
           {
             "ar": "فِي الْبَيْتِ الْكَبِيرِ",
             "fr": "*Dans la grande maison*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med9_ex_2b2a15dd"
           }
         ]
       },
@@ -2683,42 +2887,50 @@
         {
           "speaker_ar": "البائع",
           "arabic": "هَذِهِ سَيَّارَةٌ جَدِيدَةٌ وَجَمِيلَةٌ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med9_dial_3cafbed6"
         },
         {
           "speaker_ar": "Le vendeur",
           "arabic": "C'est une voiture nouvelle et belle.",
-          "french": ""
+          "french": "",
+          "audio_id": "med9_dial_d08fb027"
         },
         {
           "speaker_ar": "العميل",
           "arabic": "وَتِلْكَ السَّيَّارَةُ الْقَدِيمَةُ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med9_dial_c33453d3"
         },
         {
           "speaker_ar": "Le client",
           "arabic": "Et cette vieille voiture là-bas ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med9_dial_cd93b025"
         },
         {
           "speaker_ar": "البائع",
           "arabic": "السَّيَّارَةُ الْقَدِيمَةُ صَغِيرَةٌ وَرَخِيصَةٌ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med9_dial_16e70351"
         },
         {
           "speaker_ar": "Le vendeur",
           "arabic": "La vieille voiture est petite et bon marché.",
-          "french": ""
+          "french": "",
+          "audio_id": "med9_dial_160159d7"
         },
         {
           "speaker_ar": "العميل",
           "arabic": "أَنَا أُرِيدُ سَيَّارَةً كَبِيرَةً.",
-          "french": ""
+          "french": "",
+          "audio_id": "med9_dial_f35c126a"
         },
         {
           "speaker_ar": "Le client",
           "arabic": "Moi, je veux une grande voiture.",
-          "french": ""
+          "french": "",
+          "audio_id": "med9_dial_52c91191"
         }
       ]
     },
@@ -2855,7 +3067,8 @@
         "back_fr": "Un adjectif qui suit un nom et s'accorde avec lui en genre, nombre, cas et définition. Exemple : 'الرَّجُلُ الْكَبِيرُ' (l'homme grand).",
         "category": "Na't (Adjectif)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med9_fc_3d5c2bdb"
       },
       {
         "id": "fc_p3_2",
@@ -2863,7 +3076,8 @@
         "back_fr": "كِتَابٌ جَدِيدٌ — Les deux doivent être indéfinis avec Tanwīn (ٌ).",
         "category": "Na't Accord",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med9_fc_0d58d237"
       },
       {
         "id": "fc_p3_3",
@@ -2871,7 +3085,8 @@
         "back_fr": "الْفَتَاةُ الْجَمِيلَةُ — Tous deux définis avec Al-, féminins en ـَة.",
         "category": "Na't Accord",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med9_fc_be79dc6a"
       },
       {
         "id": "fc_p3_4",
@@ -2879,7 +3094,8 @@
         "back_fr": "Les couleurs comme 'أَحْمَرُ' (rouge), 'أَصْفَرُ' (jaune) sont diptotes → pas de Tanwīn. 'الرَّجُلُ الأَحْمَرُ' pas 'الأَحْمَرٌ'.",
         "category": "Diptotes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med9_fc_8841237b"
       },
       {
         "id": "fc_p3_5",
@@ -2887,7 +3103,8 @@
         "back_fr": "ki-TA-bi = mon livre. La Yā' force toujours Kasra sur la lettre précédente.",
         "category": "Pronoms Attachés",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med9_fc_577d431e"
       },
       {
         "id": "fc_p3_6",
@@ -2895,7 +3112,8 @@
         "back_fr": "say-YA-ra-tu-ka = ta voiture. Ta Marbuta (ـة) devient (ـت) avant le pronom.",
         "category": "Pronoms Attachés",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med9_fc_73c1bb33"
       },
       {
         "id": "fc_p3_7",
@@ -2903,7 +3121,8 @@
         "back_fr": "مَكْتَبُهُ = son bureau. Pas de Kasra car pronom n'est pas ـِي.",
         "category": "Pronoms Attachés",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med9_fc_4e1a9714"
       },
       {
         "id": "fc_p3_8",
@@ -2911,7 +3130,8 @@
         "back_fr": "شَجَرَتُهَا = son arbre (à elle). Ta Marbuta → ـت avant pronom.",
         "category": "Pronoms Attachés",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med9_fc_420412a2"
       }
     ]
   },
@@ -2932,17 +3152,20 @@
           {
             "ar": "كِتَابِي",
             "fr": "= kitābī = mon livre (littéralement : livre-moi",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_c41dfbb1"
           },
           {
             "ar": "كِتَابُكَ",
             "fr": "= kitābuka = ton livre (littéralement : livre-toi",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_cdd76b6f"
           },
           {
             "ar": "كِتَابُهُ",
             "fr": "= kitābuhu = son livre (littéralement : livre-lui",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_a59bb74b"
           }
         ]
       },
@@ -2955,52 +3178,62 @@
           {
             "ar": "ـِي",
             "fr": "| كِتَابِي | Mon livre |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_189154f1"
           },
           {
             "ar": "ـكَ",
             "fr": "| كِتَابُكَ | Ton livre |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_c2d0d09e"
           },
           {
             "ar": "ـكِ",
             "fr": "| كِتَابُكِ | Ton livre (à toi fille",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_8d818795"
           },
           {
             "ar": "ـهُ",
             "fr": "| كِتَابُهُ | Son livre |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_b8be6c6b"
           },
           {
             "ar": "ـهَا",
             "fr": "| كِتَابُهَا | Son livre (à elle",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_6f41ed8e"
           },
           {
             "ar": "ـنَا",
             "fr": "| كِتَابُنَا | Notre livre |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_e5b863d9"
           },
           {
             "ar": "ـكُمْ",
             "fr": "| كِتَابُكُمْ | Votre livre |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_cb6e85f6"
           },
           {
             "ar": "ـكُنَّ",
             "fr": "| كِتَابُكُنَّ | Votre livre (à vous filles",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_4160a061"
           },
           {
             "ar": "ـهُمْ",
             "fr": "| كِتَابُهُمْ | Leur livre |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_15ca0f98"
           },
           {
             "ar": "ـهُنَّ",
             "fr": "| كِتَابُهُنَّ | Leur livre (à elles",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_0886c60a"
           }
         ]
       },
@@ -3013,52 +3246,62 @@
           {
             "ar": "أَنَا",
             "fr": "= Je / Moi",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_b0745e4c"
           },
           {
             "ar": "أَنْتَ",
             "fr": "= Tu (Masc",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_6a84e49f"
           },
           {
             "ar": "أَنْتِ",
             "fr": "= Tu (Fém",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_29a73b68"
           },
           {
             "ar": "هُوَ",
             "fr": "= Il / Lui",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_056e4007"
           },
           {
             "ar": "هِيَ",
             "fr": "= Elle / Elle",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_05a0e2d8"
           },
           {
             "ar": "نَحْنُ",
             "fr": "= Nous",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_811e0553"
           },
           {
             "ar": "أَنْتُمْ",
             "fr": "= Vous (Masc pl",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_82b68211"
           },
           {
             "ar": "أَنْتُنَّ",
             "fr": "= Vous (Fém pl",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_4ab714ed"
           },
           {
             "ar": "هُمْ",
             "fr": "= Ils / Eux",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_73876327"
           },
           {
             "ar": "هُنَّ",
             "fr": "= Elles / Elles",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_1fab3f94"
           }
         ]
       },
@@ -3071,27 +3314,32 @@
           {
             "ar": "ـِي",
             "fr": "mon",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_189154f1"
           },
           {
             "ar": "كِتَابٌ",
             "fr": "*un livre*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_e07c3c41"
           },
           {
             "ar": "كِتَابِي",
             "fr": "*mon livre*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_c41dfbb1"
           },
           {
             "ar": "بَيْتٌ",
             "fr": "*une maison*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_d4c49c94"
           },
           {
             "ar": "بَيْتِي",
             "fr": "*ma maison*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med10_ex_41653060"
           }
         ]
       },
@@ -3146,42 +3394,50 @@
         {
           "speaker_ar": "الأب",
           "arabic": "هَذَا بَيْتِي وَهَذَا كِتَابِي.",
-          "french": ""
+          "french": "",
+          "audio_id": "med10_dial_b61730fd"
         },
         {
           "speaker_ar": "Le père",
           "arabic": "C'est ma maison et c'est mon livre.",
-          "french": ""
+          "french": "",
+          "audio_id": "med10_dial_d4e0893b"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "وَهَذِهِ حقيبتي وَقَلَمِي.",
-          "french": ""
+          "french": "",
+          "audio_id": "med10_dial_997109b0"
         },
         {
           "speaker_ar": "La mère",
           "arabic": "Et c'est mon sac et mon stylo.",
-          "french": ""
+          "french": "",
+          "audio_id": "med10_dial_6e6ae396"
         },
         {
           "speaker_ar": "البنت",
           "arabic": "أَيْنَ دفتري؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med10_dial_ac221746"
         },
         {
           "speaker_ar": "La fille",
           "arabic": "Où est mon cahier ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med10_dial_85cfdd9d"
         },
         {
           "speaker_ar": "الابن",
           "arabic": "دَفْتَرُكِ عَلَى الْمَكْتَبِ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med10_dial_013702a8"
         },
         {
           "speaker_ar": "Le fils",
           "arabic": "Ton cahier est sur le bureau.",
-          "french": ""
+          "french": "",
+          "audio_id": "med10_dial_2396150f"
         }
       ]
     },
@@ -3284,7 +3540,8 @@
         "back_fr": "Je, tu, il, elle. Pronoms isolés — sujet ou après préposition (عِنْدَ moi, avec moi, etc.).",
         "category": "Pronoms Isolés",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med10_fc_3d0cbff5"
       },
       {
         "id": "fc_p3_10",
@@ -3292,7 +3549,8 @@
         "back_fr": "Nous, vous (m. pl.), vous (f. pl.). Pronoms pluriels — pour groupes.",
         "category": "Pronoms Pluriels",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med10_fc_b0a83353"
       },
       {
         "id": "fc_p3_11",
@@ -3300,7 +3558,8 @@
         "back_fr": "Littéralement 'auprès de / chez', mais utilisé pour exprimer la possession = avoir. Exemple : 'عِنْدِي كِتَابٌ' = j'ai un livre.",
         "category": "عِنْدَ (Possession)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med10_fc_5d5d837e"
       },
       {
         "id": "fc_p3_12",
@@ -3308,7 +3567,8 @@
         "back_fr": "عِنْدِي, عِنْدَكَ, عِنْدَهُ, عِنْدَهَا, عِنْدَنَا, عِنْدَكُمْ, عِنْدَهُمْ, عِنْدَهُنَّ",
         "category": "عِنْدَ (Possession)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med10_fc_e61ad3f8"
       },
       {
         "id": "fc_p3_13",
@@ -3316,7 +3576,8 @@
         "back_fr": "'لِي' (à moi) — pour famille et liens. 'لِي أَخٌ' (j'ai un frère), pas 'عِنْدِي أَخٌ'.",
         "category": "Parenté vs Possession",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med10_fc_0ee71b7d"
       },
       {
         "id": "fc_p3_14",
@@ -3324,7 +3585,8 @@
         "back_fr": "'مَعَ' (avec) — ici et maintenant. 'الْقَلَمُ مَعِي' = le stylo est avec moi maintenant.",
         "category": "Parenté vs Possession",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med10_fc_cdd55ef6"
       },
       {
         "id": "fc_p3_15",
@@ -3332,7 +3594,8 @@
         "back_fr": "Je n'ai pas de montre. Négation 'مَا' + 'عِنْدِي' + objet nominatif indéfini.",
         "category": "عِنْدَ (Négation)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med10_fc_08cfcbdc"
       },
       {
         "id": "fc_p3_16",
@@ -3340,7 +3603,8 @@
         "back_fr": "Attribut (Khabar) : phrase séparate 'السَّيَّارَةُ كَبِيرَةٌ' (la voiture est grande). Épithète (Na't) : groupe 'السَّيَّارَةُ الْكَبِيرَةُ' (la grande voiture).",
         "category": "Na't vs Khabar",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med10_fc_97e7457c"
       }
     ]
   },
@@ -3361,22 +3625,26 @@
           {
             "ar": "عِنْدِي",
             "fr": "signifie littéralement",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_009473df"
           },
           {
             "ar": "عِنْدِي كِتَابٌ",
             "fr": "= (Littéralement : Chez moi un livre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_ed87a0dc"
           },
           {
             "ar": "عِنْدَكَ قَلَمٌ؟",
             "fr": "= (Tu as un stylo ?",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_a0af6b3f"
           },
           {
             "ar": "عِنْدَهُ سَيَّارَةٌ",
             "fr": "= (Il a une voiture",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_0fc0e781"
           }
         ]
       },
@@ -3396,22 +3664,26 @@
           {
             "ar": "مَا",
             "fr": "avant **عِنْدِي** :",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_6ed51b77"
           },
           {
             "ar": "مَا عِنْدِي كِتَابٌ",
             "fr": "= Je n'ai pas de livre",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_70575b99"
           },
           {
             "ar": "مَا عِنْدَكِ مَالٌ",
             "fr": "= Tu n'as pas d'argent",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_caa4b5fd"
           },
           {
             "ar": "مَا عِنْدَهُمْ سَيَّارَةٌ",
             "fr": "= Ils n'ont pas de voiture",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_f835ca54"
           }
         ]
       },
@@ -3424,27 +3696,32 @@
           {
             "ar": "عِنْدَ",
             "fr": "chez, avec",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_26b1b5d3"
           },
           {
             "ar": "عِنْدِي قَلَمٌ",
             "fr": "= J'ai un stylo",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_85f3f499"
           },
           {
             "ar": "لِـ",
             "fr": "pour, à",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_8f7a0fa7"
           },
           {
             "ar": "لِي أَخٌ",
             "fr": "= J'ai un frère (littéralement : à moi un frère",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_aca0c4ce"
           },
           {
             "ar": "لَهَا أُخْتٌ",
             "fr": "= Elle a une sœur",
-            "translit": null
+            "translit": null,
+            "audio_id": "med11_ex_a896ed8e"
           }
         ]
       },
@@ -3499,42 +3776,50 @@
         {
           "speaker_ar": "أحمد",
           "arabic": "عِنْدِي كِتَابٌ جَدِيدٌ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med11_dial_477aa7e3"
         },
         {
           "speaker_ar": "Ahmed",
           "arabic": "J'ai un nouveau livre !",
-          "french": ""
+          "french": "",
+          "audio_id": "med11_dial_5ee7294a"
         },
         {
           "speaker_ar": "فاطمة",
           "arabic": "عِنْدِي اثنان. مَا عِنْدِي قَلَمٌ أَحْمَرُ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med11_dial_3c8bcc90"
         },
         {
           "speaker_ar": "Fatima",
           "arabic": "Moi j'en ai deux. Je n'ai pas de stylo rouge !",
-          "french": ""
+          "french": "",
+          "audio_id": "med11_dial_4ca6b1e4"
         },
         {
           "speaker_ar": "علي",
           "arabic": "عِنْدَنَا مَدْرَسَةٌ جَمِيلَةٌ جِدًّا.",
-          "french": ""
+          "french": "",
+          "audio_id": "med11_dial_8424196b"
         },
         {
           "speaker_ar": "Ali",
           "arabic": "Nous avons une très belle école.",
-          "french": ""
+          "french": "",
+          "audio_id": "med11_dial_2e2ae05f"
         },
         {
           "speaker_ar": "الْمُعَلِّمَة",
           "arabic": "عِنْدَكُمْ وَاجِبٌ الْيَوْمَ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med11_dial_aedfd4ee"
         },
         {
           "speaker_ar": "L'enseignante",
           "arabic": "Avez-vous un devoir aujourd'hui ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med11_dial_8a7b8d1b"
         }
       ]
     },
@@ -3683,7 +3968,8 @@
         "back_fr": "'عِنْدَهُمْ' = ils ont / auprès d'eux. Exemple : 'عِنْدَهُمْ أَطْفَالٌ' = ils ont des enfants.",
         "category": "عِنْدَ (Pluriel)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med11_fc_0a96e2c5"
       },
       {
         "id": "fc_p3_18",
@@ -3691,7 +3977,8 @@
         "back_fr": "'عِنْدَهُنَّ' = elles ont / auprès d'elles. Exemple : 'عِنْدَهُنَّ كِتَابٌ' = elles ont un livre.",
         "category": "عِنْدَ (Pluriel)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med11_fc_821a3619"
       },
       {
         "id": "fc_p3_19",
@@ -3699,7 +3986,8 @@
         "back_fr": "jaw-AN. Diptote = pas de Tanwīn. Signifie 'affamé'. Exemple : 'الرَّجُلُ الْجَوْعَانُ' (l'homme affamé — pas 'الْجَوْعَانٌ').",
         "category": "Diptotes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med11_fc_502a575b"
       },
       {
         "id": "fc_p3_20",
@@ -3707,7 +3995,8 @@
         "back_fr": "Le pluriel brisé prend un Na't au féminin singulier. 'رِجَالٌ كِبَارٌ' (hommes grands) — mais 'كِبَارٌ' est un pluriel irrégulier du mot kbr.",
         "category": "Pluriel Brisé + Na't",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med11_fc_80cf70f1"
       },
       {
         "id": "fc_p3_21",
@@ -3715,7 +4004,8 @@
         "back_fr": "Le pronom 'ـِي' force toujours Kasra sur la lettre précédente. D'où 'كِتَابِي' (avec Kasra), jamais 'كِتَابْي'.",
         "category": "Pronoms Attachés (Yā')",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med11_fc_ac885b20"
       },
       {
         "id": "fc_p3_22",
@@ -3723,7 +4013,8 @@
         "back_fr": "Toujours. 'شَجَرَةٌ' → 'شَجَرَتِي', 'شَجَرَتُكَ', 'شَجَرَتُهُ'. La ـة s'ouvre en ـت.",
         "category": "Ta Marbuta",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med11_fc_dd31bad1"
       },
       {
         "id": "fc_p3_23",
@@ -3731,7 +4022,8 @@
         "back_fr": "'عِنْدَنَا ثَلَاثَةُ كُتُبٍ' ou 'عِنْدَنَا ثَلَاثُ كُتُبٍ'. Pluriel nominatif après عِنْدَنَا.",
         "category": "عِنْدَ (Pluriel)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med11_fc_08cabe90"
       },
       {
         "id": "fc_p3_24",
@@ -3739,7 +4031,8 @@
         "back_fr": "HA-dha (masc.) vs HA-dhi-hi (fém.). 'هَذَا' avec masc., 'هَذِهِ' avec fém. Accord = pointeur + nom.",
         "category": "Pointeurs",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med11_fc_4d4d3348"
       }
     ]
   },
@@ -3760,12 +4053,14 @@
           {
             "ar": "ذَهَبَ الْوَلَدُ",
             "fr": "= *Le garçon est allé* (littéralement : Est allé + le garçon",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_4a280880"
           },
           {
             "ar": "خَرَجَتِ الْبِنْتُ",
             "fr": "= *La fille est sortie* (littéralement : Est sortie + la fille",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_99c8f96e"
           }
         ]
       },
@@ -3778,47 +4073,56 @@
           {
             "ar": "ذَهَبَ",
             "fr": "| dhahaba | Il est allé | ذَهَبَ أَحْمَدُ |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_173d0dd7"
           },
           {
             "ar": "خَرَجَ",
             "fr": "| kharaja | Il est sorti | خَرَجَ عَلِيٌّ |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_ceeb1997"
           },
           {
             "ar": "جَلَسَ",
             "fr": "| jalasa | Il s'est assis | جَلَسَ الْمُعَلِّمُ |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_cb9fbf65"
           },
           {
             "ar": "دَخَلَ",
             "fr": "| dakhala | Il est entré | دَخَلَ الطَّالِبُ |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_ee282767"
           },
           {
             "ar": "نَامَ",
             "fr": "| nāma | Il a dormi | نَامَ الطِّفْلُ |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_fe3e7e34"
           },
           {
             "ar": "شَرِبَ",
             "fr": "| shariba | Il a bu | شَرِبَ مَاءً |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_1a540c49"
           },
           {
             "ar": "أَكَلَ",
             "fr": "| akala | Il a mangé | أَكَلَ خُبْزًا |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_b6be2024"
           },
           {
             "ar": "كَتَبَ",
             "fr": "| kataba | Il a écrit | كَتَبَ الدَّرْسَ |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_43ad29c6"
           },
           {
             "ar": "قَرَأَ",
             "fr": "| qara'a | Il a lu | قَرَأَ كِتَابًا |",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_d31dfd6b"
           }
         ]
       },
@@ -3831,42 +4135,50 @@
           {
             "ar": "ـتْ",
             "fr": "ou **ـتِ** selon le cas",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_e4f16951"
           },
           {
             "ar": "ذَهَبَ",
             "fr": "*Il est allé*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_173d0dd7"
           },
           {
             "ar": "ذَهَبَتْ",
             "fr": "*Elle est allée*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_ba81ecd5"
           },
           {
             "ar": "خَرَجَ",
             "fr": "*Il est sorti*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_ceeb1997"
           },
           {
             "ar": "خَرَجَتْ",
             "fr": "*Elle est sortie*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_dc4cd2eb"
           },
           {
             "ar": "جَلَسَ",
             "fr": "*Il s'est assis*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_cb9fbf65"
           },
           {
             "ar": "جَلَسَتْ",
             "fr": "*Elle s'est assise*",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_508a365c"
           },
           {
             "ar": "قَرَأَتْ",
             "fr": ".",
-            "translit": null
+            "translit": null,
+            "audio_id": "med12_ex_f7920805"
           }
         ]
       },
@@ -3928,52 +4240,62 @@
         {
           "speaker_ar": "الأم",
           "arabic": "مَاذَا فَعَلْتَ الْيَوْمَ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med12_dial_c82d7311"
         },
         {
           "speaker_ar": "La mère",
           "arabic": "Qu'as-tu fait aujourd'hui ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med12_dial_d7393d4d"
         },
         {
           "speaker_ar": "الابن",
           "arabic": "ذَهَبْتُ إِلَى الْمَدْرَسَةِ وَجَلَسْتُ فِي الصَّفِّ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med12_dial_4c98d357"
         },
         {
           "speaker_ar": "Le fils",
           "arabic": "Je suis allé à l'école et je me suis assis en classe.",
-          "french": ""
+          "french": "",
+          "audio_id": "med12_dial_2107ae62"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "وَهَلْ أَكَلْتَ الْغَدَاءَ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med12_dial_9be6a9db"
         },
         {
           "speaker_ar": "La mère",
           "arabic": "Et as-tu mangé le déjeuner ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med12_dial_045692c7"
         },
         {
           "speaker_ar": "الابن",
           "arabic": "نَعَمْ! شَرِبْتُ عَصِيرًا وَأَكَلْتُ سَمِسْمَةً.",
-          "french": ""
+          "french": "",
+          "audio_id": "med12_dial_175aad7a"
         },
         {
           "speaker_ar": "Le fils",
           "arabic": "Oui ! J'ai bu du jus et j'ai mangé un sandwich.",
-          "french": ""
+          "french": "",
+          "audio_id": "med12_dial_05fd1e26"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "هَلْ خَرَجْتَ مِنَ الْمَدْرَسَةِ الْمُبَكِّرَة؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med12_dial_b5fd289f"
         },
         {
           "speaker_ar": "La mère",
           "arabic": "Es-tu sorti tôt de l'école ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med12_dial_e2758bc8"
         }
       ]
     },
@@ -4076,7 +4398,8 @@
         "back_fr": "Phrase verbale = Verbe au passé + Sujet nominatif. Ordre arabe : verbe vient avant le sujet. Exemple : 'ذَهَبَ الطَّالِبُ' (L'étudiant est allé).",
         "category": "Jumla Fi'liyya (Phrase Verbale)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med12_fc_5d3719b7"
       },
       {
         "id": "fc_p4_2",
@@ -4084,7 +4407,8 @@
         "back_fr": "ذَهَبَ = il est allé, خَرَجَ = il est sorti, جَلَسَ = il s'est assis. Tous au passé simple 3e masc. sing. (radicale + Fatha).",
         "category": "Verbes Passés",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med12_fc_86a7e502"
       },
       {
         "id": "fc_p4_3",
@@ -4092,7 +4416,8 @@
         "back_fr": "Ajoutez 'ـتْ' à la fin du verbe masc. 'ذَهَبَ' → 'ذَهَبَتْ', 'خَرَجَ' → 'خَرَجَتْ', 'جَلَسَ' → 'جَلَسَتْ'.",
         "category": "Verbes Féminins",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med12_fc_3452db60"
       },
       {
         "id": "fc_p4_4",
@@ -4100,7 +4425,8 @@
         "back_fr": "Pluriel régulier masculin = ـُونَ au nominatif, ـِينَ à l'accusatif/génitif. Exemple : 'مُدَرِّسُونَ' (professeurs), 'مُدَرِّسِينَ' (des profs).",
         "category": "Pluriels Réguliers",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med12_fc_a6825ca2"
       },
       {
         "id": "fc_p4_5",
@@ -4108,7 +4434,8 @@
         "back_fr": "Pluriel régulier féminin = ـَاتٌ (remplace ـَة). Exemple : 'طَالِبَة' → 'طَالِبَاتٌ' (étudiantes).",
         "category": "Pluriels Réguliers",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med12_fc_177e3070"
       }
     ]
   },
@@ -4129,12 +4456,14 @@
           {
             "ar": "ـُونَ",
             "fr": "Ūna",
-            "translit": null
+            "translit": null,
+            "audio_id": "med13_ex_a787778a"
           },
           {
             "ar": "ـِينَ",
             "fr": "Īn",
-            "translit": null
+            "translit": null,
+            "audio_id": "med13_ex_0d81ee8d"
           }
         ]
       },
@@ -4228,27 +4557,32 @@
         {
           "speaker_ar": "Scène : Le premier jour de classe. Un enseignant prend l'appel et introduit les nouveaux étudiants.",
           "arabic": "Enseignant : مَرْحَبًا بِكُمْ يَا طُلَّابِي الأَعِزَّاءِ! هَؤُلَاءِ أَصْدِقَاؤُكُمُ الْجُدُدُ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med13_dial_fba9e258"
         },
         {
           "speaker_ar": "[Bienvenue à vous, ô mes chers étudiants ! Les voici, vos nouveaux camarades.]",
           "arabic": "Étudiant 1 : مَنْ هَؤُلَاءِ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med13_dial_bfa16516"
         },
         {
           "speaker_ar": "[Qui sont-ils ?]",
           "arabic": "Enseignant : هُمْ طُلَّابٌ مِنْ مَدِينَةٍ أُخْرَى. وَهَؤُلَاءِ مُدَرِّسُونَ جُدُدٌ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med13_dial_781f45ab"
         },
         {
           "speaker_ar": "[Ce sont des étudiants d'une autre ville. Et voilà, des professeurs nouveaux.]",
           "arabic": "Étudiant 2 : أَيْنَ إِخْوَتُهُمْ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med13_dial_4779762b"
         },
         {
           "speaker_ar": "[Où sont leurs frères ?]",
           "arabic": "Enseignant : هُمْ فِي الْفَصْلِ الثَّاني. الْآنَ نَبْدَأُ الدَّرْسَ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med13_dial_7ee05bee"
         }
       ]
     },
@@ -4351,7 +4685,8 @@
         "back_fr": "رَجُل → رِجَال (hommes), وَلَد → أَوْلَاد (garçons), طَالِب → طُلَّاب (étudiants). Changement interne, pas suffixe.",
         "category": "Pluriels Brisés",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med13_fc_639929ae"
       },
       {
         "id": "fc_p4_7",
@@ -4359,7 +4694,8 @@
         "back_fr": "Le verbe reste au singulier si le sujet pluriel vient après. 'ذَهَبَ الرِّجَالُ' (Les hommes sont allés) — verbe sing., sujet pluriel après.",
         "category": "Accord Verbal",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med13_fc_d79872c0"
       },
       {
         "id": "fc_p4_8",
@@ -4367,7 +4703,8 @@
         "back_fr": "Ha-U-la-i = ceux-ci, ces (pluriel humain proche). Exemple : 'هَؤُلَاءِ طُلَّابٌ' (Ce sont des étudiants ici).",
         "category": "Pointeurs Pluriels",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med13_fc_08027649"
       },
       {
         "id": "fc_p4_9",
@@ -4375,7 +4712,8 @@
         "back_fr": "U-la-i-ka = ceux-là, ces (pluriel humain lointain). Wāw silencieux. Exemple : 'أُولَئِكَ آبَاءٌ' (Ceux-là sont des pères, au loin).",
         "category": "Pointeurs Pluriels",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med13_fc_13da5366"
       },
       {
         "id": "fc_p4_10",
@@ -4383,7 +4721,8 @@
         "back_fr": "'هُنَّ' = elles (pronom isolé) et 'ـهُنَّ' = leur (fém. pl.). Exemple : 'هُنَّ طَبِيبَاتٌ' (Elles sont doctoresses).",
         "category": "Pronoms Féminins Pluriels",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med13_fc_af04c8b5"
       }
     ]
   },
@@ -4404,17 +4743,20 @@
           {
             "ar": "ـَاتٌ",
             "fr": "Ātun au nominatif",
-            "translit": null
+            "translit": null,
+            "audio_id": "med14_ex_a4570e0c"
           },
           {
             "ar": "ـَاتِ",
             "fr": "Ātin aux autres cas",
-            "translit": null
+            "translit": null,
+            "audio_id": "med14_ex_a90950a1"
           },
           {
             "ar": "ـَاتِ",
             "fr": "avec Kasra sous le Tāʾ",
-            "translit": null
+            "translit": null,
+            "audio_id": "med14_ex_a90950a1"
           }
         ]
       },
@@ -4427,22 +4769,26 @@
           {
             "ar": "أَنْتُمْ",
             "fr": "Antum",
-            "translit": null
+            "translit": null,
+            "audio_id": "med14_ex_82b68211"
           },
           {
             "ar": "أَنْتُنَّ",
             "fr": "Antunna",
-            "translit": null
+            "translit": null,
+            "audio_id": "med14_ex_4ab714ed"
           },
           {
             "ar": "ـكُمْ",
             "fr": "-kum",
-            "translit": null
+            "translit": null,
+            "audio_id": "med14_ex_cb6e85f6"
           },
           {
             "ar": "ـكُنَّ",
             "fr": "-kunna",
-            "translit": null
+            "translit": null,
+            "audio_id": "med14_ex_4160a061"
           }
         ]
       },
@@ -4455,7 +4801,8 @@
           {
             "ar": "ـنَا",
             "fr": "-nā",
-            "translit": null
+            "translit": null,
+            "audio_id": "med14_ex_e5b863d9"
           }
         ]
       },
@@ -4468,7 +4815,8 @@
           {
             "ar": "ـَات",
             "fr": "Ātun",
-            "translit": null
+            "translit": null,
+            "audio_id": "med14_ex_0d77b223"
           }
         ]
       },
@@ -4548,22 +4896,26 @@
         {
           "speaker_ar": "Scène : Un cercle d'étude coranique pour femmes à la mosquée. L'enseignante s'adresse au groupe.",
           "arabic": "Enseignante : السَّلَامُ عَلَيْكُنَّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ! أَهْلًا بِكُنَّ يَا طَالِبَاتِي الأَعِزَّاءِ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med14_dial_571731dd"
         },
         {
           "speaker_ar": "[Que la paix soit sur vous et la miséricorde de Dieu et ses bénédictions ! Bienvenue à vous, ô mes chères étudiantes.]",
           "arabic": "Étudiante 1 : وَعَلَيْكُمُ السَّلَامُ وَرَحْمَةُ اللَّهِ. أَيْنَ الْقُرْآنُ اليَوْمَ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med14_dial_515e6b8d"
         },
         {
           "speaker_ar": "[Et que la paix soit sur vous. Où est le Coran aujourd'hui ?]",
           "arabic": "Enseignante : نَحْنُ سَنَقْرَأُ السُّورَةَ الثَّانِيَةَ. أَنْتُنَّ مُسْتَعِدَّاتٌ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med14_dial_918e0961"
         },
         {
           "speaker_ar": "[Nous allons lire la deuxième sourate. Êtes-vous préparées ?]",
           "arabic": "الطَّالِبَاتُ : نَعَمْ! نَحْنُ مُسْتَعِدَّاتٌ جِدًّا.",
-          "french": ""
+          "french": "",
+          "audio_id": "med14_dial_2455ad39"
         }
       ]
     },
@@ -4712,7 +5064,8 @@
         "back_fr": "Verbe + 'ـْنَ' (Nūn an-Niswah). 'ذَهَبْنَ' (elles sont allées). 'خَرَجْنَ' (elles sont sorties).",
         "category": "Verbes Féminins Pluriels",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med14_fc_4d3377bf"
       },
       {
         "id": "fc_p4_12",
@@ -4720,7 +5073,8 @@
         "back_fr": "'كَتَبْنَا' = nous avons écrit. Pronom attaché pluriel ـنَا = nous.",
         "category": "Verbes Pluriels",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med14_fc_521707bf"
       },
       {
         "id": "fc_p4_13",
@@ -4728,7 +5082,8 @@
         "back_fr": "Adjectif + ـَاتٌ ou ـَةٌ (singulier). 'طَالِبَاتٌ ذَكِيَّاتٌ' (étudiantes intelligentes). L'adj. masc. change aussi : 'ذَكِيّ' → 'ذَكِيَّاتٌ'.",
         "category": "Accord au Pluriel Féminin",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med14_fc_4c81fc80"
       },
       {
         "id": "fc_p4_14",
@@ -4736,7 +5091,8 @@
         "back_fr": "'هَؤُلَاءِ' = ces (pl. proche), 'أُولَئِكَ' = ceux-là (pl. lointain), 'هَاتِهِ' = cette (sing. fém. lointain). Tous = pointeurs.",
         "category": "Pointeurs Comparaison",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med14_fc_cab0f623"
       },
       {
         "id": "fc_p4_15",
@@ -4744,7 +5100,8 @@
         "back_fr": "Quand l'objet ou la personne est lointain(e) — à distance, au loin, ou pour emphase. 'أُولَئِكَ الرِّجَالُ فِي الْبُعْدِ' (Ces hommes au loin).",
         "category": "Pointeurs Lointains",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med14_fc_a2dec83d"
       }
     ]
   },
@@ -4772,22 +5129,26 @@
           {
             "ar": "هُوَ",
             "fr": "Il",
-            "translit": null
+            "translit": null,
+            "audio_id": "med15_ex_056e4007"
           },
           {
             "ar": "هُمْ",
             "fr": "Ils",
-            "translit": null
+            "translit": null,
+            "audio_id": "med15_ex_73876327"
           },
           {
             "ar": "هِيَ",
             "fr": "Elle",
-            "translit": null
+            "translit": null,
+            "audio_id": "med15_ex_05a0e2d8"
           },
           {
             "ar": "هُنَّ",
             "fr": "Elles",
-            "translit": null
+            "translit": null,
+            "audio_id": "med15_ex_1fab3f94"
           }
         ]
       },
@@ -4807,7 +5168,8 @@
           {
             "ar": "تِلْكَ",
             "fr": "celle-ci, celle-là — fem sing",
-            "translit": null
+            "translit": null,
+            "audio_id": "med15_ex_18f013e2"
           }
         ]
       },
@@ -4894,27 +5256,32 @@
         {
           "speaker_ar": "Scène : À l'aéroport de Jeddah. Deux hommes regardent différents groupes de voyageurs.",
           "arabic": "Homme 1 : مَنْ أُولَئِكَ؟ هُمْ يَسِيرُونَ بِسُرْعَةٍ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med15_dial_b1f30c5d"
         },
         {
           "speaker_ar": "[Qui sont ceux-là ? Ils marchent vite.]",
           "arabic": "Homme 2 : أُولَئِكَ حُجَّاجٌ مِنَ الْفِلِبِّينِ. وَأُولَئِكَ هُنَاكَ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med15_dial_ae3e08cb"
         },
         {
           "speaker_ar": "[Ceux-là sont des pèlerins des Philippines. Et ceux-là là-bas ?]",
           "arabic": "Homme 1 : أُولَئِكَ نِسَاءٌ مِنَ الْهِنْدِ. هُنَّ طَالِبَاتٌ جِدًّا.",
-          "french": ""
+          "french": "",
+          "audio_id": "med15_dial_d3a90ab7"
         },
         {
           "speaker_ar": "[Celles-là sont des femmes de l'Inde. Ce sont des étudiantes bien sérieuses.]",
           "arabic": "Homme 2 : وَأَيْنَ الأَطْفَالُ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med15_dial_3ea183eb"
         },
         {
           "speaker_ar": "[Et où sont les enfants ?]",
           "arabic": "Homme 1 : أُولَئِكَ هُنَاكَ. هُمْ يَلْعَبُونَ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med15_dial_da9b295c"
         }
       ]
     },
@@ -5101,7 +5468,8 @@
         "back_fr": "'طَالِب' → 'طُلَّاب' (étudiants), 'قَاضٍ' → 'قُضَاةٌ' (juges). Tous deux pluriels brisés irréguliers.",
         "category": "Pluriels Brisés",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med15_fc_4faa94e8"
       },
       {
         "id": "fc_p4_17",
@@ -5109,7 +5477,8 @@
         "back_fr": "'مُهَنْدِسِينَ' (des ingénieurs en acc.). Au nominatif : 'مُهَنْدِسُونَ'. Suffixe change selon le cas.",
         "category": "Cas et Pluriels",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med15_fc_fe6b5d86"
       },
       {
         "id": "fc_p4_18",
@@ -5117,7 +5486,8 @@
         "back_fr": "'أَنْتُمْ ذَهَبْتُمْ' ou juste 'ذَهَبْتُمْ'. Pronom attaché ـتُمْ = vous (masc. pl.) ou pronoun isolé + verbe conjugué.",
         "category": "Vous (Pluriel)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med15_fc_0a15aa4f"
       },
       {
         "id": "fc_p4_19",
@@ -5125,7 +5495,8 @@
         "back_fr": "'أَنْتُنَّ ذَهَبْتُنَّ' ou juste 'ذَهَبْتُنَّ'. Pronom attaché ـتُنَّ = vous (fém. pl.) ou pronoun isolé + verbe avec Nūn an-Niswah.",
         "category": "Vous (Pluriel)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med15_fc_e73eed34"
       },
       {
         "id": "fc_p4_20",
@@ -5133,7 +5504,8 @@
         "back_fr": "Suffixe 'ـْنَ' ou 'ـتُنَّ' utilisé dans les verbes et pronoms pour le pluriel féminin. Marque 'elles' ou 'vous (femmes)'.",
         "category": "Nūn an-Niswah",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med15_fc_1f4d9066"
       },
       {
         "id": "fc_p4_21",
@@ -5141,7 +5513,8 @@
         "back_fr": "'ذَهَبَ الرِّجَالُ الْكِبَارُ' (Les grands hommes sont allés). Sujet pluriel brisé + adjectif pluriel brisé (كِبَار).",
         "category": "Phrases Complètes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med15_fc_9518446c"
       },
       {
         "id": "fc_p4_22",
@@ -5149,7 +5522,8 @@
         "back_fr": "'هَؤُلَاءِ الطُّلَّابُ ذَكِيُّونَ' (ceux-ci + pluriel + adj. pluriel masc. nominatif ـُونَ).",
         "category": "Phrases Complètes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med15_fc_4d22a0b2"
       },
       {
         "id": "fc_p4_23",
@@ -5157,7 +5531,8 @@
         "back_fr": "'أُولَئِكَ آبَاءُ عَائِلَاتٍ' (ceux-là + pluriel brisé + Idāfa). Ou 'أُولَئِكَ هُمْ الآبَاءُ'.",
         "category": "Phrases Complètes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med15_fc_4083c3a2"
       }
     ]
   },
@@ -5270,52 +5645,62 @@
         {
           "speaker_ar": "(Chez le libraire — dans une librairie)",
           "arabic": "البائع : أَهْلًا! مَاذَا تُرِيدُ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med16_dial_65749d63"
         },
         {
           "speaker_ar": "Vendeur",
           "arabic": "Bienvenue ! Que cherches-tu ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med16_dial_92521ddb"
         },
         {
           "speaker_ar": "الزَّبُون",
           "arabic": "هَذِهِ الْكُتُبُ جَدِيدَةٌ، أَلِيسَ كَذَلِكَ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med16_dial_f0c3d19c"
         },
         {
           "speaker_ar": "Client",
           "arabic": "Ces livres sont nouveaux, n'est-ce pas ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med16_dial_7f5913be"
         },
         {
           "speaker_ar": "البائع",
           "arabic": "نَعَمْ، هَذِهِ الْكُتُبُ جَدِيدَةٌ جِدًّا. وَتِلْكَ الْأَقْلَامُ جَمِيلَةٌ أَيْضًا.",
-          "french": ""
+          "french": "",
+          "audio_id": "med16_dial_1012299f"
         },
         {
           "speaker_ar": "Vendeur",
           "arabic": "Oui, ces livres sont très nouveaux. Et ces stylos là-bas sont beaux aussi.",
-          "french": ""
+          "french": "",
+          "audio_id": "med16_dial_c99e8f1b"
         },
         {
           "speaker_ar": "الزَّبُون",
           "arabic": "الْأَبْوَابُ مَفْتُوحَةٌ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med16_dial_8c85378f"
         },
         {
           "speaker_ar": "Client",
           "arabic": "Les portes sont ouvertes ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med16_dial_a3a66b10"
         },
         {
           "speaker_ar": "البائع",
           "arabic": "نَعَمْ، الأَبْوَابُ مَفْتُوحَةٌ. تَفَضَّلْ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med16_dial_4bd8e29d"
         },
         {
           "speaker_ar": "Vendeur",
           "arabic": "Oui, les portes sont ouvertes. Entre !",
-          "french": ""
+          "french": "",
+          "audio_id": "med16_dial_388b0917"
         }
       ]
     },
@@ -5418,7 +5803,8 @@
         "back_fr": "Tout pluriel d'objets inanimés (ghayr al-'āqil) est traité comme un nom FÉMININ SINGULIER grammaticalement.",
         "category": "Grammaire — Pluriel inanimé",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med16_fc_a3ac4d0a"
       },
       {
         "id": "fc_p5_2",
@@ -5426,7 +5812,8 @@
         "back_fr": "هِيَ (elle-féminin singulier), même si le nom est grammaticalement pluriel.",
         "category": "Pronoms",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med16_fc_6d21fa74"
       },
       {
         "id": "fc_p5_3",
@@ -5434,7 +5821,8 @@
         "back_fr": "Accord au FÉMININ SINGULIER. Exemple : الْكُتُبُ جَدِيدَةٌ (Les livres sont nouveaux).",
         "category": "Accord grammatical",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med16_fc_d8e5ff29"
       },
       {
         "id": "fc_p5_4",
@@ -5442,7 +5830,8 @@
         "back_fr": "هَذِهِ (ces — féminin singulier form). Exemple : هَذِهِ الأَقْلَامُ جَدِيدَةٌ.",
         "category": "Démonstratifs",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med16_fc_d467f4b5"
       },
       {
         "id": "fc_p5_5",
@@ -5450,7 +5839,8 @@
         "back_fr": "تِلْكَ (ces là — féminin singulier form). Exemple : تِلْكَ النُّجُومُ جَمِيلَةٌ.",
         "category": "Démonstratifs",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med16_fc_24653043"
       },
       {
         "id": "fc_p5_6",
@@ -5458,7 +5848,8 @@
         "back_fr": "Adverbe de lieu. Fonctionne comme Mudāf. Exemple : أَمَامَ الْمَدْرَسَةِ (devant l'école).",
         "category": "Adverbes de lieu",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med16_fc_747dc89b"
       },
       {
         "id": "fc_p5_7",
@@ -5466,7 +5857,8 @@
         "back_fr": "Adverbe de lieu. Exemple : خَلْفَ الشَّجَرَةِ (derrière l'arbre).",
         "category": "Adverbes de lieu",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med16_fc_02391b8c"
       },
       {
         "id": "fc_p5_8",
@@ -5474,7 +5866,8 @@
         "back_fr": "Adverbe de lieu. Exemple : تَحْتَ الطَّاوِلَةِ (sous la table).",
         "category": "Adverbes de lieu",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med16_fc_93b32e4e"
       }
     ]
   },
@@ -5567,62 +5960,74 @@
         {
           "speaker_ar": "(Jeu de cache-cache — Lachiyy wa Tulāsh)",
           "arabic": "الأم : أَيْنَ الْقِطَّةُ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_6ddeb8ee"
         },
         {
           "speaker_ar": "Mère",
           "arabic": "Où est le chat ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_403dfc61"
         },
         {
           "speaker_ar": "الطِّفْل",
           "arabic": "هِيَ تَحْتَ الطَّاوِلَةِ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_257b7b27"
         },
         {
           "speaker_ar": "Enfant",
           "arabic": "Il est sous la table !",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_6820c03f"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "وَأَيْنَ الْكِتَابُ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_43795ef7"
         },
         {
           "speaker_ar": "Mère",
           "arabic": "Et où est le livre ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_96c573c6"
         },
         {
           "speaker_ar": "الطِّفْل",
           "arabic": "الْكِتَابُ فَوْقَ الرِّفِّ. وَالْقَلَمُ بَجَانِبِ الْكِتَابِ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_a7bf5bc7"
         },
         {
           "speaker_ar": "Enfant",
           "arabic": "Le livre est sur l'étagère. Et le stylo est à côté du livre.",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_028aa939"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "أَحْسَنْتَ! وَمَا الَّذِي خَلْفَ الْبَابِ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_6822477d"
         },
         {
           "speaker_ar": "Mère",
           "arabic": "Très bien ! Et qu'y a-t-il derrière la porte ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_454e45b8"
         },
         {
           "speaker_ar": "الطِّفْل",
           "arabic": "هُنَاكَ شَيْءٌ غَرِيبٌ. أَنَا خَائِفٌ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_602892a0"
         },
         {
           "speaker_ar": "Enfant",
           "arabic": "Il y a quelque chose de bizarre là-bas. J'ai peur !",
-          "french": ""
+          "french": "",
+          "audio_id": "med17_dial_06353fb7"
         }
       ]
     },
@@ -5759,7 +6164,8 @@
         "back_fr": "Adverbe de lieu. Exemple : فَوْقَ السِّقْفِ (au-dessus du plafond).",
         "category": "Adverbes de lieu",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med17_fc_7963f262"
       },
       {
         "id": "fc_p5_10",
@@ -5767,7 +6173,8 @@
         "back_fr": "Adverbes de lieu qui indiquent la proximité/éloignement.",
         "category": "Adverbes de lieu",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med17_fc_80391965"
       },
       {
         "id": "fc_p5_11",
@@ -5775,7 +6182,8 @@
         "back_fr": "TOUJOURS Génitif (Kasrah ـِ) car l'adverbe fonctionne comme Mudāf.",
         "category": "Grammaire — Cas",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med17_fc_99eb9097"
       },
       {
         "id": "fc_p5_12",
@@ -5783,7 +6191,8 @@
         "back_fr": "Adverbe de lieu. C'est un nom qui indique un endroit et fonctionne comme Mudāf.",
         "category": "Terminologie grammaticale",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med17_fc_fcbdcac3"
       },
       {
         "id": "fc_p5_13",
@@ -5791,7 +6200,8 @@
         "back_fr": "Forme grammaticale arabe pour EXACTEMENT deux objets. Système ternaire : Singulier, Duel, Pluriel (3+).",
         "category": "Grammaire — Duel",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med17_fc_a311eaf4"
       },
       {
         "id": "fc_p5_14",
@@ -5799,7 +6209,8 @@
         "back_fr": "Ajoute ـَانِ au singulier. Exemple : كِتَابٌ → كِتَابَانِ (deux livres).",
         "category": "Grammaire — Duel",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med17_fc_2f6c81e1"
       },
       {
         "id": "fc_p5_15",
@@ -5807,7 +6218,8 @@
         "back_fr": "Ajoute ـَيْنِ au singulier. Exemple : كِتَابٌ → كِتَابَيْنِ (deux livres).",
         "category": "Grammaire — Duel",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med17_fc_a69048a9"
       },
       {
         "id": "fc_p5_16",
@@ -5815,7 +6227,8 @@
         "back_fr": "ة devient ت, puis ajoute ـَانِ (nom.) ou ـَيْنِ (acc./gén.). Exemple : طَاوِلَةٌ → طَاوِلَتَانِ / طَاوِلَتَيْنِ.",
         "category": "Grammaire — Duel",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med17_fc_63b03ac2"
       }
     ]
   },
@@ -5928,52 +6341,62 @@
         {
           "speaker_ar": "(Au marché de chaussures)",
           "arabic": "البائع : مَرْحَبًا! مَاذَا تُرِيدُ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med18_dial_f1c23075"
         },
         {
           "speaker_ar": "Vendeur",
           "arabic": "Bonjour ! Que veux-tu ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med18_dial_c8ff9294"
         },
         {
           "speaker_ar": "الزَّبُون",
           "arabic": "أُرِيدُ زَوْجَيْنِ مِنْ الْأَحْذِيَةِ. كَمْ هِيَ الأَسْعَارُ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med18_dial_a9ad1b58"
         },
         {
           "speaker_ar": "Client",
           "arabic": "Je veux deux paires de chaussures. Quels sont les prix ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med18_dial_cf30285a"
         },
         {
           "speaker_ar": "البائع",
           "arabic": "هَاتَانِ الْحِذَاءَانِ سُودَتَانِ جَمِيلَتَانِ. وَهَذَانِ الْحِذَاءَانِ حَمْرَاوَانِ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med18_dial_e0e33fb6"
         },
         {
           "speaker_ar": "Vendeur",
           "arabic": "Ces deux chaussures noires sont belles. Et ces deux chaussures-ci sont rouges.",
-          "french": ""
+          "french": "",
+          "audio_id": "med18_dial_26dfd57a"
         },
         {
           "speaker_ar": "الزَّبُون",
           "arabic": "كَمْ حِذَاءً فِي هَذِهِ الْمَتْجَرِ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med18_dial_569c68de"
         },
         {
           "speaker_ar": "Client",
           "arabic": "Combien de chaussures y a-t-il dans ce magasin ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med18_dial_7400318e"
         },
         {
           "speaker_ar": "البائع",
           "arabic": "عِنْدِي عِشْرُونَ زَوْجًا. هَاتَانِ الْأَرْبَعَتَانِ الأَخِيرَتَانِ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med18_dial_faf42476"
         },
         {
           "speaker_ar": "Vendeur",
           "arabic": "J'en ai vingt paires. Ces deux-ci sont les dernières.",
-          "french": ""
+          "french": "",
+          "audio_id": "med18_dial_dc799b85"
         }
       ]
     },
@@ -6088,7 +6511,8 @@
         "back_fr": "هَذَانِ (ces deux-ci — masc.) et ذَانِكَ (celui-ci [lointain] — masc. duel).",
         "category": "Démonstratifs — Duel",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med18_fc_ff7d33a8"
       },
       {
         "id": "fc_p5_18",
@@ -6096,7 +6520,8 @@
         "back_fr": "هَاتَانِ (ces deux-ci — fém.) et تِيْنِكَ (celle-ci [lointain] — fém. duel).",
         "category": "Démonstratifs — Duel",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med18_fc_21b2980f"
       },
       {
         "id": "fc_p5_19",
@@ -6104,7 +6529,8 @@
         "back_fr": "L'adjectif DOIT aussi être au duel. Exemple : كِتَابَانِ جَدِيدَانِ (deux nouveaux livres).",
         "category": "Accord grammatical — Duel",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med18_fc_a43d9ccd"
       },
       {
         "id": "fc_p5_20",
@@ -6112,7 +6538,8 @@
         "back_fr": "Toujours suivi d'un nom SINGULIER en Accusatif (Fathatayn ـًا). Exemple : كَمْ كِتَابًا ؟",
         "category": "Interrogation",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med18_fc_c0a39650"
       },
       {
         "id": "fc_p5_21",
@@ -6120,7 +6547,8 @@
         "back_fr": "C'est le spécificateur singulier accusatif qui précise ce qu'on compte. Exemple : كَمْ عَيْنًا (combien d'yeux).",
         "category": "Grammaire — Complément",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med18_fc_d9ab797e"
       },
       {
         "id": "fc_p5_22",
@@ -6128,7 +6556,8 @@
         "back_fr": "Utilise le nombre approprié (duel ou pluriel) PLUS le nom pluriel. Exemple : كَمْ كِتَابًا ؟ → عِنْدِي كِتَابَانِ.",
         "category": "Interrogation",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med18_fc_52cc44f4"
       },
       {
         "id": "fc_p5_23",
@@ -6136,7 +6565,8 @@
         "back_fr": "Prend la fin ـَتَانِ. Exemple : كَبِيرَةٌ → كَبِيرَتَانِ (deux grandes).",
         "category": "Accord grammatical — Duel",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med18_fc_c05be280"
       },
       {
         "id": "fc_p5_24",
@@ -6144,7 +6574,8 @@
         "back_fr": "Prend la fin ـَتَيْنِ. Exemple : كَبِيرَة → كَبِيرَتَيْنِ (deux grandes).",
         "category": "Accord grammatical — Duel",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med18_fc_d5211cae"
       },
       {
         "id": "fc_p5_25",
@@ -6152,7 +6583,8 @@
         "back_fr": "Quasi-phrase (construction préposée ou nominale) qui fonctionne comme un modifieur. Exemple : أَمَامَ الْمَدْرَسَةِ (devant l'école).",
         "category": "Structures grammaticales",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med18_fc_23e0ae4f"
       }
     ]
   },
@@ -6250,52 +6682,62 @@
         {
           "speaker_ar": "(Bibliothèque — Un bibliothécaire compte les livres)",
           "arabic": "الْمُكْتَبِيّ : لَدَيَّ الكثِيرُ مِنْ الكتب! هَل تُرِيدُ أَنْ تَعْرِفَ كَمْ عِنْدِي؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med19_dial_42cbad39"
         },
         {
           "speaker_ar": "Bibliothécaire",
           "arabic": "J'ai beaucoup de livres ! Veux-tu savoir combien j'en ai ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med19_dial_1c374ecb"
         },
         {
           "speaker_ar": "الزَّائِر",
           "arabic": "نَعَمْ، بِالتَّأْكِيدِ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med19_dial_b741e3fa"
         },
         {
           "speaker_ar": "Visiteur",
           "arabic": "Oui, bien sûr !",
-          "french": ""
+          "french": "",
+          "audio_id": "med19_dial_4bc29f2d"
         },
         {
           "speaker_ar": "الْمُكْتَبِيّ",
           "arabic": "هُنَاكَ ثَلَاثَةُ أَرْفُفٍ بِخَمْسَةِ كِتَابٍ عَلَى كُلِّ رَفٍّ. إِذًا، خَمْسَةَ عَشَرَ كِتَابًا فِي هَذِهِ الزَّاوِيَةِ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med19_dial_a08253cd"
         },
         {
           "speaker_ar": "Bibliothécaire",
           "arabic": "Il y a trois étagères avec cinq livres sur chaque étagère. Donc, quinze livres dans ce coin.",
-          "french": ""
+          "french": "",
+          "audio_id": "med19_dial_135d8804"
         },
         {
           "speaker_ar": "الزَّائِر",
           "arabic": "وَكَمْ مِنَ الْأَقْلَامِ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med19_dial_fcd6b61c"
         },
         {
           "speaker_ar": "Visiteur",
           "arabic": "Et combien de stylos ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med19_dial_e8465409"
         },
         {
           "speaker_ar": "الْمُكْتَبِيّ",
           "arabic": "عِنْدِي عَشَرَةُ أَقْلَامٍ حَمْرَاءَ وَتِسْعَةُ أَقْلَامٍ سَوْدَاءَ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med19_dial_8afbac05"
         },
         {
           "speaker_ar": "Bibliothécaire",
           "arabic": "J'ai dix stylos rouges et neuf stylos noirs !",
-          "french": ""
+          "french": "",
+          "audio_id": "med19_dial_5000ef28"
         }
       ]
     },
@@ -6422,7 +6864,8 @@
         "back_fr": "Règle d'or : nom MASCULIN plural → nombre FÉMININ. Nom FÉMININ plural → nombre MASCULIN.",
         "category": "Comptage",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med19_fc_94a9f2c8"
       },
       {
         "id": "fc_p6_2",
@@ -6430,7 +6873,8 @@
         "back_fr": "ثَلَاثَةٌ — Avec ة. Prononcé : Thalāthah.",
         "category": "Nombres 3-10 (féminin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med19_fc_1295983d"
       },
       {
         "id": "fc_p6_3",
@@ -6438,7 +6882,8 @@
         "back_fr": "أَرْبَعَةٌ — Avec ة. Prononcé : Arba'ah.",
         "category": "Nombres 3-10 (féminin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med19_fc_15d8862a"
       },
       {
         "id": "fc_p6_4",
@@ -6446,7 +6891,8 @@
         "back_fr": "خَمْسَةٌ — Avec ة. Prononcé : Khamsah.",
         "category": "Nombres 3-10 (féminin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med19_fc_8b6e8118"
       },
       {
         "id": "fc_p6_5",
@@ -6454,7 +6900,8 @@
         "back_fr": "سِتَّةٌ — Avec ة ET double T (شدّة). Prononcé : Sittah.",
         "category": "Nombres 3-10 (féminin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med19_fc_f187576b"
       },
       {
         "id": "fc_p6_6",
@@ -6462,7 +6909,8 @@
         "back_fr": "سَبْعَةٌ — Avec ة. Prononcé : Saba'ah.",
         "category": "Nombres 3-10 (féminin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med19_fc_638b9f10"
       },
       {
         "id": "fc_p6_7",
@@ -6470,7 +6918,8 @@
         "back_fr": "ثَمَانِيَةٌ — Avec ة. Prononcé : Thamāniyah.",
         "category": "Nombres 3-10 (féminin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med19_fc_72924da4"
       },
       {
         "id": "fc_p6_8",
@@ -6478,7 +6927,8 @@
         "back_fr": "تِسْعَةٌ — Avec ة. Prononcé : Tis'ah.",
         "category": "Nombres 3-10 (féminin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med19_fc_bae1a063"
       },
       {
         "id": "fc_p6_9",
@@ -6486,7 +6936,8 @@
         "back_fr": "عَشَرَةٌ — Avec ة ET fathah sur Shin. Prononcé : 'Asharah.",
         "category": "Nombres 3-10 (féminin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med19_fc_12f7d3c8"
       },
       {
         "id": "fc_p6_10",
@@ -6494,7 +6945,8 @@
         "back_fr": "ثَلَاثُ — SANS ة, kasrah sur TH. Prononcé : Thalāth.",
         "category": "Nombres 3-10 (masculin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med19_fc_193657bf"
       }
     ]
   },
@@ -6592,52 +7044,62 @@
         {
           "speaker_ar": "(Mère comptant les affaires scolaires de ses filles)",
           "arabic": "الأم : دَعِيني أُحْصِي أَشْيَاءَكِ الْمَدْرَسِيَّةَ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med20_dial_71ee7066"
         },
         {
           "speaker_ar": "Mère",
           "arabic": "Laisse-moi compter tes fournitures scolaires !",
-          "french": ""
+          "french": "",
+          "audio_id": "med20_dial_65f23d2d"
         },
         {
           "speaker_ar": "الْبِنْتُ الْأُولَى",
           "arabic": "مَاذَا تُحْصِينَ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med20_dial_a7996084"
         },
         {
           "speaker_ar": "Fille 1",
           "arabic": "Que comptes-tu ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med20_dial_a40320fe"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "عِنْدِي خَمْسُ دَفَاتِرَ وَسِتُّ مِمْحَاةٍ وَسَبْعُ شَنْطَاتٍ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med20_dial_bc2927f4"
         },
         {
           "speaker_ar": "Mère",
           "arabic": "J'ai 5 cahiers, 6 gommes et 7 cartables !",
-          "french": ""
+          "french": "",
+          "audio_id": "med20_dial_90606b3a"
         },
         {
           "speaker_ar": "الْبِنْتُ الثَّانِيَةُ",
           "arabic": "وَكَمْ طَالِبَةٌ فِي فَصْلِكِ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med20_dial_af58fd7c"
         },
         {
           "speaker_ar": "Fille 2",
           "arabic": "Et combien d'étudiantes dans ta classe ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med20_dial_405ff187"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "ثَمَانِي وَعِشْرُونَ طَالِبَةٌ! وَعِشْرُ مُعَلِّمَاتٍ فِي الْمَدْرَسَةِ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med20_dial_9cc50ab3"
         },
         {
           "speaker_ar": "Mère",
           "arabic": "Vingt-huit étudiantes ! Et dix enseignantes dans l'école.",
-          "french": ""
+          "french": "",
+          "audio_id": "med20_dial_b99edb77"
         }
       ]
     },
@@ -6764,7 +7226,8 @@
         "back_fr": "أَرْبَعُ — SANS ة, kasrah. Prononcé : Arba'.",
         "category": "Nombres 3-10 (masculin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med20_fc_6bb07b0b"
       },
       {
         "id": "fc_p6_12",
@@ -6772,7 +7235,8 @@
         "back_fr": "خَمْسُ — SANS ة, kasrah. Prononcé : Khams.",
         "category": "Nombres 3-10 (masculin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med20_fc_ef1f239f"
       },
       {
         "id": "fc_p6_13",
@@ -6780,7 +7244,8 @@
         "back_fr": "سِتُّ — SANS ة, double T, kasrah. Prononcé : Sitt.",
         "category": "Nombres 3-10 (masculin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med20_fc_0dcff26f"
       },
       {
         "id": "fc_p6_14",
@@ -6788,7 +7253,8 @@
         "back_fr": "سَبْعُ — SANS ة, kasrah. Prononcé : Saba'.",
         "category": "Nombres 3-10 (masculin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med20_fc_f0dd6d61"
       },
       {
         "id": "fc_p6_15",
@@ -6796,7 +7262,8 @@
         "back_fr": "ثَمَانِي — SANS ة, ـي à la fin (pas ـة), kasrah sur TH. Prononcé : Thamānī.",
         "category": "Nombres 3-10 (masculin form) — SPÉCIAL",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med20_fc_075e884a"
       },
       {
         "id": "fc_p6_16",
@@ -6804,7 +7271,8 @@
         "back_fr": "تِسْعُ — SANS ة, kasrah. Prononcé : Tis'.",
         "category": "Nombres 3-10 (masculin form)",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med20_fc_ea0ba5f1"
       },
       {
         "id": "fc_p6_17",
@@ -6812,7 +7280,8 @@
         "back_fr": "عَشْرُ — SANS ة, sukūn sur Shin (PAS fathah). Prononcé : 'Ashr.",
         "category": "Nombres 3-10 (masculin form) — SPÉCIAL",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med20_fc_9278f0e1"
       },
       {
         "id": "fc_p6_18",
@@ -6820,7 +7289,8 @@
         "back_fr": "Nombre (Mudāf) + Nom Plural (Mudāf Ilayhi, génitif). Exemple : خَمْسَةُ أَقْلَامٍ (cinq stylos).",
         "category": "Grammaire — Comptage",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med20_fc_128d4a0d"
       },
       {
         "id": "fc_p6_19",
@@ -6828,7 +7298,8 @@
         "back_fr": "TOUJOURS Génitif (Kasrah ـِ) car le nombre fonctionne comme Mudāf.",
         "category": "Grammaire — Comptage",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med20_fc_05569b9c"
       },
       {
         "id": "fc_p6_20",
@@ -6836,7 +7307,8 @@
         "back_fr": "Le nombre et le numéroté (l'objet compté). Terminologie pour l'étude du comptage.",
         "category": "Terminologie",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med20_fc_a268fd4a"
       }
     ]
   },
@@ -6944,52 +7416,62 @@
         {
           "speaker_ar": "(Conversation de voyage)",
           "arabic": "السَّائِح الأَوَّل : أَنَا مِنْ بَغْدَادَ. وَأَنْتَ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med21_dial_c96979dd"
         },
         {
           "speaker_ar": "Touriste 1",
           "arabic": "Je viens de Bagdad. Et toi ?",
-          "french": ""
+          "french": "",
+          "audio_id": "med21_dial_e7c32890"
         },
         {
           "speaker_ar": "السَّائِح الثَّانِي",
           "arabic": "أَنَا مِنْ مَكَّةَ. هَذَا بَلَدٌ جَمِيلٌ جِدًّا.",
-          "french": ""
+          "french": "",
+          "audio_id": "med21_dial_813190b7"
         },
         {
           "speaker_ar": "Touriste 2",
           "arabic": "Je viens de Makkah. C'est un très beau pays.",
-          "french": ""
+          "french": "",
+          "audio_id": "med21_dial_71d78758"
         },
         {
           "speaker_ar": "السَّائِح الأَوَّل",
           "arabic": "نَعَمْ! وَهُنَاكَ مَسَاجِدُ كَثِيرَةٌ فِي بَغْدَادَ. مَسَاجِدُ قَدِيمَةٌ جِدًّا!",
-          "french": ""
+          "french": "",
+          "audio_id": "med21_dial_2f792164"
         },
         {
           "speaker_ar": "Touriste 1",
           "arabic": "Oui ! Et il y a beaucoup de mosquées à Bagdad. Des mosquées très anciennes !",
-          "french": ""
+          "french": "",
+          "audio_id": "med21_dial_e3782115"
         },
         {
           "speaker_ar": "السَّائِح الثَّانِي",
           "arabic": "أَتَعْرِفُ الْمَرْيَمُ؟ إِنَّهَا مِنْ بَارِيسَ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med21_dial_cfa1be1a"
         },
         {
           "speaker_ar": "Touriste 2",
           "arabic": "Connais-tu Maryam ? Elle vient de Paris.",
-          "french": ""
+          "french": "",
+          "audio_id": "med21_dial_2c1ef07f"
         },
         {
           "speaker_ar": "السَّائِح الأَوَّل",
           "arabic": "بَارِيسَ جَمِيلَةٌ. أَنَا أُحِبُّ الْمُدُنَ الْحَمْرَاءَ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med21_dial_0ad60ad8"
         },
         {
           "speaker_ar": "Touriste 1",
           "arabic": "Paris est belle. J'aime les villes rouges !",
-          "french": ""
+          "french": "",
+          "audio_id": "med21_dial_8f69526a"
         }
       ]
     },
@@ -7196,7 +7678,8 @@
         "back_fr": "Mamnu' min as-Sarf (interdit de flexion). Nom qui ne prend JAMAIS le Tanwīn.",
         "category": "Diptotes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med21_fc_14ccda32"
       },
       {
         "id": "fc_p6_22",
@@ -7204,7 +7687,8 @@
         "back_fr": "Fathah (ـَ) au lieu de Kasrah normal (ـِ). Exemple : مِنْ بَغْدَادَ (avec Fathah).",
         "category": "Diptotes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med21_fc_65027d65"
       },
       {
         "id": "fc_p6_23",
@@ -7212,7 +7696,8 @@
         "back_fr": "مَرْيَمُ (Maryam), سَارَةُ (Sārah). Tous les prénoms fém. non-arabes >3 lettres sont diptotes.",
         "category": "Catégories de diptotes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med21_fc_7509ee7d"
       },
       {
         "id": "fc_p6_24",
@@ -7220,7 +7705,8 @@
         "back_fr": "حَمْزَةُ (Hamzah), أُسَامَةُ (Usāmah). Tous les noms masc. + ـَة sont diptotes.",
         "category": "Catégories de diptotes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med21_fc_f7a7734e"
       },
       {
         "id": "fc_p6_25",
@@ -7228,7 +7714,8 @@
         "back_fr": "مَسَاجِدُ (mosquées), فَنَادِقُ (hôtels). Certains pluriels brisés sont diptotes.",
         "category": "Catégories de diptotes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med21_fc_da63a8ea"
       },
       {
         "id": "fc_p6_26",
@@ -7236,7 +7723,8 @@
         "back_fr": "جَوْعَانُ (affamé), غَضْبَانُ (en colère), نَشْوَانُ (enivré). Tous les adjectifs de cette forme sont diptotes.",
         "category": "Catégories de diptotes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med21_fc_515d80f1"
       },
       {
         "id": "fc_p6_27",
@@ -7244,7 +7732,8 @@
         "back_fr": "مَكَّةُ (Makkah), بَغْدَادُ (Bagdad), بَارِيسُ (Paris), مِصْرُ (Égypte). Tous les noms de lieu sont diptotes.",
         "category": "Catégories de diptotes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med21_fc_9639f97d"
       },
       {
         "id": "fc_p6_28",
@@ -7252,7 +7741,8 @@
         "back_fr": "أَحْمَرُ (rouge), أَكْبَرُ (plus grand), أَبْيَضُ (blanc). Les formes de couleur et comparative sont diptotes.",
         "category": "Catégories de diptotes",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med21_fc_c6fd8d8f"
       },
       {
         "id": "fc_p6_29",
@@ -7260,7 +7750,8 @@
         "back_fr": "Quand le diptote est précédé de AL- OU devient Mudāf. Exemple : الْمَسَاجِدُ (avec AL- → kasrah normal).",
         "category": "Diptotes — Exceptions",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med21_fc_b4edf798"
       },
       {
         "id": "fc_p6_30",
@@ -7268,7 +7759,8 @@
         "back_fr": "أَنَا مِنْ مَرْيَمَ (Je viens de Maryam). FATHAH après préposition (diptote).",
         "category": "Exemples",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med21_fc_10214840"
       },
       {
         "id": "fc_p6_31",
@@ -7276,7 +7768,8 @@
         "back_fr": "أَنَا مِنْ بَغْدَادَ (Je viens de Bagdad). FATHAH après préposition (diptote/ville).",
         "category": "Exemples",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med21_fc_4a1fa7fb"
       }
     ]
   },
@@ -7359,32 +7852,38 @@
         {
           "speaker_ar": "الْمُعَلِّمُ",
           "arabic": "مَاذَا تَفْعَلُ كُلَّ صَبَاح؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med22_dial_34a58307"
         },
         {
           "speaker_ar": "الطَّالِبُ",
           "arabic": "أَشْرَبُ الْقَهْوَةَ، ثُمَّ أَذْهَبُ إِلَى الْمَدْرَسَةِ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med22_dial_24dca1df"
         },
         {
           "speaker_ar": "الْمُعَلِّمُ",
           "arabic": "وَمَاذَا تَفْعَلُ فِي الْفَصْلِ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med22_dial_534dac51"
         },
         {
           "speaker_ar": "الطَّالِبُ",
           "arabic": "أَسْتَمِعُ إِلَى الدَّرْسِ وَأَكْتُبُ الْمَلَاحِظَاتِ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med22_dial_be109114"
         },
         {
           "speaker_ar": "الْمُعَلِّمُ",
           "arabic": "هَذَا عَمَلٌ جَيِّدٌ! وَمَتَى تَعُودُ إِلَى الْبَيْتِ؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med22_dial_94df84dd"
         },
         {
           "speaker_ar": "الطَّالِبُ",
           "arabic": "أَعُودُ حَوَالَيْ السَّاعَةِ الثَّالِثَةِ عَصْرًا.",
-          "french": ""
+          "french": "",
+          "audio_id": "med22_dial_579dc3b2"
         }
       ]
     },
@@ -7571,7 +8070,8 @@
         "back_fr": "Première personne singulier (Je). Exemple : أَذْهَبُ (Je vais).",
         "category": "Préfixes Présent",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_3cb6db1b"
       },
       {
         "id": "2",
@@ -7579,7 +8079,8 @@
         "back_fr": "Première personne pluriel (Nous). Exemple : نَذْهَبُ (Nous allons).",
         "category": "Préfixes Présent",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_ed3e7b8c"
       },
       {
         "id": "3",
@@ -7587,7 +8088,8 @@
         "back_fr": "Troisième personne masculin singulier (Il) OU troisième personne féminin pluriel (Elles). Exemple : يَذْهَبُ (Il va), يَذْهَبْنَ (Elles vont).",
         "category": "Préfixes Présent",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_122a4ca3"
       },
       {
         "id": "4",
@@ -7595,7 +8097,8 @@
         "back_fr": "Deuxième personne singulier (Tu) OU troisième personne féminin singulier (Elle). Contexte décide. Exemple : تَذْهَبُ (Tu vas / Elle va).",
         "category": "Préfixes Présent",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_8d219919"
       },
       {
         "id": "5",
@@ -7603,7 +8106,8 @@
         "back_fr": "أَـ (Ana), نَـ (Nahnu), يَـ (Huwa), تَـ (Anta/Hiya) — Les 4 lettres de préfixe du présent arabe.",
         "category": "Mnemonic",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_1fa685b3"
       },
       {
         "id": "6",
@@ -7611,7 +8115,8 @@
         "back_fr": "Ajouté au présent pour le pluriel masculin (Vous, Ils). Exemple : يَذْهَبُونَ (Ils vont), تَذْهَبُونَ (Vous allez — masc).",
         "category": "Suffixes Pluriel",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_7a9f43c2"
       },
       {
         "id": "7",
@@ -7619,7 +8124,8 @@
         "back_fr": "Ajouté au présent pour le pluriel féminin (Vous fém, Elles). Sukūn avant Nūn. Exemple : يَذْهَبْنَ (Elles vont), تَذْهَبْنَ (Vous allez — fém).",
         "category": "Suffixes Pluriel",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_12b6dc4f"
       },
       {
         "id": "8",
@@ -7627,7 +8133,8 @@
         "back_fr": "Signe du présent. Distingue le présent du passé. Exemple : ذَهَبَ (passé) vs يَذْهَبُ (présent avec Sukūn sur ذ).",
         "category": "Marques du Présent",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_2d0d447c"
       },
       {
         "id": "9",
@@ -7635,7 +8142,8 @@
         "back_fr": "L'état Marfū' (nominatif) du présent. Toujours présent sauf en cas de Nasb ou Jazm. Exemple : يَذْهَبُ.",
         "category": "I'rāb Présent",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_7a56e214"
       },
       {
         "id": "10",
@@ -7643,7 +8151,8 @@
         "back_fr": "Préfixe placé devant le verbe au présent pour indiquer le futur imminent. Exemple : سَيَذْهَبُ (Il ira bientôt).",
         "category": "Temps Présent",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_ca67247a"
       },
       {
         "id": "11",
@@ -7651,7 +8160,8 @@
         "back_fr": "Littéralement 'le verbe qui ressemble'. C'est le nom du présent en arabe car il ressemble au nom par sa terminaison en Damma.",
         "category": "Terminologie",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_b53293cc"
       },
       {
         "id": "12",
@@ -7659,7 +8169,8 @@
         "back_fr": "Les 4 lettres de préfixe (أَـ, نَـ, يَـ, تَـ) qui caractérisent le verbe présent.",
         "category": "Terminologie",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med22_fc_16eaae83"
       }
     ]
   },
@@ -7742,32 +8253,38 @@
         {
           "speaker_ar": "الْمُدَرِّبُ",
           "arabic": "يَا أَوْلاَدُ، هَلْ تَسْتَعِدُّونَ لِلْمُبَارَاةِ غَدًا؟",
-          "french": ""
+          "french": "",
+          "audio_id": "med23_dial_df99207f"
         },
         {
           "speaker_ar": "الطُّلَّابُ",
           "arabic": "نَعَمْ، نَحْنُ مُسْتَعِدُّونَ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med23_dial_700f01fd"
         },
         {
           "speaker_ar": "الْمُدَرِّبُ",
           "arabic": "تَذْهَبُونَ الْآنَ إِلَى الْمَلْعَبِ وَتَتَمَرَّنُونَ لِمُدَّةِ سَاعَتَيْنِ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med23_dial_f953c8f1"
         },
         {
           "speaker_ar": "الطُّلَّابُ",
           "arabic": "حَاضِرُونَ يَا سَيِّدَ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med23_dial_4f4c5f8d"
         },
         {
           "speaker_ar": "الْمُدَرِّبُ",
           "arabic": "وَأَنْتِ يَا فَاطِمَةُ، أَنْتِ وَصَدِيقَاتُكِ تَلْعَبْنَ بِكُلِّ قُوَّةٍ.",
-          "french": ""
+          "french": "",
+          "audio_id": "med23_dial_225d9e3f"
         },
         {
           "speaker_ar": "فَاطِمَةُ",
           "arabic": "حَتْمًا! نَحْنُ سَوْفَ نَرْبَحُ!",
-          "french": ""
+          "french": "",
+          "audio_id": "med23_dial_e0a3e4cb"
         }
       ]
     },
@@ -7988,7 +8505,8 @@
         "back_fr": "Permanence du Nūn. Dans ـُونَ et ـِينَ (pluriels masc), le Nūn demeure dans tous les états grammaticaux, indiquant le Marfū'.",
         "category": "Terminologie",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_8bf41dfb"
       },
       {
         "id": "14",
@@ -7996,7 +8514,8 @@
         "back_fr": "Wāw de pluralité masculine. Le و du suffixe ـُونَ représente le sujet pluriel masculin.",
         "category": "Terminologie",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_68c57e23"
       },
       {
         "id": "15",
@@ -8004,7 +8523,8 @@
         "back_fr": "Les verbes au féminin pluriel (ـْنَ) ne changent jamais d'état grammatical. Ils restent invariables peu importe le contexte.",
         "category": "Terminologie",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_5699d15b"
       },
       {
         "id": "16",
@@ -8012,7 +8532,8 @@
         "back_fr": "Il va. Préfixe يَـ + ذهب + Damma. État Marfū'.",
         "category": "Exemples Conjugaison",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_d638e80e"
       },
       {
         "id": "17",
@@ -8020,7 +8541,8 @@
         "back_fr": "Tu vas / Elle va. Préfixe تَـ + ذهب + Damma. Contexte décide la personne.",
         "category": "Exemples Conjugaison",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_852bf9eb"
       },
       {
         "id": "18",
@@ -8028,7 +8550,8 @@
         "back_fr": "Nous allons. Préfixe نَـ + ذهب + Damma.",
         "category": "Exemples Conjugaison",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_5f4212ed"
       },
       {
         "id": "19",
@@ -8036,7 +8559,8 @@
         "back_fr": "Ils vont. Préfixe يَـ + ذهب + ـُونَ. Pluriel masculin.",
         "category": "Exemples Conjugaison",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_c6286356"
       },
       {
         "id": "20",
@@ -8044,7 +8568,8 @@
         "back_fr": "Vous allez (masc pl). Préfixe تَـ + ذهب + ـُونَ.",
         "category": "Exemples Conjugaison",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_2fe35696"
       },
       {
         "id": "21",
@@ -8052,7 +8577,8 @@
         "back_fr": "Elles vont. Préfixe يَـ + ذهب + ـْنَ. ATTENTION : يَـ pas تَـ.",
         "category": "Exemples Conjugaison",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_bab2a937"
       },
       {
         "id": "22",
@@ -8060,7 +8586,8 @@
         "back_fr": "Vous allez (fém pl). Préfixe تَـ + ذهب + ـْنَ.",
         "category": "Exemples Conjugaison",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_e73477eb"
       },
       {
         "id": "23",
@@ -8068,7 +8595,8 @@
         "back_fr": "Présent singulier. Préfixe أَـ + شرب. Racine : ش-ر-ب.",
         "category": "Vocabulaire Présent",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_e111abf5"
       },
       {
         "id": "24",
@@ -8076,7 +8604,8 @@
         "back_fr": "Présent pluriel masc. Préfixe يَـ + كتب + ـُونَ. Racine : ك-ت-ب.",
         "category": "Vocabulaire Présent",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_a1c252bf"
       },
       {
         "id": "25",
@@ -8084,7 +8613,8 @@
         "back_fr": "Futur proche. Préfixe سَـ + préfixe يَـ + ذهب + Damma. Exprime une action imminente.",
         "category": "Temps Futur",
         "example_ar": null,
-        "example_fr": null
+        "example_fr": null,
+        "audio_id": "med23_fc_45dda841"
       }
     ]
   }
