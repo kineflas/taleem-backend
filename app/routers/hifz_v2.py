@@ -2,6 +2,7 @@
 Hifz Master V2 router — Wird-based Quran memorization with 7-tier SRS.
 
 Endpoints:
+  GET    /student/hifz/v2/surahs/suggested     — Suggested surahs (Ikhtiar)
   GET    /student/hifz/v2/wird/today           — Compose today's Wird
   POST   /student/hifz/v2/wird/start           — Start (or resume) Wird
   PATCH  /student/hifz/v2/wird/{id}/complete   — Complete Wird session
@@ -29,6 +30,7 @@ from ..schemas.hifz_v2 import (
     EnrichedSurahOut,
     JourneyMapOut, SurahMapEntry,
     VerseProgressV2Out,
+    SuggestedSurahOut, SuggestedSurahsOut,
 )
 from ..models.hifz_v2 import SRS_TIERS, tier_from_score
 from ..models.hifz_master import VerseProgress
@@ -36,6 +38,7 @@ from ..services.hifz_v2_service import (
     compose_wird, start_wird, complete_wird,
     process_exercise_answer, process_step_result,
     build_journey_map, calculate_stars,
+    get_suggested_surahs,
 )
 
 logger = logging.getLogger(__name__)
@@ -50,8 +53,26 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 # Wird Endpoints
 # ══════════════════════════════════════════════════════════════════
 
+@router.get("/surahs/suggested", response_model=SuggestedSurahsOut)
+def get_suggested_surahs_endpoint(student: StudentUser, db: DB):
+    """
+    Get suggested surahs for the Ikhtiar (selection) screen.
+
+    Returns:
+      - current_surah: surah in progress (from active goal)
+      - suggestions: new surahs to start
+      - review_due_surahs: surahs with pending reviews
+    """
+    data = get_suggested_surahs(db, student.id)
+    return SuggestedSurahsOut(
+        current_surah=SuggestedSurahOut(**data["current_surah"]) if data["current_surah"] else None,
+        suggestions=[SuggestedSurahOut(**s) for s in data["suggestions"]],
+        review_due_surahs=[SuggestedSurahOut(**s) for s in data["review_due_surahs"]],
+    )
+
+
 @router.get("/wird/today", response_model=WirdTodayOut)
-def get_wird_today(student: StudentUser, db: DB):
+def get_wird_today(student: StudentUser, db: DB, surah_number: int | None = None):
     """
     Compose today's Wird (daily session).
 
@@ -72,7 +93,7 @@ def get_wird_today(student: StudentUser, db: DB):
         .first()
     )
 
-    composition = compose_wird(db, student.id)
+    composition = compose_wird(db, student.id, surah_number=surah_number)
 
     # Build bloc outputs
     blocs = []
@@ -152,14 +173,21 @@ def get_wird_today(student: StudentUser, db: DB):
 
 
 @router.post("/wird/start", response_model=WirdSessionOut, status_code=status.HTTP_201_CREATED)
-def start_wird_session(student: StudentUser, db: DB):
+def start_wird_session(
+    student: StudentUser,
+    db: DB,
+    body: WirdStartRequest | None = None,
+):
     """
     Start (or resume) today's Wird session.
 
     Creates a new WirdSession if none exists for today.
     Returns existing session if already started.
+
+    Optionally accepts surah_number to override the default goal-based surah.
     """
-    wird = start_wird(db, student.id)
+    surah_number = body.surah_number if body else None
+    wird = start_wird(db, student.id, surah_number=surah_number)
     db.commit()
     db.refresh(wird)
     return WirdSessionOut.model_validate(wird)

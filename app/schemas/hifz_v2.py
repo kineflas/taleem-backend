@@ -113,7 +113,29 @@ class WirdTodayOut(BaseModel):
 
 class WirdStartRequest(BaseModel):
     """Request to start (or resume) today's Wird."""
-    pass  # No body needed — server composes the Wird
+    surah_number: Optional[int] = Field(default=None, ge=1, le=114)
+
+
+class SuggestedSurahOut(BaseModel):
+    """A suggested surah for the student to study."""
+    surah_number: int
+    name_ar: str
+    name_fr: str
+    total_verses: int
+    verses_started: int = 0
+    verses_remaining: int = 0
+    next_verse: int = 1
+    average_score: float = 0.0
+    has_review_due: bool = False
+    review_count: int = 0
+    reason: str = ""  # "in_progress", "suggested", "review_due"
+
+
+class SuggestedSurahsOut(BaseModel):
+    """Response for suggested surahs endpoint."""
+    current_surah: Optional[SuggestedSurahOut] = None
+    suggestions: list[SuggestedSurahOut] = []
+    review_due_surahs: list[SuggestedSurahOut] = []
 
 
 class WirdSessionOut(BaseModel):

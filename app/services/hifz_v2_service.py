@@ -120,6 +120,7 @@ def update_mastery_from_score(score: int) -> str:
 def compose_wird(
     db: Session,
     student_id: uuid.UUID,
+    surah_number: int | None = None,
 ) -> dict:
     """
     Compose today's Wird for a student.
@@ -151,15 +152,35 @@ def compose_wird(
         reciter = goal.reciter_id
         daily_target = goal.calculated_daily_target or 3
 
+    # ── Determine which surah to use for JADID ──────────────────
+    # If the user explicitly chose a surah, use it; otherwise use the active goal
+    target_surah = surah_number  # From user selection (Ikhtiar screen)
+    target_total_verses = 0
+
+    if target_surah:
+        # User chose a specific surah — look up its total verses
+        from ..models.quran import Surah
+        surah_record = db.query(Surah).filter(Surah.surah_number == target_surah).first()
+        if surah_record:
+            target_total_verses = surah_record.total_verses
+        else:
+            # Fallback to known counts (Juz Amma)
+            from ..routers.hifz_master import SURAH_VERSE_COUNTS
+            if 1 <= target_surah <= len(SURAH_VERSE_COUNTS):
+                target_total_verses = SURAH_VERSE_COUNTS[target_surah - 1]
+    elif goal:
+        target_surah = goal.surah_number
+        target_total_verses = goal.total_verses
+
     # ── JADID: Find new verses to learn ──────────────────────────
     jadid_verses = []
-    if goal:
+    if target_surah and target_total_verses > 0:
         # Find the last verse the student has progress on for this surah
         last_verse = (
             db.query(func.max(VerseProgress.verse_number))
             .filter(
                 VerseProgress.student_id == student_id,
-                VerseProgress.surah_number == goal.surah_number,
+                VerseProgress.surah_number == target_surah,
             )
             .scalar()
         ) or 0
@@ -167,9 +188,9 @@ def compose_wird(
         # Next verses to learn
         for i in range(1, daily_target + 1):
             next_verse = last_verse + i
-            if next_verse <= goal.total_verses:
+            if next_verse <= target_total_verses:
                 jadid_verses.append({
-                    "surah_number": goal.surah_number,
+                    "surah_number": target_surah,
                     "verse_number": next_verse,
                 })
 
@@ -441,7 +462,11 @@ def process_step_result(
 
 # ── Wird Session Management ──────────────────────────────────────
 
-def start_wird(db: Session, student_id: uuid.UUID) -> WirdSession:
+def start_wird(
+    db: Session,
+    student_id: uuid.UUID,
+    surah_number: int | None = None,
+) -> WirdSession:
     """Create or resume today's Wird session."""
     today = date.today()
 
@@ -458,8 +483,8 @@ def start_wird(db: Session, student_id: uuid.UUID) -> WirdSession:
     if existing:
         return existing
 
-    # Compose the Wird
-    composition = compose_wird(db, student_id)
+    # Compose the Wird (with optional surah selection from Ikhtiar)
+    composition = compose_wird(db, student_id, surah_number=surah_number)
 
     wird = WirdSession(
         student_id=student_id,
@@ -634,6 +659,146 @@ def build_journey_map(db: Session, student_id: uuid.UUID) -> dict:
         "level": level,
         "title_ar": title["ar"],
         "title_fr": title["fr"],
+    }
+
+
+# ── Suggested Surahs (Ikhtiar Screen) ───────────────────────────
+
+def get_suggested_surahs(db: Session, student_id: uuid.UUID) -> dict:
+    """
+    Build suggested surahs for the Ikhtiar (selection) screen.
+
+    Returns:
+      - current_surah: the surah currently in progress (from active goal)
+      - suggestions: up to 3 surahs to start next
+      - review_due_surahs: surahs with verses needing review
+    """
+    from ..models.quran import Surah
+    from ..routers.hifz_master import SURAH_VERSE_COUNTS
+
+    # ── SURAH_NAMES for Juz Amma ──
+    SURAH_NAMES = {
+        78: ("النبأ", "An-Naba"), 79: ("النازعات", "An-Naziat"),
+        80: ("عبس", "Abasa"), 81: ("التكوير", "At-Takwir"),
+        82: ("الانفطار", "Al-Infitar"), 83: ("المطففين", "Al-Mutaffifin"),
+        84: ("الانشقاق", "Al-Inshiqaq"), 85: ("البروج", "Al-Buruj"),
+        86: ("الطارق", "At-Tariq"), 87: ("الأعلى", "Al-Ala"),
+        88: ("الغاشية", "Al-Ghashiya"), 89: ("الفجر", "Al-Fajr"),
+        90: ("البلد", "Al-Balad"), 91: ("الشمس", "Ash-Shams"),
+        92: ("الليل", "Al-Layl"), 93: ("الضحى", "Ad-Duha"),
+        94: ("الشرح", "Ash-Sharh"), 95: ("التين", "At-Tin"),
+        96: ("العلق", "Al-Alaq"), 97: ("القدر", "Al-Qadr"),
+        98: ("البينة", "Al-Bayyina"), 99: ("الزلزلة", "Az-Zalzala"),
+        100: ("العاديات", "Al-Adiyat"), 101: ("القارعة", "Al-Qaria"),
+        102: ("التكاثر", "At-Takathur"), 103: ("العصر", "Al-Asr"),
+        104: ("الهمزة", "Al-Humaza"), 105: ("الفيل", "Al-Fil"),
+        106: ("قريش", "Quraysh"), 107: ("الماعون", "Al-Maun"),
+        108: ("الكوثر", "Al-Kawthar"), 109: ("الكافرون", "Al-Kafirun"),
+        110: ("النصر", "An-Nasr"), 111: ("المسد", "Al-Masad"),
+        112: ("الإخلاص", "Al-Ikhlas"), 113: ("الفلق", "Al-Falaq"),
+        114: ("الناس", "An-Nas"),
+    }
+
+    today = date.today()
+
+    # Get active goal
+    goal = (
+        db.query(HifzGoal)
+        .filter(
+            HifzGoal.student_id == student_id,
+            HifzGoal.is_completed == False,
+        )
+        .order_by(HifzGoal.started_at.desc())
+        .first()
+    )
+
+    # Get all verse progress grouped by surah
+    all_progress = (
+        db.query(
+            VerseProgress.surah_number,
+            func.count(VerseProgress.id).label("started"),
+            func.max(VerseProgress.verse_number).label("last_verse"),
+            func.avg(VerseProgress.mastery_score).label("avg_score"),
+        )
+        .filter(VerseProgress.student_id == student_id)
+        .group_by(VerseProgress.surah_number)
+        .all()
+    )
+    progress_map = {
+        r.surah_number: {
+            "started": r.started,
+            "last_verse": r.last_verse,
+            "avg_score": float(r.avg_score or 0),
+        }
+        for r in all_progress
+    }
+
+    # Count review-due verses per surah
+    review_due_rows = (
+        db.query(
+            VerseProgress.surah_number,
+            func.count(VerseProgress.id).label("due_count"),
+        )
+        .filter(
+            VerseProgress.student_id == student_id,
+            VerseProgress.next_review_date <= today + timedelta(days=1),
+        )
+        .group_by(VerseProgress.surah_number)
+        .all()
+    )
+    review_due_map = {r.surah_number: r.due_count for r in review_due_rows}
+
+    def _build_entry(sn: int, reason: str) -> dict:
+        names = SURAH_NAMES.get(sn, ("", ""))
+        total_v = SURAH_VERSE_COUNTS[sn - 1] if sn <= len(SURAH_VERSE_COUNTS) else 0
+        prog = progress_map.get(sn, {"started": 0, "last_verse": 0, "avg_score": 0})
+        next_v = (prog["last_verse"] or 0) + 1
+        return {
+            "surah_number": sn,
+            "name_ar": names[0],
+            "name_fr": names[1],
+            "total_verses": total_v,
+            "verses_started": prog["started"],
+            "verses_remaining": max(0, total_v - prog["started"]),
+            "next_verse": min(next_v, total_v),
+            "average_score": round(prog["avg_score"], 1),
+            "has_review_due": sn in review_due_map,
+            "review_count": review_due_map.get(sn, 0),
+            "reason": reason,
+        }
+
+    # ── Current surah (from active goal) ──
+    current_surah = None
+    if goal:
+        prog = progress_map.get(goal.surah_number, {"started": 0, "last_verse": 0})
+        if (prog["last_verse"] or 0) < goal.total_verses:
+            current_surah = _build_entry(goal.surah_number, "in_progress")
+
+    # ── Suggestions: surahs not yet started, starting from shortest ──
+    suggestions = []
+    # Start from An-Nas (114) going down — shorter surahs first
+    for sn in range(114, 77, -1):
+        if sn in progress_map:
+            continue  # Already started
+        if current_surah and sn == current_surah["surah_number"]:
+            continue
+        suggestions.append(_build_entry(sn, "suggested"))
+        if len(suggestions) >= 3:
+            break
+
+    # ── Review due surahs ──
+    review_due_surahs = []
+    for sn, count in sorted(review_due_map.items(), key=lambda x: -x[1]):
+        if current_surah and sn == current_surah["surah_number"]:
+            continue
+        review_due_surahs.append(_build_entry(sn, "review_due"))
+        if len(review_due_surahs) >= 5:
+            break
+
+    return {
+        "current_surah": current_surah,
+        "suggestions": suggestions,
+        "review_due_surahs": review_due_surahs,
     }
 
 
