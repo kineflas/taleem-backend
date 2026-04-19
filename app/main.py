@@ -31,6 +31,7 @@ from .routers.autonomous_learning import (
     student_learn_router,
 )
 from .routers.hifz_master import hifz_router
+from .routers.hifz_v2 import hifz_v2_router
 from .routers.lesson import router as lesson_router
 from .routers.flashcards import router as flashcards_router
 from .routers.diagnostic import router as diagnostic_router
@@ -117,6 +118,7 @@ app.include_router(teacher_curriculum_router)
 app.include_router(learn_content_router)
 app.include_router(student_learn_router)
 app.include_router(hifz_router)
+app.include_router(hifz_v2_router)
 app.include_router(lesson_router)
 app.include_router(flashcards_router)
 app.include_router(diagnostic_router)

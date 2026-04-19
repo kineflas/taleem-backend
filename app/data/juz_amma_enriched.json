@@ -1,0 +1,413 @@
+[
+  {
+    "surah_number": 108,
+    "name_ar": "الكوثر",
+    "name_fr": "L'Abondance",
+    "name_transliteration": "Al-Kawthar",
+    "revelation": "mecquoise",
+    "verse_count": 3,
+    "theme_fr": "Les bienfaits abondants accordés au Prophète et l'ordre de prier et de sacrifier en signe de gratitude.",
+    "intro_fr": "Cette sourate, la plus courte du Coran, a été révélée pour consoler le Prophète Muhammad face à ceux qui le raillaient. Elle annonce le don du Kawthar, une rivière du Paradis, et affirme que ses ennemis seront oubliés.",
+    "verses": [
+      {
+        "number": 1,
+        "text_ar": "إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ",
+        "text_fr": "Nous t'avons certes accordé l'Abondance",
+        "context_fr": "Dieu annonce au Prophète qu'Il lui a accordé un bienfait immense : Al-Kawthar, une rivière du Paradis et un bien abondant.",
+        "words": ["إِنَّآ", "أَعْطَيْنَـٰكَ", "ٱلْكَوْثَرَ"],
+        "audio_timing": [0.0, 0.7, 1.5],
+        "key_word": {"ar": "ٱلْكَوْثَرَ", "fr": "L'Abondance", "root": "ك ث ر"}
+      },
+      {
+        "number": 2,
+        "text_ar": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+        "text_fr": "Accomplis la prière pour ton Seigneur et sacrifie",
+        "context_fr": "En retour de ce bienfait, Dieu ordonne au Prophète deux actes d'adoration : la prière et le sacrifice.",
+        "words": ["فَصَلِّ", "لِرَبِّكَ", "وَٱنْحَرْ"],
+        "audio_timing": [0.0, 0.6, 1.3],
+        "key_word": {"ar": "فَصَلِّ", "fr": "Accomplis la prière", "root": "ص ل و"}
+      },
+      {
+        "number": 3,
+        "text_ar": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+        "text_fr": "Certes, celui qui te hait sera lui-même privé de postérité",
+        "context_fr": "Dieu rassure le Prophète : c'est son ennemi qui sera oublié et coupé de tout bien, et non lui.",
+        "words": ["إِنَّ", "شَانِئَكَ", "هُوَ", "ٱلْأَبْتَرُ"],
+        "audio_timing": [0.0, 0.5, 1.2, 1.6],
+        "key_word": {"ar": "ٱلْأَبْتَرُ", "fr": "Le privé de postérité", "root": "ب ت ر"}
+      }
+    ],
+    "connections": [
+      {"from_verse": 1, "to_verse": 2, "hint_fr": "Après l'annonce du bienfait divin (verset 1), vient l'ordre de remercier Dieu par la prière et le sacrifice (verset 2)."},
+      {"from_verse": 2, "to_verse": 3, "hint_fr": "Après l'ordre d'adoration (verset 2), Dieu conclut en rassurant le Prophète que son ennemi sera le vrai perdant (verset 3)."}
+    ]
+  },
+  {
+    "surah_number": 109,
+    "name_ar": "الكافرون",
+    "name_fr": "Les Mécréants",
+    "name_transliteration": "Al-Kafirun",
+    "revelation": "mecquoise",
+    "verse_count": 6,
+    "theme_fr": "La séparation nette entre le monothéisme et le polythéisme, et le refus de tout compromis en matière de foi.",
+    "intro_fr": "Cette sourate a été révélée lorsque les polythéistes de La Mecque ont proposé au Prophète un compromis religieux. Elle établit une frontière claire et définitive entre la foi monothéiste et l'idolâtrie.",
+    "verses": [
+      {
+        "number": 1,
+        "text_ar": "قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ",
+        "text_fr": "Dis : Ô vous les mécréants",
+        "context_fr": "Dieu ordonne au Prophète de s'adresser directement aux mécréants pour leur annoncer une position ferme et sans équivoque.",
+        "words": ["قُلْ", "يَـٰٓأَيُّهَا", "ٱلْكَـٰفِرُونَ"],
+        "audio_timing": [0.0, 0.5, 1.2],
+        "key_word": {"ar": "ٱلْكَـٰفِرُونَ", "fr": "Les mécréants", "root": "ك ف ر"}
+      },
+      {
+        "number": 2,
+        "text_ar": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
+        "text_fr": "Je n'adore pas ce que vous adorez",
+        "context_fr": "Le Prophète déclare qu'il n'adorera jamais leurs idoles. C'est un refus catégorique dans le présent.",
+        "words": ["لَآ", "أَعْبُدُ", "مَا", "تَعْبُدُونَ"],
+        "audio_timing": [0.0, 0.4, 1.0, 1.3],
+        "key_word": {"ar": "أَعْبُدُ", "fr": "J'adore", "root": "ع ب د"}
+      },
+      {
+        "number": 3,
+        "text_ar": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
+        "text_fr": "Et vous n'adorez pas ce que j'adore",
+        "context_fr": "Le constat inverse : les mécréants refusent eux aussi d'adorer le Dieu unique. La divergence est réciproque.",
+        "words": ["وَلَآ", "أَنتُمْ", "عَـٰبِدُونَ", "مَآ", "أَعْبُدُ"],
+        "audio_timing": [0.0, 0.5, 0.9, 1.5, 1.8],
+        "key_word": {"ar": "عَـٰبِدُونَ", "fr": "Adorateurs", "root": "ع ب د"}
+      },
+      {
+        "number": 4,
+        "text_ar": "وَلَآ أَنَا۠ عَابِدٌ مَّا عَبَدتُّمْ",
+        "text_fr": "Et je ne suis pas adorateur de ce que vous adorez",
+        "context_fr": "Réaffirmation renforcée du refus : le Prophète ne fléchira jamais vers leur culte, ni maintenant ni à l'avenir.",
+        "words": ["وَلَآ", "أَنَا۠", "عَابِدٌ", "مَّا", "عَبَدتُّمْ"],
+        "audio_timing": [0.0, 0.5, 0.9, 1.5, 1.8],
+        "key_word": {"ar": "عَابِدٌ", "fr": "Adorateur", "root": "ع ب د"}
+      },
+      {
+        "number": 5,
+        "text_ar": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
+        "text_fr": "Et vous n'adorez pas ce que j'adore",
+        "context_fr": "Dernière réaffirmation de la divergence. La répétition souligne le caractère définitif de cette séparation.",
+        "words": ["وَلَآ", "أَنتُمْ", "عَـٰبِدُونَ", "مَآ", "أَعْبُدُ"],
+        "audio_timing": [0.0, 0.5, 0.9, 1.5, 1.8],
+        "key_word": {"ar": "أَعْبُدُ", "fr": "J'adore", "root": "ع ب د"}
+      },
+      {
+        "number": 6,
+        "text_ar": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+        "text_fr": "À vous votre religion, et à moi ma religion",
+        "context_fr": "La conclusion qui pose le principe de non-compromis en matière de foi : chacun suit sa voie, sans mélange.",
+        "words": ["لَكُمْ", "دِينُكُمْ", "وَلِىَ", "دِينِ"],
+        "audio_timing": [0.0, 0.5, 1.1, 1.5],
+        "key_word": {"ar": "دِينُكُمْ", "fr": "Votre religion", "root": "د ي ن"}
+      }
+    ],
+    "connections": [
+      {"from_verse": 1, "to_verse": 2, "hint_fr": "Après l'interpellation des mécréants (verset 1), le Prophète annonce son refus d'adorer leurs idoles (verset 2)."},
+      {"from_verse": 2, "to_verse": 3, "hint_fr": "Du refus du Prophète (verset 2) au constat symétrique : eux non plus n'adorent pas Dieu (verset 3)."},
+      {"from_verse": 3, "to_verse": 4, "hint_fr": "Après le constat de leur refus (verset 3), le Prophète réaffirme son propre refus de manière encore plus ferme (verset 4)."},
+      {"from_verse": 4, "to_verse": 5, "hint_fr": "Le verset 5 reprend le verset 3 pour insister sur le caractère irrévocable de la séparation."},
+      {"from_verse": 5, "to_verse": 6, "hint_fr": "Après les réaffirmations répétées (verset 5), la conclusion tranche définitivement : chacun sa religion (verset 6)."}
+    ]
+  },
+  {
+    "surah_number": 110,
+    "name_ar": "النصر",
+    "name_fr": "Le Secours",
+    "name_transliteration": "An-Nasr",
+    "revelation": "médinoise",
+    "verse_count": 3,
+    "theme_fr": "L'annonce de la victoire de l'Islam et l'ordre de glorifier Dieu et de Lui demander pardon.",
+    "intro_fr": "Dernière sourate révélée en totalité, elle annonce la conquête de La Mecque et l'entrée massive des gens dans l'Islam. Elle est aussi interprétée comme un signe de la fin prochaine de la mission prophétique.",
+    "verses": [
+      {
+        "number": 1,
+        "text_ar": "إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+        "text_fr": "Lorsque vient le secours de Dieu ainsi que la victoire",
+        "context_fr": "Dieu annonce un événement futur certain : Sa victoire et la conquête de La Mecque.",
+        "words": ["إِذَا", "جَآءَ", "نَصْرُ", "ٱللَّهِ", "وَٱلْفَتْحُ"],
+        "audio_timing": [0.0, 0.4, 0.9, 1.3, 1.8],
+        "key_word": {"ar": "نَصْرُ", "fr": "Le secours", "root": "ن ص ر"}
+      },
+      {
+        "number": 2,
+        "text_ar": "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا",
+        "text_fr": "Et que tu vois les gens entrer en foule dans la religion de Dieu",
+        "context_fr": "Le signe de cette victoire : les gens embrassent l'Islam en masse, par groupes entiers.",
+        "words": ["وَرَأَيْتَ", "ٱلنَّاسَ", "يَدْخُلُونَ", "فِى", "دِينِ", "ٱللَّهِ", "أَفْوَاجًا"],
+        "audio_timing": [0.0, 0.6, 1.1, 1.7, 2.0, 2.4, 2.9],
+        "key_word": {"ar": "أَفْوَاجًا", "fr": "En foule", "root": "ف و ج"}
+      },
+      {
+        "number": 3,
+        "text_ar": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًا",
+        "text_fr": "Alors, par la louange, célèbre la gloire de ton Seigneur et implore Son pardon. Car c'est Lui le grand Accueillant au repentir",
+        "context_fr": "L'ordre divin face à la victoire n'est pas l'orgueil mais l'humilité : glorifier Dieu et demander pardon.",
+        "words": ["فَسَبِّحْ", "بِحَمْدِ", "رَبِّكَ", "وَٱسْتَغْفِرْهُ", "إِنَّهُۥ", "كَانَ", "تَوَّابًا"],
+        "audio_timing": [0.0, 0.6, 1.0, 1.5, 2.3, 2.7, 3.1],
+        "key_word": {"ar": "تَوَّابًا", "fr": "Accueillant au repentir", "root": "ت و ب"}
+      }
+    ],
+    "connections": [
+      {"from_verse": 1, "to_verse": 2, "hint_fr": "Le verset 1 annonce la victoire, le verset 2 en décrit la manifestation : l'entrée massive des gens dans l'Islam."},
+      {"from_verse": 2, "to_verse": 3, "hint_fr": "Face à ce succès (verset 2), la réponse attendue est la gratitude et l'humilité devant Dieu (verset 3)."}
+    ]
+  },
+  {
+    "surah_number": 111,
+    "name_ar": "المسد",
+    "name_fr": "Les Fibres",
+    "name_transliteration": "Al-Masad",
+    "revelation": "mecquoise",
+    "verse_count": 5,
+    "theme_fr": "La condamnation d'Abou Lahab et de sa femme pour leur hostilité acharnée contre le Prophète et l'Islam.",
+    "intro_fr": "Cette sourate est la seule du Coran qui mentionne nommément un ennemi du Prophète : son oncle Abou Lahab. Elle a été révélée après qu'il eut publiquement maudit le Prophète sur le mont Safa.",
+    "verses": [
+      {
+        "number": 1,
+        "text_ar": "تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ",
+        "text_fr": "Que périssent les deux mains d'Abou Lahab et qu'il périsse",
+        "context_fr": "Malédiction divine contre Abou Lahab, l'oncle du Prophète qui fut son plus féroce ennemi.",
+        "words": ["تَبَّتْ", "يَدَآ", "أَبِى", "لَهَبٍ", "وَتَبَّ"],
+        "audio_timing": [0.0, 0.5, 0.9, 1.3, 1.8],
+        "key_word": {"ar": "تَبَّتْ", "fr": "Que périssent", "root": "ت ب ب"}
+      },
+      {
+        "number": 2,
+        "text_ar": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
+        "text_fr": "Sa richesse et ce qu'il a acquis ne lui serviront à rien",
+        "context_fr": "Ni sa fortune ni ses efforts ne le protégeront du châtiment divin. Les biens matériels sont vains face à Dieu.",
+        "words": ["مَآ", "أَغْنَىٰ", "عَنْهُ", "مَالُهُۥ", "وَمَا", "كَسَبَ"],
+        "audio_timing": [0.0, 0.4, 0.8, 1.2, 1.7, 2.1],
+        "key_word": {"ar": "مَالُهُۥ", "fr": "Sa richesse", "root": "م و ل"}
+      },
+      {
+        "number": 3,
+        "text_ar": "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
+        "text_fr": "Il sera brûlé dans un Feu plein de flammes",
+        "context_fr": "Le châtiment annoncé : un feu dont les flammes rappellent ironiquement son surnom 'Abou Lahab' (père de la flamme).",
+        "words": ["سَيَصْلَىٰ", "نَارًا", "ذَاتَ", "لَهَبٍ"],
+        "audio_timing": [0.0, 0.7, 1.2, 1.6],
+        "key_word": {"ar": "نَارًا", "fr": "Un feu", "root": "ن و ر"}
+      },
+      {
+        "number": 4,
+        "text_ar": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
+        "text_fr": "De même sa femme, la porteuse de bois",
+        "context_fr": "Sa femme Oumm Jamil, qui jetait des épines sur le chemin du Prophète, partagera le même sort.",
+        "words": ["وَٱمْرَأَتُهُۥ", "حَمَّالَةَ", "ٱلْحَطَبِ"],
+        "audio_timing": [0.0, 0.8, 1.4],
+        "key_word": {"ar": "حَمَّالَةَ", "fr": "Porteuse", "root": "ح م ل"}
+      },
+      {
+        "number": 5,
+        "text_ar": "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍ",
+        "text_fr": "À son cou une corde de fibres",
+        "context_fr": "Elle portera autour du cou une corde de fibres tressées, symbole de son châtiment en Enfer.",
+        "words": ["فِى", "جِيدِهَا", "حَبْلٌ", "مِّن", "مَّسَدٍ"],
+        "audio_timing": [0.0, 0.3, 0.8, 1.2, 1.5],
+        "key_word": {"ar": "مَّسَدٍ", "fr": "Fibres tressées", "root": "م س د"}
+      }
+    ],
+    "connections": [
+      {"from_verse": 1, "to_verse": 2, "hint_fr": "Après la malédiction (verset 1), le verset 2 explique que sa richesse ne le sauvera pas."},
+      {"from_verse": 2, "to_verse": 3, "hint_fr": "Puisque ses biens sont inutiles (verset 2), voici son châtiment : le Feu (verset 3)."},
+      {"from_verse": 3, "to_verse": 4, "hint_fr": "Après le sort d'Abou Lahab (verset 3), le châtiment s'étend à sa femme complice (verset 4)."},
+      {"from_verse": 4, "to_verse": 5, "hint_fr": "La description de sa femme (verset 4) se complète par le détail de son supplice : la corde de fibres (verset 5)."}
+    ]
+  },
+  {
+    "surah_number": 112,
+    "name_ar": "الإخلاص",
+    "name_fr": "Le Monothéisme Pur",
+    "name_transliteration": "Al-Ikhlas",
+    "revelation": "mecquoise",
+    "verse_count": 4,
+    "theme_fr": "La déclaration fondamentale du monothéisme pur : l'unicité absolue de Dieu et Sa transcendance.",
+    "intro_fr": "Cette sourate est considérée comme équivalente au tiers du Coran car elle résume l'essence du monothéisme islamique. Elle a été révélée en réponse à ceux qui demandaient au Prophète de décrire Dieu.",
+    "verses": [
+      {
+        "number": 1,
+        "text_ar": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+        "text_fr": "Dis : Il est Dieu, l'Unique",
+        "context_fr": "La proclamation centrale de l'Islam : Dieu est Un, sans associé. Le mot 'Ahad' exprime une unicité absolue.",
+        "words": ["قُلْ", "هُوَ", "ٱللَّهُ", "أَحَدٌ"],
+        "audio_timing": [0.0, 0.4, 0.8, 1.3],
+        "key_word": {"ar": "أَحَدٌ", "fr": "Unique", "root": "و ح د"}
+      },
+      {
+        "number": 2,
+        "text_ar": "ٱللَّهُ ٱلصَّمَدُ",
+        "text_fr": "Dieu, le Seul à être imploré pour ce que l'on désire",
+        "context_fr": "As-Samad signifie Celui dont tout dépend et qui ne dépend de rien. Il est le Refuge absolu.",
+        "words": ["ٱللَّهُ", "ٱلصَّمَدُ"],
+        "audio_timing": [0.0, 0.6],
+        "key_word": {"ar": "ٱلصَّمَدُ", "fr": "L'Absolu", "root": "ص م د"}
+      },
+      {
+        "number": 3,
+        "text_ar": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+        "text_fr": "Il n'a jamais engendré, ni n'a été engendré",
+        "context_fr": "Dieu est au-delà de la reproduction et de la filiation. Il n'a ni enfant ni parent, réfutant toute idée de famille divine.",
+        "words": ["لَمْ", "يَلِدْ", "وَلَمْ", "يُولَدْ"],
+        "audio_timing": [0.0, 0.4, 0.9, 1.3],
+        "key_word": {"ar": "يَلِدْ", "fr": "Il engendre", "root": "و ل د"}
+      },
+      {
+        "number": 4,
+        "text_ar": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+        "text_fr": "Et nul n'est égal à Lui",
+        "context_fr": "La conclusion affirme l'incomparabilité totale de Dieu : rien ni personne ne Lui ressemble.",
+        "words": ["وَلَمْ", "يَكُن", "لَّهُۥ", "كُفُوًا", "أَحَدٌۢ"],
+        "audio_timing": [0.0, 0.4, 0.8, 1.2, 1.7],
+        "key_word": {"ar": "كُفُوًا", "fr": "Égal", "root": "ك ف أ"}
+      }
+    ],
+    "connections": [
+      {"from_verse": 1, "to_verse": 2, "hint_fr": "Après avoir proclamé l'unicité de Dieu (verset 1), le verset 2 décrit Sa nature : Il est l'Absolu dont tout dépend."},
+      {"from_verse": 2, "to_verse": 3, "hint_fr": "Étant l'Absolu (verset 2), Il est au-delà de la filiation : Il n'engendre pas et n'est pas engendré (verset 3)."},
+      {"from_verse": 3, "to_verse": 4, "hint_fr": "N'ayant ni parent ni enfant (verset 3), la conclusion logique est que rien ne Lui est comparable (verset 4)."}
+    ]
+  },
+  {
+    "surah_number": 113,
+    "name_ar": "الفلق",
+    "name_fr": "L'Aube Naissante",
+    "name_transliteration": "Al-Falaq",
+    "revelation": "mecquoise",
+    "verse_count": 5,
+    "theme_fr": "La recherche de la protection divine contre les maux extérieurs : l'obscurité, la sorcellerie et l'envie.",
+    "intro_fr": "Première des deux sourates protectrices (Al-Mu'awwidhatayn), elle enseigne au croyant à chercher refuge auprès de Dieu contre les maux du monde extérieur, en particulier la sorcellerie et la jalousie.",
+    "verses": [
+      {
+        "number": 1,
+        "text_ar": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+        "text_fr": "Dis : Je cherche protection auprès du Seigneur de l'aube naissante",
+        "context_fr": "L'ordre divin d'invoquer la protection de Dieu, désigné ici comme le Seigneur de l'aube, symbole de lumière dissipant les ténèbres.",
+        "words": ["قُلْ", "أَعُوذُ", "بِرَبِّ", "ٱلْفَلَقِ"],
+        "audio_timing": [0.0, 0.4, 0.9, 1.4],
+        "key_word": {"ar": "ٱلْفَلَقِ", "fr": "L'aube naissante", "root": "ف ل ق"}
+      },
+      {
+        "number": 2,
+        "text_ar": "مِن شَرِّ مَا خَلَقَ",
+        "text_fr": "Contre le mal de ce qu'Il a créé",
+        "context_fr": "Protection générale contre tout mal existant dans la création. C'est la demande la plus large et englobante.",
+        "words": ["مِن", "شَرِّ", "مَا", "خَلَقَ"],
+        "audio_timing": [0.0, 0.3, 0.7, 1.0],
+        "key_word": {"ar": "شَرِّ", "fr": "Le mal", "root": "ش ر ر"}
+      },
+      {
+        "number": 3,
+        "text_ar": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+        "text_fr": "Contre le mal de l'obscurité quand elle s'approfondit",
+        "context_fr": "La nuit profonde est un moment de vulnérabilité. Les maux et les dangers s'intensifient dans l'obscurité.",
+        "words": ["وَمِن", "شَرِّ", "غَاسِقٍ", "إِذَا", "وَقَبَ"],
+        "audio_timing": [0.0, 0.4, 0.8, 1.3, 1.7],
+        "key_word": {"ar": "غَاسِقٍ", "fr": "L'obscurité", "root": "غ س ق"}
+      },
+      {
+        "number": 4,
+        "text_ar": "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ",
+        "text_fr": "Contre le mal de celles qui soufflent sur les nœuds",
+        "context_fr": "Référence aux pratiques de sorcellerie où l'on souffle sur des nœuds pour jeter des sorts. La magie est un mal réel dont on doit se protéger.",
+        "words": ["وَمِن", "شَرِّ", "ٱلنَّفَّـٰثَـٰتِ", "فِى", "ٱلْعُقَدِ"],
+        "audio_timing": [0.0, 0.4, 0.9, 1.5, 1.9],
+        "key_word": {"ar": "ٱلنَّفَّـٰثَـٰتِ", "fr": "Celles qui soufflent", "root": "ن ف ث"}
+      },
+      {
+        "number": 5,
+        "text_ar": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+        "text_fr": "Et contre le mal de l'envieux quand il envie",
+        "context_fr": "Le dernier mal cité est la jalousie, un sentiment destructeur qui peut nuire à autrui. Le croyant s'en remet à Dieu pour s'en protéger.",
+        "words": ["وَمِن", "شَرِّ", "حَاسِدٍ", "إِذَا", "حَسَدَ"],
+        "audio_timing": [0.0, 0.4, 0.8, 1.3, 1.7],
+        "key_word": {"ar": "حَاسِدٍ", "fr": "L'envieux", "root": "ح س د"}
+      }
+    ],
+    "connections": [
+      {"from_verse": 1, "to_verse": 2, "hint_fr": "Après avoir invoqué la protection divine (verset 1), on précise le premier mal : tout ce qui existe dans la création (verset 2)."},
+      {"from_verse": 2, "to_verse": 3, "hint_fr": "Du mal général (verset 2) au mal spécifique de la nuit et de l'obscurité (verset 3)."},
+      {"from_verse": 3, "to_verse": 4, "hint_fr": "Après le mal naturel de la nuit (verset 3), vient le mal surnaturel de la sorcellerie (verset 4)."},
+      {"from_verse": 4, "to_verse": 5, "hint_fr": "Après la sorcellerie (verset 4), le dernier mal est celui qui vient des êtres humains : la jalousie (verset 5)."}
+    ]
+  },
+  {
+    "surah_number": 114,
+    "name_ar": "الناس",
+    "name_fr": "Les Hommes",
+    "name_transliteration": "An-Nas",
+    "revelation": "mecquoise",
+    "verse_count": 6,
+    "theme_fr": "La recherche de la protection divine contre le mal intérieur : les suggestions insidieuses du diable.",
+    "intro_fr": "Seconde des deux sourates protectrices, elle complète Al-Falaq en traitant du mal intérieur. Si Al-Falaq protège des maux extérieurs, An-Nas protège des chuchotements du diable qui s'insinuent dans le cœur des hommes.",
+    "verses": [
+      {
+        "number": 1,
+        "text_ar": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+        "text_fr": "Dis : Je cherche protection auprès du Seigneur des hommes",
+        "context_fr": "Dieu est invoqué en tant que Seigneur des hommes, soulignant Sa souveraineté sur toute l'humanité.",
+        "words": ["قُلْ", "أَعُوذُ", "بِرَبِّ", "ٱلنَّاسِ"],
+        "audio_timing": [0.0, 0.4, 0.9, 1.4],
+        "key_word": {"ar": "أَعُوذُ", "fr": "Je cherche refuge", "root": "ع و ذ"}
+      },
+      {
+        "number": 2,
+        "text_ar": "مَلِكِ ٱلنَّاسِ",
+        "text_fr": "Le Souverain des hommes",
+        "context_fr": "Deuxième attribut divin : Dieu est le Roi et le Souverain absolu de l'humanité.",
+        "words": ["مَلِكِ", "ٱلنَّاسِ"],
+        "audio_timing": [0.0, 0.5],
+        "key_word": {"ar": "مَلِكِ", "fr": "Le Souverain", "root": "م ل ك"}
+      },
+      {
+        "number": 3,
+        "text_ar": "إِلَـٰهِ ٱلنَّاسِ",
+        "text_fr": "Le Dieu des hommes",
+        "context_fr": "Troisième attribut : Dieu est la seule divinité digne d'adoration. Ces trois attributs (Seigneur, Roi, Dieu) renforcent la demande de protection.",
+        "words": ["إِلَـٰهِ", "ٱلنَّاسِ"],
+        "audio_timing": [0.0, 0.5],
+        "key_word": {"ar": "إِلَـٰهِ", "fr": "Le Dieu", "root": "أ ل ه"}
+      },
+      {
+        "number": 4,
+        "text_ar": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+        "text_fr": "Contre le mal du tentateur qui se dérobe",
+        "context_fr": "Le mal visé est identifié : le chuchoteur furtif, c'est-à-dire le diable qui suggère le mal puis se retire quand on invoque Dieu.",
+        "words": ["مِن", "شَرِّ", "ٱلْوَسْوَاسِ", "ٱلْخَنَّاسِ"],
+        "audio_timing": [0.0, 0.3, 0.8, 1.4],
+        "key_word": {"ar": "ٱلْوَسْوَاسِ", "fr": "Le tentateur", "root": "و س و س"}
+      },
+      {
+        "number": 5,
+        "text_ar": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+        "text_fr": "Celui qui chuchote dans les poitrines des hommes",
+        "context_fr": "Le diable agit en soufflant des pensées mauvaises directement dans le cœur des gens, de manière insidieuse.",
+        "words": ["ٱلَّذِى", "يُوَسْوِسُ", "فِى", "صُدُورِ", "ٱلنَّاسِ"],
+        "audio_timing": [0.0, 0.4, 1.0, 1.3, 1.8],
+        "key_word": {"ar": "يُوَسْوِسُ", "fr": "Il chuchote", "root": "و س و س"}
+      },
+      {
+        "number": 6,
+        "text_ar": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+        "text_fr": "Qu'il soit parmi les djinns ou parmi les hommes",
+        "context_fr": "Le mal peut venir de deux sources : les djinns (êtres invisibles) et les hommes eux-mêmes. La protection divine couvre les deux.",
+        "words": ["مِنَ", "ٱلْجِنَّةِ", "وَٱلنَّاسِ"],
+        "audio_timing": [0.0, 0.4, 0.9],
+        "key_word": {"ar": "ٱلْجِنَّةِ", "fr": "Les djinns", "root": "ج ن ن"}
+      }
+    ],
+    "connections": [
+      {"from_verse": 1, "to_verse": 2, "hint_fr": "Le premier attribut 'Seigneur des hommes' (verset 1) est complété par le deuxième : 'Souverain des hommes' (verset 2)."},
+      {"from_verse": 2, "to_verse": 3, "hint_fr": "Après 'Souverain' (verset 2), le troisième attribut 'Dieu des hommes' (verset 3) complète la triple invocation."},
+      {"from_verse": 3, "to_verse": 4, "hint_fr": "Après avoir invoqué Dieu par Ses trois attributs (verset 3), on précise le mal visé : le tentateur furtif (verset 4)."},
+      {"from_verse": 4, "to_verse": 5, "hint_fr": "Le tentateur est identifié (verset 4), puis sa méthode est décrite : chuchoter dans les cœurs (verset 5)."},
+      {"from_verse": 5, "to_verse": 6, "hint_fr": "Après avoir décrit l'action du tentateur (verset 5), le verset 6 précise qu'il peut être un djinn ou un humain."}
+    ]
+  }
+]
