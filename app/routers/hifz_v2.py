@@ -271,7 +271,7 @@ def get_surah_content(surah_number: int, student: StudentUser, db: DB):
         except (json.JSONDecodeError, IOError) as e:
             logger.error("Error loading enriched surah data: %s", e)
 
-    # ── Fallback: generate basic content from DB ──────────────────
+    # ── Fallback: use Quran text JSON + DB metadata ────────────────
     surah = db.query(Surah).filter(Surah.surah_number == surah_number).first()
     if not surah:
         raise HTTPException(
@@ -279,17 +279,30 @@ def get_surah_content(surah_number: int, student: StudentUser, db: DB):
             detail=f"Sourate {surah_number} non trouvée"
         )
 
-    # Build basic verses (text_ar empty — Flutter will display reference only)
+    # Load real Arabic text from quran_juz_amma_text.json
+    quran_text = {}
+    quran_text_path = DATA_DIR / "quran_juz_amma_text.json"
+    if quran_text_path.exists():
+        try:
+            with open(quran_text_path, "r", encoding="utf-8") as f:
+                quran_text = json.load(f)
+        except (json.JSONDecodeError, IOError) as e:
+            logger.error("Error loading Quran text data: %s", e)
+
+    surah_text_data = quran_text.get(str(surah_number), {})
+    surah_verses = surah_text_data.get("verses", {})
+
     verses = []
     for v_num in range(1, surah.total_verses + 1):
+        text_ar = surah_verses.get(str(v_num), f"﴿ آية {v_num} ﴾")
         verses.append({
             "number": v_num,
-            "text_ar": f"﴿ {surah.surah_name_ar} — آية {v_num} ﴾",
-            "words": [surah.surah_name_ar, "—", f"آية", str(v_num)],
+            "text_ar": text_ar,
+            "words": text_ar.split(),
         })
 
     logger.info(
-        "Fallback content for surah %d (%s) — %d verses (enriched JSON not available)",
+        "Fallback content for surah %d (%s) — %d verses (from quran text JSON)",
         surah_number, surah.surah_name_ar, surah.total_verses,
     )
 
