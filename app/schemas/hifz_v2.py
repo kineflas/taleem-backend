@@ -51,7 +51,7 @@ class EnrichedVerseOut(BaseModel):
     """A single verse with all pedagogical metadata."""
     number: int
     text_ar: str
-    text_fr: str
+    text_fr: str = ""
     context_fr: str = ""
     words: list[str]
     audio_timing: list[float] = []

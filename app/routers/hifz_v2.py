@@ -250,39 +250,60 @@ def get_surah_content(surah_number: int, student: StudentUser, db: DB):
 
     Returns verses with Arabic text, French translation, context,
     word list, audio timings, and key words.
+
+    Falls back to basic content from DB if enriched JSON not available.
     """
+    from ..models.quran import Surah
+
     if surah_number < 1 or surah_number > 114:
         raise HTTPException(status_code=400, detail="Numéro de sourate invalide")
 
-    # Try to load from JSON file
+    # Try to load from enriched JSON file first
     json_path = DATA_DIR / "juz_amma_enriched.json"
-    if not json_path.exists():
+    if json_path.exists():
+        try:
+            with open(json_path, "r", encoding="utf-8") as f:
+                all_surahs = json.load(f)
+
+            for s in all_surahs:
+                if s.get("surah_number") == surah_number:
+                    return EnrichedSurahOut(**s)
+        except (json.JSONDecodeError, IOError) as e:
+            logger.error("Error loading enriched surah data: %s", e)
+
+    # ── Fallback: generate basic content from DB ──────────────────
+    surah = db.query(Surah).filter(Surah.surah_number == surah_number).first()
+    if not surah:
         raise HTTPException(
             status_code=404,
-            detail=f"Contenu enrichi non disponible pour la sourate {surah_number}"
+            detail=f"Sourate {surah_number} non trouvée"
         )
 
-    try:
-        with open(json_path, "r", encoding="utf-8") as f:
-            all_surahs = json.load(f)
-    except (json.JSONDecodeError, IOError) as e:
-        logger.error("Error loading enriched surah data: %s", e)
-        raise HTTPException(status_code=500, detail="Erreur de chargement des données")
+    # Build basic verses (text_ar empty — Flutter will display reference only)
+    verses = []
+    for v_num in range(1, surah.total_verses + 1):
+        verses.append({
+            "number": v_num,
+            "text_ar": f"﴿ {surah.surah_name_ar} — آية {v_num} ﴾",
+            "words": [surah.surah_name_ar, "—", f"آية", str(v_num)],
+        })
 
-    # Find the requested surah
-    surah_data = None
-    for s in all_surahs:
-        if s.get("surah_number") == surah_number:
-            surah_data = s
-            break
+    logger.info(
+        "Fallback content for surah %d (%s) — %d verses (enriched JSON not available)",
+        surah_number, surah.surah_name_ar, surah.total_verses,
+    )
 
-    if not surah_data:
-        raise HTTPException(
-            status_code=404,
-            detail=f"Sourate {surah_number} non trouvée dans les données enrichies"
-        )
-
-    return EnrichedSurahOut(**surah_data)
+    return EnrichedSurahOut(
+        surah_number=surah_number,
+        name_ar=surah.surah_name_ar,
+        name_fr=surah.surah_name_fr,
+        name_transliteration=surah.surah_name_en,
+        revelation="mecquoise" if surah.is_meccan else "médinoise",
+        verse_count=surah.total_verses,
+        theme_fr="",
+        intro_fr="",
+        verses=verses,
+    )
 
 
 # ══════════════════════════════════════════════════════════════════
