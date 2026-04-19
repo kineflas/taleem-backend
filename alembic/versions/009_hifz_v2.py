@@ -40,13 +40,22 @@ depends_on = None
 
 
 def upgrade() -> None:
-    # ── Create enums ─────────────────────────────────────────────
-    op.execute("CREATE TYPE wirdstatus AS ENUM ('IN_PROGRESS', 'COMPLETED', 'SKIPPED')")
-    op.execute(
-        "CREATE TYPE exercisetype AS ENUM ("
-        "'PUZZLE', 'MOT_MANQUANT', 'VERSET_SUIVANT', 'ECOUTE', "
-        "'DICTEE', 'VRAI_FAUX', 'DEBUT_FIN', 'VERSET_MIROIR')"
-    )
+    # ── Create enums (idempotent) ────────────────────────────────
+    op.execute("""
+        DO $$ BEGIN
+            CREATE TYPE wirdstatus AS ENUM ('IN_PROGRESS', 'COMPLETED', 'SKIPPED');
+        EXCEPTION WHEN duplicate_object THEN NULL;
+        END $$
+    """)
+    op.execute("""
+        DO $$ BEGIN
+            CREATE TYPE exercisetype AS ENUM (
+                'PUZZLE', 'MOT_MANQUANT', 'VERSET_SUIVANT', 'ECOUTE',
+                'DICTEE', 'VRAI_FAUX', 'DEBUT_FIN', 'VERSET_MIROIR'
+            );
+        EXCEPTION WHEN duplicate_object THEN NULL;
+        END $$
+    """)
 
     # ── wird_sessions ────────────────────────────────────────────
     op.create_table(
