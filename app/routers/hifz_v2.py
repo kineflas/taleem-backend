@@ -32,13 +32,14 @@ from ..schemas.hifz_v2 import (
     VerseProgressV2Out,
     SuggestedSurahOut, SuggestedSurahsOut,
     CheckpointCompleteRequest, CheckpointCompleteOut,
+    QuickVerifyRequest, QuickVerifyOut,
 )
 from ..models.hifz_v2 import SRS_TIERS, tier_from_score
 from ..models.hifz_master import VerseProgress
 from ..services.hifz_v2_service import (
     compose_wird, start_wird, complete_wird,
     process_exercise_answer, process_step_result,
-    process_checkpoint,
+    process_checkpoint, quick_verify_surah,
     build_journey_map, calculate_stars,
     get_suggested_surahs,
 )
@@ -294,12 +295,52 @@ def complete_checkpoint(body: CheckpointCompleteRequest, student: StudentUser, d
         tartib_score=body.tartib_score,
         takamul_score=body.takamul_score,
         tasmi_score=body.tasmi_score,
+        rabita_score=body.rabita_score,
         verse_scores=verse_scores,
         duration_seconds=body.duration_seconds,
         wird_session_id=body.wird_session_id,
     )
     db.commit()
     return CheckpointCompleteOut(**result)
+
+
+# ══════════════════════════════════════════════════════════════════
+# Quick Verify Endpoints (Phase 3 — Mode Rapide)
+# ══════════════════════════════════════════════════════════════════
+
+@router.post("/surah/{surah_number}/quick-verify", response_model=QuickVerifyOut)
+def quick_verify_surah_endpoint(
+    surah_number: int,
+    body: QuickVerifyRequest,
+    student: StudentUser,
+    db: DB,
+):
+    """
+    Quick verification of a known surah (Mode Rapide).
+
+    Batch-updates SRS for all verses in a single transaction.
+    Used for surahs where ≥80% of verses are Tier 4+ (Acquis).
+    """
+    if surah_number < 1 or surah_number > 114:
+        raise HTTPException(status_code=400, detail="Numéro de sourate invalide")
+
+    verse_scores = [
+        {"verse_number": vs.verse_number, "score": vs.score}
+        for vs in body.verse_scores
+    ]
+
+    result = quick_verify_surah(
+        db=db,
+        student_id=student.id,
+        surah_number=surah_number,
+        verse_scores=verse_scores,
+        tartib_score=body.tartib_score,
+        takamul_score=body.takamul_score,
+        tasmi_score=body.tasmi_score,
+        duration_seconds=body.duration_seconds,
+    )
+    db.commit()
+    return QuickVerifyOut(**result)
 
 
 # ══════════════════════════════════════════════════════════════════

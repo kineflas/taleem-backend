@@ -278,6 +278,7 @@ class CheckpointCompleteRequest(BaseModel):
     tartib_score: int = Field(ge=0, le=100)
     takamul_score: int = Field(ge=0, le=100)
     tasmi_score: int = Field(ge=0, le=100)
+    rabita_score: Optional[int] = Field(default=None, ge=0, le=100)  # Phase 3
     # Per-verse scores (optional, for granular SRS update)
     verse_scores: list[CheckpointVerseScore] = []
     duration_seconds: int = Field(ge=0)
@@ -289,4 +290,31 @@ class CheckpointCompleteOut(BaseModel):
     stars: int
     xp_earned: int
     verses_updated: int
-    scores_by_step: dict  # {"tartib": 80, "takamul": 90, "tasmi": 85}
+    scores_by_step: dict  # {"tartib": 80, "takamul": 90, "rabita": 75, "tasmi": 85}
+
+
+# ─── Quick Verify (Phase 3 — Mode Rapide) ────────────────────────
+
+class QuickVerifyVerseScore(BaseModel):
+    """Score for a single verse in quick verify."""
+    verse_number: int = Field(ge=1, le=286)
+    score: int = Field(ge=0, le=100)
+
+
+class QuickVerifyRequest(BaseModel):
+    """Request for quick surah verification (Mode Rapide)."""
+    tartib_score: int = Field(ge=0, le=100)
+    takamul_score: int = Field(ge=0, le=100)
+    tasmi_score: int = Field(ge=0, le=100)
+    verse_scores: list[QuickVerifyVerseScore] = []
+    duration_seconds: int = Field(ge=0)
+
+
+class QuickVerifyOut(BaseModel):
+    """Response after quick verification."""
+    global_score: int
+    stars: int
+    xp_earned: int
+    verses_updated: int
+    tier_ups: int
+    scores_by_step: dict

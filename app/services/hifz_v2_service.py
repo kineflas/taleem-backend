@@ -54,9 +54,10 @@ EXERCISE_DIFFICULTY = {
     ExerciseType.VERSET_SUIVANT: "medium",
     ExerciseType.DICTEE: "hard",
     ExerciseType.VERSET_MIROIR: "hard",
-    # Checkpoint exercises (Phase 2)
+    # Checkpoint exercises (Phase 2+3)
     ExerciseType.TARTIB: "medium",
     ExerciseType.TAKAMUL: "medium",
+    ExerciseType.RABITA: "hard",
 }
 
 
@@ -676,6 +677,7 @@ def process_checkpoint(
     tartib_score: int,
     takamul_score: int,
     tasmi_score: int,
+    rabita_score: int | None = None,
     verse_scores: list[dict] | None = None,
     duration_seconds: int = 0,
     wird_session_id: uuid.UUID | None = None,
@@ -683,11 +685,24 @@ def process_checkpoint(
     """
     Process a checkpoint result: update SRS for all verses in the group.
 
-    The checkpoint global score is a weighted average of the 3 exercise scores.
+    The checkpoint global score is a weighted average of the exercise scores.
+    With Rabita (Phase 3): tartib 15%, takamul 25%, rabita 25%, tasmi 35%
+    Without Rabita (Phase 2 compat): tartib 25%, takamul 35%, tasmi 40%
+
     Each verse in the range gets its mastery_score blended with the checkpoint score.
     """
     # Weighted average for checkpoint global score
-    global_score = int(tartib_score * 0.25 + takamul_score * 0.35 + tasmi_score * 0.40)
+    if rabita_score is not None:
+        # Phase 3 weights (4 exercises)
+        global_score = int(
+            tartib_score * 0.15
+            + takamul_score * 0.25
+            + rabita_score * 0.25
+            + tasmi_score * 0.35
+        )
+    else:
+        # Phase 2 compat weights (3 exercises)
+        global_score = int(tartib_score * 0.25 + takamul_score * 0.35 + tasmi_score * 0.40)
     global_score = max(0, min(100, global_score))
 
     stars = calculate_stars(global_score)
@@ -757,7 +772,8 @@ def process_checkpoint(
     if wird_session_id:
         wird = db.query(WirdSession).filter(WirdSession.id == wird_session_id).first()
         if wird:
-            wird.total_exercises += 3  # 3 checkpoint exercises
+            exercise_count = 4 if rabita_score is not None else 3
+            wird.total_exercises += exercise_count
             wird.xp_earned += total_xp
 
     db.flush()
@@ -770,6 +786,7 @@ def process_checkpoint(
         "scores_by_step": {
             "tartib": tartib_score,
             "takamul": takamul_score,
+            **({"rabita": rabita_score} if rabita_score is not None else {}),
             "tasmi": tasmi_score,
         },
     }
@@ -912,6 +929,103 @@ def get_suggested_surahs(db: Session, student_id: uuid.UUID) -> dict:
         "current_surah": current_surah,
         "suggestions": suggestions,
         "review_due_surahs": review_due_surahs,
+    }
+
+
+# ── Quick Verify (Phase 3 — Mode Rapide) ────────────────────────
+
+def quick_verify_surah(
+    db: Session,
+    student_id: uuid.UUID,
+    surah_number: int,
+    verse_scores: list[dict],
+    tartib_score: int,
+    takamul_score: int,
+    tasmi_score: int,
+    duration_seconds: int = 0,
+) -> dict:
+    """
+    Quick verification of an entire surah (Mode Rapide).
+
+    Updates SRS for all provided verses in a single batch.
+    Returns global stats and per-verse updates.
+    """
+    # Global score (express weights)
+    global_score = int(tartib_score * 0.25 + takamul_score * 0.35 + tasmi_score * 0.40)
+    global_score = max(0, min(100, global_score))
+
+    stars = calculate_stars(global_score)
+    verses_updated = 0
+    tier_ups = 0
+
+    for vs in verse_scores:
+        v_num = vs["verse_number"]
+        v_score = vs.get("score", global_score)
+
+        verse_prog = (
+            db.query(VerseProgress)
+            .filter(
+                VerseProgress.student_id == student_id,
+                VerseProgress.surah_number == surah_number,
+                VerseProgress.verse_number == v_num,
+            )
+            .first()
+        )
+
+        if not verse_prog:
+            verse_prog = VerseProgress(
+                student_id=student_id,
+                surah_number=surah_number,
+                verse_number=v_num,
+                mastery_score=0,
+                mastery=VerseMastery.RED,
+                next_review_date=date.today(),
+            )
+            db.add(verse_prog)
+            db.flush()
+
+        old_tier = tier_from_score(verse_prog.mastery_score)
+
+        # Quick verify blends more aggressively (0.40 weight) since it's a full-surah test
+        old_score = verse_prog.mastery_score
+        new_score = int(old_score * 0.60 + v_score * 0.40)
+        new_score = max(0, min(100, new_score))
+
+        verse_prog.mastery_score = new_score
+        verse_prog.mastery = VerseMastery(update_mastery_from_score(new_score))
+        verse_prog.review_count += 1
+        verse_prog.last_practiced_at = datetime.now(timezone.utc)
+
+        new_tier = tier_from_score(new_score)
+        verse_prog.next_review_date = calculate_next_review_date(new_tier)
+
+        if new_tier.value > old_tier.value:
+            tier_ups += 1
+
+        verses_updated += 1
+
+    # XP: base + bonus
+    xp = 30  # Base XP for quick verify
+    if global_score >= 90:
+        xp += 25
+    elif global_score >= 70:
+        xp += 15
+    xp += tier_ups * XP_BONUS_TIER_UP
+
+    _award_xp(db, student_id, xp)
+    db.flush()
+
+    return {
+        "global_score": global_score,
+        "stars": stars,
+        "xp_earned": xp,
+        "verses_updated": verses_updated,
+        "tier_ups": tier_ups,
+        "scores_by_step": {
+            "tartib": tartib_score,
+            "takamul": takamul_score,
+            "tasmi": tasmi_score,
+        },
     }
 
 

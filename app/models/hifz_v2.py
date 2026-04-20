@@ -45,6 +45,8 @@ class ExerciseType(str, enum.Enum):
     # Checkpoint exercises (Phase 2)
     TARTIB = "TARTIB"                   # ترتيب الآيات — Reorder verses (drag-and-drop)
     TAKAMUL = "TAKAMUL"                 # تكامل — Multi-verse gap filling
+    # Phase 3
+    RABITA = "RABITA"                   # رابطة — Verse transition test (MCQ/ASR)
 
 
 class SrsTier(int, enum.Enum):
