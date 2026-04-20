@@ -54,6 +54,9 @@ EXERCISE_DIFFICULTY = {
     ExerciseType.VERSET_SUIVANT: "medium",
     ExerciseType.DICTEE: "hard",
     ExerciseType.VERSET_MIROIR: "hard",
+    # Checkpoint exercises (Phase 2)
+    ExerciseType.TARTIB: "medium",
+    ExerciseType.TAKAMUL: "medium",
 }
 
 
@@ -659,6 +662,116 @@ def build_journey_map(db: Session, student_id: uuid.UUID) -> dict:
         "level": level,
         "title_ar": title["ar"],
         "title_fr": title["fr"],
+    }
+
+
+# ── Checkpoint Processing (Phase 2) ─────────────────────────────
+
+def process_checkpoint(
+    db: Session,
+    student_id: uuid.UUID,
+    surah_number: int,
+    verse_start: int,
+    verse_end: int,
+    tartib_score: int,
+    takamul_score: int,
+    tasmi_score: int,
+    verse_scores: list[dict] | None = None,
+    duration_seconds: int = 0,
+    wird_session_id: uuid.UUID | None = None,
+) -> dict:
+    """
+    Process a checkpoint result: update SRS for all verses in the group.
+
+    The checkpoint global score is a weighted average of the 3 exercise scores.
+    Each verse in the range gets its mastery_score blended with the checkpoint score.
+    """
+    # Weighted average for checkpoint global score
+    global_score = int(tartib_score * 0.25 + takamul_score * 0.35 + tasmi_score * 0.40)
+    global_score = max(0, min(100, global_score))
+
+    stars = calculate_stars(global_score)
+    total_xp = 0
+    verses_updated = 0
+
+    # Build per-verse score map (if provided, use it; otherwise use global)
+    verse_score_map = {}
+    if verse_scores:
+        for vs in verse_scores:
+            verse_score_map[(vs["surah_number"], vs["verse_number"])] = vs["score"]
+
+    # Update each verse in the range
+    for v_num in range(verse_start, verse_end + 1):
+        verse_prog = (
+            db.query(VerseProgress)
+            .filter(
+                VerseProgress.student_id == student_id,
+                VerseProgress.surah_number == surah_number,
+                VerseProgress.verse_number == v_num,
+            )
+            .first()
+        )
+
+        if not verse_prog:
+            verse_prog = VerseProgress(
+                student_id=student_id,
+                surah_number=surah_number,
+                verse_number=v_num,
+                mastery_score=0,
+                mastery=VerseMastery.RED,
+                next_review_date=date.today(),
+            )
+            db.add(verse_prog)
+            db.flush()
+
+        # Use per-verse score if available, otherwise global checkpoint score
+        checkpoint_score = verse_score_map.get((surah_number, v_num), global_score)
+
+        # Blend checkpoint score into mastery (weight = 0.30 for checkpoint)
+        old_score = verse_prog.mastery_score
+        new_score = int(old_score * 0.70 + checkpoint_score * 0.30)
+        new_score = max(0, min(100, new_score))
+
+        verse_prog.mastery_score = new_score
+        verse_prog.mastery = VerseMastery(update_mastery_from_score(new_score))
+        verse_prog.review_count += 1
+        verse_prog.last_practiced_at = datetime.now(timezone.utc)
+        verse_prog.total_practice_seconds += duration_seconds // max(1, verse_end - verse_start + 1)
+
+        tier = tier_from_score(new_score)
+        verse_prog.next_review_date = calculate_next_review_date(tier)
+
+        verses_updated += 1
+
+    # XP: base checkpoint XP + bonus for good score
+    checkpoint_xp = 25  # Base XP for completing a checkpoint
+    if global_score >= 90:
+        checkpoint_xp += 20  # Bonus for excellence
+    elif global_score >= 70:
+        checkpoint_xp += 10  # Bonus for good performance
+    total_xp = checkpoint_xp
+
+    _award_xp(db, student_id, total_xp)
+
+    # Update Wird session stats if applicable
+    if wird_session_id:
+        wird = db.query(WirdSession).filter(WirdSession.id == wird_session_id).first()
+        if wird:
+            wird.total_exercises += 3  # 3 checkpoint exercises
+            wird.xp_earned += total_xp
+
+    db.flush()
+
+    return {
+        "global_score": global_score,
+        "stars": stars,
+        "xp_earned": total_xp,
+        "verses_updated": verses_updated,
+        "scores_by_step": {
+            "tartib": tartib_score,
+            "takamul": takamul_score,
+            "tasmi": tasmi_score,
+        },
     }
 
 

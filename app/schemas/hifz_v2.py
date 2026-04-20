@@ -257,3 +257,36 @@ class StepResultOut(BaseModel):
     stars: int
     xp_earned: int
     next_review_date: date
+
+
+# ─── Checkpoint (Phase 2) ─────────────────────────────────────
+
+class CheckpointVerseScore(BaseModel):
+    """Score for a single verse within a checkpoint."""
+    surah_number: int = Field(ge=1, le=114)
+    verse_number: int = Field(ge=1, le=286)
+    score: int = Field(ge=0, le=100)
+
+
+class CheckpointCompleteRequest(BaseModel):
+    """Request to complete a checkpoint with multi-verse scores."""
+    wird_session_id: Optional[UUID] = None
+    surah_number: int = Field(ge=1, le=114)
+    verse_start: int = Field(ge=1, le=286)
+    verse_end: int = Field(ge=1, le=286)
+    # Scores by checkpoint step
+    tartib_score: int = Field(ge=0, le=100)
+    takamul_score: int = Field(ge=0, le=100)
+    tasmi_score: int = Field(ge=0, le=100)
+    # Per-verse scores (optional, for granular SRS update)
+    verse_scores: list[CheckpointVerseScore] = []
+    duration_seconds: int = Field(ge=0)
+
+
+class CheckpointCompleteOut(BaseModel):
+    """Response after completing a checkpoint."""
+    global_score: int
+    stars: int
+    xp_earned: int
+    verses_updated: int
+    scores_by_step: dict  # {"tartib": 80, "takamul": 90, "tasmi": 85}

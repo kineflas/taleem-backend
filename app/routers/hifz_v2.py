@@ -31,12 +31,14 @@ from ..schemas.hifz_v2 import (
     JourneyMapOut, SurahMapEntry,
     VerseProgressV2Out,
     SuggestedSurahOut, SuggestedSurahsOut,
+    CheckpointCompleteRequest, CheckpointCompleteOut,
 )
 from ..models.hifz_v2 import SRS_TIERS, tier_from_score
 from ..models.hifz_master import VerseProgress
 from ..services.hifz_v2_service import (
     compose_wird, start_wird, complete_wird,
     process_exercise_answer, process_step_result,
+    process_checkpoint,
     build_journey_map, calculate_stars,
     get_suggested_surahs,
 )
@@ -265,6 +267,39 @@ def submit_step_result(body: StepResultRequest, student: StudentUser, db: DB):
     )
     db.commit()
     return StepResultOut(**result)
+
+
+# ══════════════════════════════════════════════════════════════════
+# Checkpoint Endpoints (Phase 2)
+# ══════════════════════════════════════════════════════════════════
+
+@router.post("/checkpoint/complete", response_model=CheckpointCompleteOut)
+def complete_checkpoint(body: CheckpointCompleteRequest, student: StudentUser, db: DB):
+    """
+    Complete a checkpoint verification for a group of verses.
+
+    Updates SRS for all verses in the range and awards XP.
+    """
+    verse_scores = [
+        {"surah_number": vs.surah_number, "verse_number": vs.verse_number, "score": vs.score}
+        for vs in body.verse_scores
+    ] if body.verse_scores else None
+
+    result = process_checkpoint(
+        db=db,
+        student_id=student.id,
+        surah_number=body.surah_number,
+        verse_start=body.verse_start,
+        verse_end=body.verse_end,
+        tartib_score=body.tartib_score,
+        takamul_score=body.takamul_score,
+        tasmi_score=body.tasmi_score,
+        verse_scores=verse_scores,
+        duration_seconds=body.duration_seconds,
+        wird_session_id=body.wird_session_id,
+    )
+    db.commit()
+    return CheckpointCompleteOut(**result)
 
 
 # ══════════════════════════════════════════════════════════════════
