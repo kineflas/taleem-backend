@@ -33,6 +33,10 @@ RUN chmod +x start.sh
 # Ensure audio upload directory exists
 RUN mkdir -p /app/static/audio
 
+# Generate real Husary word-level timestamps for karaoke (offline data)
+RUN python scripts/generate_audio_timings.py \
+    && rm -rf scripts/.cache
+
 # Non-root user for security
 RUN useradd -m appuser && chown -R appuser:appuser /app
 USER appuser
