@@ -16,7 +16,7 @@ import json
 import uuid
 import logging
 from pathlib import Path
-from datetime import date
+from datetime import date, timedelta
 
 from fastapi import APIRouter, HTTPException, status
 from sqlalchemy.orm import Session
@@ -34,6 +34,7 @@ from ..schemas.hifz_v2 import (
     CheckpointCompleteRequest, CheckpointCompleteOut,
     QuickVerifyRequest, QuickVerifyOut,
     RevisionVerseOut, AudioRevisionPlaylistOut,
+    ListeningLogRequest, ListeningLogOut,
 )
 from ..models.hifz_v2 import SRS_TIERS, tier_from_score
 from ..models.hifz_master import VerseProgress
@@ -614,6 +615,60 @@ def get_audio_revision_playlist(
         total_listens=total_listens,
         estimated_minutes=estimated_minutes,
     )
+
+
+# ══════════════════════════════════════════════════════════════════
+# Listening Log (passive audio tracking)
+# ══════════════════════════════════════════════════════════════════
+
+@router.post("/listening-log", response_model=ListeningLogOut)
+def log_listening(req: ListeningLogRequest, student: StudentUser, db: DB):
+    """
+    Log a completed verse listen from the Quran Audio Player.
+
+    Impact SRS: l'écoute ne fait pas monter de tier, mais empêche la
+    descente en repoussant next_review_date sans modifier mastery_score.
+    """
+    # Find the verse progress if it exists
+    vp = (
+        db.query(VerseProgress)
+        .filter(
+            VerseProgress.student_id == student.id,
+            VerseProgress.surah_number == req.surah_number,
+            VerseProgress.verse_number == req.verse_number,
+        )
+        .first()
+    )
+
+    next_review = None
+
+    if vp and req.completed:
+        # Push next_review_date forward by the tier's interval (prevents decay)
+        tier = tier_from_score(vp.mastery_score)
+        tier_name = tier.value.lower()
+
+        # Interval based on tier (matching SRS schedule)
+        intervals = {
+            "nouveau": 1,
+            "fragile": 1,
+            "en_cours": 3,
+            "acquis": 7,
+            "solide": 14,
+            "maitrise": 30,
+            "ancre": 60,
+        }
+        interval_days = intervals.get(tier_name, 3)
+
+        new_review = date.today() + timedelta(days=interval_days)
+
+        # Only push forward, never pull back
+        if vp.next_review_date is None or new_review > vp.next_review_date:
+            vp.next_review_date = new_review
+            db.commit()
+
+        next_review = str(vp.next_review_date)
+
+    return ListeningLogOut(logged=True, next_review_date=next_review)
 
 
 # ══════════════════════════════════════════════════════════════════

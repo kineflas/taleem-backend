@@ -337,3 +337,20 @@ class AudioRevisionPlaylistOut(BaseModel):
     verses: list[RevisionVerseOut]
     total_listens: int  # Sum of adaptive repeats
     estimated_minutes: int
+
+
+# ── Listening Log ──────────────────────────────────────────────────
+
+class ListeningLogRequest(BaseModel):
+    """Log a completed verse listen (passive tracking)."""
+    surah_number: int
+    verse_number: int
+    reciter_folder: str
+    listen_count: int = 1  # How many times the verse was repeated
+    completed: bool = True  # True if the whole verse was listened to
+
+
+class ListeningLogOut(BaseModel):
+    """Response after logging a listen."""
+    logged: bool = True
+    next_review_date: Optional[str] = None  # Updated review date if applicable
