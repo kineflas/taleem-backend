@@ -587,7 +587,7 @@ def get_audio_revision_playlist(
     total_listens = 0
     for v in ordered:
         tier = tier_from_score(v.mastery_score)
-        tier_label = tier.value.lower()
+        tier_label = tier.name.lower()  # .name = "FRAGILE", .value = int
 
         # Adaptive repeat count
         if tier_label == "fragile":
@@ -645,7 +645,7 @@ def log_listening(req: ListeningLogRequest, student: StudentUser, db: DB):
     if vp and req.completed:
         # Push next_review_date forward by the tier's interval (prevents decay)
         tier = tier_from_score(vp.mastery_score)
-        tier_name = tier.value.lower()
+        tier_name = tier.name.lower()  # .name = "FRAGILE", .value = int
 
         # Interval based on tier (matching SRS schedule)
         intervals = {
