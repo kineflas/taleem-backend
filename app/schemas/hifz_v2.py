@@ -318,3 +318,22 @@ class QuickVerifyOut(BaseModel):
     verses_updated: int
     tier_ups: int
     scores_by_step: dict
+
+
+# ── Audio Revision Playlist ──────────────────────────────────────
+
+class RevisionVerseOut(BaseModel):
+    """A single verse entry in the audio revision playlist."""
+    surah_number: int
+    verse_number: int
+    surah_name_ar: str
+    tier: str
+    mastery_score: int
+    next_review_date: str  # ISO date
+
+
+class AudioRevisionPlaylistOut(BaseModel):
+    """Playlist of verses for audio revision, ordered by urgency."""
+    verses: list[RevisionVerseOut]
+    total_listens: int  # Sum of adaptive repeats
+    estimated_minutes: int

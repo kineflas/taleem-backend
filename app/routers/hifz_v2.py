@@ -33,6 +33,7 @@ from ..schemas.hifz_v2 import (
     SuggestedSurahOut, SuggestedSurahsOut,
     CheckpointCompleteRequest, CheckpointCompleteOut,
     QuickVerifyRequest, QuickVerifyOut,
+    RevisionVerseOut, AudioRevisionPlaylistOut,
 )
 from ..models.hifz_v2 import SRS_TIERS, tier_from_score
 from ..models.hifz_master import VerseProgress
@@ -513,6 +514,105 @@ def get_verse_progress_v2(
         review_count=verse_prog.review_count,
         total_exercises_played=exercise_count,
         last_practiced_at=verse_prog.last_practiced_at,
+    )
+
+
+# ══════════════════════════════════════════════════════════════════
+# Audio Revision Playlist
+# ══════════════════════════════════════════════════════════════════
+
+@router.get("/revision/audio-playlist", response_model=AudioRevisionPlaylistOut)
+def get_audio_revision_playlist(
+    student: StudentUser,
+    db: DB,
+    limit: int = 30,
+):
+    """
+    Build a playlist of verses for passive audio revision.
+
+    Selection logic:
+      1. Verses with next_review_date <= today + 2 days (urgent first)
+      2. Sorted by SRS tier ascending (FRAGILE > EN_COURS > ACQUIS)
+      3. Grouped by surah for coherent listening
+      4. Capped at `limit` verses
+
+    Adaptive repetitions per tier:
+      - FRAGILE  → 3×
+      - EN_COURS → 2×
+      - ACQUIS+  → 1×
+    """
+    from datetime import timedelta
+    from ..models.quran import Surah
+
+    today = date.today()
+    horizon = today + timedelta(days=2)
+
+    # Fetch due verses
+    due_verses = (
+        db.query(VerseProgress)
+        .filter(
+            VerseProgress.student_id == student.id,
+            VerseProgress.next_review_date <= horizon,
+            VerseProgress.mastery_score > 0,  # Skip never-practiced verses
+        )
+        .order_by(
+            VerseProgress.mastery_score.asc(),  # Weakest first
+            VerseProgress.next_review_date.asc(),
+        )
+        .limit(limit)
+        .all()
+    )
+
+    # Build surah name cache
+    surah_numbers = list({v.surah_number for v in due_verses})
+    surah_map = {}
+    if surah_numbers:
+        surahs = db.query(Surah).filter(Surah.surah_number.in_(surah_numbers)).all()
+        surah_map = {s.surah_number: s.surah_name_ar for s in surahs}
+
+    # Group by surah for coherent listening, then sort within each group
+    from collections import defaultdict
+    by_surah = defaultdict(list)
+    for v in due_verses:
+        by_surah[v.surah_number].append(v)
+
+    ordered = []
+    for sn in sorted(by_surah.keys(), reverse=True):  # Higher surah numbers first (Juz Amma)
+        group = sorted(by_surah[sn], key=lambda v: v.verse_number)
+        ordered.extend(group)
+
+    # Build output
+    result_verses = []
+    total_listens = 0
+    for v in ordered:
+        tier = tier_from_score(v.mastery_score)
+        tier_label = tier.value.lower()
+
+        # Adaptive repeat count
+        if tier_label == "fragile":
+            repeats = 3
+        elif tier_label == "en_cours":
+            repeats = 2
+        else:
+            repeats = 1
+
+        total_listens += repeats
+        result_verses.append(RevisionVerseOut(
+            surah_number=v.surah_number,
+            verse_number=v.verse_number,
+            surah_name_ar=surah_map.get(v.surah_number, f"Sourate {v.surah_number}"),
+            tier=tier_label,
+            mastery_score=v.mastery_score,
+            next_review_date=str(v.next_review_date),
+        ))
+
+    # Estimate: ~8 seconds per listen on average
+    estimated_minutes = max(1, (total_listens * 8) // 60)
+
+    return AudioRevisionPlaylistOut(
+        verses=result_verses,
+        total_listens=total_listens,
+        estimated_minutes=estimated_minutes,
     )
 
 
