@@ -241,48 +241,48 @@
         "question": "Quelle est la bonne traduction de **هَذَا قَلَمٌ** ?",
         "options": [
           "C'est un stylo",
-          "Ceci est une maison",
-          "Qui est-ce ?",
-          "Où est le stylo ?"
+          "C'est le stylo",
+          "C'est une voiture",
+          "Voici le livre"
         ],
         "correct": 0,
-        "explanation": null
+        "explanation": "هَذَا = ceci + قَلَمٌ (avec Tanwin ـٌ = indéfini = 'un stylo'). 'C'est le stylo' serait هَذَا الْقَلَمُ (avec الـ)."
       },
       {
         "id": "L1Q2",
         "question": "Lequel de ces mots est **féminin** ?",
         "options": [
-          "بَيْتٌ",
-          "قَلَمٌ",
-          "سَيَّارَةٌ",
-          "كِتَابٌ"
+          "بَيْتٌ (maison)",
+          "قَلَمٌ (stylo)",
+          "سَيَّارَةٌ (voiture)",
+          "كِتَابٌ (livre)"
         ],
         "correct": 2,
-        "explanation": null
+        "explanation": "Le ة (Ta Marbuta) à la fin de سَيَّارَةٌ signale le féminin. Les autres mots n'ont pas de ة = masculins."
       },
       {
         "id": "L1Q3",
-        "question": "Qu'est-ce que le Tanwin (ٌ) ?",
+        "question": "Que signifie le signe ـٌ (double dammah) sur **بَيْتٌ** ?",
         "options": [
-          "Un accent",
-          "Un son 'un' qui remplace l'article indéfini",
-          "Une lettre solaire",
-          "Un adjectif"
+          "C'est l'article défini (le/la)",
+          "C'est l'article indéfini (un/une)",
+          "C'est le signe du pluriel",
+          "C'est la marque du féminin"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "Le Tanwin ـٌ (son 'oun') remplace l'article indéfini 'un/une'. بَيْتٌ = UNE maison. Pour dire LA maison, on utiliserait الْبَيْتُ."
       },
       {
         "id": "L1Q4",
-        "question": "Quel est le démonstratif féminin ?",
+        "question": "Complétez : **______ سَيَّارَةٌ** (c'est une voiture)",
         "options": [
           "هَذَا",
           "ذَلِكَ",
           "هَذِهِ",
-          "تِلْكَ"
+          "مَا"
         ],
         "correct": 2,
-        "explanation": null
+        "explanation": "سَيَّارَةٌ est féminin (ة), donc le démonstratif doit être féminin : هَذِهِ (ceci — fém.). هَذَا serait incorrect car c'est le masculin."
       }
     ],
     "flashcards": [
@@ -554,52 +554,52 @@
     ],
     "quiz_questions": [
       {
-        "id": "L1Q5",
+        "id": "L2Q1",
         "question": "Complétez : **هَذِهِ ______** (ceci est une voiture)",
         "options": [
           "سَيَّارَةٌ",
           "سَيَّارَةُ",
-          "بَيْتٌ",
-          "كِتَابٌ"
+          "السَّيَّارَةُ",
+          "سَيَّارَةً"
         ],
         "correct": 0,
-        "explanation": null
+        "explanation": "Phrase indéfinie → Tanwin obligatoire : سَيَّارَةٌ. سَيَّارَةُ (sans Tanwin) serait en état d'annexion. السَّيَّارَةُ serait défini."
       },
       {
-        "id": "L2Q1",
-        "question": "Comment demander 'Qu'est-ce que c'est ?' en arabe ?",
+        "id": "L2Q2",
+        "question": "Comment demander '**Qu'est-ce que c'est ?**' en arabe ?",
         "options": [
           "مَنْ هَذَا؟",
           "مَا هَذَا؟",
           "أَهَذَا؟",
-          "هَلْ؟"
+          "هَلْ هَذَا؟"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "مَا = que/quoi (choses). مَنْ = qui (personnes). أَ et هَلْ = questions fermées (oui/non)."
       },
       {
-        "id": "L2Q2",
+        "id": "L2Q3",
         "question": "Quel mot interrogatif s'utilise pour les **personnes** ?",
         "options": [
           "مَا",
           "مَنْ",
-          "أَ",
-          "أَيْنَ"
+          "أَيْنَ",
+          "كَيْفَ"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "مَنْ = qui (personnes). مَا = quoi (choses). أَيْنَ = où. كَيْفَ = comment."
       },
       {
-        "id": "L2Q3",
-        "question": "Quelle est la fonction de la particule **أَ** ?",
+        "id": "L2Q4",
+        "question": "Traduisez : **أَهَذَا كِتَابٌ؟**",
         "options": [
-          "Demander une chose",
-          "Demander une personne",
-          "Transformer une affirmation en question fermée (Oui/Non)",
-          "Indiquer la négation"
+          "Qu'est-ce qu'un livre ?",
+          "Où est le livre ?",
+          "Est-ce un livre ?",
+          "C'est un livre."
         ],
         "correct": 2,
-        "explanation": null
+        "explanation": "أَ transforme une affirmation en question fermée (oui/non). هَذَا كِتَابٌ (affirmation) → أَهَذَا كِتَابٌ؟ (question)."
       }
     ],
     "flashcards": [
@@ -910,52 +910,52 @@
     ],
     "quiz_questions": [
       {
-        "id": "L2Q4",
-        "question": "Traduisez : **أَهَذَا كِتَابٌ؟**",
-        "options": [
-          "Qu'est-ce que c'est ?",
-          "Ceci est un livre",
-          "Est-ce un livre ?",
-          "Qui est ce ?"
-        ],
-        "correct": 2,
-        "explanation": null
-      },
-      {
         "id": "L3Q1",
         "question": "Quelle est la différence entre **كِتَابٌ** et **الْكِتَابُ** ?",
         "options": [
-          "L'un est masculin, l'autre féminin",
-          "L'un est indéfini, l'autre défini",
-          "L'un est une question, l'autre une affirmation",
-          "Aucune différence"
+          "Le premier porte le Tanwin (indéfini), le second porte الـ (défini)",
+          "Le premier est au nominatif, le second au génitif",
+          "Le premier est masculin, le second est féminin",
+          "Le premier est singulier, le second est pluriel"
         ],
-        "correct": 1,
-        "explanation": null
+        "correct": 0,
+        "explanation": "كِتَابٌ = un livre (Tanwin = indéfini). الْكِتَابُ = le livre (الـ = défini). Le Tanwin disparaît quand on ajoute الـ."
       },
       {
         "id": "L3Q2",
-        "question": "Que se passe-t-il au Tanwin quand on ajoute l'article **الـ** ?",
+        "question": "Que se passe-t-il au **Tanwin** quand on ajoute الـ ?",
         "options": [
           "Il reste identique",
           "Il disparaît",
           "Il double",
-          "Il change en 'a'"
+          "Il se transforme en Kasrah"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "Le Tanwin et الـ sont mutuellement exclusifs. Indéfini : كِتَابٌ. Défini : الْكِتَابُ (Tanwin remplacé par Dammah simple)."
       },
       {
         "id": "L3Q3",
-        "question": "Quelle est la première lettre de **التَّاجُ** (la couronne) ?",
+        "question": "Dans le mot **الشَّمْسُ**, pourquoi le ل de الـ ne se prononce pas ?",
         "options": [
-          "ت (t)",
-          "ا (a)",
-          "ل (l)",
-          "ه (h)"
+          "C'est une erreur d'écriture",
+          "Parce que ش est une lettre solaire qui assimile le ل",
+          "Parce que ش est une lettre lunaire",
+          "Parce que le mot est féminin"
         ],
-        "correct": 0,
-        "explanation": "C'est une lettre solaire. Le ل de الـ se fusionne avec le ت."
+        "correct": 1,
+        "explanation": "Les lettres solaires (comme ش) assimilent le ل de الـ. On prononce 'ash-shams' pas 'al-shams'. Le shadda (ّ) indique le redoublement."
+      },
+      {
+        "id": "L3Q4",
+        "question": "Le mot **الْقَمَرُ** commence par une lettre :",
+        "options": [
+          "Solaire (le ل de الـ s'assimile)",
+          "Lunaire (le ل de الـ se prononce)",
+          "Ni solaire ni lunaire",
+          "Solaire au nominatif, lunaire au génitif"
+        ],
+        "correct": 1,
+        "explanation": "ق est une lettre lunaire. On prononce clairement le ل : al-qamar. Contrairement aux solaires où le ل disparaît dans la prononciation."
       }
     ],
     "flashcards": [
@@ -1262,76 +1262,52 @@
     ],
     "quiz_questions": [
       {
-        "id": "L3Q4",
-        "question": "Quel type de lettre est ق (q) dans **الْقَلَمُ** ?",
-        "options": [
-          "Solaire",
-          "Lunaire",
-          "Neutre",
-          "Spéciale"
-        ],
-        "correct": 1,
-        "explanation": null
-      },
-      {
         "id": "L4Q1",
-        "question": "Quelle préposition signifie 'dans' ?",
+        "question": "Quelle préposition signifie '**dans**' ?",
         "options": [
           "عَلَى",
           "فِي",
-          "إِلَى",
-          "مِنْ"
+          "مِنْ",
+          "إِلَى"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "فِي = dans, عَلَى = sur, مِنْ = de/depuis, إِلَى = vers."
       },
       {
         "id": "L4Q2",
-        "question": "Complétez : **_________ الْبَيْتِ** (dans la maison)",
+        "question": "Complétez : **______ الْمَدْرَسَةِ** (dans l'école)",
         "options": [
           "عَلَى",
           "فِي",
-          "الْبَيْتُ",
-          "الْبَيْتَ"
+          "مِنْ",
+          "إِلَى"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "فِي = dans. Notez la Kasrah sur الْمَدْرَسَةِ → le nom après une préposition est toujours au cas Majrur (génitif)."
       },
       {
         "id": "L4Q3",
-        "question": "Quel est le cas du nom après une préposition ?",
+        "question": "Quel est le **cas grammatical** du nom après une préposition ?",
         "options": [
-          "Nominatif",
-          "Accusatif",
-          "Majrūr",
-          "Duel"
+          "Nominatif (Marfu' — Dammah)",
+          "Accusatif (Mansub — Fathah)",
+          "Génitif (Majrur — Kasrah)",
+          "Pas de changement de cas"
         ],
         "correct": 2,
-        "explanation": null
+        "explanation": "Après une préposition, le nom est TOUJOURS au cas Majrur → Kasrah (ـِ). Exemple : فِي الْبَيْتِ (dans la maison — Kasrah sur ت)."
       },
       {
         "id": "L4Q4",
-        "question": "Quelle est la voyelle finale (Majrūr) dans **فِي الطَّاوِلَةِ** ?",
+        "question": "Quelle est la voyelle finale correcte dans **فِي الطَّاوِلَةِ** ?",
         "options": [
-          "ُ (u)",
-          "َ (a)",
-          "ِ (i)",
-          "ٌ (un)"
+          "ُ (dammah — nominatif)",
+          "َ (fathah — accusatif)",
+          "ِ (kasrah — génitif)",
+          "ٌ (tanwin — indéfini)"
         ],
         "correct": 2,
-        "explanation": null
-      },
-      {
-        "id": "L4Q5",
-        "question": "Traduisez : **عَلَى الْقَلَمِ**",
-        "options": [
-          "Dans le stylo",
-          "Le stylo",
-          "Sur le stylo",
-          "Quel stylo ?"
-        ],
-        "correct": 2,
-        "explanation": null
+        "explanation": "Après فِي (préposition), le nom prend la Kasrah (ـِ) = cas Majrur. Le Tanwin est impossible car le mot est défini (الـ)."
       }
     ],
     "flashcards": [
@@ -1630,51 +1606,51 @@
     "quiz_questions": [
       {
         "id": "L5Q1",
-        "question": "Qu'est-ce que l'Annexion en arabe ?",
+        "question": "Qu'est-ce que **l'Annexion** (الإضافة) ?",
         "options": [
-          "Une préposition",
-          "Une façon d'exprimer la possession sans préposition",
-          "Un verbe",
-          "Un article"
+          "Une préposition qui lie deux noms",
+          "Une construction qui exprime la possession sans préposition",
+          "Un article défini spécial",
+          "Un accord entre nom et adjectif"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "L'Annexion (Idafa) = deux noms juxtaposés pour exprimer l'appartenance. كِتَابُ أَحْمَدَ = le livre d'Ahmed, sans préposition."
       },
       {
         "id": "L5Q2",
-        "question": "Complétez l'annexion : **كِتَابُ** ______ (le livre d'Ahmed)",
+        "question": "Dans **كِتَابُ الطَّالِبِ**, pourquoi كِتَاب n'a pas de Tanwin ?",
         "options": [
-          "في",
-          "أَحْمَدَ",
-          "الْكِتَابِ",
-          "مِنْ"
+          "Parce que c'est un mot féminin",
+          "Parce que c'est le Mudaf (1er terme de l'annexion) — le Tanwin disparaît",
+          "Parce qu'il porte الـ",
+          "Parce qu'il est au cas accusatif"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "Le 1er terme (Mudaf) perd TOUJOURS son Tanwin en annexion. كِتَابٌ → كِتَابُ. Le 2ème terme (Mudaf ilayhi) prend le cas Majrur."
       },
       {
         "id": "L5Q3",
-        "question": "Que se passe-t-il au Tanwin quand on annexe ?",
+        "question": "Quel est le cas du **2ème terme** de l'annexion (Mudaf ilayhi) ?",
         "options": [
-          "Il reste identique",
-          "Il disparaît",
-          "Il double",
-          "Il change de son"
-        ],
-        "correct": 1,
-        "explanation": null
-      },
-      {
-        "id": "L5Q4",
-        "question": "L'annexion rend-elle le groupe nominale défini ou indéfini ?",
-        "options": [
-          "Indéfini",
-          "Défini",
-          "Neutre",
+          "Nominatif (Dammah)",
+          "Toujours Majrur (Kasrah)",
+          "Accusatif (Fathah)",
           "Dépend du contexte"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "Le Mudaf ilayhi est TOUJOURS au cas Majrur. Exemple : بَابُ الْمَسْجِدِ (la porte de la mosquée) — الْمَسْجِدِ porte la Kasrah."
+      },
+      {
+        "id": "L5Q4",
+        "question": "Traduisez : **بَيْتُ الْمُعَلِّمِ**",
+        "options": [
+          "Une maison du professeur",
+          "La maison du professeur",
+          "Le professeur de la maison",
+          "Un professeur dans la maison"
+        ],
+        "correct": 1,
+        "explanation": "L'annexion rend le groupe défini quand le 2ème terme est défini (الْمُعَلِّمِ). بَيْتُ الْمُعَلِّمِ = LA maison du professeur."
       }
     ],
     "flashcards": [
@@ -1982,52 +1958,52 @@
     ],
     "quiz_questions": [
       {
-        "id": "L5Q5",
-        "question": "Traduisez : **بَيْتُ الْمُعَلِّمِ**",
-        "options": [
-          "Un maison du professeur",
-          "La maison du professeur",
-          "Maison de école",
-          "Un professeur"
-        ],
-        "correct": 1,
-        "explanation": null
-      },
-      {
         "id": "L6Q1",
-        "question": "Quel est le marqueur principal du féminin en arabe ?",
+        "question": "Quel est le marqueur principal du **féminin** en arabe ?",
         "options": [
-          "Un préfixe",
-          "Un suffixe spécial",
-          "La lettre ة (Tā' Marbūta)",
-          "Une préposition"
+          "Le préfixe الـ",
+          "Le Tanwin ـٌ",
+          "La lettre ة (Ta Marbuta)",
+          "La Kasrah ـِ"
         ],
         "correct": 2,
-        "explanation": null
+        "explanation": "La Ta Marbuta (ة) est le marqueur du féminin. مُدَرِّسٌ (prof masc.) → مُدَرِّسَةٌ (prof fém.)."
       },
       {
         "id": "L6Q2",
-        "question": "Lequel de ces mots est **féminin** ?",
+        "question": "Complétez : **مَدْرَسَةٌ ______** (une grande école)",
         "options": [
-          "مَكْتَبٌ",
-          "مُعَلِّمٌ",
-          "مَدْرَسَةٌ",
-          "قَاضٍ"
+          "كَبِيرٌ",
+          "كَبِيرَةٌ",
+          "الْكَبِيرُ",
+          "الْكَبِيرَةُ"
         ],
-        "correct": 2,
-        "explanation": null
+        "correct": 1,
+        "explanation": "مَدْرَسَةٌ est féminin + indéfini → l'adjectif doit être féminin + indéfini : كَبِيرَةٌ (avec ة et Tanwin). كَبِيرٌ = masculin, الْكَبِيرَةُ = défini."
       },
       {
         "id": "L6Q3",
-        "question": "Comment doit-on accorder un adjectif avec un nom féminin ?",
+        "question": "Lequel de ces mots est féminin **sans** Ta Marbuta ?",
         "options": [
-          "L'adjectif reste au masculin",
-          "L'adjectif doit aussi être féminin",
-          "L'adjectif n'a pas d'accord en arabe",
-          "Aucun accord nécessaire"
+          "كِتَابٌ (livre)",
+          "أُمٌّ (mère)",
+          "قَلَمٌ (stylo)",
+          "بَابٌ (porte)"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "أُمٌّ (mère) est féminin par sens (être humain féminin) malgré l'absence de ة. C'est une exception. La majorité des féminins portent la ة."
+      },
+      {
+        "id": "L6Q4",
+        "question": "Quelle phrase est **correctement** accordée ?",
+        "options": [
+          "سَيَّارَةٌ جَمِيلٌ",
+          "سَيَّارَةٌ جَمِيلَةٌ",
+          "سَيَّارَةٌ الْجَمِيلَةُ",
+          "السَّيَّارَةُ جَمِيلَةٌ"
+        ],
+        "correct": 1,
+        "explanation": "سَيَّارَةٌ (fém. indéf.) → adjectif fém. indéf. : جَمِيلَةٌ. Option A : جَمِيلٌ est masculin. Option C : mélange indéf./déf. Option D : nom défini + adj. indéfini = phrase complète (acceptable mais c'est une prédication, pas une qualification)."
       }
     ],
     "flashcards": [
@@ -2323,20 +2299,8 @@
     ],
     "quiz_questions": [
       {
-        "id": "L6Q4",
-        "question": "Complétez : **مَدْرَسَةٌ ________** (une grande école)",
-        "options": [
-          "كَبِيرٌ",
-          "كَبِيرَةٌ",
-          "الْكَبِيرَةُ",
-          "كَبِيرَه"
-        ],
-        "correct": 1,
-        "explanation": null
-      },
-      {
         "id": "L7Q1",
-        "question": "Quel est le démonstratif lointain **masculin** ?",
+        "question": "Quel démonstratif signifie '**celui-là**' (masc. lointain) ?",
         "options": [
           "هَذَا",
           "ذَلِكَ",
@@ -2344,11 +2308,11 @@
           "تِلْكَ"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "ذَلِكَ = celui-là / cela (masc. lointain). هَذَا = celui-ci (masc. proche). تِلْكَ = celle-là (fém. lointain)."
       },
       {
         "id": "L7Q2",
-        "question": "Quel est le démonstratif lointain **féminin** ?",
+        "question": "Complétez : **______ الْمَدْرَسَةُ** (cette école là-bas)",
         "options": [
           "هَذَا",
           "ذَلِكَ",
@@ -2356,19 +2320,31 @@
           "تِلْكَ"
         ],
         "correct": 3,
-        "explanation": null
+        "explanation": "مَدْرَسَةُ est féminin → démonstratif féminin. Lointain → تِلْكَ. هَذِهِ serait 'cette école-ci' (proche)."
       },
       {
         "id": "L7Q3",
-        "question": "Complétez : **_______ بَيْتٌ** (ce là est une maison)",
+        "question": "Traduisez : **تِلْكَ سَيَّارَةٌ جَمِيلَةٌ**",
         "options": [
-          "هَذَا",
-          "ذَلِكَ",
-          "أُولَئِكَ",
-          "تِلْكَ"
+          "Cette voiture-ci est belle",
+          "Cela est une belle voiture",
+          "La belle voiture est là-bas",
+          "C'est une voiture neuve"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "تِلْكَ = cela (fém. lointain) + سَيَّارَةٌ جَمِيلَةٌ = une voiture belle. 'Cela (là-bas) est une belle voiture.'"
+      },
+      {
+        "id": "L7Q4",
+        "question": "Quelle est la différence entre **هَذَا الْبَيْتُ** et **ذَلِكَ الْبَيْتُ** ?",
+        "options": [
+          "L'un est défini, l'autre indéfini",
+          "L'un est proche, l'autre lointain",
+          "L'un est masculin, l'autre féminin",
+          "L'un est au nominatif, l'autre au génitif"
+        ],
+        "correct": 1,
+        "explanation": "هَذَا = proche (cette maison-ci). ذَلِكَ = lointain (cette maison là-bas). Tous deux sont masculins et définis."
       }
     ],
     "flashcards": [
@@ -2644,76 +2620,52 @@
     ],
     "quiz_questions": [
       {
-        "id": "L7Q4",
-        "question": "Traduisez : **تِلْكَ الْمَدْرَسَةُ**",
-        "options": [
-          "Ceci est une école",
-          "Cette école-ci",
-          "Cette école là-bas",
-          "Une grande école"
-        ],
-        "correct": 2,
-        "explanation": null
-      },
-      {
         "id": "L8Q1",
-        "question": "Quelle est la différence entre **هَذَا كِتَابٌ** et **هَذَا الْكِتَابُ** ?",
+        "question": "Quelle est la différence entre **هَذَا الْبَيْتُ جَمِيلٌ** et **هَذَا بَيْتٌ جَمِيلٌ** ?",
         "options": [
           "Aucune différence",
-          "La première est une identification, la deuxième désigne quelque chose",
-          "La première pose une question",
+          "La première identifie (la maison est belle), la seconde désigne (c'est une belle maison)",
+          "La première est une question",
           "La première est féminine"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "Quand le nom est défini (الْبَيْتُ), c'est une identification. Quand il est indéfini (بَيْتٌ), c'est une désignation (c'est un...)."
       },
       {
         "id": "L8Q2",
-        "question": "Comment s'appelle l'adjectif qui modifie un nom en arabe ?",
+        "question": "Où se place l'adjectif en arabe par rapport au nom ?",
         "options": [
-          "Al-Mubtadā'",
-          "Al-Khabar",
-          "Al-Nʿt",
-          "Al-Iḍāfa"
+          "Avant le nom (comme en français)",
+          "Après le nom",
+          "Indifféremment avant ou après",
+          "Entre l'article et le nom"
         ],
-        "correct": 2,
-        "explanation": null
+        "correct": 1,
+        "explanation": "En arabe, l'adjectif (النَّعْت) se place TOUJOURS après le nom (المَنْعُوت). الْبَيْتُ الْكَبِيرُ = la grande maison (litt. la maison la grande)."
       },
       {
         "id": "L8Q3",
-        "question": "Où doit-on placer l'adjectif en arabe ?",
-        "options": [
-          "Avant le nom",
-          "Après le nom",
-          "À côté du nom (peu importe l'ordre)",
-          "Après l'article"
-        ],
-        "correct": 1,
-        "explanation": null
-      },
-      {
-        "id": "L8Q4",
-        "question": "Si le nom est défini, l'adjectif doit-il aussi être défini ?",
-        "options": [
-          "Non, l'adjectif reste indéfini",
-          "Oui, obligatoirement",
-          "C'est optionnel",
-          "Seulement pour les féminins"
-        ],
-        "correct": 1,
-        "explanation": null
-      },
-      {
-        "id": "L8Q5",
-        "question": "Complétez : **الْكِتَابُ ________** (le grand livre)",
+        "question": "Complétez : **الْكِتَابُ ______** (le grand livre)",
         "options": [
           "كَبِيرٌ",
           "الْكَبِيرُ",
           "كَبِيرَةٌ",
-          "كَبِيرَا"
+          "الْكَبِيرَةُ"
         ],
         "correct": 1,
-        "explanation": null
+        "explanation": "Le nom est défini (الْكِتَابُ) + masculin → l'adjectif doit aussi être défini + masculin : الْكَبِيرُ. كَبِيرٌ (indéfini) ferait une phrase prédicative."
+      },
+      {
+        "id": "L8Q4",
+        "question": "L'adjectif doit-il porter الـ si le nom le porte ?",
+        "options": [
+          "Non, l'adjectif reste toujours indéfini",
+          "Oui, obligatoirement, pour la qualification (النَّعْت)",
+          "C'est optionnel",
+          "Seulement pour les adjectifs féminins"
+        ],
+        "correct": 1,
+        "explanation": "Pour la qualification, l'adjectif DOIT s'accorder en définition avec le nom. Nom défini → adjectif défini. Sinon, ça devient une phrase prédicative."
       }
     ],
     "flashcards": [
@@ -3024,20 +2976,20 @@
     ],
     "quiz_questions": [
       {
-        "id": "1",
-        "question": "Quel est le bon accord d'adjectif dans la phrase : 'L'homme ____ est venu' (grand) ?",
+        "id": "L9Q1",
+        "question": "Complétez : **الرَّجُلُ ______** (l'homme grand)",
         "options": [
           "كَبِيرٌ",
           "الْكَبِيرُ",
           "كَبِيرَةٌ",
           "الْكَبِيرَةُ"
         ],
-        "correct": 0,
-        "explanation": "Puisque le nom 'الرَّجُلُ' est défini avec Al-, l'adjectif doit aussi être défini : 'الرَّجُلُ الْكَبِيرُ'. C'est l'accord fondamental du Na't."
+        "correct": 1,
+        "explanation": "الرَّجُلُ est défini (الـ) + masculin → l'adjectif doit être défini + masculin : الْكَبِيرُ. كَبِيرٌ serait indéfini = 'l'homme EST grand' (phrase prédicative)."
       },
       {
-        "id": "2",
-        "question": "Complétez : 'Ceci est mon livre' = '_______ كِتَابِي'",
+        "id": "L9Q2",
+        "question": "Quel pronom démonstratif utiliser : **______ كِتَابِي** (ceci est mon livre) ?",
         "options": [
           "هَذَا",
           "هَذِهِ",
@@ -3045,19 +2997,19 @@
           "ذَاكَ"
         ],
         "correct": 0,
-        "explanation": "'هَذَا' (ceci — masc. sing.) s'accorde avec 'كِتَابِي' (livre — masc. sing.). 'كِتَابِي' force Kasra avant la Yā'."
+        "explanation": "كِتَابِي (livre, masc.) → démonstratif masculin هَذَا. Le pronom possessif ـي force la Kasrah sur le ب mais ne change pas le genre."
       },
       {
-        "id": "3",
-        "question": "Quel pronom attaché exprime 'sa voiture (à elle)' ?",
+        "id": "L9Q3",
+        "question": "Comment dit-on '**sa voiture à elle**' ?",
         "options": [
           "سَيَّارَتُهُ",
           "سَيَّارَتُهَا",
           "سَيَّارَتِي",
           "سَيَّارَتُكَ"
         ],
-        "correct": 0,
-        "explanation": "'سَيَّارَتُهَا' = sa voiture à elle. La Ta Marbuta devient ت avant le pronom. 'ـهَا' = à elle."
+        "correct": 1,
+        "explanation": "ـهَا = à elle (pronom attaché féminin). سَيَّارَتُهَا = sa voiture à elle. ـهُ = à lui, ـي = à moi, ـكَ = à toi."
       }
     ],
     "flashcards": [
@@ -3497,40 +3449,40 @@
     ],
     "quiz_questions": [
       {
-        "id": "4",
-        "question": "Comment dit-on 'J'ai trois livres' en utilisant عِنْدَ ?",
+        "id": "L10Q1",
+        "question": "Comment dit-on '**J'ai trois livres**' ?",
         "options": [
           "كِتَابٌ عِنْدِي ثَلَاثَةٌ",
           "عِنْدِي ثَلَاثَةُ كُتُبٍ",
           "عِنْدِي ثَلَاثَةٌ مِنَ الْكِتَابِ",
           "ثَلَاثَةُ كُتُبٍ عِنْدِي"
         ],
-        "correct": 0,
-        "explanation": "'عِنْدِي' + nombre + pluriel nominatif. Correct : 'عِنْدِي ثَلَاثَةُ كُتُبٍ' ou 'عِنْدِي ثَلَاثُ كُتُبٍ'."
+        "correct": 1,
+        "explanation": "Structure : عِنْدِي + nombre + pluriel génitif. عِنْدِي ثَلَاثَةُ كُتُبٍ. Le nombre et le nom forment une annexion."
       },
       {
-        "id": "5",
-        "question": "Qu'est-ce qui est faux dans cette phrase : 'هَذَا قَلَمٌ جَمِيلَة' ?",
+        "id": "L10Q2",
+        "question": "Qu'est-ce qui est **faux** dans **هَذَا قَلَمٌ جَمِيلَة** ?",
         "options": [
-          "القلم n'existe pas",
-          "L'adjectif 'جَمِيلَة' est féminin mais 'قَلَمٌ' est masculin",
-          "Pas de Al- avant l'adjectif",
+          "Le mot قَلَمٌ n'existe pas",
+          "L'adjectif جَمِيلَة est féminin mais قَلَمٌ est masculin",
+          "Il manque الـ avant l'adjectif",
           "Rien, c'est correct"
         ],
-        "correct": 0,
-        "explanation": "'قَلَمٌ' est masculin singulier, donc l'adjectif doit être 'جَمِيلٌ' (masc.), pas 'جَمِيلَة' (fém.). Accord obligatoire."
+        "correct": 1,
+        "explanation": "قَلَمٌ est masculin, donc l'adjectif doit être masculin : جَمِيلٌ (pas جَمِيلَة). L'accord en genre est obligatoire."
       },
       {
-        "id": "6",
-        "question": "Quel est le pronom isolé équivalent à 'ـهُمْ' (leur) ?",
+        "id": "L10Q3",
+        "question": "Le pronom attaché **ـهُمْ** correspond au pronom isolé :",
         "options": [
-          "هُوَ",
-          "هِيَ",
-          "هُمْ",
-          "نَحْنُ"
+          "هُوَ (lui)",
+          "هِيَ (elle)",
+          "هُمْ (eux)",
+          "نَحْنُ (nous)"
         ],
-        "correct": 0,
-        "explanation": "'ـهُمْ' est un pronom attaché = leur (masc. pluriel). Le pronom isolé équivalent est 'هُمْ' (eux)."
+        "correct": 2,
+        "explanation": "ـهُمْ = leur (masc. pluriel attaché). Le pronom isolé équivalent est هُمْ = eux. Exemple : كِتَابُهُمْ = leur livre."
       }
     ],
     "flashcards": [
@@ -3913,52 +3865,52 @@
     ],
     "quiz_questions": [
       {
-        "id": "7",
-        "question": "Comment traduisez-vous 'Je n'ai pas de stylo' ?",
+        "id": "L11Q1",
+        "question": "Traduisez : '**Je n'ai pas de stylo**'",
         "options": [
           "أَنَا مَا عِنْدِي قَلَمٌ",
           "مَا عِنْدِي قَلَمٌ",
           "قَلَمٌ مَا عِنْدِي",
           "عِنْدِي لَا قَلَمٌ"
         ],
-        "correct": 0,
-        "explanation": "Négation 'مَا' + 'عِنْدِي' + objet nominatif. Correct : 'مَا عِنْدِي قَلَمٌ'. Pas besoin de 'أَنَا' (redondant)."
+        "correct": 1,
+        "explanation": "مَا + عِنْدِي + objet. Pas besoin de أَنَا (redondant car عِنْدِي contient déjà 'moi'). Négation : مَا عِنْدِي قَلَمٌ."
       },
       {
-        "id": "8",
-        "question": "Quelle est la différence entre 'لِي' et 'عِنْدِي' ?",
+        "id": "L11Q2",
+        "question": "Quelle est la différence entre **لِي** et **عِنْدِي** ?",
         "options": [
-          "Aucune, synonymes parfaits",
-          "'لِي' est pour la parenté, 'عِنْدِي' pour possession générale",
-          "'عِنْدِي' est négatif, 'لِي' est positif",
-          "'لِي' est ancien, 'عِنْدِي' est moderne"
+          "Aucune, ce sont des synonymes parfaits",
+          "لِي pour la parenté/lien intime, عِنْدِي pour la possession générale",
+          "عِنْدِي est négatif, لِي est positif",
+          "لِي est ancien, عِنْدِي est moderne"
         ],
-        "correct": 0,
-        "explanation": "'لِي أَخٌ' = J'ai un frère (familial). 'عِنْدِي سَيَّارَةٌ' = J'ai une voiture (possession)."
+        "correct": 1,
+        "explanation": "لِي أَخٌ = j'ai un frère (lien familial). عِنْدِي سَيَّارَةٌ = j'ai une voiture (possession matérielle)."
       },
       {
-        "id": "9",
-        "question": "Comment accorde-t-on les couleurs comme adjectif ? 'Voiture rouge' = ?",
+        "id": "L11Q3",
+        "question": "Complétez : **سَيَّارَةٌ ______** (une voiture rouge)",
         "options": [
-          "سَيَّارَةٌ حَمْرَاءٌ",
-          "سَيَّارَةٌ أَحْمَرٌ",
-          "سَيَّارَة الحمراء",
-          "سَيَّارَةٌ حَمْرَاءٌ أَحْمَرٌ"
+          "حَمْرَاءُ",
+          "أَحْمَرُ",
+          "حَمْرَاءٌ",
+          "الْحَمْرَاءُ"
         ],
-        "correct": 0,
-        "explanation": "Les couleurs comme adjectif suivent les règles de Na't. Féminin : 'حَمْرَاءٌ'. Défini : 'السَّيَّارَةُ الْحَمْرَاءُ'."
+        "correct": 2,
+        "explanation": "سَيَّارَةٌ est fém. + indéfini → adjectif couleur fém. + indéfini : حَمْرَاءٌ (avec Tanwin). أَحْمَرُ = masculin. الْحَمْرَاءُ = défini."
       },
       {
-        "id": "10",
-        "question": "Complétez : 'Ton professeur est ici' = 'مُدَرِّسُكَ _______'",
+        "id": "L11Q4",
+        "question": "Complétez : **مُدَرِّسُكَ ______** (ton professeur est ici)",
         "options": [
           "هُنَّ",
           "هُوَ هُنَا",
           "هُنَا",
           "هُمْ هُنَا"
         ],
-        "correct": 0,
-        "explanation": "'مُدَرِّسُكَ' = ton prof (masc. sing.). Phrase : 'مُدَرِّسُكَ هُنَا' (ton prof est ici)."
+        "correct": 2,
+        "explanation": "مُدَرِّسُكَ = ton prof (masc. sing.). هُنَا = ici (adverbe de lieu). Pas besoin du pronom هُوَ car le sujet est déjà mentionné."
       }
     ],
     "flashcards": [
@@ -4355,40 +4307,40 @@
     ],
     "quiz_questions": [
       {
-        "id": "1",
-        "question": "Conjuguez le verbe 'aller' au passé (3e pers. masc. sing.) : ?",
+        "id": "L12Q1",
+        "question": "Quelle est la forme du passé simple (3ème pers. masc.) de '**aller**' ?",
         "options": [
-          "ذِهَابٌ",
-          "ذَهَبَ",
-          "يَذْهَبُ",
-          "ذَهَابًا"
+          "ذِهَابٌ (nom verbal)",
+          "ذَهَبَ (il est allé)",
+          "يَذْهَبُ (il va)",
+          "ذَهَابًا (en allant)"
         ],
-        "correct": 0,
-        "explanation": "'ذَهَبَ' est la forme passée simple masculine singulière (racine ذ-ه-ب + Fatha). Base pour tous les conjugués."
+        "correct": 1,
+        "explanation": "ذَهَبَ = il est allé (passé simple, racine ذ-ه-ب + pattern fa'ala). ذِهَابٌ est le nom verbal (masdar), يَذْهَبُ est le présent."
       },
       {
-        "id": "2",
-        "question": "Féminisez le verbe passé : ذَهَبَ → ? (elle est allée)",
+        "id": "L12Q2",
+        "question": "Comment former le féminin du verbe passé **ذَهَبَ** ?",
         "options": [
           "ذَهَبٌ",
           "ذَهَبَةٌ",
           "ذَهَبَتْ",
           "ذِهَابَتٌ"
         ],
-        "correct": 0,
-        "explanation": "Féminin = ajouter 'ـتْ' à la fin. 'ذَهَبَ' → 'ذَهَبَتْ' (elle est allée)."
+        "correct": 2,
+        "explanation": "On ajoute ـتْ (ta sakina) à la fin : ذَهَبَ → ذَهَبَتْ (elle est allée). ذَهَبٌ = or (nom, pas un verbe !)."
       },
       {
-        "id": "3",
-        "question": "Construisez la phrase : 'Le prof est sorti de la classe' = ?",
+        "id": "L12Q3",
+        "question": "Traduisez : '**Le professeur est sorti de la classe**'",
         "options": [
           "الْمُدَرِّسُ خَرَجَ مِنَ الْفَصْلِ",
           "خَرَجَ الْمُدَرِّسُ مِنَ الْفَصْلِ",
           "مِنَ الْفَصْلِ خَرَجَ الْمُدَرِّسُ",
           "الْفَصْلُ خَرَجَ الْمُدَرِّسُ"
         ],
-        "correct": 0,
-        "explanation": "Ordre arabe (Jumla Fi'liyya) : Verbe + Sujet. 'خَرَجَ' (il a sorti) + 'الْمُدَرِّسُ' (le prof — sujet Marfū')."
+        "correct": 1,
+        "explanation": "En arabe, l'ordre de la phrase verbale est : Verbe + Sujet (+ complément). خَرَجَ الْمُدَرِّسُ مِنَ الْفَصْلِ."
       }
     ],
     "flashcards": [
@@ -4642,40 +4594,40 @@
     ],
     "quiz_questions": [
       {
-        "id": "4",
-        "question": "Quel est le pluriel régulier masculin de 'مُدَرِّس' au nominatif ?",
+        "id": "L13Q1",
+        "question": "Quel est le pluriel régulier masculin de **مُدَرِّسٌ** au nominatif ?",
         "options": [
           "مُدَرِّسٌ",
           "مُدَرِّسُونَ",
           "مُدَرِّسِينَ",
           "مُدَرِّسَاتٌ"
         ],
-        "correct": 0,
-        "explanation": "Pluriel régulier masc. (Jam' al-Mudhakkar as-Sālim) au nominatif = ـُونَ. 'مُدَرِّسُونَ' (les professeurs)."
+        "correct": 1,
+        "explanation": "Pluriel régulier masc. au nominatif = ـُونَ. مُدَرِّسُونَ (les professeurs). Au cas Majrur/Mansub : مُدَرِّسِينَ."
       },
       {
-        "id": "5",
-        "question": "Quel est le pluriel régulier féminin de 'طَالِبَة' ?",
+        "id": "L13Q2",
+        "question": "Quel est le pluriel régulier féminin de **طَالِبَةٌ** ?",
         "options": [
           "طَالِبَةٌ",
           "طَالِبَاتٌ",
           "طَالِبِينَ",
           "طُلَّابٌ"
         ],
-        "correct": 0,
-        "explanation": "Pluriel régulier fém. (Jam' al-Mu'annath as-Sālim) = ـَاتٌ. 'طَالِبَاتٌ' (les étudiantes) — remplace ـَة par ـَاتٌ."
+        "correct": 1,
+        "explanation": "Pluriel régulier fém. = ـَاتٌ. طَالِبَاتٌ (les étudiantes). La Ta Marbuta disparaît. طُلَّابٌ est le pluriel brisé de طَالِبٌ (masc.)."
       },
       {
-        "id": "6",
-        "question": "Traduisez le pointeur pluriel proche 'هَؤُلَاءِ' :",
+        "id": "L13Q3",
+        "question": "Que signifie **هَؤُلَاءِ** ?",
         "options": [
-          "celui-ci (sing.)",
-          "ceux-ci, ces (pl. proche)",
-          "ceux-là (pl. lointain)",
-          "cela"
+          "Celui-ci (singulier)",
+          "Ceux-ci / celles-ci (pluriel proche)",
+          "Ceux-là (pluriel lointain)",
+          "Celui-là (singulier lointain)"
         ],
-        "correct": 0,
-        "explanation": "'هَؤُلَاءِ' = ceux-ci / ces (pluriel humain proche). Exemple : 'هَؤُلَاءِ طُلَّابٌ' (Ce sont des étudiants)."
+        "correct": 1,
+        "explanation": "هَؤُلَاءِ = ceux-ci / ces (pluriel humain proche). Exemple : هَؤُلَاءِ طُلَّابٌ (ce sont des étudiants). Pour le lointain : أُولَئِكَ."
       }
     ],
     "flashcards": [
@@ -5009,44 +4961,44 @@
     ],
     "quiz_questions": [
       {
-        "id": "7",
-        "question": "Traduisez le pointeur pluriel lointain 'أُولَئِكَ' :",
+        "id": "L14Q1",
+        "question": "Que signifie **أُولَئِكَ** ?",
         "options": [
-          "celui-là (sing.)",
-          "ceux-ci (pl. proche)",
-          "ceux-là, ces (pl. lointain)",
-          "aucun"
+          "Celui-là (singulier)",
+          "Ceux-ci (pluriel proche)",
+          "Ceux-là / celles-là (pluriel lointain)",
+          "Ce sont des"
         ],
-        "correct": 0,
-        "explanation": "'أُولَئِكَ' = ceux-là / ces (pluriel humain lointain). Wāw silencieux. Exemple : 'أُولَئِكَ آبَاءُ الطُّلَّابِ' (Ceux-là sont les pères)."
+        "correct": 2,
+        "explanation": "أُولَئِكَ = ceux-là / ces (pluriel humain lointain). Opposé de هَؤُلَاءِ (proche). Contient un Waw silencieux."
       },
       {
-        "id": "8",
-        "question": "Quel est le pluriel brisé du mot 'وَلَد' (garçon) ?",
+        "id": "L14Q2",
+        "question": "Quel est le **pluriel brisé** de **وَلَدٌ** (garçon) ?",
         "options": [
           "وَلَدُونَ",
           "وَلَدِينَ",
           "أَوْلَادٌ",
           "وَلَدَاتٌ"
         ],
-        "correct": 0,
-        "explanation": "Pluriel brisé de 'وَلَد' = 'أَوْلَادٌ' (garçons). Changement interne (و→أ, d→d demeure)."
+        "correct": 2,
+        "explanation": "أَوْلَادٌ est le pluriel brisé (changement interne). Les pluriels brisés ne suivent pas les patterns réguliers ـُونَ ou ـَاتٌ."
       },
       {
-        "id": "9",
-        "question": "Conjuguez le verbe féminin pluriel 'elles sont allées' : ?",
+        "id": "L14Q3",
+        "question": "Conjuguez '**elles sont allées**' :",
         "options": [
           "ذَهَبُنَّ",
           "ذَهَبْنَ",
           "ذَهَبَتْنَ",
           "ذَهَبَتِينَ"
         ],
-        "correct": 0,
-        "explanation": "Pluriel féminin passé = verbe + 'ـْنَ' (Nūn an-Niswah). 'ذَهَبْنَ' (elles sont allées)."
+        "correct": 1,
+        "explanation": "Pluriel féminin passé = verbe + ـْنَ (Nun an-Niswah avec sukun). ذَهَبْنَ = elles sont allées."
       },
       {
-        "id": "10",
-        "question": "Complétez : 'Nous sommes sortis' = 'نَحْنُ _______'",
+        "id": "L14Q4",
+        "question": "Traduisez : **نَحْنُ خَرَجْنَا** (nous sommes sortis)",
         "options": [
           "خَرَجْنَا",
           "خَرَجُونَ",
@@ -5054,7 +5006,7 @@
           "خَرَجَتْ"
         ],
         "correct": 0,
-        "explanation": "'نَحْنُ خَرَجْنَا' = nous sommes sortis. Radicale du verbe + ـْنَا (nous — pronom attaché pluriel)."
+        "explanation": "خَرَجْنَا = nous sommes sortis. Le suffixe ـْنَا = 'nous' (1ère pers. pluriel). S'utilise aussi bien pour masc. que fém."
       }
     ],
     "flashcards": [
@@ -5341,124 +5293,40 @@
     ],
     "quiz_questions": [
       {
-        "id": "1",
-        "question": "Quel est le bon accord d'adjectif dans la phrase : 'L'homme ____ est venu' (grand) ?",
-        "options": [
-          "كَبِيرٌ",
-          "الْكَبِيرُ",
-          "كَبِيرَةٌ",
-          "الْكَبِيرَةُ"
-        ],
-        "correct": 0,
-        "explanation": "Puisque le nom 'الرَّجُلُ' est défini avec Al-, l'adjectif doit aussi être défini : 'الرَّجُلُ الْكَبِيرُ'. C'est l'accord fondamental du Na't."
-      },
-      {
-        "id": "2",
-        "question": "Complétez : 'Ceci est mon livre' = '_______ كِتَابِي'",
+        "id": "L15Q1",
+        "question": "Complétez avec le bon démonstratif : **______ الرِّجَالُ أَطِبَّاءُ** (ces hommes là-bas sont médecins)",
         "options": [
           "هَذَا",
-          "هَذِهِ",
-          "تِلْكَ",
-          "ذَاكَ"
+          "هَؤُلَاءِ",
+          "أُولَئِكَ",
+          "تِلْكَ"
         ],
-        "correct": 0,
-        "explanation": "'هَذَا' (ceci — masc. sing.) s'accorde avec 'كِتَابِي' (livre — masc. sing.). 'كِتَابِي' force Kasra avant la Yā'."
+        "correct": 2,
+        "explanation": "Pluriel humain + lointain = أُولَئِكَ. هَؤُلَاءِ serait pour le proche. هَذَا et تِلْكَ sont singuliers."
       },
       {
-        "id": "3",
-        "question": "Quel pronom attaché exprime 'sa voiture (à elle)' ?",
+        "id": "L15Q2",
+        "question": "Quel est le pluriel brisé de **كِتَابٌ** ?",
         "options": [
-          "سَيَّارَتُهُ",
-          "سَيَّارَتُهَا",
-          "سَيَّارَتِي",
-          "سَيَّارَتُكَ"
+          "كِتَابُونَ",
+          "كِتَابَاتٌ",
+          "كُتُبٌ",
+          "كِتَابَيْنِ"
         ],
-        "correct": 0,
-        "explanation": "'سَيَّارَتُهَا' = sa voiture à elle. La Ta Marbuta devient ت avant le pronom. 'ـهَا' = à elle."
+        "correct": 2,
+        "explanation": "كُتُبٌ est le pluriel brisé de كِتَابٌ. Les objets inanimés utilisent souvent des pluriels brisés."
       },
       {
-        "id": "4",
-        "question": "Comment dit-on 'J'ai trois livres' en utilisant عِنْدَ ?",
+        "id": "L15Q3",
+        "question": "Conjuguez '**ils sont allés**' au passé :",
         "options": [
-          "كِتَابٌ عِنْدِي ثَلَاثَةٌ",
-          "عِنْدِي ثَلَاثَةُ كُتُبٍ",
-          "عِنْدِي ثَلَاثَةٌ مِنَ الْكِتَابِ",
-          "ثَلَاثَةُ كُتُبٍ عِنْدِي"
+          "ذَهَبُوا",
+          "ذَهَبَتْ",
+          "ذَهَبْنَ",
+          "ذَهَبْنَا"
         ],
         "correct": 0,
-        "explanation": "'عِنْدِي' + nombre + pluriel nominatif. Correct : 'عِنْدِي ثَلَاثَةُ كُتُبٍ' ou 'عِنْدِي ثَلَاثُ كُتُبٍ'."
-      },
-      {
-        "id": "5",
-        "question": "Qu'est-ce qui est faux dans cette phrase : 'هَذَا قَلَمٌ جَمِيلَة' ?",
-        "options": [
-          "القلم n'existe pas",
-          "L'adjectif 'جَمِيلَة' est féminin mais 'قَلَمٌ' est masculin",
-          "Pas de Al- avant l'adjectif",
-          "Rien, c'est correct"
-        ],
-        "correct": 0,
-        "explanation": "'قَلَمٌ' est masculin singulier, donc l'adjectif doit être 'جَمِيلٌ' (masc.), pas 'جَمِيلَة' (fém.). Accord obligatoire."
-      },
-      {
-        "id": "6",
-        "question": "Quel est le pronom isolé équivalent à 'ـهُمْ' (leur) ?",
-        "options": [
-          "هُوَ",
-          "هِيَ",
-          "هُمْ",
-          "نَحْنُ"
-        ],
-        "correct": 0,
-        "explanation": "'ـهُمْ' est un pronom attaché = leur (masc. pluriel). Le pronom isolé équivalent est 'هُمْ' (eux)."
-      },
-      {
-        "id": "7",
-        "question": "Comment traduisez-vous 'Je n'ai pas de stylo' ?",
-        "options": [
-          "أَنَا مَا عِنْدِي قَلَمٌ",
-          "مَا عِنْدِي قَلَمٌ",
-          "قَلَمٌ مَا عِنْدِي",
-          "عِنْدِي لَا قَلَمٌ"
-        ],
-        "correct": 0,
-        "explanation": "Négation 'مَا' + 'عِنْدِي' + objet nominatif. Correct : 'مَا عِنْدِي قَلَمٌ'. Pas besoin de 'أَنَا' (redondant)."
-      },
-      {
-        "id": "8",
-        "question": "Quelle est la différence entre 'لِي' et 'عِنْدِي' ?",
-        "options": [
-          "Aucune, synonymes parfaits",
-          "'لِي' est pour la parenté, 'عِنْدِي' pour possession générale",
-          "'عِنْدِي' est négatif, 'لِي' est positif",
-          "'لِي' est ancien, 'عِنْدِي' est moderne"
-        ],
-        "correct": 0,
-        "explanation": "'لِي أَخٌ' = J'ai un frère (familial). 'عِنْدِي سَيَّارَةٌ' = J'ai une voiture (possession)."
-      },
-      {
-        "id": "9",
-        "question": "Comment accorde-t-on les couleurs comme adjectif ? 'Voiture rouge' = ?",
-        "options": [
-          "سَيَّارَةٌ حَمْرَاءٌ",
-          "سَيَّارَةٌ أَحْمَرٌ",
-          "سَيَّارَة الحمراء",
-          "سَيَّارَةٌ حَمْرَاءٌ أَحْمَرٌ"
-        ],
-        "correct": 0,
-        "explanation": "Les couleurs comme adjectif suivent les règles de Na't. Féminin : 'حَمْرَاءٌ'. Défini : 'السَّيَّارَةُ الْحَمْرَاءُ'."
-      },
-      {
-        "id": "10",
-        "question": "Complétez : 'Ton professeur est ici' = 'مُدَرِّسُكَ _______'",
-        "options": [
-          "هُنَّ",
-          "هُوَ هُنَا",
-          "هُنَا",
-          "هُمْ هُنَا"
-        ],
-        "correct": 0,
-        "explanation": "'مُدَرِّسُكَ' = ton prof (masc. sing.). Phrase : 'مُدَرِّسُكَ هُنَا' (ton prof est ici)."
+        "explanation": "Le suffixe ـُوا (Waw al-Jama'ah) pour le pluriel masculin passé. ذَهَبُوا = ils sont allés. ذَهَبْنَ = elles sont allées."
       }
     ],
     "flashcards": [
@@ -5760,40 +5628,40 @@
     ],
     "quiz_questions": [
       {
-        "id": "1",
-        "question": "Comment est-ce qu'un objet inanimé pluriel s'accorde en arabe ?",
+        "id": "L16Q1",
+        "question": "Comment un pluriel d'**objets inanimés** s'accorde-t-il ?",
         "options": [
-          "Comme un nom masculin singulier",
-          "Comme un nom féminin singulier",
-          "Comme un nom masculin pluriel",
+          "Comme un masculin singulier",
+          "Comme un féminin singulier",
+          "Comme un masculin pluriel",
           "Sans accord spécial"
         ],
-        "correct": 0,
-        "explanation": "Règle d'or : ghayr al-'āqil (inanimé) = accord féminin singulier. Exemple : الْكُتُبُ جَدِيدَةٌ (Les livres sont nouveaux, avec l'adjectif au féminin singulier جَدِيدَةٌ)."
+        "correct": 1,
+        "explanation": "Règle d'or : les objets inanimés au pluriel = accord féminin singulier. الْكُتُبُ جَدِيدَةٌ (les livres sont neufs — accord fém. sing.)."
       },
       {
-        "id": "2",
-        "question": "Quel pronom utilises-tu pour un pluriel d'objets ?",
+        "id": "L16Q2",
+        "question": "Quel pronom utiliser pour désigner **الْأَقْلَامُ** (les stylos) ?",
         "options": [
           "هُوَ",
           "هِيَ",
           "هُمْ",
-          "هُنّ"
+          "هُنَّ"
         ],
-        "correct": 0,
-        "explanation": "Pour un pluriel inanimé, le pronom est هِيَ (elle-féminin singulier), même si grammaticalement c'est le pluriel."
+        "correct": 1,
+        "explanation": "Pluriel inanimé → pronom هِيَ (féminin singulier). هِيَ جَدِيدَةٌ = ils/elles sont neufs (litt. elle est neuve)."
       },
       {
-        "id": "3",
-        "question": "Complète : تِلْكَ الْأَقْلَامُ ______ (جَدِيدٌ)",
+        "id": "L16Q3",
+        "question": "Complétez : **تِلْكَ الْأَقْلَامُ ______** (ces stylos sont neufs)",
         "options": [
           "جَدِيدٌ",
           "جَدِيدَةٌ",
-          "جَدِيدُون",
-          "جَدِيدَان"
+          "جُدُدٌ",
+          "الْجَدِيدَةُ"
         ],
-        "correct": 0,
-        "explanation": "Pluriel inanimé → féminin singulier. جَدِيدَةٌ est la bonne forme."
+        "correct": 1,
+        "explanation": "Pluriel inanimé → féminin singulier : جَدِيدَةٌ. جَدِيدٌ = masculin. جُدُدٌ = pluriel brisé (non standard ici)."
       }
     ],
     "flashcards": [
@@ -6121,40 +5989,40 @@
     ],
     "quiz_questions": [
       {
-        "id": "4",
-        "question": "Quel cas grammatical suit un adverbe de lieu (Zarf al-Makān) ?",
+        "id": "L17Q1",
+        "question": "Quel **cas** prend le nom après un adverbe de lieu (أَمَامَ، فَوْقَ...) ?",
         "options": [
           "Nominatif (Dammah)",
           "Accusatif (Fathah)",
           "Génitif (Kasrah)",
-          "Aucun cas"
+          "Aucun changement"
         ],
-        "correct": 0,
-        "explanation": "L'adverbe fonctionne comme mudāf, donc le nom qui suit est toujours au génitif (Kasrah). Exemple : أَمَامَ الْمَدْرَسَةِ (devant l'école)."
+        "correct": 2,
+        "explanation": "L'adverbe de lieu fonctionne comme Mudaf → le nom qui suit est au génitif (Kasrah). أَمَامَ الْبَيْتِ (devant la maison)."
       },
       {
-        "id": "5",
-        "question": "Complète : الْكِتَابُ ______ الرِّفِّ (الْكِتَابُ فَوْقَ...)",
+        "id": "L17Q2",
+        "question": "Complétez : **الْكِتَابُ ______ الرِّفِّ** (le livre est sur l'étagère)",
         "options": [
           "أَمَامَ",
           "خَلْفَ",
           "فَوْقَ",
           "تَحْتَ"
         ],
-        "correct": 0,
-        "explanation": "فَوْقَ = au-dessus/sur. L'adverbe est suivi du génitif : فَوْقَ الرِّفِّ."
+        "correct": 2,
+        "explanation": "فَوْقَ = au-dessus de / sur. أَمَامَ = devant. خَلْفَ = derrière. تَحْتَ = sous."
       },
       {
-        "id": "6",
-        "question": "Quel cas grammatical prend le nom après كَمْ (Combien) ?",
+        "id": "L17Q3",
+        "question": "Après **كَمْ** (combien), quel cas prend le nom ?",
         "options": [
           "Nominatif (Dammah)",
-          "Accusatif (Fathah/Fathatayn)",
+          "Accusatif singulier (Fathatayn)",
           "Génitif (Kasrah)",
-          "Aucun cas"
+          "Pas de règle fixe"
         ],
-        "correct": 0,
-        "explanation": "Après كَمْ, le nom est singulier accusatif (Fathatayn : ـًا). Exemple : كَمْ كِتَابًا ؟"
+        "correct": 1,
+        "explanation": "Après كَمْ interrogatif, le nom est au singulier accusatif indéfini (Fathatayn). كَمْ كِتَابًا؟ = Combien de livres ?"
       }
     ],
     "flashcards": [
@@ -6456,8 +6324,8 @@
     ],
     "quiz_questions": [
       {
-        "id": "7",
-        "question": "Quelle est la formation du duel nominatif pour نَجْمٌ (étoile masc.) ?",
+        "id": "L18Q1",
+        "question": "Quel est le duel **nominatif** de **نَجْمٌ** (étoile) ?",
         "options": [
           "نَجْمَانِ",
           "نُجُومٌ",
@@ -6465,43 +6333,43 @@
           "نَجْمٌ وَنَجْمٌ"
         ],
         "correct": 0,
-        "explanation": "Duel nominatif = ـَانِ. نَجْمَانِ (deux étoiles). L'accusatif/génitif serait نَجْمَيْنِ."
+        "explanation": "Duel nominatif = ـَانِ. نَجْمَانِ (deux étoiles). Au génitif/accusatif ce serait نَجْمَيْنِ (ـَيْنِ)."
       },
       {
-        "id": "8",
-        "question": "Complète : هَاتَانِ الطَّاوِلَتَانِ ______ (كَبِيرٌ)",
+        "id": "L18Q2",
+        "question": "Complétez : **هَاتَانِ الطَّاوِلَتَانِ ______** (ces deux tables sont grandes)",
         "options": [
           "كَبِيرَةٌ",
           "كَبِيرَتَانِ",
           "كَبِيرَتَيْنِ",
-          "كَبِيرُون"
+          "كَبِيرُونَ"
         ],
-        "correct": 0,
-        "explanation": "Adjectif duel féminin nominatif = ـَتَانِ. كَبِيرَتَانِ (deux grandes tables)."
+        "correct": 1,
+        "explanation": "Adjectif duel féminin nominatif = ـَتَانِ. كَبِيرَتَانِ s'accorde avec le nom duel féminin nominatif."
       },
       {
-        "id": "9",
-        "question": "Quel est le démonstratif duel féminin ?",
+        "id": "L18Q3",
+        "question": "Quel est le démonstratif **duel féminin** ?",
         "options": [
           "هَذَانِ",
           "هَاتَانِ",
           "تِلْكَ",
-          "ذَاتِ"
+          "هَؤُلَاءِ"
         ],
-        "correct": 0,
-        "explanation": "هَاتَانِ = ce/ces deux-ci (féminin duel). هَذَانِ est le masculin duel."
+        "correct": 1,
+        "explanation": "هَاتَانِ = ces deux-ci (féminin duel). هَذَانِ = ces deux-ci (masculin duel). تِلْكَ = singulier fém. lointain."
       },
       {
-        "id": "10",
-        "question": "Pourquoi utilise-t-on la Shibhu Jumla après un adverbe de lieu ?",
+        "id": "L18Q4",
+        "question": "Qu'est-ce qu'une **Shibhu Jumla** (شِبْهُ جُمْلَة) ?",
         "options": [
-          "Pour former une phrase verbale complète",
-          "Pour créer une quasi-phrase nominale qui fonctionne comme modifieur",
-          "Pour montrer le pluriel du nom",
-          "Pour indiquer le temps"
+          "Une phrase verbale complète",
+          "Une quasi-phrase (préposition/adverbe + nom) qui agit comme modifieur",
+          "Un pluriel irrégulier",
+          "Un indicateur de temps"
         ],
-        "correct": 0,
-        "explanation": "Shibhu Jumla (adverbe + nom génitif) = construction nominale qui agit comme phrase, exprimant le lieu de manière compacte."
+        "correct": 1,
+        "explanation": "Shibhu Jumla = quasi-phrase. Préposition ou adverbe + nom génitif. Exemple : فِي الْبَيْتِ (dans la maison) peut qualifier un nom."
       }
     ],
     "flashcards": [
@@ -6797,64 +6665,52 @@
     ],
     "quiz_questions": [
       {
-        "id": "1",
-        "question": "Quelle est la règle d'or du comptage en arabe ?",
+        "id": "L19Q1",
+        "question": "Pour compter des noms **masculins** (3-10), le nombre est :",
         "options": [
-          "Le nombre s'accorde toujours avec le genre du nom",
-          "Pour compter des noms MASCULINS, utilise un nombre FÉMININ (Mukhālafah)",
-          "Le nombre ne s'accorde pas avec le genre",
-          "Tous les nombres sont masculins"
+          "Masculin (sans ة), en accord",
+          "Féminin (avec ة), par Mukhālafah (opposition)",
+          "Invariable",
+          "Au duel"
         ],
-        "correct": 0,
-        "explanation": "Mukhālafah = opposition/contraste des genres. Nom masculin plural → nombre féminin. Exemple : خَمْسَةُ أَقْلَامٍ (cinq stylos masc. — nombre fém.)."
+        "correct": 1,
+        "explanation": "Règle de Mukhālafah : nom masculin → nombre féminin (avec ة). خَمْسَةُ كُتُبٍ = cinq livres (كُتُبٍ masc. → خَمْسَةُ avec ة)."
       },
       {
-        "id": "2",
-        "question": "Complète : عِنْدِي ______ كِتَابٍ (I have 5 books)",
+        "id": "L19Q2",
+        "question": "Comment dit-on '**cinq livres**' ?",
         "options": [
-          "خَمْسٌ",
-          "خَمْسَةٌ",
-          "خَمْسُ",
-          "خَمْسَيْنِ"
+          "خَمْسٌ كُتُبٍ",
+          "خَمْسَةُ كُتُبٍ",
+          "خَمْسُ كُتُبٍ",
+          "خَمْسَيْنِ كُتُبٍ"
         ],
-        "correct": 0,
-        "explanation": "خَمْسَةٌ est la forme féminine pour compter des noms masculins pluriels."
+        "correct": 1,
+        "explanation": "كُتُبٍ (livres = masc. pluriel) → nombre féminin : خَمْسَةُ (avec ة). Le nom est au génitif (annexion)."
       },
       {
-        "id": "3",
-        "question": "Pour compter des noms FÉMININS, quel type de nombre utilises-tu ?",
+        "id": "L19Q3",
+        "question": "Pour compter des noms **féminins** (3-10), le nombre est :",
         "options": [
-          "Nombre féminin (avec ة)",
-          "Nombre masculin (sans ة)",
-          "Nombre duel",
-          "Aucun accord spécial"
+          "Féminin (avec ة)",
+          "Masculin (sans ة), par Mukhālafah inversée",
+          "Au duel",
+          "Invariable"
         ],
-        "correct": 0,
-        "explanation": "L'inverse : nom féminin → nombre masculin. Exemple : خَمْسُ طَالِبَاتٍ (cinq étudiantes fém. — nombre masc.)."
+        "correct": 1,
+        "explanation": "L'inverse : nom féminin → nombre masculin (sans ة). خَمْسُ طَالِبَاتٍ = cinq étudiantes (طَالِبَاتٍ fém. → خَمْسُ sans ة)."
       },
       {
-        "id": "4",
-        "question": "Complète : لَدَيّ ______ طَالِبَاتٍ (I have 6 female students)",
-        "options": [
-          "سِتَّةٌ",
-          "سِتُّ",
-          "سِتَّتَانِ",
-          "سِتَّيْنِ"
-        ],
-        "correct": 0,
-        "explanation": "سِتُّ est la forme masculine pour compter des noms féminins pluriels (طَالِبَاتٍ)."
-      },
-      {
-        "id": "5",
-        "question": "Quel est le cas grammatical du nom après le nombre (3-10) ?",
+        "id": "L19Q4",
+        "question": "Quel **cas** prend le nom après le nombre (3-10) ?",
         "options": [
           "Nominatif (Dammah)",
           "Accusatif (Fathah)",
-          "Génitif (Kasrah)",
-          "Aucun cas"
+          "Génitif (Kasrah) — car c'est une annexion",
+          "Pas de cas fixe"
         ],
-        "correct": 0,
-        "explanation": "Le nom après le nombre est TOUJOURS au génitif (Kasrah) car le nombre fonctionne comme Mudāf."
+        "correct": 2,
+        "explanation": "Le nombre + nom = annexion (Idafa). Le nom (Mudaf ilayhi) est TOUJOURS au génitif pluriel. خَمْسَةُ كُتُبٍ."
       }
     ],
     "flashcards": [
@@ -7159,64 +7015,52 @@
     ],
     "quiz_questions": [
       {
-        "id": "6",
-        "question": "Quelle est la forme spéciale du nombre 8 féminin ?",
+        "id": "L20Q1",
+        "question": "Comment dit-on '**huit étudiantes**' ?",
         "options": [
-          "ثَمَانِيَةٌ",
-          "ثَمَانِي",
-          "ثَمَانِيَان",
-          "ثَمَانِيُون"
+          "ثَمَانِيَةٌ طَالِبَاتٍ",
+          "ثَمَانِي طَالِبَاتٍ",
+          "ثَمَانِيَان طَالِبَاتٍ",
+          "ثَمَانِيُون طَالِبَاتٍ"
         ],
-        "correct": 0,
-        "explanation": "ثَمَانِي (avec ـي, pas ـة) pour compter des noms féminins. Prononcé : Thamānī."
+        "correct": 1,
+        "explanation": "Nom féminin → nombre masculin (sans ة). ثَمَانِي (forme masculine de 8) + طَالِبَاتٍ au génitif."
       },
       {
-        "id": "7",
-        "question": "Quelle est la différence de prononciation entre عَشَرَةٌ et عَشْرُ ?",
+        "id": "L20Q2",
+        "question": "Quelle est la différence entre **عَشَرَةٌ** et **عَشْرُ** ?",
         "options": [
-          "Aucune différence",
-          "عَشَرَةٌ a fathah sur le Shin, عَشْرُ a sukūn",
-          "عَشَرَةٌ a kasrah, عَشْرُ a dammah",
-          "Seulement la voyelle finale diffère"
+          "Aucune, ce sont des variantes régionales",
+          "عَشَرَةٌ (avec ة et fathah) pour masc., عَشْرُ (sans ة, sukun) pour fém.",
+          "عَشَرَةٌ avec kasrah, عَشْرُ avec dammah",
+          "Seule la voyelle finale diffère"
         ],
-        "correct": 0,
-        "explanation": "عَشَرَةٌ (fem. number form, avec ة et fathah) vs عَشْرُ (masc. number form, avec sukūn sur SH)."
+        "correct": 1,
+        "explanation": "عَشَرَةٌ (avec ة, fathah sur shin) = pour compter des noms masculins. عَشْرُ (sans ة, sukun sur shin) = pour compter des noms féminins."
       },
       {
-        "id": "8",
-        "question": "Qu'est-ce que Mamnu' min as-Sarf (diptote) ?",
+        "id": "L20Q3",
+        "question": "Qu'est-ce qu'un **diptote** (Mamnu' min as-Sarf) ?",
         "options": [
-          "Un nom qui prend toujours le Tanwīn",
-          "Un nom qui ne prend JAMAIS le Tanwīn",
-          "Un nom qui prend le Tanwīn optionnel",
-          "Un nom qui change de sens avec le Tanwīn"
+          "Un nom qui prend toujours le Tanwin",
+          "Un nom qui ne prend JAMAIS le Tanwin",
+          "Un nom qui prend le Tanwin optionnel",
+          "Un nom invariable"
         ],
-        "correct": 0,
-        "explanation": "Mamnu' min as-Sarf = Interdit de flexion. Les diptotes ne prennent JAMAIS le Tanwīn."
+        "correct": 1,
+        "explanation": "Les diptotes (noms interdits de Tanwin) ne prennent jamais ـٌ/ـً/ـٍ et leur génitif prend Fathah au lieu de Kasrah."
       },
       {
-        "id": "9",
-        "question": "Après une préposition, un diptote prend quel cas au lieu de génitif normal ?",
+        "id": "L20Q4",
+        "question": "Quel cas prend un **diptote** après une préposition ?",
         "options": [
           "Nominatif (Dammah)",
-          "Accusatif (Fathah)",
-          "Aucun cas",
-          "Génitif normal (Kasrah)"
+          "Fathah (au lieu de Kasrah)",
+          "Kasrah normale",
+          "Génitif normal"
         ],
-        "correct": 0,
-        "explanation": "Après préposition, les diptotes prennent Fathah (accusatif-like) au lieu de Kasrah normal. Exemple : مِنْ بَغْدَادَ (avec Fathah)."
-      },
-      {
-        "id": "10",
-        "question": "Quelle catégorie de noms est TOUJOURS diptote ?",
-        "options": [
-          "Tous les prénoms féminins",
-          "Tous les prénoms non-arabes féminins (>3 lettres)",
-          "Tous les noms féminins",
-          "Tous les pluriels brisés"
-        ],
-        "correct": 0,
-        "explanation": "Prénoms non-arabes féminins comme مَرْيَمُ et سَارَةُ sont toujours diptotes. مَرْيَمُ (Maryam) mِنْ مَرْيَمَ (Fathah)."
+        "correct": 1,
+        "explanation": "Les diptotes prennent Fathah au lieu de Kasrah au génitif. مِنْ مَرْيَمَ (de Maryam) pas مِنْ مَرْيَمِ."
       }
     ],
     "flashcards": [
@@ -7551,124 +7395,52 @@
     ],
     "quiz_questions": [
       {
-        "id": "1",
-        "question": "Comment est-ce qu'un objet inanimé pluriel s'accorde en arabe ?",
+        "id": "L21Q1",
+        "question": "Lequel de ces noms est un **diptote** ?",
         "options": [
-          "Comme un nom masculin singulier",
-          "Comme un nom féminin singulier",
-          "Comme un nom masculin pluriel",
-          "Sans accord spécial"
+          "كِتَابٌ",
+          "أَحْمَدُ",
+          "طَالِبٌ",
+          "مَدْرَسَةٌ"
         ],
-        "correct": 0,
-        "explanation": "Règle d'or : ghayr al-'āqil (inanimé) = accord féminin singulier. Exemple : الْكُتُبُ جَدِيدَةٌ (Les livres sont nouveaux, avec l'adjectif au féminin singulier جَدِيدَةٌ)."
+        "correct": 1,
+        "explanation": "أَحْمَدُ (prénom sur le pattern أَفْعَلُ) est diptote : pas de Tanwin, génitif en Fathah. Les autres portent le Tanwin normalement."
       },
       {
-        "id": "2",
-        "question": "Quel pronom utilises-tu pour un pluriel d'objets ?",
+        "id": "L21Q2",
+        "question": "Complétez : **ذَهَبْتُ إِلَى ______** (je suis allé à Ibrahim)",
         "options": [
-          "هُوَ",
-          "هِيَ",
-          "هُمْ",
-          "هُنّ"
+          "إِبْرَاهِيمَ",
+          "إِبْرَاهِيمِ",
+          "إِبْرَاهِيمٍ",
+          "إِبْرَاهِيمُ"
         ],
         "correct": 0,
-        "explanation": "Pour un pluriel inanimé, le pronom est هِيَ (elle-féminin singulier), même si grammaticalement c'est le pluriel."
+        "explanation": "إِبْرَاهِيمَ est un diptote (prénom non-arabe) → après إِلَى, il prend Fathah (pas Kasrah). Pas de Tanwin."
       },
       {
-        "id": "3",
-        "question": "Complète : تِلْكَ الْأَقْلَامُ ______ (جَدِيدٌ)",
+        "id": "L21Q3",
+        "question": "Quel pattern rend un adjectif **diptote** ?",
         "options": [
-          "جَدِيدٌ",
-          "جَدِيدَةٌ",
-          "جَدِيدُون",
-          "جَدِيدَان"
+          "فَعِيلٌ",
+          "أَفْعَلُ (comparatif/couleur)",
+          "فَاعِلٌ",
+          "مَفْعُولٌ"
         ],
-        "correct": 0,
-        "explanation": "Pluriel inanimé → féminin singulier. جَدِيدَةٌ est la bonne forme."
+        "correct": 1,
+        "explanation": "Le pattern أَفْعَلُ (superlatif, couleur : أَحْمَرُ, أَكْبَرُ) est toujours diptote. فَعِيلٌ et فَاعِلٌ sont triptotes normaux."
       },
       {
-        "id": "4",
-        "question": "Quel cas grammatical suit un adverbe de lieu (Zarf al-Makān) ?",
+        "id": "L21Q4",
+        "question": "Quand un diptote **retrouve-t-il** le Tanwin ?",
         "options": [
-          "Nominatif (Dammah)",
-          "Accusatif (Fathah)",
-          "Génitif (Kasrah)",
-          "Aucun cas"
+          "Jamais, c'est une règle absolue",
+          "Quand il reçoit الـ ou qu'il est en annexion (Mudaf)",
+          "Quand il est au pluriel",
+          "Quand il est sujet de la phrase"
         ],
-        "correct": 0,
-        "explanation": "L'adverbe fonctionne comme mudāf, donc le nom qui suit est toujours au génitif (Kasrah). Exemple : أَمَامَ الْمَدْرَسَةِ (devant l'école)."
-      },
-      {
-        "id": "5",
-        "question": "Complète : الْكِتَابُ ______ الرِّفِّ (الْكِتَابُ فَوْقَ...)",
-        "options": [
-          "أَمَامَ",
-          "خَلْفَ",
-          "فَوْقَ",
-          "تَحْتَ"
-        ],
-        "correct": 0,
-        "explanation": "فَوْقَ = au-dessus/sur. L'adverbe est suivi du génitif : فَوْقَ الرِّفِّ."
-      },
-      {
-        "id": "6",
-        "question": "Quel cas grammatical prend le nom après كَمْ (Combien) ?",
-        "options": [
-          "Nominatif (Dammah)",
-          "Accusatif (Fathah/Fathatayn)",
-          "Génitif (Kasrah)",
-          "Aucun cas"
-        ],
-        "correct": 0,
-        "explanation": "Après كَمْ, le nom est singulier accusatif (Fathatayn : ـًا). Exemple : كَمْ كِتَابًا ؟"
-      },
-      {
-        "id": "7",
-        "question": "Quelle est la formation du duel nominatif pour نَجْمٌ (étoile masc.) ?",
-        "options": [
-          "نَجْمَانِ",
-          "نُجُومٌ",
-          "نَجْمَيْنِ",
-          "نَجْمٌ وَنَجْمٌ"
-        ],
-        "correct": 0,
-        "explanation": "Duel nominatif = ـَانِ. نَجْمَانِ (deux étoiles). L'accusatif/génitif serait نَجْمَيْنِ."
-      },
-      {
-        "id": "8",
-        "question": "Complète : هَاتَانِ الطَّاوِلَتَانِ ______ (كَبِيرٌ)",
-        "options": [
-          "كَبِيرَةٌ",
-          "كَبِيرَتَانِ",
-          "كَبِيرَتَيْنِ",
-          "كَبِيرُون"
-        ],
-        "correct": 0,
-        "explanation": "Adjectif duel féminin nominatif = ـَتَانِ. كَبِيرَتَانِ (deux grandes tables)."
-      },
-      {
-        "id": "9",
-        "question": "Quel est le démonstratif duel féminin ?",
-        "options": [
-          "هَذَانِ",
-          "هَاتَانِ",
-          "تِلْكَ",
-          "ذَاتِ"
-        ],
-        "correct": 0,
-        "explanation": "هَاتَانِ = ce/ces deux-ci (féminin duel). هَذَانِ est le masculin duel."
-      },
-      {
-        "id": "10",
-        "question": "Pourquoi utilise-t-on la Shibhu Jumla après un adverbe de lieu ?",
-        "options": [
-          "Pour former une phrase verbale complète",
-          "Pour créer une quasi-phrase nominale qui fonctionne comme modifieur",
-          "Pour montrer le pluriel du nom",
-          "Pour indiquer le temps"
-        ],
-        "correct": 0,
-        "explanation": "Shibhu Jumla (adverbe + nom génitif) = construction nominale qui agit comme phrase, exprimant le lieu de manière compacte."
+        "correct": 1,
+        "explanation": "Avec الـ ou en annexion, le diptote redevient triptote : الْمَسَاجِدِ (avec Kasrah), مَسَاجِدُ الْمَدِينَةِ."
       }
     ],
     "flashcards": [
@@ -7943,124 +7715,64 @@
     ],
     "quiz_questions": [
       {
-        "id": "1",
-        "question": "Quel est le rôle principal des lettres ANAYTU (أَنَيْتُ) ?",
+        "id": "L22Q1",
+        "question": "Quelles sont les **lettres du présent** (حُرُوفُ الْمُضَارَعَةِ) ?",
         "options": [
           "Elles indiquent le passé",
-          "Elles sont les préfixes pour former le présent et identifier le sujet",
-          "Elles sont les suffixes comme au passé",
-          "Elles n'ont aucune fonction grammaticale"
+          "أَـ, نَـ, يَـ, تَـ — préfixes qui forment le présent",
+          "Ce sont des suffixes comme au passé",
+          "Elles marquent l'impératif"
         ],
-        "correct": 0,
-        "explanation": "Les 4 lettres أَنَيْتُ (أَـ, نَـ, يَـ, تَـ) sont les Hurūf al-Mudāra'ah (lettres du présent) et servent de préfixes pour indiquer la personne du sujet."
+        "correct": 1,
+        "explanation": "أَنَيْتُ (mnémonique) : أَـ (je), نَـ (nous), يَـ (il/ils), تَـ (tu/elle/vous). Ces préfixes identifient le sujet ET le temps."
       },
       {
-        "id": "2",
-        "question": "Transformez ذَهَبَ (passé) au présent pour 'il va' :",
+        "id": "L22Q2",
+        "question": "Transformez **ذَهَبَ** (il est allé) au présent :",
         "options": [
           "ذَهَبَ",
           "يَذْهَبُ",
           "ذَهَبُ",
           "يَذْهَبَ"
         ],
-        "correct": 0,
-        "explanation": "Ajout du préfixe يَـ (il), Sukūn sur la 1ère radicale (ذْـ), Damma sur la 3ème lettre (ـُ)."
+        "correct": 1,
+        "explanation": "Présent : préfixe يَـ (il) + sukun sur 1ère radicale (ذْ) + dammah sur 3ème radicale (ـُ) → يَذْهَبُ."
       },
       {
-        "id": "3",
-        "question": "Quel préfixe utilise-t-on pour 'nous' au présent ?",
+        "id": "L22Q3",
+        "question": "Quelle lettre du mnémonique أَنَيْتُ correspond à '**nous**' ?",
         "options": [
           "أَـ",
           "تَـ",
           "نَـ",
           "يَـ"
         ],
-        "correct": 0,
-        "explanation": "La lettre نَـ du mnemonic ANAYTU correspond à 'Nous' (نَحْنُ)."
+        "correct": 2,
+        "explanation": "نَـ = نَحْنُ (nous). أَـ = أَنَا (je). يَـ = هُوَ (il). تَـ = أَنْتَ/هِيَ (tu/elle)."
       },
       {
-        "id": "4",
-        "question": "Quel suffixe ajoutez-vous pour le pluriel MASCULIN au présent ?",
+        "id": "L22Q4",
+        "question": "Quel suffixe marque le **pluriel masculin** au présent ?",
         "options": [
           "ـْنَ",
           "ـُونَ",
-          "ـَان",
-          "ـِين"
+          "ـَانِ",
+          "ـِينَ"
         ],
-        "correct": 0,
-        "explanation": "Le pluriel masculin utilise ـُونَ (avec Wāw al-Jamā'ah et Nūn), indiquant la permanence du Nūn et l'état Marfū'."
+        "correct": 1,
+        "explanation": "Pluriel masculin présent = ـُونَ (Waw al-Jama'ah + Nun). يَكْتُبُونَ = ils écrivent. ـْنَ = féminin pluriel."
       },
       {
-        "id": "5",
-        "question": "Conjuguez يَكْتُبُ (il écrit) pour 'elles écrivent' :",
-        "options": [
-          "يَكْتُبُونَ",
-          "تَكْتُبُونَ",
-          "يَكْتُبْنَ",
-          "تَكْتُبْنَ"
-        ],
-        "correct": 0,
-        "explanation": "Préfixe يَـ pour 'elles' + suffixe ـْنَ (avec Sukūn) pour le féminin pluriel. Attention : يَـ pas تَـ."
-      },
-      {
-        "id": "6",
-        "question": "Quelle est la différence clé entre تَذْهَبُ (tu sing fém) et يَذْهَبْنَ (elles) ?",
-        "options": [
-          "Pas de différence",
-          "Le préfixe : تَـ vs يَـ",
-          "Seul le suffixe diffère",
-          "Impossible à distinguer"
-        ],
-        "correct": 0,
-        "explanation": "Les deux changent : préfixe (تَـ vs يَـ) ET suffixe (ـُ vs ـْنَ). C'est une distinction cruciale entre singulier et pluriel."
-      },
-      {
-        "id": "7",
-        "question": "Comment exprime-t-on le futur proche en arabe ?",
+        "id": "L22Q5",
+        "question": "Comment former le **futur** en arabe ?",
         "options": [
           "Avec le suffixe ـَا",
           "Avec le préfixe سَـ devant le présent",
           "Avec le préfixe بِـ",
           "Avec l'adverbe غَدًا seul"
         ],
-        "correct": 0,
-        "explanation": "Le futur proche (near future) s'exprime avec السِّين (سَـ) placé avant le verbe au présent : سَيَذْهَبُ (il ira bientôt)."
-      },
-      {
-        "id": "8",
-        "question": "Remplissez : الطُّلَّابُ ............... إِلَى الْمَلْعَبِ.",
-        "options": [
-          "تَذْهَبُ",
-          "يَذْهَبُ",
-          "يَذْهَبُونَ",
-          "أَذْهَبُ"
-        ],
-        "correct": 0,
-        "explanation": "Sujet masculin pluriel (الطُّلَّابُ) → verbe au pluriel masculin (يَـ + ـُونَ)."
-      },
-      {
-        "id": "9",
-        "question": "Traduisez en arabe : 'Les filles écrivent les devoirs.' Choisissez la bonne option :",
-        "options": [
-          "الْبَنَاتُ يَكْتُبُونَ الْوَاجِبَاتِ.",
-          "الْبَنَاتُ يَكْتُبْنَ الْوَاجِبَاتِ.",
-          "الْبَنَاتُ تَكْتُبْنَ الْوَاجِبَاتِ.",
-          "الْبَنَاتُ تَكْتُبُونَ الْوَاجِبَاتِ."
-        ],
-        "correct": 0,
-        "explanation": "Sujet féminin pluriel + verbe féminin pluriel (يَـ + ـْنَ). L'option B est correcte : يَكْتُبْنَ."
-      },
-      {
-        "id": "10",
-        "question": "Identifiez l'erreur grammaticale : 'الْمُدَرِّسُ يَخْرُجْنَ مِنَ الْفَصْلِ.'",
-        "options": [
-          "Pas d'erreur",
-          "Le préfixe يَـ est incorrect (doit être تَـ)",
-          "Le suffixe ـْنَ est incorrect pour un sujet masculin singulier",
-          "La préposition مِنَ est mal utilisée"
-        ],
-        "correct": 0,
-        "explanation": "الْمُدَرِّسُ est un sujet masculin SINGULIER. On ne peut pas utiliser ـْنَ (qui est pour le féminin pluriel ou le pluriel féminin). Correction : يَخْرُجُ."
+        "correct": 1,
+        "explanation": "Le futur = سَـ + verbe au présent. سَيَذْهَبُ = il ira. سَوْفَ (forme longue) exprime un futur plus lointain."
       }
     ],
     "flashcards": [
@@ -8378,124 +8090,64 @@
     ],
     "quiz_questions": [
       {
-        "id": "1",
-        "question": "Quel est le rôle principal des lettres ANAYTU (أَنَيْتُ) ?",
-        "options": [
-          "Elles indiquent le passé",
-          "Elles sont les préfixes pour former le présent et identifier le sujet",
-          "Elles sont les suffixes comme au passé",
-          "Elles n'ont aucune fonction grammaticale"
-        ],
-        "correct": 0,
-        "explanation": "Les 4 lettres أَنَيْتُ (أَـ, نَـ, يَـ, تَـ) sont les Hurūf al-Mudāra'ah (lettres du présent) et servent de préfixes pour indiquer la personne du sujet."
-      },
-      {
-        "id": "2",
-        "question": "Transformez ذَهَبَ (passé) au présent pour 'il va' :",
-        "options": [
-          "ذَهَبَ",
-          "يَذْهَبُ",
-          "ذَهَبُ",
-          "يَذْهَبَ"
-        ],
-        "correct": 0,
-        "explanation": "Ajout du préfixe يَـ (il), Sukūn sur la 1ère radicale (ذْـ), Damma sur la 3ème lettre (ـُ)."
-      },
-      {
-        "id": "3",
-        "question": "Quel préfixe utilise-t-on pour 'nous' au présent ?",
-        "options": [
-          "أَـ",
-          "تَـ",
-          "نَـ",
-          "يَـ"
-        ],
-        "correct": 0,
-        "explanation": "La lettre نَـ du mnemonic ANAYTU correspond à 'Nous' (نَحْنُ)."
-      },
-      {
-        "id": "4",
-        "question": "Quel suffixe ajoutez-vous pour le pluriel MASCULIN au présent ?",
-        "options": [
-          "ـْنَ",
-          "ـُونَ",
-          "ـَان",
-          "ـِين"
-        ],
-        "correct": 0,
-        "explanation": "Le pluriel masculin utilise ـُونَ (avec Wāw al-Jamā'ah et Nūn), indiquant la permanence du Nūn et l'état Marfū'."
-      },
-      {
-        "id": "5",
-        "question": "Conjuguez يَكْتُبُ (il écrit) pour 'elles écrivent' :",
+        "id": "L23Q1",
+        "question": "Conjuguez '**elles écrivent**' au présent :",
         "options": [
           "يَكْتُبُونَ",
           "تَكْتُبُونَ",
           "يَكْتُبْنَ",
           "تَكْتُبْنَ"
         ],
-        "correct": 0,
-        "explanation": "Préfixe يَـ pour 'elles' + suffixe ـْنَ (avec Sukūn) pour le féminin pluriel. Attention : يَـ pas تَـ."
+        "correct": 2,
+        "explanation": "Féminin pluriel présent = يَـ + ـْنَ. يَكْتُبْنَ (elles écrivent). Attention : le préfixe est يَـ (pas تَـ) pour le fém. pluriel."
       },
       {
-        "id": "6",
-        "question": "Quelle est la différence clé entre تَذْهَبُ (tu sing fém) et يَذْهَبْنَ (elles) ?",
-        "options": [
-          "Pas de différence",
-          "Le préfixe : تَـ vs يَـ",
-          "Seul le suffixe diffère",
-          "Impossible à distinguer"
-        ],
-        "correct": 0,
-        "explanation": "Les deux changent : préfixe (تَـ vs يَـ) ET suffixe (ـُ vs ـْنَ). C'est une distinction cruciale entre singulier et pluriel."
-      },
-      {
-        "id": "7",
-        "question": "Comment exprime-t-on le futur proche en arabe ?",
-        "options": [
-          "Avec le suffixe ـَا",
-          "Avec le préfixe سَـ devant le présent",
-          "Avec le préfixe بِـ",
-          "Avec l'adverbe غَدًا seul"
-        ],
-        "correct": 0,
-        "explanation": "Le futur proche (near future) s'exprime avec السِّين (سَـ) placé avant le verbe au présent : سَيَذْهَبُ (il ira bientôt)."
-      },
-      {
-        "id": "8",
-        "question": "Remplissez : الطُّلَّابُ ............... إِلَى الْمَلْعَبِ.",
+        "id": "L23Q2",
+        "question": "Complétez : **الطُّلَّابُ ______** (les étudiants vont)",
         "options": [
           "تَذْهَبُ",
           "يَذْهَبُ",
           "يَذْهَبُونَ",
           "أَذْهَبُ"
         ],
-        "correct": 0,
-        "explanation": "Sujet masculin pluriel (الطُّلَّابُ) → verbe au pluriel masculin (يَـ + ـُونَ)."
+        "correct": 2,
+        "explanation": "الطُّلَّابُ = sujet masc. pluriel → يَـ + ـُونَ = يَذْهَبُونَ. يَذْهَبُ serait singulier."
       },
       {
-        "id": "9",
-        "question": "Traduisez en arabe : 'Les filles écrivent les devoirs.' Choisissez la bonne option :",
+        "id": "L23Q3",
+        "question": "Quelle est la bonne phrase : '**Les filles écrivent les devoirs**' ?",
         "options": [
-          "الْبَنَاتُ يَكْتُبُونَ الْوَاجِبَاتِ.",
-          "الْبَنَاتُ يَكْتُبْنَ الْوَاجِبَاتِ.",
-          "الْبَنَاتُ تَكْتُبْنَ الْوَاجِبَاتِ.",
-          "الْبَنَاتُ تَكْتُبُونَ الْوَاجِبَاتِ."
+          "الْبَنَاتُ يَكْتُبُونَ الْوَاجِبَاتِ",
+          "الْبَنَاتُ يَكْتُبْنَ الْوَاجِبَاتِ",
+          "الْبَنَاتُ تَكْتُبْنَ الْوَاجِبَاتِ",
+          "الْبَنَاتُ تَكْتُبُونَ الْوَاجِبَاتِ"
         ],
-        "correct": 0,
-        "explanation": "Sujet féminin pluriel + verbe féminin pluriel (يَـ + ـْنَ). L'option B est correcte : يَكْتُبْنَ."
+        "correct": 1,
+        "explanation": "Sujet fém. pluriel → يَـ + ـْنَ. يَكْتُبْنَ est la conjugaison correcte pour 'elles'. Le préfixe est يَـ, pas تَـ."
       },
       {
-        "id": "10",
-        "question": "Identifiez l'erreur grammaticale : 'الْمُدَرِّسُ يَخْرُجْنَ مِنَ الْفَصْلِ.'",
+        "id": "L23Q4",
+        "question": "Trouvez l'erreur : **الْمُدَرِّسُ يَخْرُجْنَ مِنَ الْفَصْلِ**",
         "options": [
           "Pas d'erreur",
           "Le préfixe يَـ est incorrect (doit être تَـ)",
           "Le suffixe ـْنَ est incorrect pour un sujet masculin singulier",
           "La préposition مِنَ est mal utilisée"
         ],
-        "correct": 0,
-        "explanation": "الْمُدَرِّسُ est un sujet masculin SINGULIER. On ne peut pas utiliser ـْنَ (qui est pour le féminin pluriel ou le pluriel féminin). Correction : يَخْرُجُ."
+        "correct": 2,
+        "explanation": "الْمُدَرِّسُ = masc. singulier → verbe singulier يَخْرُجُ (pas يَخْرُجْنَ qui est fém. pluriel). Le suffixe ـْنَ ne correspond pas au sujet."
+      },
+      {
+        "id": "L23Q5",
+        "question": "Comment dit-on '**nous étudions**' au présent ?",
+        "options": [
+          "يَدْرُسُونَ",
+          "نَدْرُسُ",
+          "تَدْرُسُ",
+          "أَدْرُسُ"
+        ],
+        "correct": 1,
+        "explanation": "Nous = نَحْنُ → préfixe نَـ. نَدْرُسُ = nous étudions. أَدْرُسُ = j'étudie. تَدْرُسُ = tu étudies."
       }
     ],
     "flashcards": [

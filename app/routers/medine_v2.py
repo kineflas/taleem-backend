@@ -262,13 +262,15 @@ def submit_quiz_v2(
 
     score = (correct_count / total * 100) if total > 0 else 0
 
-    # Stars
+    # Stars — minimum 40% to pass (1 star), otherwise 0 stars (fail)
     if score >= 85:
         stars = 3
     elif score >= 60:
         stars = 2
-    else:
+    elif score >= 40:
         stars = 1
+    else:
+        stars = 0
 
     # XP: base 5 per correct + speed bonus
     xp = correct_count * 5
@@ -279,7 +281,7 @@ def submit_quiz_v2(
     progress = _get_or_create_progress(db, current_user.id, lesson_number)
     progress.quiz_score = score
     progress.stars = max(progress.stars, stars)
-    progress.is_completed = True
+    progress.is_completed = stars >= 1  # Only mark complete if passed
     progress.xp_earned = (progress.xp_earned or 0) + xp
     progress.updated_at = datetime.now(timezone.utc)
 
@@ -601,12 +603,30 @@ def submit_diagnostic(
             score=comp_score,
         ))
 
+    # Unlock all lessons up to start_at_lesson by creating progress rows
+    start_at = level_info.get("start_at", 1)
+    if start_at > 1:
+        for ln in range(1, start_at):
+            existing = db.query(MedineV2Progress).filter_by(
+                student_id=current_user.id,
+                lesson_number=ln,
+            ).first()
+            if not existing:
+                db.add(MedineV2Progress(
+                    student_id=current_user.id,
+                    lesson_number=ln,
+                    stars=1,
+                    is_completed=True,
+                    current_step="diagnostic_skip",
+                ))
+        db.commit()
+
     return DiagnosticResult(
         score=score,
         total=total,
         correct=correct_count,
         level=level_info.get("level", "Débutant"),
-        start_at_lesson=level_info.get("start_at", 1),
+        start_at_lesson=start_at,
         start_at_part=level_info.get("start_part", 1),
         message=level_info.get("message", ""),
         competencies=competency_scores,
