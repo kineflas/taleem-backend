@@ -277,12 +277,12 @@
         "question": "Complétez : **______ سَيَّارَةٌ** (c'est une voiture)",
         "options": [
           "هَذَا",
-          "ذَلِكَ",
+          "تِلْكَ",
           "هَذِهِ",
-          "مَا"
+          "هَاتَانِ"
         ],
         "correct": 2,
-        "explanation": "سَيَّارَةٌ est féminin (ة), donc le démonstratif doit être féminin : هَذِهِ (ceci — fém.). هَذَا serait incorrect car c'est le masculin."
+        "explanation": "سَيَّارَةٌ est féminin (ة) → démonstratif féminin proche : هَذِهِ. هَذَا = masc. تِلْكَ = fém. lointain. هَاتَانِ = fém. duel."
       }
     ],
     "flashcards": [
@@ -355,7 +355,7 @@
       {
         "type": "rule",
         "title_fr": "💡 Les trois piliers de la question",
-        "content_fr": "En arabe, il y a trois façons principales de poser une question :\n\n1. **مَا (Mā) :** La question \"Qu'est-ce que ?\" S'utilise pour demander des informations sur **les choses**.\n2. **مَنْ (Man) :** La question \"Qui ?\" S'utilise pour demander des informations sur **les personnes**.\n3. **أَ (A) :** La particule d'inversion binaire. Elle transforme une affirmation en question fermée (Oui/Non).\n\n**La structure à retenir :**\n\n- `Mā + Démonstratif + Objet = \"Qu'est-ce que c'est ?\"` — _Mā Hādhā ?_ (Qu'est-ce que c'est ?)\n- `Man + Démonstratif = \"Qui est-ce ?\"` — _Man Hādhā ?_ (Qui est-ce ?)\n- `A + Phrase Nominale = Question Oui/Non` — _A Hādhā Kitāb ?_ (Est-ce un livre ?)",
+        "content_fr": "En arabe, il y a trois façons principales de poser une question :\n\n1. **مَا (Mā) :** La question \"Qu'est-ce que ?\" S'utilise pour demander des informations sur **les choses**.\n2. **مَنْ (Man) :** La question \"Qui ?\" S'utilise pour demander des informations sur **les personnes**.\n3. **أَ (A) :** La particule d'inversion binaire. Elle transforme une affirmation en question fermée (Oui/Non).\n\n**La structure à retenir :**\n\n- `Mā + Démonstratif = \"Qu'est-ce que c'est ?\"` — _Mā Hādhā ?_ (Qu'est-ce que ceci ?)\n- `Man + Démonstratif = \"Qui est-ce ?\"` — _Man Hādhā ?_ (Qui est-ce ?)\n- `A + Phrase Nominale = Question Oui/Non` — _A Hādhā Kitāb ?_ (Est-ce un livre ?)",
         "content_ar": null,
         "examples": []
       },
@@ -373,21 +373,15 @@
         "content_ar": null,
         "examples": [
           {
-            "ar": "أَ",
-            "fr": "ne change pas la phrase — elle marque juste une question. Elle est extrêmement courte et facile à ignorer au premier abord.",
-            "translit": null,
-            "audio_id": "med2_ex_1e0b8ca9"
-          },
-          {
             "ar": "هَذَا كِتَابٌ",
-            "fr": "_Ceci est un livre_",
-            "translit": null,
+            "fr": "Ceci est un livre (affirmation)",
+            "translit": "Hādhā kitābun",
             "audio_id": "med2_ex_0fa5d53f"
           },
           {
             "ar": "أَهَذَا كِتَابٌ؟",
-            "fr": "_Est-ce un livre ?_",
-            "translit": null,
+            "fr": "Est-ce un livre ? (question avec أَ)",
+            "translit": "A-hādhā kitābun?",
             "audio_id": "med2_ex_1e1d4047"
           }
         ]
@@ -583,11 +577,11 @@
         "options": [
           "مَا",
           "مَنْ",
-          "أَيْنَ",
-          "كَيْفَ"
+          "أَ",
+          "هَلْ"
         ],
         "correct": 1,
-        "explanation": "مَنْ = qui (personnes). مَا = quoi (choses). أَيْنَ = où. كَيْفَ = comment."
+        "explanation": "مَنْ = qui (personnes). مَا = quoi (choses). أَ = question fermée oui/non. هَلْ = question fermée oui/non (variante)."
       },
       {
         "id": "L2Q4",
@@ -1767,7 +1761,7 @@
       {
         "type": "rule",
         "title_fr": "🔔 Les mots féminins courants",
-        "content_fr": "Presque tous les mots finissant par **ة** sont féminins. Il y a très peu d'exceptions. Quelques exemples courants :\n\n- **مَدْرَسَةٌ** (une école)\n- **سَيَّارَةٌ** (une voiture)\n- **طَاوِلَةٌ** (une table)\n- **كُرْسِيَّةٌ** (une chaise)\n- **نَافِذَةٌ** (une fenêtre)\n- **غُرْفَةٌ** (une chambre)\n- **مَكْتَبَةٌ** (une bibliothèque)",
+        "content_fr": "Presque tous les mots finissant par **ة** sont féminins. Il y a très peu d'exceptions. Quelques exemples courants :\n\n- **مَدْرَسَةٌ** (une école)\n- **سَيَّارَةٌ** (une voiture)\n- **طَاوِلَةٌ** (une table)\n- **طَاوِلَةٌ** (une table)\n- **نَافِذَةٌ** (une fenêtre)\n- **غُرْفَةٌ** (une chambre)\n- **مَكْتَبَةٌ** (une bibliothèque)",
         "content_ar": null,
         "examples": [
           {
@@ -1789,8 +1783,8 @@
             "audio_id": "med6_ex_fc40278e"
           },
           {
-            "ar": "كُرْسِيَّةٌ",
-            "fr": "une chaise",
+            "ar": "طَاوِلَةٌ",
+            "fr": "une table",
             "translit": null,
             "audio_id": "med6_ex_0c59af1b"
           },
@@ -1995,7 +1989,7 @@
       },
       {
         "id": "L6Q4",
-        "question": "Quelle phrase est **correctement** accordée ?",
+        "question": "Quel **groupe nominal indéfini** est **correctement** accordé ?",
         "options": [
           "سَيَّارَةٌ جَمِيلٌ",
           "سَيَّارَةٌ جَمِيلَةٌ",
@@ -2003,7 +1997,7 @@
           "السَّيَّارَةُ جَمِيلَةٌ"
         ],
         "correct": 1,
-        "explanation": "سَيَّارَةٌ (fém. indéf.) → adjectif fém. indéf. : جَمِيلَةٌ. Option A : جَمِيلٌ est masculin. Option C : mélange indéf./déf. Option D : nom défini + adj. indéfini = phrase complète (acceptable mais c'est une prédication, pas une qualification)."
+        "explanation": "سَيَّارَةٌ جَمِيلَةٌ = groupe nominal indéfini fém. correctement accordé. Option A : جَمِيلٌ est masculin. Option C : mélange indéf./déf. Option D : السَّيَّارَةُ جَمِيلَةٌ = phrase complète (pas un groupe nominal indéfini)."
       }
     ],
     "flashcards": [
@@ -2830,7 +2824,7 @@
       },
       {
         "type": "mise_en_situation",
-        "content_fr": "Imagine que tu es acheteur chez un concessionnaire automobile à Damas. Le vendeur te présente trois véhicules : une belle voiture neuve et grande, une petite voiture ancienne bon marché, et une voiture moyennement neuve mais puissante. Tu dois décrire chacune d'elles en utilisant des adjectifs qui s'accordent avec les noms. Remarque comment chaque adjectif change de forme en fonction du genre du nom : **سَيَّارَةٌ كَبِيرَةٌ** (voiture grande, féminin) vs **بَيْتٌ كَبِيرٌ** (maison grande, mais ici « maison » est féminin aussi, donc **بَيْتٌ كَبِيرٌ**... attendez, **بَيْت** est masculin !)."
+        "content_fr": "Tu es dans une concession automobile (مَعْرِضُ سَيَّارَات) à Riyad. Tu écoutes le vendeur décrire chaque véhicule.\n\nIl dit : « هَذِهِ سَيَّارَةٌ جَدِيدَةٌ وَجَمِيلَةٌ » (C'est une voiture nouvelle et belle). Observe : سَيَّارَةٌ est féminin (ة) → l'adjectif جَدِيدَةٌ est aussi féminin (ة). L'accord est parfait !\n\nEnsuite : « الْبَيْتُ الْكَبِيرُ جَمِيلٌ » (La grande maison est belle). بَيْتٌ est masculin (pas de ة) → adjectif masculin الْكَبِيرُ. Tout s'accorde en genre et définition."
       }
     ],
     "dialogue": {
@@ -2839,50 +2833,26 @@
         {
           "speaker_ar": "البائع",
           "arabic": "هَذِهِ سَيَّارَةٌ جَدِيدَةٌ وَجَمِيلَةٌ.",
-          "french": "",
+          "french": "C'est une voiture nouvelle et belle.",
           "audio_id": "med9_dial_3cafbed6"
-        },
-        {
-          "speaker_ar": "Le vendeur",
-          "arabic": "C'est une voiture nouvelle et belle.",
-          "french": "",
-          "audio_id": "med9_dial_d08fb027"
         },
         {
           "speaker_ar": "العميل",
           "arabic": "وَتِلْكَ السَّيَّارَةُ الْقَدِيمَةُ؟",
-          "french": "",
+          "french": "Et cette vieille voiture là-bas ?",
           "audio_id": "med9_dial_c33453d3"
-        },
-        {
-          "speaker_ar": "Le client",
-          "arabic": "Et cette vieille voiture là-bas ?",
-          "french": "",
-          "audio_id": "med9_dial_cd93b025"
         },
         {
           "speaker_ar": "البائع",
           "arabic": "السَّيَّارَةُ الْقَدِيمَةُ صَغِيرَةٌ وَرَخِيصَةٌ.",
-          "french": "",
+          "french": "La vieille voiture est petite et bon marché.",
           "audio_id": "med9_dial_16e70351"
-        },
-        {
-          "speaker_ar": "Le vendeur",
-          "arabic": "La vieille voiture est petite et bon marché.",
-          "french": "",
-          "audio_id": "med9_dial_160159d7"
         },
         {
           "speaker_ar": "العميل",
           "arabic": "أَنَا أُرِيدُ سَيَّارَةً كَبِيرَةً.",
-          "french": "",
+          "french": "Moi, je veux une grande voiture.",
           "audio_id": "med9_dial_f35c126a"
-        },
-        {
-          "speaker_ar": "Le client",
-          "arabic": "Moi, je veux une grande voiture.",
-          "french": "",
-          "audio_id": "med9_dial_52c91191"
         }
       ]
     },
@@ -3346,50 +3316,26 @@
         {
           "speaker_ar": "الأب",
           "arabic": "هَذَا بَيْتِي وَهَذَا كِتَابِي.",
-          "french": "",
+          "french": "C'est ma maison et c'est mon livre.",
           "audio_id": "med10_dial_b61730fd"
         },
         {
-          "speaker_ar": "Le père",
-          "arabic": "C'est ma maison et c'est mon livre.",
-          "french": "",
-          "audio_id": "med10_dial_d4e0893b"
-        },
-        {
           "speaker_ar": "الأم",
-          "arabic": "وَهَذِهِ حقيبتي وَقَلَمِي.",
-          "french": "",
+          "arabic": "وَهَذِهِ حَقِيبَتِي وَقَلَمِي.",
+          "french": "Et c'est mon sac et mon stylo.",
           "audio_id": "med10_dial_997109b0"
         },
         {
-          "speaker_ar": "La mère",
-          "arabic": "Et c'est mon sac et mon stylo.",
-          "french": "",
-          "audio_id": "med10_dial_6e6ae396"
-        },
-        {
           "speaker_ar": "البنت",
-          "arabic": "أَيْنَ دفتري؟",
-          "french": "",
+          "arabic": "أَيْنَ دَفْتَرِي؟",
+          "french": "Où est mon cahier ?",
           "audio_id": "med10_dial_ac221746"
-        },
-        {
-          "speaker_ar": "La fille",
-          "arabic": "Où est mon cahier ?",
-          "french": "",
-          "audio_id": "med10_dial_85cfdd9d"
         },
         {
           "speaker_ar": "الابن",
           "arabic": "دَفْتَرُكِ عَلَى الْمَكْتَبِ.",
-          "french": "",
+          "french": "Ton cahier est sur le bureau.",
           "audio_id": "med10_dial_013702a8"
-        },
-        {
-          "speaker_ar": "Le fils",
-          "arabic": "Ton cahier est sur le bureau.",
-          "french": "",
-          "audio_id": "med10_dial_2396150f"
         }
       ]
     },
@@ -3450,15 +3396,15 @@
     "quiz_questions": [
       {
         "id": "L10Q1",
-        "question": "Comment dit-on '**J'ai trois livres**' ?",
+        "question": "Comment dit-on '**J'ai un livre**' avec عِنْدِي ?",
         "options": [
-          "كِتَابٌ عِنْدِي ثَلَاثَةٌ",
-          "عِنْدِي ثَلَاثَةُ كُتُبٍ",
-          "عِنْدِي ثَلَاثَةٌ مِنَ الْكِتَابِ",
-          "ثَلَاثَةُ كُتُبٍ عِنْدِي"
+          "عِنْدِي كِتَابٌ",
+          "كِتَابٌ عِنْدِي",
+          "لِي كِتَابٌ",
+          "أَنَا كِتَابٌ"
         ],
-        "correct": 1,
-        "explanation": "Structure : عِنْدِي + nombre + pluriel génitif. عِنْدِي ثَلَاثَةُ كُتُبٍ. Le nombre et le nom forment une annexion."
+        "correct": 0,
+        "explanation": "عِنْدِي كِتَابٌ = j'ai un livre. L'ordre standard est عِنْدِي + nom. كِتَابٌ عِنْدِي est grammaticalement possible mais peu naturel. لِي كِتَابٌ exprimerait un lien intime (L11). أَنَا كِتَابٌ = 'je suis un livre' (absurde)."
       },
       {
         "id": "L10Q2",
@@ -3728,50 +3674,26 @@
         {
           "speaker_ar": "أحمد",
           "arabic": "عِنْدِي كِتَابٌ جَدِيدٌ!",
-          "french": "",
+          "french": "J'ai un nouveau livre !",
           "audio_id": "med11_dial_477aa7e3"
         },
         {
-          "speaker_ar": "Ahmed",
-          "arabic": "J'ai un nouveau livre !",
-          "french": "",
-          "audio_id": "med11_dial_5ee7294a"
-        },
-        {
           "speaker_ar": "فاطمة",
-          "arabic": "عِنْدِي اثنان. مَا عِنْدِي قَلَمٌ أَحْمَرُ!",
-          "french": "",
+          "arabic": "عِنْدِي كِتَابَانِ. مَا عِنْدِي قَلَمٌ جَدِيدٌ!",
+          "french": "Moi j'en ai deux. Je n'ai pas de stylo neuf !",
           "audio_id": "med11_dial_3c8bcc90"
-        },
-        {
-          "speaker_ar": "Fatima",
-          "arabic": "Moi j'en ai deux. Je n'ai pas de stylo rouge !",
-          "french": "",
-          "audio_id": "med11_dial_4ca6b1e4"
         },
         {
           "speaker_ar": "علي",
           "arabic": "عِنْدَنَا مَدْرَسَةٌ جَمِيلَةٌ جِدًّا.",
-          "french": "",
+          "french": "Nous avons une très belle école.",
           "audio_id": "med11_dial_8424196b"
-        },
-        {
-          "speaker_ar": "Ali",
-          "arabic": "Nous avons une très belle école.",
-          "french": "",
-          "audio_id": "med11_dial_2e2ae05f"
         },
         {
           "speaker_ar": "الْمُعَلِّمَة",
           "arabic": "عِنْدَكُمْ وَاجِبٌ الْيَوْمَ؟",
-          "french": "",
+          "french": "Avez-vous un devoir aujourd'hui ?",
           "audio_id": "med11_dial_aedfd4ee"
-        },
-        {
-          "speaker_ar": "L'enseignante",
-          "arabic": "Avez-vous un devoir aujourd'hui ?",
-          "french": "",
-          "audio_id": "med11_dial_8a7b8d1b"
         }
       ]
     },
@@ -3890,27 +3812,27 @@
       },
       {
         "id": "L11Q3",
-        "question": "Complétez : **سَيَّارَةٌ ______** (une voiture rouge)",
+        "question": "Complétez : **عِنْدِي سَيَّارَةٌ ______** (j'ai une grande voiture)",
         "options": [
-          "حَمْرَاءُ",
-          "أَحْمَرُ",
-          "حَمْرَاءٌ",
-          "الْحَمْرَاءُ"
+          "كَبِيرٌ",
+          "كَبِيرَةٌ",
+          "الْكَبِيرَةُ",
+          "كَبِيرَةً"
         ],
-        "correct": 2,
-        "explanation": "سَيَّارَةٌ est fém. + indéfini → adjectif couleur fém. + indéfini : حَمْرَاءٌ (avec Tanwin). أَحْمَرُ = masculin. الْحَمْرَاءُ = défini."
+        "correct": 1,
+        "explanation": "سَيَّارَةٌ est fém. + indéfini → adjectif fém. + indéfini : كَبِيرَةٌ. كَبِيرٌ = masculin. الْكَبِيرَةُ = défini (mais سَيَّارَةٌ est indéfini). كَبِيرَةً = accusatif."
       },
       {
         "id": "L11Q4",
         "question": "Complétez : **مُدَرِّسُكَ ______** (ton professeur est ici)",
         "options": [
-          "هُنَّ",
+          "هُنَاكَ",
           "هُوَ هُنَا",
           "هُنَا",
           "هُمْ هُنَا"
         ],
         "correct": 2,
-        "explanation": "مُدَرِّسُكَ = ton prof (masc. sing.). هُنَا = ici (adverbe de lieu). Pas besoin du pronom هُوَ car le sujet est déjà mentionné."
+        "explanation": "مُدَرِّسُكَ = ton prof (masc. sing.). هُنَا = ici. هُنَاكَ = là-bas (piège : lieu aussi mais sens différent). هُوَ هُنَا = redondant."
       }
     ],
     "flashcards": [
@@ -4192,62 +4114,32 @@
         {
           "speaker_ar": "الأم",
           "arabic": "مَاذَا فَعَلْتَ الْيَوْمَ؟",
-          "french": "",
+          "french": "Qu'as-tu fait aujourd'hui ?",
           "audio_id": "med12_dial_c82d7311"
-        },
-        {
-          "speaker_ar": "La mère",
-          "arabic": "Qu'as-tu fait aujourd'hui ?",
-          "french": "",
-          "audio_id": "med12_dial_d7393d4d"
         },
         {
           "speaker_ar": "الابن",
           "arabic": "ذَهَبْتُ إِلَى الْمَدْرَسَةِ وَجَلَسْتُ فِي الصَّفِّ.",
-          "french": "",
+          "french": "Je suis allé à l'école et je me suis assis en classe.",
           "audio_id": "med12_dial_4c98d357"
-        },
-        {
-          "speaker_ar": "Le fils",
-          "arabic": "Je suis allé à l'école et je me suis assis en classe.",
-          "french": "",
-          "audio_id": "med12_dial_2107ae62"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "وَهَلْ أَكَلْتَ الْغَدَاءَ؟",
-          "french": "",
+          "french": "Et as-tu mangé le déjeuner ?",
           "audio_id": "med12_dial_9be6a9db"
         },
         {
-          "speaker_ar": "La mère",
-          "arabic": "Et as-tu mangé le déjeuner ?",
-          "french": "",
-          "audio_id": "med12_dial_045692c7"
-        },
-        {
           "speaker_ar": "الابن",
-          "arabic": "نَعَمْ! شَرِبْتُ عَصِيرًا وَأَكَلْتُ سَمِسْمَةً.",
-          "french": "",
+          "arabic": "نَعَمْ! شَرِبْتُ عَصِيرًا وَأَكَلْتُ سَنْدَوِيشَةً.",
+          "french": "Oui ! J'ai bu du jus et j'ai mangé un sandwich.",
           "audio_id": "med12_dial_175aad7a"
-        },
-        {
-          "speaker_ar": "Le fils",
-          "arabic": "Oui ! J'ai bu du jus et j'ai mangé un sandwich.",
-          "french": "",
-          "audio_id": "med12_dial_05fd1e26"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "هَلْ خَرَجْتَ مِنَ الْمَدْرَسَةِ الْمُبَكِّرَة؟",
-          "french": "",
+          "french": "Es-tu sorti tôt de l'école ?",
           "audio_id": "med12_dial_b5fd289f"
-        },
-        {
-          "speaker_ar": "La mère",
-          "arabic": "Es-tu sorti tôt de l'école ?",
-          "french": "",
-          "audio_id": "med12_dial_e2758bc8"
         }
       ]
     },
@@ -4504,37 +4396,37 @@
       }
     ],
     "dialogue": {
-      "situation": null,
+      "situation": "Le premier jour de classe. Un enseignant accueille de nouveaux élèves.",
       "lines": [
         {
-          "speaker_ar": "Scène : Le premier jour de classe. Un enseignant prend l'appel et introduit les nouveaux étudiants.",
-          "arabic": "Enseignant : مَرْحَبًا بِكُمْ يَا طُلَّابِي الأَعِزَّاءِ! هَؤُلَاءِ أَصْدِقَاؤُكُمُ الْجُدُدُ.",
-          "french": "",
-          "audio_id": "med13_dial_fba9e258"
+          "speaker_ar": "الْمُعَلِّمُ",
+          "arabic": "مَرْحَبًا بِكُمْ يَا طُلَّابِي الأَعِزَّاءِ! هَؤُلَاءِ طُلَّابٌ جُدُدٌ.",
+          "french": "Bienvenue à vous, ô mes chers étudiants ! Voici de nouveaux étudiants.",
+          "audio_id": ""
         },
         {
-          "speaker_ar": "[Bienvenue à vous, ô mes chers étudiants ! Les voici, vos nouveaux camarades.]",
-          "arabic": "Étudiant 1 : مَنْ هَؤُلَاءِ؟",
-          "french": "",
-          "audio_id": "med13_dial_bfa16516"
+          "speaker_ar": "الطَّالِبُ الأَوَّل",
+          "arabic": "مَنْ هَؤُلَاءِ؟",
+          "french": "Qui sont-ils ?",
+          "audio_id": ""
         },
         {
-          "speaker_ar": "[Qui sont-ils ?]",
-          "arabic": "Enseignant : هُمْ طُلَّابٌ مِنْ مَدِينَةٍ أُخْرَى. وَهَؤُلَاءِ مُدَرِّسُونَ جُدُدٌ.",
-          "french": "",
-          "audio_id": "med13_dial_781f45ab"
+          "speaker_ar": "الْمُعَلِّمُ",
+          "arabic": "هُمْ طُلَّابٌ مِنْ مَدِينَةٍ أُخْرَى. وَهَؤُلَاءِ أَوْلَادٌ مُجْتَهِدُونَ.",
+          "french": "Ce sont des étudiants d'une autre ville. Et ce sont des garçons travailleurs.",
+          "audio_id": ""
         },
         {
-          "speaker_ar": "[Ce sont des étudiants d'une autre ville. Et voilà, des professeurs nouveaux.]",
-          "arabic": "Étudiant 2 : أَيْنَ إِخْوَتُهُمْ؟",
-          "french": "",
-          "audio_id": "med13_dial_4779762b"
+          "speaker_ar": "الطَّالِبُ الثَّانِي",
+          "arabic": "أَيْنَ إِخْوَتُهُمْ؟",
+          "french": "Où sont leurs frères ?",
+          "audio_id": ""
         },
         {
-          "speaker_ar": "[Où sont leurs frères ?]",
-          "arabic": "Enseignant : هُمْ فِي الْفَصْلِ الثَّاني. الْآنَ نَبْدَأُ الدَّرْسَ.",
-          "french": "",
-          "audio_id": "med13_dial_7ee05bee"
+          "speaker_ar": "الْمُعَلِّمُ",
+          "arabic": "هُمْ فِي الْفَصْلِ الثَّانِي.",
+          "french": "Ils sont dans la deuxième classe.",
+          "audio_id": ""
         }
       ]
     },
@@ -4843,31 +4735,31 @@
       }
     ],
     "dialogue": {
-      "situation": null,
+      "situation": "Un cercle d'étude coranique pour femmes dans une mosquée.",
       "lines": [
         {
-          "speaker_ar": "Scène : Un cercle d'étude coranique pour femmes à la mosquée. L'enseignante s'adresse au groupe.",
-          "arabic": "Enseignante : السَّلَامُ عَلَيْكُنَّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ! أَهْلًا بِكُنَّ يَا طَالِبَاتِي الأَعِزَّاءِ.",
-          "french": "",
-          "audio_id": "med14_dial_571731dd"
+          "speaker_ar": "الْمُعَلِّمَةُ",
+          "arabic": "السَّلَامُ عَلَيْكُنَّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ.",
+          "french": "Que la paix soit sur vous et la miséricorde d'Allah et Ses bénédictions.",
+          "audio_id": ""
         },
         {
-          "speaker_ar": "[Que la paix soit sur vous et la miséricorde de Dieu et ses bénédictions ! Bienvenue à vous, ô mes chères étudiantes.]",
-          "arabic": "Étudiante 1 : وَعَلَيْكُمُ السَّلَامُ وَرَحْمَةُ اللَّهِ. أَيْنَ الْقُرْآنُ اليَوْمَ؟",
-          "french": "",
-          "audio_id": "med14_dial_515e6b8d"
+          "speaker_ar": "الطَّالِبَةُ الأُولَى",
+          "arabic": "وَعَلَيْكُنَّ السَّلَامُ وَرَحْمَةُ اللَّهِ. أَيْنَ الدَّرْسُ الْيَوْمَ؟",
+          "french": "Et que la paix soit sur vous et la miséricorde d'Allah. Où est le cours aujourd'hui ?",
+          "audio_id": ""
         },
         {
-          "speaker_ar": "[Et que la paix soit sur vous. Où est le Coran aujourd'hui ?]",
-          "arabic": "Enseignante : نَحْنُ سَنَقْرَأُ السُّورَةَ الثَّانِيَةَ. أَنْتُنَّ مُسْتَعِدَّاتٌ؟",
-          "french": "",
-          "audio_id": "med14_dial_918e0961"
+          "speaker_ar": "الْمُعَلِّمَةُ",
+          "arabic": "نَحْنُ سَنَقْرَأُ السُّورَةَ الثَّانِيَةَ. أَنْتُنَّ مُسْتَعِدَّاتٌ؟",
+          "french": "Nous allons lire la deuxième sourate. Êtes-vous prêtes ?",
+          "audio_id": ""
         },
         {
-          "speaker_ar": "[Nous allons lire la deuxième sourate. Êtes-vous préparées ?]",
-          "arabic": "الطَّالِبَاتُ : نَعَمْ! نَحْنُ مُسْتَعِدَّاتٌ جِدًّا.",
-          "french": "",
-          "audio_id": "med14_dial_2455ad39"
+          "speaker_ar": "الطَّالِبَاتُ",
+          "arabic": "نَعَمْ! نَحْنُ مُسْتَعِدَّاتٌ جِدًّا.",
+          "french": "Oui ! Nous sommes très prêtes.",
+          "audio_id": ""
         }
       ]
     },
@@ -4998,7 +4890,7 @@
       },
       {
         "id": "L14Q4",
-        "question": "Traduisez : **نَحْنُ خَرَجْنَا** (nous sommes sortis)",
+        "question": "Complétez : '**Nous sommes sortis**' = _______",
         "options": [
           "خَرَجْنَا",
           "خَرَجُونَ",
@@ -5006,7 +4898,7 @@
           "خَرَجَتْ"
         ],
         "correct": 0,
-        "explanation": "خَرَجْنَا = nous sommes sortis. Le suffixe ـْنَا = 'nous' (1ère pers. pluriel). S'utilise aussi bien pour masc. que fém."
+        "explanation": "خَرَجْنَا = nous sommes sortis. Le suffixe ـْنَا = 'nous' (1ère pers. pluriel). خَرَجُونَ et خَرَجِينَ n'existent pas. خَرَجَتْ = elle est sortie."
       }
     ],
     "flashcards": [
@@ -5203,37 +5095,37 @@
       }
     ],
     "dialogue": {
-      "situation": null,
+      "situation": "À l'aéroport de Jeddah. Deux hommes observent les voyageurs.",
       "lines": [
         {
-          "speaker_ar": "Scène : À l'aéroport de Jeddah. Deux hommes regardent différents groupes de voyageurs.",
-          "arabic": "Homme 1 : مَنْ أُولَئِكَ؟ هُمْ يَسِيرُونَ بِسُرْعَةٍ.",
-          "french": "",
-          "audio_id": "med15_dial_b1f30c5d"
+          "speaker_ar": "الرَّجُلُ الأَوَّلُ",
+          "arabic": "مَنْ أُولَئِكَ؟ هُمْ يَسِيرُونَ بِسُرْعَةٍ.",
+          "french": "Qui sont ceux-là ? Ils marchent vite.",
+          "audio_id": ""
         },
         {
-          "speaker_ar": "[Qui sont ceux-là ? Ils marchent vite.]",
-          "arabic": "Homme 2 : أُولَئِكَ حُجَّاجٌ مِنَ الْفِلِبِّينِ. وَأُولَئِكَ هُنَاكَ؟",
-          "french": "",
-          "audio_id": "med15_dial_ae3e08cb"
+          "speaker_ar": "الرَّجُلُ الثَّانِي",
+          "arabic": "أُولَئِكَ حُجَّاجٌ مِنَ الْفِلِبِّينِ.",
+          "french": "Ceux-là sont des pèlerins des Philippines.",
+          "audio_id": ""
         },
         {
-          "speaker_ar": "[Ceux-là sont des pèlerins des Philippines. Et ceux-là là-bas ?]",
-          "arabic": "Homme 1 : أُولَئِكَ نِسَاءٌ مِنَ الْهِنْدِ. هُنَّ طَالِبَاتٌ جِدًّا.",
-          "french": "",
-          "audio_id": "med15_dial_d3a90ab7"
+          "speaker_ar": "الرَّجُلُ الأَوَّلُ",
+          "arabic": "وَأُولَئِكَ نِسَاءٌ مِنَ الْهِنْدِ. هُنَّ طَالِبَاتٌ.",
+          "french": "Et celles-là sont des femmes de l'Inde. Ce sont des étudiantes.",
+          "audio_id": ""
         },
         {
-          "speaker_ar": "[Celles-là sont des femmes de l'Inde. Ce sont des étudiantes bien sérieuses.]",
-          "arabic": "Homme 2 : وَأَيْنَ الأَطْفَالُ؟",
-          "french": "",
-          "audio_id": "med15_dial_3ea183eb"
+          "speaker_ar": "الرَّجُلُ الثَّانِي",
+          "arabic": "وَأَيْنَ الأَطْفَالُ؟",
+          "french": "Et où sont les enfants ?",
+          "audio_id": ""
         },
         {
-          "speaker_ar": "[Et où sont les enfants ?]",
-          "arabic": "Homme 1 : أُولَئِكَ هُنَاكَ. هُمْ يَلْعَبُونَ.",
-          "french": "",
-          "audio_id": "med15_dial_da9b295c"
+          "speaker_ar": "الرَّجُلُ الأَوَّلُ",
+          "arabic": "أُولَئِكَ هُنَاكَ.",
+          "french": "Ceux-là sont là-bas.",
+          "audio_id": ""
         }
       ]
     },
@@ -5508,67 +5400,37 @@
       }
     ],
     "dialogue": {
-      "situation": null,
+      "situation": "(Chez le libraire — dans une librairie)",
       "lines": [
         {
-          "speaker_ar": "(Chez le libraire — dans une librairie)",
-          "arabic": "البائع : أَهْلًا! مَاذَا تُرِيدُ؟",
-          "french": "",
+          "speaker_ar": "البائع",
+          "arabic": "أَهْلًا! مَاذَا تُرِيدُ؟",
+          "french": "Bienvenue ! Que cherches-tu ?",
           "audio_id": "med16_dial_65749d63"
-        },
-        {
-          "speaker_ar": "Vendeur",
-          "arabic": "Bienvenue ! Que cherches-tu ?",
-          "french": "",
-          "audio_id": "med16_dial_92521ddb"
         },
         {
           "speaker_ar": "الزَّبُون",
           "arabic": "هَذِهِ الْكُتُبُ جَدِيدَةٌ، أَلِيسَ كَذَلِكَ؟",
-          "french": "",
+          "french": "Ces livres sont nouveaux, n'est-ce pas ?",
           "audio_id": "med16_dial_f0c3d19c"
-        },
-        {
-          "speaker_ar": "Client",
-          "arabic": "Ces livres sont nouveaux, n'est-ce pas ?",
-          "french": "",
-          "audio_id": "med16_dial_7f5913be"
         },
         {
           "speaker_ar": "البائع",
           "arabic": "نَعَمْ، هَذِهِ الْكُتُبُ جَدِيدَةٌ جِدًّا. وَتِلْكَ الْأَقْلَامُ جَمِيلَةٌ أَيْضًا.",
-          "french": "",
+          "french": "Oui, ces livres sont très nouveaux. Et ces stylos là-bas sont beaux aussi.",
           "audio_id": "med16_dial_1012299f"
-        },
-        {
-          "speaker_ar": "Vendeur",
-          "arabic": "Oui, ces livres sont très nouveaux. Et ces stylos là-bas sont beaux aussi.",
-          "french": "",
-          "audio_id": "med16_dial_c99e8f1b"
         },
         {
           "speaker_ar": "الزَّبُون",
           "arabic": "الْأَبْوَابُ مَفْتُوحَةٌ؟",
-          "french": "",
+          "french": "Les portes sont ouvertes ?",
           "audio_id": "med16_dial_8c85378f"
-        },
-        {
-          "speaker_ar": "Client",
-          "arabic": "Les portes sont ouvertes ?",
-          "french": "",
-          "audio_id": "med16_dial_a3a66b10"
         },
         {
           "speaker_ar": "البائع",
           "arabic": "نَعَمْ، الأَبْوَابُ مَفْتُوحَةٌ. تَفَضَّلْ!",
-          "french": "",
+          "french": "Oui, les portes sont ouvertes. Entre !",
           "audio_id": "med16_dial_4bd8e29d"
-        },
-        {
-          "speaker_ar": "Vendeur",
-          "arabic": "Oui, les portes sont ouvertes. Entre !",
-          "french": "",
-          "audio_id": "med16_dial_388b0917"
         }
       ]
     },
@@ -5823,79 +5685,43 @@
       }
     ],
     "dialogue": {
-      "situation": null,
+      "situation": "(Jeu de cache-cache — Lachiyy wa Tulāsh)",
       "lines": [
         {
-          "speaker_ar": "(Jeu de cache-cache — Lachiyy wa Tulāsh)",
-          "arabic": "الأم : أَيْنَ الْقِطَّةُ؟",
-          "french": "",
+          "speaker_ar": "الأم",
+          "arabic": "أَيْنَ الْقِطَّةُ؟",
+          "french": "Où est le chat ?",
           "audio_id": "med17_dial_6ddeb8ee"
-        },
-        {
-          "speaker_ar": "Mère",
-          "arabic": "Où est le chat ?",
-          "french": "",
-          "audio_id": "med17_dial_403dfc61"
         },
         {
           "speaker_ar": "الطِّفْل",
           "arabic": "هِيَ تَحْتَ الطَّاوِلَةِ!",
-          "french": "",
+          "french": "Il est sous la table !",
           "audio_id": "med17_dial_257b7b27"
-        },
-        {
-          "speaker_ar": "Enfant",
-          "arabic": "Il est sous la table !",
-          "french": "",
-          "audio_id": "med17_dial_6820c03f"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "وَأَيْنَ الْكِتَابُ؟",
-          "french": "",
+          "french": "Et où est le livre ?",
           "audio_id": "med17_dial_43795ef7"
-        },
-        {
-          "speaker_ar": "Mère",
-          "arabic": "Et où est le livre ?",
-          "french": "",
-          "audio_id": "med17_dial_96c573c6"
         },
         {
           "speaker_ar": "الطِّفْل",
           "arabic": "الْكِتَابُ فَوْقَ الرِّفِّ. وَالْقَلَمُ بَجَانِبِ الْكِتَابِ.",
-          "french": "",
+          "french": "Le livre est sur l'étagère. Et le stylo est à côté du livre.",
           "audio_id": "med17_dial_a7bf5bc7"
-        },
-        {
-          "speaker_ar": "Enfant",
-          "arabic": "Le livre est sur l'étagère. Et le stylo est à côté du livre.",
-          "french": "",
-          "audio_id": "med17_dial_028aa939"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "أَحْسَنْتَ! وَمَا الَّذِي خَلْفَ الْبَابِ؟",
-          "french": "",
+          "french": "Très bien ! Et qu'y a-t-il derrière la porte ?",
           "audio_id": "med17_dial_6822477d"
-        },
-        {
-          "speaker_ar": "Mère",
-          "arabic": "Très bien ! Et qu'y a-t-il derrière la porte ?",
-          "french": "",
-          "audio_id": "med17_dial_454e45b8"
         },
         {
           "speaker_ar": "الطِّفْل",
           "arabic": "هُنَاكَ شَيْءٌ غَرِيبٌ. أَنَا خَائِفٌ!",
-          "french": "",
+          "french": "Il y a quelque chose de bizarre là-bas. J'ai peur !",
           "audio_id": "med17_dial_602892a0"
-        },
-        {
-          "speaker_ar": "Enfant",
-          "arabic": "Il y a quelque chose de bizarre là-bas. J'ai peur !",
-          "french": "",
-          "audio_id": "med17_dial_06353fb7"
         }
       ]
     },
@@ -6204,67 +6030,37 @@
       }
     ],
     "dialogue": {
-      "situation": null,
+      "situation": "(Au marché de chaussures)",
       "lines": [
         {
-          "speaker_ar": "(Au marché de chaussures)",
-          "arabic": "البائع : مَرْحَبًا! مَاذَا تُرِيدُ؟",
-          "french": "",
+          "speaker_ar": "البائع",
+          "arabic": "مَرْحَبًا! مَاذَا تُرِيدُ؟",
+          "french": "Bonjour ! Que veux-tu ?",
           "audio_id": "med18_dial_f1c23075"
-        },
-        {
-          "speaker_ar": "Vendeur",
-          "arabic": "Bonjour ! Que veux-tu ?",
-          "french": "",
-          "audio_id": "med18_dial_c8ff9294"
         },
         {
           "speaker_ar": "الزَّبُون",
           "arabic": "أُرِيدُ زَوْجَيْنِ مِنْ الْأَحْذِيَةِ. كَمْ هِيَ الأَسْعَارُ؟",
-          "french": "",
+          "french": "Je veux deux paires de chaussures. Quels sont les prix ?",
           "audio_id": "med18_dial_a9ad1b58"
         },
         {
-          "speaker_ar": "Client",
-          "arabic": "Je veux deux paires de chaussures. Quels sont les prix ?",
-          "french": "",
-          "audio_id": "med18_dial_cf30285a"
-        },
-        {
           "speaker_ar": "البائع",
-          "arabic": "هَاتَانِ الْحِذَاءَانِ سُودَتَانِ جَمِيلَتَانِ. وَهَذَانِ الْحِذَاءَانِ حَمْرَاوَانِ.",
-          "french": "",
+          "arabic": "هَذَانِ الْحِذَاءَانِ أَسْوَدَانِ جَمِيلَانِ. وَهَذَانِ الْحِذَاءَانِ بَيْضَاوَانِ.",
+          "french": "Ces deux chaussures noires sont belles. Et ces deux chaussures sont blanches.",
           "audio_id": "med18_dial_e0e33fb6"
         },
         {
-          "speaker_ar": "Vendeur",
-          "arabic": "Ces deux chaussures noires sont belles. Et ces deux chaussures-ci sont rouges.",
-          "french": "",
-          "audio_id": "med18_dial_26dfd57a"
-        },
-        {
           "speaker_ar": "الزَّبُون",
-          "arabic": "كَمْ حِذَاءً فِي هَذِهِ الْمَتْجَرِ؟",
-          "french": "",
+          "arabic": "كَمْ حِذَاءً فِي هَذَا الْمَتْجَرِ؟",
+          "french": "Combien de chaussures y a-t-il dans ce magasin ?",
           "audio_id": "med18_dial_569c68de"
-        },
-        {
-          "speaker_ar": "Client",
-          "arabic": "Combien de chaussures y a-t-il dans ce magasin ?",
-          "french": "",
-          "audio_id": "med18_dial_7400318e"
         },
         {
           "speaker_ar": "البائع",
           "arabic": "عِنْدِي عِشْرُونَ زَوْجًا. هَاتَانِ الْأَرْبَعَتَانِ الأَخِيرَتَانِ.",
-          "french": "",
+          "french": "J'en ai vingt paires. Ces deux-ci sont les dernières.",
           "audio_id": "med18_dial_faf42476"
-        },
-        {
-          "speaker_ar": "Vendeur",
-          "arabic": "J'en ai vingt paires. Ces deux-ci sont les dernières.",
-          "french": "",
-          "audio_id": "med18_dial_dc799b85"
         }
       ]
     },
@@ -6498,44 +6294,44 @@
         "type": "examples_table",
         "rows": [
           {
-            "ar": "خَمْسَةُ أَقْلَامٍ",
-            "fr": "Cinq stylos",
-            "analysis": "خَمْسَةٌ (fém.) pour قَلَمٌ (masc.)"
-          },
-          {
-            "ar": "عَشَرَةُ طُلَّابٍ",
-            "fr": "Dix étudiants",
-            "analysis": "عَشَرَةٌ (fém.) pour طَالِبٌ (masc.)"
-          },
-          {
-            "ar": "ثَلَاثَةُ كِتَابٍ",
+            "ar": "ثَلَاثَةُ كُتُبٍ",
             "fr": "Trois livres",
-            "analysis": "ثَلَاثَةٌ (fém.) pour كِتَابٌ (masc.)"
+            "analysis": "كِتَابٌ (singulier masc.) → nombre fém. : ثَلَاثَةُ (avec ة). Pluriel génitif : كُتُبٍ"
           },
           {
-            "ar": "سِتَّةُ مَكَاتِبَ",
-            "fr": "Six bureaux",
-            "analysis": "سِتَّةٌ (fém.) pour مَكْتَبٌ (masc.)"
+            "ar": "أَرْبَعَةُ أَقْلَامٍ",
+            "fr": "Quatre stylos",
+            "analysis": "قَلَمٌ (singulier masc.) → nombre fém. : أَرْبَعَةُ (avec ة). Pluriel génitif : أَقْلَامٍ"
           },
           {
-            "ar": "تِسْعَةُ أَبْنَاءٍ",
-            "fr": "Neuf fils",
-            "analysis": "تِسْعَةٌ (fém.) pour اِبْنٌ (masc.)"
+            "ar": "خَمْسَةُ طُلَّابٍ",
+            "fr": "Cinq étudiants",
+            "analysis": "طَالِبٌ (singulier masc.) → nombre fém. : خَمْسَةُ (avec ة). Pluriel génitif : طُلَّابٍ"
           },
           {
-            "ar": "سَبْعَةُ نُجُومٍ",
-            "fr": "Sept étoiles",
-            "analysis": "سَبْعَةٌ (fém.) pour نَجْمٌ (masc.)"
+            "ar": "سِتَّةُ بُيُوتٍ",
+            "fr": "Six maisons",
+            "analysis": "بَيْتٌ (singulier masc.) → nombre fém. : سِتَّةُ (avec ة). Pluriel génitif : بُيُوتٍ"
           },
           {
-            "ar": "أَرْبَعَةُ أَبْوَابٍ",
-            "fr": "Quatre portes",
-            "analysis": "أَرْبَعَةٌ (fém.) pour بَابٌ (masc.)"
+            "ar": "سَبْعَةُ أَبْوَابٍ",
+            "fr": "Sept portes",
+            "analysis": "بَابٌ (singulier masc.) → nombre fém. : سَبْعَةُ (avec ة). Pluriel génitif : أَبْوَابٍ"
           },
           {
-            "ar": "ثَمَانِيَةُ سَيَّارَاتٍ",
-            "fr": "Huit voitures",
-            "analysis": "ثَمَانِيَةٌ (fém.) pour سَيَّارَةٌ (masc.)"
+            "ar": "ثَمَانِيَةُ رِجَالٍ",
+            "fr": "Huit hommes",
+            "analysis": "رَجُلٌ (singulier masc.) → nombre fém. : ثَمَانِيَةُ (avec ة). Pluriel génitif : رِجَالٍ"
+          },
+          {
+            "ar": "تِسْعَةُ أَوْلَادٍ",
+            "fr": "Neuf garçons",
+            "analysis": "وَلَدٌ (singulier masc.) → nombre fém. : تِسْعَةُ (avec ة). Pluriel génitif : أَوْلَادٍ"
+          },
+          {
+            "ar": "عَشَرَةُ دُرُوسٍ",
+            "fr": "Dix leçons",
+            "analysis": "دَرْسٌ (singulier masc.) → nombre fém. : عَشَرَةُ (avec ة). Pluriel génitif : دُرُوسٍ"
           }
         ]
       },
@@ -6545,67 +6341,37 @@
       }
     ],
     "dialogue": {
-      "situation": null,
+      "situation": "(Bibliothèque — Un bibliothécaire compte les livres)",
       "lines": [
         {
-          "speaker_ar": "(Bibliothèque — Un bibliothécaire compte les livres)",
-          "arabic": "الْمُكْتَبِيّ : لَدَيَّ الكثِيرُ مِنْ الكتب! هَل تُرِيدُ أَنْ تَعْرِفَ كَمْ عِنْدِي؟",
-          "french": "",
+          "speaker_ar": "الْمُكْتَبِيّ",
+          "arabic": "لَدَيَّ الكثِيرُ مِنْ الكتب! هَل تُرِيدُ أَنْ تَعْرِفَ كَمْ عِنْدِي؟",
+          "french": "J'ai beaucoup de livres ! Veux-tu savoir combien j'en ai ?",
           "audio_id": "med19_dial_42cbad39"
-        },
-        {
-          "speaker_ar": "Bibliothécaire",
-          "arabic": "J'ai beaucoup de livres ! Veux-tu savoir combien j'en ai ?",
-          "french": "",
-          "audio_id": "med19_dial_1c374ecb"
         },
         {
           "speaker_ar": "الزَّائِر",
           "arabic": "نَعَمْ، بِالتَّأْكِيدِ!",
-          "french": "",
+          "french": "Oui, bien sûr !",
           "audio_id": "med19_dial_b741e3fa"
         },
         {
-          "speaker_ar": "Visiteur",
-          "arabic": "Oui, bien sûr !",
-          "french": "",
-          "audio_id": "med19_dial_4bc29f2d"
-        },
-        {
           "speaker_ar": "الْمُكْتَبِيّ",
-          "arabic": "هُنَاكَ ثَلَاثَةُ أَرْفُفٍ بِخَمْسَةِ كِتَابٍ عَلَى كُلِّ رَفٍّ. إِذًا، خَمْسَةَ عَشَرَ كِتَابًا فِي هَذِهِ الزَّاوِيَةِ.",
-          "french": "",
+          "arabic": "هُنَاكَ ثَلَاثَةُ أَرْفُفٍ بِخَمْسَةِ كُتُبٍ عَلَى كُلِّ رَفٍّ. إِذًا، خَمْسَةَ عَشَرَ كِتَابًا فِي هَذِهِ الزَّاوِيَةِ.",
+          "french": "Il y a trois étagères avec cinq livres sur chaque étagère. Donc, quinze livres dans ce coin.",
           "audio_id": "med19_dial_a08253cd"
-        },
-        {
-          "speaker_ar": "Bibliothécaire",
-          "arabic": "Il y a trois étagères avec cinq livres sur chaque étagère. Donc, quinze livres dans ce coin.",
-          "french": "",
-          "audio_id": "med19_dial_135d8804"
         },
         {
           "speaker_ar": "الزَّائِر",
           "arabic": "وَكَمْ مِنَ الْأَقْلَامِ؟",
-          "french": "",
+          "french": "Et combien de stylos ?",
           "audio_id": "med19_dial_fcd6b61c"
-        },
-        {
-          "speaker_ar": "Visiteur",
-          "arabic": "Et combien de stylos ?",
-          "french": "",
-          "audio_id": "med19_dial_e8465409"
         },
         {
           "speaker_ar": "الْمُكْتَبِيّ",
           "arabic": "عِنْدِي عَشَرَةُ أَقْلَامٍ حَمْرَاءَ وَتِسْعَةُ أَقْلَامٍ سَوْدَاءَ!",
-          "french": "",
+          "french": "J'ai dix stylos rouges et neuf stylos noirs !",
           "audio_id": "med19_dial_8afbac05"
-        },
-        {
-          "speaker_ar": "Bibliothécaire",
-          "arabic": "J'ai dix stylos rouges et neuf stylos noirs !",
-          "french": "",
-          "audio_id": "med19_dial_5000ef28"
         }
       ]
     },
@@ -6817,7 +6583,7 @@
       {
         "type": "expert_corner",
         "title_fr": "Le coin des experts",
-        "content_fr": "**Al-Mukhālafah** (المُخَالَفَةُ) = Opposition, contraste. C'est le principe fondamental du comptage arabe.\n\n**Forme masculine sans ة :** Pour les nombres féminins, aucune ة n'apparaît.\n\n**Cas particulier : ثَمَانِي :** Ce nombre a une forme spéciale (ـي au lieu de ـة) en tant que forme féminine.\n\n**Cas particulier : عَشْرُ vs عَشَرَةٌ :**\n\n- عَشَرَةٌ = nombre féminin (pour compter des noms masc.)\n- عَشْرُ = nombre masculin (pour compter des noms fém.)\n\nNotez aussi qu'en composition (11-19), le système change complètement (LEÇON future)."
+        "content_fr": "**Al-Mukhālafah** (المُخَالَفَةُ) = Opposition de genre entre le nombre et le nom.\n\n**Règle fondamentale :** Pour déterminer le genre du nombre (3-10), on regarde le genre du **singulier** du nom, qu'il soit animé ou inanimé :\n- Si le singulier est **féminin** (مَدْرَسَةٌ, طَالِبَةٌ, بِنْتٌ) → le nombre est **masculin** (sans ة)\n- Si le singulier est **masculin** (كِتَابٌ, طَالِبٌ, وَلَدٌ) → le nombre est **féminin** (avec ة)\n\n**Forme masculine du nombre (sans ة) :** ثَلَاثُ, أَرْبَعُ, خَمْسُ, سِتُّ, سَبْعُ, ثَمَانِي, تِسْعُ, عَشْرُ\n\n**Cas particulier — ثَمَانِي :** Ce nombre a une forme spéciale : ـي au lieu de la simple suppression de ة.\n\n**Cas particulier — عَشْرُ vs عَشَرَةٌ :**\n- عَشَرَةٌ (avec ة et fatha sur shin) = pour noms masculins\n- عَشْرُ (sans ة, sukun sur shin) = pour noms féminins"
       },
       {
         "type": "pronunciation",
@@ -6848,114 +6614,79 @@
         "type": "examples_table",
         "rows": [
           {
+            "ar": "ثَلَاثُ بَنَاتٍ",
+            "fr": "Trois filles",
+            "analysis": "بِنْتٌ (singulier fém.) → nombre masc. : ثَلَاثُ (sans ة)"
+          },
+          {
             "ar": "خَمْسُ نِسَاءٍ",
             "fr": "Cinq femmes",
-            "analysis": "خَمْسُ (masc.) pour نِسْوَةٌ/اِمْرَأَةٌ (fém.)"
+            "analysis": "اِمْرَأَةٌ (singulier fém.) → nombre masc. : خَمْسُ (sans ة)"
           },
           {
             "ar": "سِتُّ طَالِبَاتٍ",
             "fr": "Six étudiantes",
-            "analysis": "سِتُّ (masc.) pour طَالِبَةٌ (fém.)"
-          },
-          {
-            "ar": "ثَمَانِي مُعَلِّمَاتٍ",
-            "fr": "Huit enseignantes",
-            "analysis": "ثَمَانِي (masc.) pour مُعَلِّمَةٌ (fém.)"
-          },
-          {
-            "ar": "عَشْرُ سَاعَاتٍ",
-            "fr": "Dix montres",
-            "analysis": "عَشْرُ (masc.) pour سَاعَةٌ (fém.)"
-          },
-          {
-            "ar": "ثَلَاثُ بَنَاتٍ",
-            "fr": "Trois filles",
-            "analysis": "ثَلَاثُ (masc.) pour بِنْتٌ (fém.)"
-          },
-          {
-            "ar": "أَرْبَعُ فُصُولٍ",
-            "fr": "Quatre classes",
-            "analysis": "أَرْبَعُ (masc.) pour فَصْلٌ... wait, this is masc!"
+            "analysis": "طَالِبَةٌ (singulier fém. avec ة) → nombre masc. : سِتُّ (sans ة)"
           },
           {
             "ar": "سَبْعُ مَدَارِسَ",
             "fr": "Sept écoles",
-            "analysis": "سَبْعُ (masc.) pour مَدْرَسَةٌ (fém.)"
+            "analysis": "مَدْرَسَةٌ (singulier fém. avec ة) → nombre masc. : سَبْعُ (sans ة)"
           },
           {
-            "ar": "تِسْعُ أُخَوَاتٍ",
+            "ar": "ثَمَانِي مُعَلِّمَاتٍ",
+            "fr": "Huit enseignantes",
+            "analysis": "مُعَلِّمَةٌ (singulier fém.) → nombre masc. : ثَمَانِي (forme spéciale)"
+          },
+          {
+            "ar": "تِسْعُ أَخَوَاتٍ",
             "fr": "Neuf sœurs",
-            "analysis": "تِسْعُ (masc.) pour أُخْتٌ (fém.)"
+            "analysis": "أُخْتٌ (singulier fém.) → nombre masc. : تِسْعُ (sans ة)"
+          },
+          {
+            "ar": "عَشْرُ سَاعَاتٍ",
+            "fr": "Dix montres",
+            "analysis": "سَاعَةٌ (singulier fém. avec ة) → nombre masc. : عَشْرُ (sans ة)"
           }
         ]
       },
       {
         "type": "mise_en_situation",
-        "content_fr": "Tu es dans une école secondaire pour filles (مَدْرَسَةٌ ثَانَوِيَّة لِلْبَنَاتِ) à Damas. Tu aides la directrice à dresser un inventaire. Elle dit : « لَدَيْنَا عَشْرُ فُصُولٍ وَخَمْسُ مَخْتَبَرَاتٍ وَتِسْعُ مَكْتَبَاتٍ » (Nous avons dix classes, cinq laboratoires et neuf bibliothèques). Chaque fois, elle compte des noms féminins (فُصُولٌ, مَخْتَبَرٌ, مَكْتَبَةٌ) avec des nombres masculins sans ة. C'est l'inversion parfaite de ce que tu as appris à la Leçon 19. À la fin, elle ajoute : « وَثَمَانِي طَالِبَاتٌ نَاجِحَاتٌ » (Et huit étudiantes brillantes). L'ordre des mots te rappelle que cette langue est systématique et logique — juste différente du français."
+        "content_fr": "Tu es dans une école secondaire pour filles (مَدْرَسَةٌ ثَانَوِيَّة لِلْبَنَاتِ) à Damas. Tu aides la directrice à dresser un inventaire.\n\nElle dit : « عِنْدَنَا تِسْعُ مَكْتَبَاتٍ وَخَمْسُ مُعَلِّمَاتٍ وَسَبْعُ حَافِلَاتٍ » (Nous avons neuf bibliothèques, cinq enseignantes et sept bus).\n\nChaque fois, elle compte des noms dont le **singulier est féminin** : مَكْتَبَةٌ (bibliothèque, fém.), مُعَلِّمَةٌ (enseignante, fém.), حَافِلَةٌ (bus, fém.) → nombre masculin sans ة.\n\nRappelle-toi : c'est toujours le genre du **singulier** qui commande le genre du nombre !"
       }
     ],
     "dialogue": {
-      "situation": null,
+      "situation": "(Mère comptant les affaires scolaires de ses filles)",
       "lines": [
         {
-          "speaker_ar": "(Mère comptant les affaires scolaires de ses filles)",
-          "arabic": "الأم : دَعِيني أُحْصِي أَشْيَاءَكِ الْمَدْرَسِيَّةَ!",
-          "french": "",
+          "speaker_ar": "الأم",
+          "arabic": "دَعِيني أُحْصِي أَشْيَاءَكِ الْمَدْرَسِيَّةَ!",
+          "french": "Laisse-moi compter tes fournitures scolaires !",
           "audio_id": "med20_dial_71ee7066"
-        },
-        {
-          "speaker_ar": "Mère",
-          "arabic": "Laisse-moi compter tes fournitures scolaires !",
-          "french": "",
-          "audio_id": "med20_dial_65f23d2d"
         },
         {
           "speaker_ar": "الْبِنْتُ الْأُولَى",
           "arabic": "مَاذَا تُحْصِينَ؟",
-          "french": "",
+          "french": "Que comptes-tu ?",
           "audio_id": "med20_dial_a7996084"
-        },
-        {
-          "speaker_ar": "Fille 1",
-          "arabic": "Que comptes-tu ?",
-          "french": "",
-          "audio_id": "med20_dial_a40320fe"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "عِنْدِي خَمْسُ دَفَاتِرَ وَسِتُّ مِمْحَاةٍ وَسَبْعُ شَنْطَاتٍ!",
-          "french": "",
+          "french": "J'ai 5 cahiers, 6 gommes et 7 cartables !",
           "audio_id": "med20_dial_bc2927f4"
-        },
-        {
-          "speaker_ar": "Mère",
-          "arabic": "J'ai 5 cahiers, 6 gommes et 7 cartables !",
-          "french": "",
-          "audio_id": "med20_dial_90606b3a"
         },
         {
           "speaker_ar": "الْبِنْتُ الثَّانِيَةُ",
           "arabic": "وَكَمْ طَالِبَةٌ فِي فَصْلِكِ؟",
-          "french": "",
+          "french": "Et combien d'étudiantes dans ta classe ?",
           "audio_id": "med20_dial_af58fd7c"
-        },
-        {
-          "speaker_ar": "Fille 2",
-          "arabic": "Et combien d'étudiantes dans ta classe ?",
-          "french": "",
-          "audio_id": "med20_dial_405ff187"
         },
         {
           "speaker_ar": "الأم",
           "arabic": "ثَمَانِي وَعِشْرُونَ طَالِبَةٌ! وَعِشْرُ مُعَلِّمَاتٍ فِي الْمَدْرَسَةِ.",
-          "french": "",
+          "french": "Vingt-huit étudiantes ! Et dix enseignantes dans l'école.",
           "audio_id": "med20_dial_9cc50ab3"
-        },
-        {
-          "speaker_ar": "Mère",
-          "arabic": "Vingt-huit étudiantes ! Et dix enseignantes dans l'école.",
-          "french": "",
-          "audio_id": "med20_dial_b99edb77"
         }
       ]
     },
@@ -7040,27 +6771,27 @@
       },
       {
         "id": "L20Q3",
-        "question": "Qu'est-ce qu'un **diptote** (Mamnu' min as-Sarf) ?",
+        "question": "Complétez : **______ مُعَلِّمَاتٍ** (sept enseignantes)",
         "options": [
-          "Un nom qui prend toujours le Tanwin",
-          "Un nom qui ne prend JAMAIS le Tanwin",
-          "Un nom qui prend le Tanwin optionnel",
-          "Un nom invariable"
+          "سَبْعَةُ",
+          "سَبْعُ",
+          "سَبْعَةً",
+          "سَبْعَانِ"
         ],
         "correct": 1,
-        "explanation": "Les diptotes (noms interdits de Tanwin) ne prennent jamais ـٌ/ـً/ـٍ et leur génitif prend Fathah au lieu de Kasrah."
+        "explanation": "مُعَلِّمَةٌ (singulier fém.) → nombre masculin sans ة : سَبْعُ. سَبْعَةُ (avec ة) serait pour un nom masculin."
       },
       {
         "id": "L20Q4",
-        "question": "Quel cas prend un **diptote** après une préposition ?",
+        "question": "Quelle est la forme correcte de '**huit étudiantes**' ?",
         "options": [
-          "Nominatif (Dammah)",
-          "Fathah (au lieu de Kasrah)",
-          "Kasrah normale",
-          "Génitif normal"
+          "ثَمَانِيَةُ طَالِبَاتٍ",
+          "ثَمَانِي طَالِبَاتٍ",
+          "ثَمَانِ طَالِبَاتٍ",
+          "ثَمَانُ طَالِبَاتٍ"
         ],
         "correct": 1,
-        "explanation": "Les diptotes prennent Fathah au lieu de Kasrah au génitif. مِنْ مَرْيَمَ (de Maryam) pas مِنْ مَرْيَمِ."
+        "explanation": "طَالِبَةٌ (singulier fém.) → nombre masculin. La forme masculine de 8 est ثَمَانِي (forme spéciale avec ـي). ثَمَانِيَةُ (avec ة) serait pour les noms masculins."
       }
     ],
     "flashcards": [
@@ -7255,67 +6986,37 @@
       }
     ],
     "dialogue": {
-      "situation": null,
+      "situation": "(Conversation de voyage)",
       "lines": [
         {
-          "speaker_ar": "(Conversation de voyage)",
-          "arabic": "السَّائِح الأَوَّل : أَنَا مِنْ بَغْدَادَ. وَأَنْتَ؟",
-          "french": "",
+          "speaker_ar": "السَّائِح الأَوَّل",
+          "arabic": "أَنَا مِنْ بَغْدَادَ. وَأَنْتَ؟",
+          "french": "Je viens de Bagdad. Et toi ?",
           "audio_id": "med21_dial_c96979dd"
-        },
-        {
-          "speaker_ar": "Touriste 1",
-          "arabic": "Je viens de Bagdad. Et toi ?",
-          "french": "",
-          "audio_id": "med21_dial_e7c32890"
         },
         {
           "speaker_ar": "السَّائِح الثَّانِي",
           "arabic": "أَنَا مِنْ مَكَّةَ. هَذَا بَلَدٌ جَمِيلٌ جِدًّا.",
-          "french": "",
+          "french": "Je viens de Makkah. C'est un très beau pays.",
           "audio_id": "med21_dial_813190b7"
-        },
-        {
-          "speaker_ar": "Touriste 2",
-          "arabic": "Je viens de Makkah. C'est un très beau pays.",
-          "french": "",
-          "audio_id": "med21_dial_71d78758"
         },
         {
           "speaker_ar": "السَّائِح الأَوَّل",
           "arabic": "نَعَمْ! وَهُنَاكَ مَسَاجِدُ كَثِيرَةٌ فِي بَغْدَادَ. مَسَاجِدُ قَدِيمَةٌ جِدًّا!",
-          "french": "",
+          "french": "Oui ! Et il y a beaucoup de mosquées à Bagdad. Des mosquées très anciennes !",
           "audio_id": "med21_dial_2f792164"
         },
         {
-          "speaker_ar": "Touriste 1",
-          "arabic": "Oui ! Et il y a beaucoup de mosquées à Bagdad. Des mosquées très anciennes !",
-          "french": "",
-          "audio_id": "med21_dial_e3782115"
-        },
-        {
           "speaker_ar": "السَّائِح الثَّانِي",
-          "arabic": "أَتَعْرِفُ الْمَرْيَمُ؟ إِنَّهَا مِنْ بَارِيسَ.",
-          "french": "",
+          "arabic": "هَلْ تَعْرِفُ مَرْيَمَ؟ إِنَّهَا مِنْ بَارِيسَ.",
+          "french": "Connais-tu Maryam ? Elle vient de Paris.",
           "audio_id": "med21_dial_cfa1be1a"
-        },
-        {
-          "speaker_ar": "Touriste 2",
-          "arabic": "Connais-tu Maryam ? Elle vient de Paris.",
-          "french": "",
-          "audio_id": "med21_dial_2c1ef07f"
         },
         {
           "speaker_ar": "السَّائِح الأَوَّل",
           "arabic": "بَارِيسَ جَمِيلَةٌ. أَنَا أُحِبُّ الْمُدُنَ الْحَمْرَاءَ!",
-          "french": "",
+          "french": "Paris est belle. J'aime les villes rouges !",
           "audio_id": "med21_dial_0ad60ad8"
-        },
-        {
-          "speaker_ar": "Touriste 1",
-          "arabic": "Paris est belle. J'aime les villes rouges !",
-          "french": "",
-          "audio_id": "med21_dial_8f69526a"
         }
       ]
     },
@@ -7624,37 +7325,37 @@
         {
           "speaker_ar": "الْمُعَلِّمُ",
           "arabic": "مَاذَا تَفْعَلُ كُلَّ صَبَاح؟",
-          "french": "",
+          "french": "Que fais-tu chaque matin ?",
           "audio_id": "med22_dial_34a58307"
         },
         {
           "speaker_ar": "الطَّالِبُ",
           "arabic": "أَشْرَبُ الْقَهْوَةَ، ثُمَّ أَذْهَبُ إِلَى الْمَدْرَسَةِ.",
-          "french": "",
+          "french": "Je bois le café, puis je vais à l'école.",
           "audio_id": "med22_dial_24dca1df"
         },
         {
           "speaker_ar": "الْمُعَلِّمُ",
           "arabic": "وَمَاذَا تَفْعَلُ فِي الْفَصْلِ؟",
-          "french": "",
+          "french": "Et que fais-tu en classe ?",
           "audio_id": "med22_dial_534dac51"
         },
         {
           "speaker_ar": "الطَّالِبُ",
           "arabic": "أَسْتَمِعُ إِلَى الدَّرْسِ وَأَكْتُبُ الْمَلَاحِظَاتِ.",
-          "french": "",
+          "french": "J'écoute le cours et j'écris les notes.",
           "audio_id": "med22_dial_be109114"
         },
         {
           "speaker_ar": "الْمُعَلِّمُ",
           "arabic": "هَذَا عَمَلٌ جَيِّدٌ! وَمَتَى تَعُودُ إِلَى الْبَيْتِ؟",
-          "french": "",
+          "french": "C'est un bon travail ! Et quand rentres-tu à la maison ?",
           "audio_id": "med22_dial_94df84dd"
         },
         {
           "speaker_ar": "الطَّالِبُ",
           "arabic": "أَعُودُ حَوَالَيْ السَّاعَةِ الثَّالِثَةِ عَصْرًا.",
-          "french": "",
+          "french": "Je rentre vers trois heures de l'après-midi.",
           "audio_id": "med22_dial_579dc3b2"
         }
       ]
@@ -7965,37 +7666,37 @@
         {
           "speaker_ar": "الْمُدَرِّبُ",
           "arabic": "يَا أَوْلاَدُ، هَلْ تَسْتَعِدُّونَ لِلْمُبَارَاةِ غَدًا؟",
-          "french": "",
+          "french": "Ô garçons, êtes-vous prêts pour le match demain ?",
           "audio_id": "med23_dial_df99207f"
         },
         {
           "speaker_ar": "الطُّلَّابُ",
           "arabic": "نَعَمْ، نَحْنُ مُسْتَعِدُّونَ!",
-          "french": "",
+          "french": "Oui, nous sommes prêts !",
           "audio_id": "med23_dial_700f01fd"
         },
         {
           "speaker_ar": "الْمُدَرِّبُ",
           "arabic": "تَذْهَبُونَ الْآنَ إِلَى الْمَلْعَبِ وَتَتَمَرَّنُونَ لِمُدَّةِ سَاعَتَيْنِ.",
-          "french": "",
+          "french": "Allez maintenant au terrain et entraînez-vous pendant une heure.",
           "audio_id": "med23_dial_f953c8f1"
         },
         {
           "speaker_ar": "الطُّلَّابُ",
-          "arabic": "حَاضِرُونَ يَا سَيِّدَ!",
-          "french": "",
+          "arabic": "حَاضِرُونَ يَا أُسْتَاذُ!",
+          "french": "Présents, ô professeur !",
           "audio_id": "med23_dial_4f4c5f8d"
         },
         {
           "speaker_ar": "الْمُدَرِّبُ",
           "arabic": "وَأَنْتِ يَا فَاطِمَةُ، أَنْتِ وَصَدِيقَاتُكِ تَلْعَبْنَ بِكُلِّ قُوَّةٍ.",
-          "french": "",
+          "french": "Et toi Fatima, toi et tes amies vous jouez au basket ?",
           "audio_id": "med23_dial_225d9e3f"
         },
         {
           "speaker_ar": "فَاطِمَةُ",
           "arabic": "حَتْمًا! نَحْنُ سَوْفَ نَرْبَحُ!",
-          "french": "",
+          "french": "Absolument ! Nous allons gagner !",
           "audio_id": "med23_dial_e0a3e4cb"
         }
       ]

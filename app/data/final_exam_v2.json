@@ -1,98 +1,349 @@
 {
   "exam_title": "Examen Final de Synthèse - Tome 1 Complet",
-  "time_limit": 25,
+  "time_limit": 35,
   "passing_score": 70,
-  "total_questions": 10,
+  "total_questions": 20,
   "questions": [
     {
       "id": "EX1",
       "difficulty": 1,
-      "covers_concepts": ["démonstratifs", "phrase nominale"],
+      "covers_concepts": [
+        "démonstratifs",
+        "phrase nominale"
+      ],
       "question": "Identifiez la phrase grammaticalement correcte :",
-      "options": ["هَذَا الْكِتَابُ أَحْمَرُ", "هَذَا الْكِتَابُ حَمْرَاء", "هَذِهِ الْكِتَابُ أَحْمَرُ", "هَذَا الْكِتَابُ حَمْرَانِ"],
+      "options": [
+        "هَذَا الْكِتَابُ أَحْمَرُ",
+        "هَذَا الْكِتَابُ حَمْرَاء",
+        "هَذِهِ الْكِتَابُ أَحْمَرُ",
+        "هَذَا الْكِتَابُ حَمْرَانِ"
+      ],
       "correct": 0,
       "explanation": "Accord correct : démonstratif masc + nom masc + adjectif masc. هَذَا + الْكِتَابُ + أَحْمَرُ."
     },
     {
       "id": "EX2",
       "difficulty": 2,
-      "covers_concepts": ["idāfa", "possession"],
+      "covers_concepts": [
+        "idāfa",
+        "possession"
+      ],
       "question": "Complétez l'Idāfa : 'la maison du maître' en arabe :",
-      "options": ["بَيْتُ الْمُعَلِّمِ", "بَيْتُ مُعَلِّمِ", "الْبَيْتُ الْمُعَلِّمِ", "بَيْتِ الْمُعَلِّمُ"],
+      "options": [
+        "بَيْتُ الْمُعَلِّمِ",
+        "بَيْتُ مُعَلِّمِ",
+        "الْبَيْتُ الْمُعَلِّمِ",
+        "بَيْتِ الْمُعَلِّمُ"
+      ],
       "correct": 0,
       "explanation": "En Idāfa : 1er nom au Marfū' (بَيْتُ), 2e au Majrūr (الْمُعَلِّمِ). Pas de الـ sur le 1er."
     },
     {
       "id": "EX3",
       "difficulty": 2,
-      "covers_concepts": ["prépositions", "cas grammatical"],
+      "covers_concepts": [
+        "prépositions",
+        "cas grammatical"
+      ],
       "question": "La préposition فِي met le nom au cas :",
-      "options": ["Marfū' (nominatif)", "Mansūb (accusatif)", "Majrūr (génitif)", "Aucun cas particulier"],
+      "options": [
+        "Marfū' (nominatif)",
+        "Mansūb (accusatif)",
+        "Majrūr (génitif)",
+        "Aucun cas particulier"
+      ],
       "correct": 2,
       "explanation": "Toutes les prépositions (فِي, عَلَى, مِنْ, إِلَى) → Majrūr (Kasra)."
     },
     {
       "id": "EX4",
       "difficulty": 1,
-      "covers_concepts": ["accord adjectif", "pluriel"],
+      "covers_concepts": [
+        "accord adjectif",
+        "pluriel"
+      ],
       "question": "Accordez 'grand' (كَبِيرٌ) avec 'maisons' (بُيُوتٌ — pluriel fém) :",
-      "options": ["بُيُوتٌ كَبِيرَةٌ", "بُيُوتٌ كَبِيرًا", "بُيُوتٌ كِبَارٌ", "بُيُوتٌ كَبِيرٌ"],
+      "options": [
+        "بُيُوتٌ كَبِيرَةٌ",
+        "بُيُوتٌ كَبِيرًا",
+        "بُيُوتٌ كِبَارٌ",
+        "بُيُوتٌ كَبِيرٌ"
+      ],
       "correct": 0,
       "explanation": "Pluriel inanimé → adjectif fém. sing. كَبِيرَةٌ."
     },
     {
       "id": "EX5",
       "difficulty": 2,
-      "covers_concepts": ["pluriel objets", "accord interne"],
+      "covers_concepts": [
+        "pluriel objets",
+        "accord interne"
+      ],
       "question": "Pluriel de 'bateau' dans 'les bateaux rapides' :",
-      "options": ["السَّفِينَاتُ السَّرِيعَةُ", "السَّفِينَاتُ السَّرِيعَتَانِ", "السَّفِينَاتُ السَّرِيعِينَ", "السَّفِينَاتِ السَّرِيعَاتِ"],
+      "options": [
+        "السَّفِينَاتُ السَّرِيعَةُ",
+        "السَّفِينَاتُ السَّرِيعَتَانِ",
+        "السَّفِينَاتُ السَّرِيعِينَ",
+        "السَّفِينَاتِ السَّرِيعَاتِ"
+      ],
       "correct": 0,
       "explanation": "Pluriel fém. sain (ـَاتُ) + adjectif fém. sing. (السَّرِيعَةُ) au Marfū'."
     },
     {
       "id": "EX6",
       "difficulty": 2,
-      "covers_concepts": ["nombres", "polarité 3-10"],
+      "covers_concepts": [
+        "nombres",
+        "polarité 3-10"
+      ],
       "question": "خَمْسَةُ أَقْلَامٍ — pourquoi le nombre est-il féminin ?",
-      "options": ["Le nombre change au pluriel féminin", "Règle de polarité : nom masc. → nombre fém.", "Nombre et nom doivent être féminins", "Le nombre s'accorde avec le cas"],
+      "options": [
+        "Le nombre change au pluriel féminin",
+        "Règle de polarité : nom masc. → nombre fém.",
+        "Nombre et nom doivent être féminins",
+        "Le nombre s'accorde avec le cas"
+      ],
       "correct": 1,
       "explanation": "Polarité 3-10 : nombre fém. (خَمْسَةُ) + nom masc. pluriel génitif (أَقْلَامٍ)."
     },
     {
       "id": "EX7",
       "difficulty": 1,
-      "covers_concepts": ["diptotes", "cas"],
+      "covers_concepts": [
+        "diptotes",
+        "cas"
+      ],
       "question": "Un diptote en Majrūr prend quelle marque ?",
-      "options": ["Kasra (ـِ)", "Fatha (ـَ)", "Damma (ـُ)", "Sukūn (ـْ)"],
+      "options": [
+        "Kasra (ـِ)",
+        "Fatha (ـَ)",
+        "Damma (ـُ)",
+        "Sukūn (ـْ)"
+      ],
       "correct": 1,
       "explanation": "Diptotes : jamais de Kasra. En Majrūr → Fatha. مِنْ أَحْمَدَ."
     },
     {
       "id": "EX8",
       "difficulty": 2,
-      "covers_concepts": ["verbe passé", "sujet"],
+      "covers_concepts": [
+        "verbe passé",
+        "sujet"
+      ],
       "question": "Transformez en passé : 'Elle écrit une lettre'",
-      "options": ["هِيَ تَكْتُبُ رِسَالَةً", "هِيَ كَتَبَتْ رِسَالَةً", "كَتَبْتُ رِسَالَةً", "تَكْتُبُ رِسَالَةً"],
+      "options": [
+        "هِيَ تَكْتُبُ رِسَالَةً",
+        "هِيَ كَتَبَتْ رِسَالَةً",
+        "كَتَبْتُ رِسَالَةً",
+        "تَكْتُبُ رِسَالَةً"
+      ],
       "correct": 1,
       "explanation": "Passé fém. = كَتَبَتْ (racine ك-ت-ب + ـَتْ)."
     },
     {
       "id": "EX9",
       "difficulty": 2,
-      "covers_concepts": ["présent", "pluriel"],
+      "covers_concepts": [
+        "présent",
+        "pluriel"
+      ],
       "question": "Les professeurs (المُدَرِّسُونَ) étudient. Complétez :",
-      "options": ["الْمُدَرِّسُونَ يَدْرُسُ", "الْمُدَرِّسُونَ يَدْرُسُونَ", "الْمُدَرِّسُونَ نَدْرُسُ", "الْمُدَرِّسُونَ تَدْرُسُ"],
+      "options": [
+        "الْمُدَرِّسُونَ يَدْرُسُ",
+        "الْمُدَرِّسُونَ يَدْرُسُونَ",
+        "الْمُدَرِّسُونَ نَدْرُسُ",
+        "الْمُدَرِّسُونَ تَدْرُسُ"
+      ],
       "correct": 1,
       "explanation": "Sujet masc. pluriel → يَـ + ـُونَ. يَدْرُسُونَ."
     },
     {
       "id": "EX10",
       "difficulty": 3,
-      "covers_concepts": ["présent pluriel féminin", "synthèse"],
+      "covers_concepts": [
+        "présent pluriel féminin",
+        "synthèse"
+      ],
       "question": "Les filles vont à l'école demain. Complétez :",
-      "options": ["الْبَنَاتُ تَذْهَبُ غَدًا إِلَى الْمَدْرَسَةِ", "الْبَنَاتُ يَذْهَبْنَ غَدًا إِلَى الْمَدْرَسَةِ", "الْبَنَاتُ تَذْهَبُونَ غَدًا إِلَى الْمَدْرَسَةِ", "الْبَنَاتُ نَذْهَبُ غَدًا إِلَى الْمَدْرَسَةِ"],
+      "options": [
+        "الْبَنَاتُ تَذْهَبُ غَدًا إِلَى الْمَدْرَسَةِ",
+        "الْبَنَاتُ يَذْهَبْنَ غَدًا إِلَى الْمَدْرَسَةِ",
+        "الْبَنَاتُ تَذْهَبُونَ غَدًا إِلَى الْمَدْرَسَةِ",
+        "الْبَنَاتُ نَذْهَبُ غَدًا إِلَى الْمَدْرَسَةِ"
+      ],
       "correct": 1,
       "explanation": "Sujet fém. pluriel → يَـ + ـْنَ. يَذْهَبْنَ."
+    },
+    {
+      "id": "EX11",
+      "difficulty": 1,
+      "covers_concepts": [
+        "pronoms attachés",
+        "possession"
+      ],
+      "question": "Comment dit-on '**mon livre**' en arabe ?",
+      "options": [
+        "كِتَابِي",
+        "كِتَابُكَ",
+        "كِتَابُهُ",
+        "كِتَابُنَا"
+      ],
+      "correct": 0,
+      "explanation": "ـي = mon/ma (1ère personne). كِتَابِي = mon livre. كِتَابُكَ = ton livre, كِتَابُهُ = son livre, كِتَابُنَا = notre livre."
+    },
+    {
+      "id": "EX12",
+      "difficulty": 1,
+      "covers_concepts": [
+        "'inda",
+        "négation"
+      ],
+      "question": "Traduisez : **مَا عِنْدِي سَيَّارَةٌ**",
+      "options": [
+        "Je n'ai pas de voiture",
+        "J'ai une voiture",
+        "Où est ma voiture ?",
+        "C'est ma voiture"
+      ],
+      "correct": 0,
+      "explanation": "مَا عِنْدِي = je n'ai pas. مَا = négation + عِنْدِي = chez moi (possession)."
+    },
+    {
+      "id": "EX13",
+      "difficulty": 2,
+      "covers_concepts": [
+        "verbe passé",
+        "conjugaison"
+      ],
+      "question": "Conjuguez '**sortir**' (خَرَجَ) au féminin passé :",
+      "options": [
+        "خَرَجَتْ",
+        "خَرَجَ",
+        "يَخْرُجُ",
+        "خَرَجُوا"
+      ],
+      "correct": 0,
+      "explanation": "Féminin passé = verbe + ـتْ (tā' sākina). خَرَجَ → خَرَجَتْ (elle est sortie)."
+    },
+    {
+      "id": "EX14",
+      "difficulty": 2,
+      "covers_concepts": [
+        "pluriel humain",
+        "démonstratif pluriel"
+      ],
+      "question": "Quel démonstratif pour '**ces étudiants-ci**' (pluriel humain proche) ?",
+      "options": [
+        "هَؤُلَاءِ الطُّلَّابُ",
+        "أُولَئِكَ الطُّلَّابُ",
+        "هَذَا الطُّلَّابُ",
+        "تِلْكَ الطُّلَّابُ"
+      ],
+      "correct": 0,
+      "explanation": "هَؤُلَاءِ = ceux-ci (pluriel humain proche). أُولَئِكَ = ceux-là (lointain). هَذَا = singulier masc."
+    },
+    {
+      "id": "EX15",
+      "difficulty": 2,
+      "covers_concepts": [
+        "duel",
+        "accord"
+      ],
+      "question": "Quel est le duel nominatif de **قَلَمٌ** (stylo) ?",
+      "options": [
+        "قَلَمَانِ",
+        "قَلَمَيْنِ",
+        "أَقْلَامٌ",
+        "قَلَمُونَ"
+      ],
+      "correct": 0,
+      "explanation": "Duel nominatif = ـَانِ. قَلَمَانِ = deux stylos. قَلَمَيْنِ = duel génitif/accusatif. أَقْلَامٌ = pluriel."
+    },
+    {
+      "id": "EX16",
+      "difficulty": 2,
+      "covers_concepts": [
+        "adverbes de lieu",
+        "cas grammatical"
+      ],
+      "question": "Complétez : **الْكِتَابُ ______ الطَّاوِلَةِ** (le livre est sous la table)",
+      "options": [
+        "تَحْتَ",
+        "فَوْقَ",
+        "أَمَامَ",
+        "خَلْفَ"
+      ],
+      "correct": 0,
+      "explanation": "تَحْتَ = sous. فَوْقَ = au-dessus. أَمَامَ = devant. خَلْفَ = derrière."
+    },
+    {
+      "id": "EX17",
+      "difficulty": 3,
+      "covers_concepts": [
+        "nombres 3-10",
+        "mukhālafah"
+      ],
+      "question": "Comment dit-on '**cinq étudiantes**' ?",
+      "options": [
+        "خَمْسُ طَالِبَاتٍ",
+        "خَمْسَةُ طَالِبَاتٍ",
+        "خَمْسَةَ طَالِبَاتٍ",
+        "خَمْسٌ طَالِبَاتٍ"
+      ],
+      "correct": 0,
+      "explanation": "طَالِبَةٌ = singulier féminin → nombre masculin (sans ة) : خَمْسُ. Le nom est au génitif pluriel."
+    },
+    {
+      "id": "EX18",
+      "difficulty": 3,
+      "covers_concepts": [
+        "présent",
+        "conjugaison pluriel"
+      ],
+      "question": "Conjuguez '**elles écrivent**' au présent :",
+      "options": [
+        "يَكْتُبْنَ",
+        "يَكْتُبُونَ",
+        "تَكْتُبُ",
+        "نَكْتُبُ"
+      ],
+      "correct": 0,
+      "explanation": "Fém. pluriel présent = يَـ + racine + ـْنَ. يَكْتُبْنَ = elles écrivent. يَكْتُبُونَ = ils écrivent (masc.)."
+    },
+    {
+      "id": "EX19",
+      "difficulty": 3,
+      "covers_concepts": [
+        "futur",
+        "présent"
+      ],
+      "question": "Comment former le **futur** de يَذْهَبُ (il va) ?",
+      "options": [
+        "سَيَذْهَبُ",
+        "ذَهَبَ",
+        "يَذْهَبُونَ",
+        "ذَاهِبٌ"
+      ],
+      "correct": 0,
+      "explanation": "Futur = سَـ + verbe au présent. سَيَذْهَبُ = il ira. ذَهَبَ = passé. ذَاهِبٌ = participe actif."
+    },
+    {
+      "id": "EX20",
+      "difficulty": 3,
+      "covers_concepts": [
+        "diptotes",
+        "cas grammatical",
+        "synthèse"
+      ],
+      "question": "Complétez : **ذَهَبْتُ إِلَى ______** (je suis allé à Ahmad)",
+      "options": [
+        "أَحْمَدَ",
+        "أَحْمَدِ",
+        "أَحْمَدٍ",
+        "أَحْمَدُ"
+      ],
+      "correct": 0,
+      "explanation": "أَحْمَدُ est diptote (pattern أَفْعَلُ) → après إِلَى : Fathah (pas Kasrah). Pas de Tanwin. أَحْمَدَ."
     }
   ]
 }
