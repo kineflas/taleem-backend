@@ -1344,6 +1344,53 @@
             "category": "Non-sifflantes"
           }
         ]
+      },
+      {
+        "type": "SPEED_ROUND",
+        "prompt_fr": "Confusion contrôlée ! Identifie chaque lettre le plus vite possible — attention aux pièges visuels !",
+        "time_limit_seconds": 20,
+        "items": [
+          {
+            "glyph": "س",
+            "name": "Sīn"
+          },
+          {
+            "glyph": "ش",
+            "name": "Shīn"
+          },
+          {
+            "glyph": "س",
+            "name": "Sīn"
+          },
+          {
+            "glyph": "ز",
+            "name": "Zāy"
+          },
+          {
+            "glyph": "ر",
+            "name": "Rā"
+          },
+          {
+            "glyph": "ش",
+            "name": "Shīn"
+          },
+          {
+            "glyph": "ر",
+            "name": "Rā"
+          },
+          {
+            "glyph": "ز",
+            "name": "Zāy"
+          },
+          {
+            "glyph": "س",
+            "name": "Sīn"
+          },
+          {
+            "glyph": "ش",
+            "name": "Shīn"
+          }
+        ]
       }
     ],
     "mini_lecture": {
@@ -2733,6 +2780,89 @@
             "correct": "ثُ"
           }
         ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "Confusion contrôlée ! Classe chaque lettre — elles se ressemblent toutes, seuls les points changent !",
+        "categories": [
+          "ب (1 point dessous)",
+          "ت (2 points dessus)",
+          "ث (3 points dessus)",
+          "ن (1 point dessus)"
+        ],
+        "items": [
+          {
+            "word": "ب",
+            "category": "ب (1 point dessous)"
+          },
+          {
+            "word": "ت",
+            "category": "ت (2 points dessus)"
+          },
+          {
+            "word": "ث",
+            "category": "ث (3 points dessus)"
+          },
+          {
+            "word": "ن",
+            "category": "ن (1 point dessus)"
+          },
+          {
+            "word": "ب",
+            "category": "ب (1 point dessous)"
+          },
+          {
+            "word": "ث",
+            "category": "ث (3 points dessus)"
+          },
+          {
+            "word": "ن",
+            "category": "ن (1 point dessus)"
+          },
+          {
+            "word": "ت",
+            "category": "ت (2 points dessus)"
+          }
+        ]
+      },
+      {
+        "type": "SPEED_ROUND",
+        "prompt_fr": "Dāl ou Dhāl ? La seule différence est le point ! Identifie vite !",
+        "time_limit_seconds": 15,
+        "items": [
+          {
+            "glyph": "د",
+            "name": "Dāl"
+          },
+          {
+            "glyph": "ذ",
+            "name": "Dhāl"
+          },
+          {
+            "glyph": "ذ",
+            "name": "Dhāl"
+          },
+          {
+            "glyph": "د",
+            "name": "Dāl"
+          },
+          {
+            "glyph": "ذ",
+            "name": "Dhāl"
+          },
+          {
+            "glyph": "د",
+            "name": "Dāl"
+          },
+          {
+            "glyph": "د",
+            "name": "Dāl"
+          },
+          {
+            "glyph": "ذ",
+            "name": "Dhāl"
+          }
+        ]
       }
     ],
     "mini_lecture": {
@@ -3889,6 +4019,45 @@
             "correct": 1
           }
         ]
+      },
+      {
+        "type": "SPEED_ROUND",
+        "prompt_fr": "Fā ou Qāf ? Même boucle, mais les points changent ! Sois précis !",
+        "time_limit_seconds": 15,
+        "items": [
+          {
+            "glyph": "ف",
+            "name": "Fā"
+          },
+          {
+            "glyph": "ق",
+            "name": "Qāf"
+          },
+          {
+            "glyph": "ق",
+            "name": "Qāf"
+          },
+          {
+            "glyph": "ف",
+            "name": "Fā"
+          },
+          {
+            "glyph": "ف",
+            "name": "Fā"
+          },
+          {
+            "glyph": "ق",
+            "name": "Qāf"
+          },
+          {
+            "glyph": "ق",
+            "name": "Qāf"
+          },
+          {
+            "glyph": "ف",
+            "name": "Fā"
+          }
+        ]
       }
     ],
     "mini_lecture": {
@@ -4646,6 +4815,45 @@
             "category": "Légères"
           }
         ]
+      },
+      {
+        "type": "SPEED_ROUND",
+        "prompt_fr": "Ṣād ou Ḍād ? Même forme, un seul point de différence !",
+        "time_limit_seconds": 15,
+        "items": [
+          {
+            "glyph": "ص",
+            "name": "Ṣād"
+          },
+          {
+            "glyph": "ض",
+            "name": "Ḍād"
+          },
+          {
+            "glyph": "ض",
+            "name": "Ḍād"
+          },
+          {
+            "glyph": "ص",
+            "name": "Ṣād"
+          },
+          {
+            "glyph": "ص",
+            "name": "Ṣād"
+          },
+          {
+            "glyph": "ض",
+            "name": "Ḍād"
+          },
+          {
+            "glyph": "ض",
+            "name": "Ḍād"
+          },
+          {
+            "glyph": "ص",
+            "name": "Ṣād"
+          }
+        ]
       }
     ],
     "mini_lecture": {
@@ -4997,6 +5205,103 @@
             "category": "Légères"
           }
         ]
+      },
+      {
+        "type": "SPEED_ROUND",
+        "prompt_fr": "Ṭā ou Ẓā ? Un point change tout !",
+        "time_limit_seconds": 15,
+        "items": [
+          {
+            "glyph": "ط",
+            "name": "Ṭā"
+          },
+          {
+            "glyph": "ظ",
+            "name": "Ẓā"
+          },
+          {
+            "glyph": "ظ",
+            "name": "Ẓā"
+          },
+          {
+            "glyph": "ط",
+            "name": "Ṭā"
+          },
+          {
+            "glyph": "ط",
+            "name": "Ṭā"
+          },
+          {
+            "glyph": "ظ",
+            "name": "Ẓā"
+          },
+          {
+            "glyph": "ظ",
+            "name": "Ẓā"
+          },
+          {
+            "glyph": "ط",
+            "name": "Ṭā"
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "Le Grand Défi ! Classe chaque lettre : est-ce l'emphatique (lourde) ou sa jumelle légère ?",
+        "categories": [
+          "Emphatique (lourde)",
+          "Légère (normale)"
+        ],
+        "items": [
+          {
+            "word": "ص",
+            "category": "Emphatique (lourde)"
+          },
+          {
+            "word": "س",
+            "category": "Légère (normale)"
+          },
+          {
+            "word": "ض",
+            "category": "Emphatique (lourde)"
+          },
+          {
+            "word": "د",
+            "category": "Légère (normale)"
+          },
+          {
+            "word": "ط",
+            "category": "Emphatique (lourde)"
+          },
+          {
+            "word": "ت",
+            "category": "Légère (normale)"
+          },
+          {
+            "word": "ظ",
+            "category": "Emphatique (lourde)"
+          },
+          {
+            "word": "ذ",
+            "category": "Légère (normale)"
+          },
+          {
+            "word": "ص",
+            "category": "Emphatique (lourde)"
+          },
+          {
+            "word": "ت",
+            "category": "Légère (normale)"
+          },
+          {
+            "word": "ط",
+            "category": "Emphatique (lourde)"
+          },
+          {
+            "word": "س",
+            "category": "Légère (normale)"
+          }
+        ]
       }
     ],
     "mini_lecture": {
@@ -5325,6 +5630,53 @@
               "ع (contraction)"
             ],
             "correct": 2
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "Trois frères se ressemblent ! Classe chaque lettre de la famille ج/ح/خ !",
+        "categories": [
+          "ج (point dessous)",
+          "ح (pas de point)",
+          "خ (point dessus)"
+        ],
+        "items": [
+          {
+            "word": "ج",
+            "category": "ج (point dessous)"
+          },
+          {
+            "word": "ح",
+            "category": "ح (pas de point)"
+          },
+          {
+            "word": "خ",
+            "category": "خ (point dessus)"
+          },
+          {
+            "word": "خ",
+            "category": "خ (point dessus)"
+          },
+          {
+            "word": "ج",
+            "category": "ج (point dessous)"
+          },
+          {
+            "word": "ح",
+            "category": "ح (pas de point)"
+          },
+          {
+            "word": "ح",
+            "category": "ح (pas de point)"
+          },
+          {
+            "word": "ج",
+            "category": "ج (point dessous)"
+          },
+          {
+            "word": "خ",
+            "category": "خ (point dessus)"
           }
         ]
       }
