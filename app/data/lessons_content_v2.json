@@ -863,23 +863,27 @@
       },
       {
         "type": "FILL_BLANK",
-        "prompt_fr": "Complétez avec l'article الـ :",
+        "prompt_fr": "Choisissez la forme correcte : définie (الـ sans Tanwīn) ou indéfinie (Tanwīn sans الـ) :",
         "items": [
           {
-            "sentence": "**\\_\\_\\_** قَلَمٌ (le stylo)",
-            "answer": "الـ"
+            "sentence": "هَذَا **\\_\\_\\_** (le stylo)",
+            "options": ["الْقَلَمُ", "قَلَمٌ"],
+            "answer": "الْقَلَمُ"
           },
           {
-            "sentence": "**\\_\\_\\_** مَدْرَسَةٌ (l'école)",
-            "answer": "الـ"
+            "sentence": "هَذِهِ **\\_\\_\\_** (une école)",
+            "options": ["الْمَدْرَسَةُ", "مَدْرَسَةٌ"],
+            "answer": "مَدْرَسَةٌ"
           },
           {
-            "sentence": "**\\_\\_\\_** دَارٌ (la maison)",
-            "answer": "الـ"
+            "sentence": "أَيْنَ **\\_\\_\\_** ؟ (Où est la maison ?)",
+            "options": ["الدَّارُ", "دَارٌ"],
+            "answer": "الدَّارُ"
           },
           {
-            "sentence": "**\\_\\_\\_** سَيَّارَةٌ (la voiture)",
-            "answer": "الـ"
+            "sentence": "هَذِهِ **\\_\\_\\_** (une voiture)",
+            "options": ["السَّيَّارَةُ", "سَيَّارَةٌ"],
+            "answer": "سَيَّارَةٌ"
           }
         ]
       },
@@ -1219,19 +1223,22 @@
       },
       {
         "type": "FILL_BLANK",
-        "prompt_fr": "Complétez avec فِي ou عَلَى et changez la voyelle finale en Majrūr :",
+        "prompt_fr": "Choisissez la bonne préposition ET la bonne voyelle finale (Majrūr = Kasra ـِ) :",
         "items": [
           {
-            "sentence": "**\\_\\_\\_** الطَّاوِلَ\\_\\_\\_ (sur la table) [compléter la voyelle]",
-            "answer": "عَلَى"
+            "sentence": "**\\_\\_\\_** (sur la table)",
+            "options": ["عَلَى الطَّاوِلَةِ", "عَلَى الطَّاوِلَةُ", "فِي الطَّاوِلَةِ"],
+            "answer": "عَلَى الطَّاوِلَةِ"
           },
           {
-            "sentence": "**\\_\\_\\_** الْمَدْرَسَ\\_\\_\\_ (dans l'école) [compléter la voyelle]",
-            "answer": "فِي"
+            "sentence": "**\\_\\_\\_** (dans l'école)",
+            "options": ["فِي الْمَدْرَسَةِ", "فِي الْمَدْرَسَةُ", "عَلَى الْمَدْرَسَةِ"],
+            "answer": "فِي الْمَدْرَسَةِ"
           },
           {
-            "sentence": "**\\_\\_\\_** الْقَاعَ\\_\\_\\_ (dans le salon) [compléter la voyelle]",
-            "answer": "فِي"
+            "sentence": "**\\_\\_\\_** (dans le salon)",
+            "options": ["فِي الْقَاعَةِ", "فِي الْقَاعَةُ", "عَلَى الْقَاعَةِ"],
+            "answer": "فِي الْقَاعَةِ"
           }
         ]
       },
@@ -3788,7 +3795,7 @@
     "quiz_questions": [
       {
         "id": "L11Q1",
-        "question": "Traduisez : '**Je n'ai pas de stylo**'",
+        "question": "Quelle est la forme **la plus correcte** pour dire 'Je n'ai pas de stylo' ?",
         "options": [
           "أَنَا مَا عِنْدِي قَلَمٌ",
           "مَا عِنْدِي قَلَمٌ",
@@ -3796,7 +3803,7 @@
           "عِنْدِي لَا قَلَمٌ"
         ],
         "correct": 1,
-        "explanation": "مَا + عِنْدِي + objet. Pas besoin de أَنَا (redondant car عِنْدِي contient déjà 'moi'). Négation : مَا عِنْدِي قَلَمٌ."
+        "explanation": "مَا عِنْدِي قَلَمٌ est la forme standard. أَنَا مَا عِنْدِي n'est pas faux mais redondant : le ـي de عِنْدِي signifie déjà 'moi'. En arabe classique, on préfère la forme concise sans أَنَا."
       },
       {
         "id": "L11Q2",
@@ -4856,13 +4863,13 @@
         "id": "L14Q1",
         "question": "Que signifie **أُولَئِكَ** ?",
         "options": [
-          "Celui-là (singulier)",
+          "Celui-là (singulier masculin)",
           "Ceux-ci (pluriel proche)",
           "Ceux-là / celles-là (pluriel lointain)",
-          "Ce sont des"
+          "Celle-là (singulier féminin)"
         ],
         "correct": 2,
-        "explanation": "أُولَئِكَ = ceux-là / ces (pluriel humain lointain). Opposé de هَؤُلَاءِ (proche). Contient un Waw silencieux."
+        "explanation": "أُولَئِكَ = ceux-là / celles-là (pluriel humain lointain). ذَلِكَ = celui-là (sing. masc.), تِلْكَ = celle-là (sing. fém.), هَؤُلَاءِ = ceux-ci (proche)."
       },
       {
         "id": "L14Q2",
@@ -5305,6 +5312,53 @@
     "objective": null,
     "discovery_cards": [
       {
+        "type": "rule",
+        "title_fr": "💡 La Règle d'Or du Pluriel des Objets",
+        "content_fr": "En arabe, les objets inanimés (choses, animaux, concepts) au pluriel **s'accordent comme un féminin singulier**. C'est la règle la plus importante à retenir pour les pluriels non-humains.\n\n**Pourquoi ?** L'arabe distingue les humains des non-humains. Seuls les humains \"méritent\" un vrai accord pluriel. Les objets, eux, sont traités comme un groupe — un collectif féminin singulier.\n\n- **الْكُتُبُ جَدِيدَةٌ** = Les livres sont neufs (litt. « neuve »)\n- **السَّيَّارَاتُ سَرِيعَةٌ** = Les voitures sont rapides (litt. « rapide »)\n\nOn utilise le pronom **هِيَ** (elle) pour les désigner, même s'il s'agit de livres ou de stylos.",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "الْكُتُبُ جَدِيدَةٌ",
+            "fr": "Les livres sont neufs",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "هِيَ جَمِيلَةٌ",
+            "fr": "Ils/elles sont beaux (en parlant d'objets)",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "📐 Comment appliquer la règle",
+        "content_fr": "Prenons un nom d'objet au singulier et passons-le au pluriel :\n\n**Étape 1 :** Mettre le nom au pluriel (brisé ou régulier).\n**Étape 2 :** Tous les accords (adjectif, démonstratif, pronom, verbe) passent au **féminin singulier**.\n\n- **Singulier :** هَذَا كِتَابٌ جَدِيدٌ → Ce livre est nouveau (masc. sing.)\n- **Pluriel :** هَذِهِ كُتُبٌ جَدِيدَةٌ → Ces livres sont nouveaux (fém. sing. !)\n\nRemarquez : le démonstratif passe de **هَذَا** (masc.) à **هَذِهِ** (fém.), et l'adjectif de **جَدِيدٌ** à **جَدِيدَةٌ**.",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "هَذِهِ أَقْلَامٌ جَمِيلَةٌ",
+            "fr": "Ce sont de beaux stylos",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "تِلْكَ الْبُيُوتُ كَبِيرَةٌ",
+            "fr": "Ces maisons là-bas sont grandes",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "⚠️ Humains vs Objets : la distinction cruciale",
+        "content_fr": "Attention à ne pas confondre :\n\n- **Pluriel d'humains** (L13-L14) → accord **pluriel** normal : الطُّلَّابُ الْجُدُدُ (les nouveaux étudiants)\n- **Pluriel d'objets** → accord **féminin singulier** : الْكُتُبُ الْجَدِيدَةُ (les nouveaux livres)\n\n**Astuce :** Posez-vous la question : « Est-ce que ça pense ? » Si oui → pluriel normal. Si non → féminin singulier.\n\n- الْمُعَلِّمُونَ **ذَهَبُوا** = Les professeurs sont partis (humains → pluriel)\n- الْكُتُبُ **وَصَلَتْ** = Les livres sont arrivés (objets → fém. sing.)",
+        "content_ar": null,
+        "examples": []
+      },
+      {
         "type": "expert_corner",
         "title_fr": "Le coin des experts",
         "content_fr": "**Termes grammaticaux :**\n\n- **Ghayr al-'Āqil** (غَيْرُ الْعَاقِلِ) = L'inanimé, l'objet dénué de raison\n- **Na't** (النَّعْتُ) = Adjectif attribut, doit s'accorder en genre/nombre/cas\n- **Mubtada'** (الْمُبْتَدَأُ) = Sujet (nominatif)\n- **Khabar** (الْخَبَرُ) = Attribut du sujet (nominatif)\n- **Idāfah** (الإِضَافَةُ) = Construction de complémentation (génitif pour le second terme)\n\n**Point clé :** L'accord du Na't avec un pluriel d'objet exige TOUJOURS la forme féminine singulière, indépendamment du sens originel du mot."
@@ -5609,6 +5663,66 @@
     "part_name": "Règles avancées et Pluriels d'objets",
     "objective": null,
     "discovery_cards": [
+      {
+        "type": "rule",
+        "title_fr": "💡 Les Adverbes de Lieu (أَيْنَ الْقِطَّة؟)",
+        "content_fr": "Pour situer un objet dans l'espace, l'arabe utilise des **adverbes de lieu** qui fonctionnent exactement comme l'annexion (الإِضَافَة) :\n\n- **أَمَامَ** = devant\n- **خَلْفَ** = derrière\n- **فَوْقَ** = au-dessus de / sur\n- **تَحْتَ** = sous / en dessous de\n- **بَيْنَ** = entre\n- **بِجَانِبِ** = à côté de\n\n**Structure :** `Adverbe + Nom au génitif (Kasrah)`. Exemple : **فَوْقَ الطَّاوِلَةِ** = sur la table.",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "الْكِتَابُ فَوْقَ الرِّفِّ",
+            "fr": "Le livre est sur l'étagère",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "الْقِطَّةُ تَحْتَ الطَّاوِلَةِ",
+            "fr": "Le chat est sous la table",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "📐 Pourquoi le génitif ? C'est une annexion !",
+        "content_fr": "Tu te souviens de l'annexion (L5) ? Le mot après l'adverbe de lieu est au **génitif** (Kasrah) pour la même raison :\n\n- بَابُ **الْمَسْجِدِ** = la porte de la mosquée (annexion)\n- أَمَامَ **الْمَسْجِدِ** = devant la mosquée (adverbe de lieu)\n\nDans les deux cas, le deuxième mot porte la **Kasrah** (ـِ) parce qu'il est le complément du premier.\n\n**Astuce :** Si tu sais faire une annexion, tu sais utiliser un adverbe de lieu. C'est le même mécanisme !",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "أَمَامَ الْبَيْتِ",
+            "fr": "Devant la maison",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "بَيْنَ الْكِتَابِ وَالْقَلَمِ",
+            "fr": "Entre le livre et le stylo",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "🔢 كَمْ — Combien ?",
+        "content_fr": "Le mot **كَمْ** (combien) est un interrogatif spécial. Le nom qui le suit se met au **singulier accusatif indéfini** (avec Fathatayn ـًا) :\n\n- **كَمْ كِتَابًا؟** = Combien de livres ?\n- **كَمْ طَالِبًا؟** = Combien d'étudiants ?\n\nRemarque : on n'utilise PAS le pluriel après كَمْ. C'est le singulier avec le Tanwin Fathah (ـًا).",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "كَمْ سَيَّارَةً؟",
+            "fr": "Combien de voitures ?",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "كَمْ وَلَدًا فِي الْفَصْلِ؟",
+            "fr": "Combien de garçons dans la classe ?",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
       {
         "type": "expert_corner",
         "title_fr": "Le coin des experts",
@@ -5934,6 +6048,53 @@
     "part_name": "Règles avancées et Pluriels d'objets",
     "objective": null,
     "discovery_cards": [
+      {
+        "type": "rule",
+        "title_fr": "💡 Le Duel — Une forme pour « exactement deux »",
+        "content_fr": "En français, on a le singulier et le pluriel. L'arabe a une troisième forme : le **duel** (المُثَنَّى), réservé à exactement **deux** éléments.\n\n**Formation :** On ajoute un suffixe au nom singulier :\n- **Nominatif** (sujet) → ـَانِ : كِتَابٌ → **كِتَابَانِ** (deux livres)\n- **Accusatif/Génitif** → ـَيْنِ : كِتَابٌ → **كِتَابَيْنِ** (deux livres)\n\n**Pour le féminin** (avec ة), la Tā' Marbūta redevient un **ت** :\n- طَاوِلَةٌ → **طَاوِلَتَانِ** (deux tables, nominatif)\n- طَاوِلَةٌ → **طَاوِلَتَيْنِ** (deux tables, accusatif/génitif)",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "عِنْدِي كِتَابَانِ",
+            "fr": "J'ai deux livres",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "رَأَيْتُ طَالِبَتَيْنِ",
+            "fr": "J'ai vu deux étudiantes",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "📐 Les démonstratifs du duel",
+        "content_fr": "Comme pour le singulier (هَذَا / هَذِهِ), le duel a ses propres démonstratifs :\n\n- **هَذَانِ** = ces deux-ci (masculin, nominatif)\n- **هَاتَانِ** = ces deux-ci (féminin, nominatif)\n- **هَذَيْنِ** = ces deux-ci (masculin, accusatif/génitif)\n- **هَاتَيْنِ** = ces deux-ci (féminin, accusatif/génitif)\n\nL'adjectif aussi prend la forme duelle :\n- **هَذَانِ الْكِتَابَانِ كَبِيرَانِ** = Ces deux livres sont grands\n- **هَاتَانِ الطَّاوِلَتَانِ صَغِيرَتَانِ** = Ces deux tables sont petites",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "هَذَانِ قَلَمَانِ جَدِيدَانِ",
+            "fr": "Ce sont deux stylos neufs",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "هَاتَانِ سَيَّارَتَانِ سَرِيعَتَانِ",
+            "fr": "Ce sont deux voitures rapides",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "⚠️ Quand utiliser le duel et quand utiliser le pluriel ?",
+        "content_fr": "La règle est simple :\n\n- **Exactement 2** → Duel (ـَانِ / ـَيْنِ)\n- **3 ou plus** → Pluriel\n\nOn ne dit JAMAIS اِثْنَانِ كُتُبٍ (deux + pluriel). On dit **كِتَابَانِ** directement.\n\n**Le nombre 2 (اِثْنَانِ) est un adjectif**, pas un nombre qu'on place devant le nom. Il vient APRÈS le nom si on veut insister : **طَالِبَانِ اثْنَانِ** = deux étudiants (exactement deux).",
+        "content_ar": null,
+        "examples": []
+      },
       {
         "type": "expert_corner",
         "title_fr": "Le coin des experts",
@@ -6261,6 +6422,66 @@
     "objective": null,
     "discovery_cards": [
       {
+        "type": "rule",
+        "title_fr": "💡 Les Nombres 3-10 : La Règle d'Opposition (المُخَالَفَة)",
+        "content_fr": "Voici la règle la plus surprenante de l'arabe : pour les nombres de 3 à 10, le nombre prend le genre **opposé** à celui du nom qu'il compte !\n\n**Comment ça marche ?**\n1. Regarde le **singulier** du nom que tu comptes.\n2. Détermine son genre : masculin (pas de ة) ou féminin (avec ة ou fém. par sens).\n3. Utilise le nombre dans le genre **contraire**.\n\n- Nom masculin (كِتَابٌ) → nombre **féminin** (avec ة) : **ثَلَاثَةُ** كُتُبٍ = trois livres\n- Nom féminin (طَالِبَةٌ) → nombre **masculin** (sans ة) : **ثَلَاثُ** طَالِبَاتٍ = trois étudiantes",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "خَمْسَةُ أَقْلَامٍ",
+            "fr": "Cinq stylos (قَلَمٌ = masc. → خَمْسَةُ avec ة)",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "خَمْسُ طَالِبَاتٍ",
+            "fr": "Cinq étudiantes (طَالِبَةٌ = fém. → خَمْسُ sans ة)",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "📐 Le nom après le nombre : toujours pluriel génitif",
+        "content_fr": "Avec les nombres 3-10, le nom qui suit forme une **annexion** (إِضَافَة) avec le nombre. Cela signifie :\n\n1. Le nom doit être au **pluriel** (pas au singulier !)\n2. Le nom doit être au **génitif** (Kasrah / Tanwin Kasrah)\n\n- ثَلَاثَةُ **كُتُبٍ** = trois livres (كُتُبٍ = pluriel génitif de كِتَابٌ)\n- سَبْعَةُ **رِجَالٍ** = sept hommes (رِجَالٍ = pluriel génitif de رَجُلٌ)\n\n**Attention :** Le nombre perd son Tanwin car il est le premier terme de l'annexion (المُضَاف).",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "أَرْبَعَةُ بُيُوتٍ",
+            "fr": "Quatre maisons",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "عَشَرَةُ دُرُوسٍ",
+            "fr": "Dix leçons",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "🔢 Les nombres féminins (avec ة) : 3 à 10",
+        "content_fr": "Voici les formes **féminines** des nombres (utilisées pour compter des noms **masculins**) :\n\n- 3 : **ثَلَاثَةٌ**\n- 4 : **أَرْبَعَةٌ**\n- 5 : **خَمْسَةٌ**\n- 6 : **سِتَّةٌ**\n- 7 : **سَبْعَةٌ**\n- 8 : **ثَمَانِيَةٌ**\n- 9 : **تِسْعَةٌ**\n- 10 : **عَشَرَةٌ** (avec Fathah sur le ش)\n\nToutes portent la **Tā' Marbūta** (ة) = marque du féminin.",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "سِتَّةُ أَيَّامٍ",
+            "fr": "Six jours",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "ثَمَانِيَةُ رِجَالٍ",
+            "fr": "Huit hommes",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
         "type": "expert_corner",
         "title_fr": "Le coin des experts",
         "content_fr": "**Al-'Adad wa al-Ma'dūd** (الْعَدَدُ وَالْمَعْدُودُ) = Le nombre et le numéroté (l'objet compté).\n\n**Mukhālafah** (المُخَالَفَةُ) = Opposition, différence. C'est le terme pour la règle de polarity du genre dans le comptage.\n\n**Idāfah** (الإِضَافَةُ) = Construction de complémentation. Le nombre agit comme Mudāf.\n\n**Majrūr** (المَجْرُورُ) = Génitif. Le nom pluriel après le nombre est TOUJOURS génitif."
@@ -6581,6 +6802,46 @@
     "objective": null,
     "discovery_cards": [
       {
+        "type": "rule",
+        "title_fr": "💡 Compter des noms féminins : l'inverse !",
+        "content_fr": "Tu as appris en Leçon 19 que le nombre prend le genre **opposé** au nom. Pour les noms **féminins**, on utilise donc la forme **masculine** du nombre (sans ة) :\n\n- طَالِبَةٌ (étudiante, fém.) → **ثَلَاثُ** طَالِبَاتٍ = trois étudiantes\n- مَدْرَسَةٌ (école, fém.) → **سَبْعُ** مَدَارِسَ = sept écoles\n\n**Rappel :** C'est le genre du **singulier** qui compte, même si le pluriel change de forme. مَدْرَسَةٌ est féminin (ة) → nombre masculin (sans ة).",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "خَمْسُ سَيَّارَاتٍ",
+            "fr": "Cinq voitures (سَيَّارَةٌ = fém.)",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "أَرْبَعُ غُرَفٍ",
+            "fr": "Quatre chambres (غُرْفَةٌ = fém.)",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "🔢 Les nombres masculins (sans ة) : 3 à 10",
+        "content_fr": "Voici les formes **masculines** des nombres (utilisées pour compter des noms **féminins**) :\n\n- 3 : **ثَلَاثُ**\n- 4 : **أَرْبَعُ**\n- 5 : **خَمْسُ**\n- 6 : **سِتُّ**\n- 7 : **سَبْعُ**\n- 8 : **ثَمَانِي** (forme spéciale avec ـي)\n- 9 : **تِسْعُ**\n- 10 : **عَشْرُ** (avec Sukūn sur le ش)\n\nAucune ne porte la Tā' Marbūta. Remarque la forme spéciale de 8 : **ثَمَانِي** (pas *ثَمَانٌ).",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "سِتُّ طَالِبَاتٍ",
+            "fr": "Six étudiantes",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "ثَمَانِي مُعَلِّمَاتٍ",
+            "fr": "Huit enseignantes",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
         "type": "expert_corner",
         "title_fr": "Le coin des experts",
         "content_fr": "**Al-Mukhālafah** (المُخَالَفَةُ) = Opposition de genre entre le nombre et le nom.\n\n**Règle fondamentale :** Pour déterminer le genre du nombre (3-10), on regarde le genre du **singulier** du nom, qu'il soit animé ou inanimé :\n- Si le singulier est **féminin** (مَدْرَسَةٌ, طَالِبَةٌ, بِنْتٌ) → le nombre est **masculin** (sans ة)\n- Si le singulier est **masculin** (كِتَابٌ, طَالِبٌ, وَلَدٌ) → le nombre est **féminin** (avec ة)\n\n**Forme masculine du nombre (sans ة) :** ثَلَاثُ, أَرْبَعُ, خَمْسُ, سِتُّ, سَبْعُ, ثَمَانِي, تِسْعُ, عَشْرُ\n\n**Cas particulier — ثَمَانِي :** Ce nombre a une forme spéciale : ـي au lieu de la simple suppression de ة.\n\n**Cas particulier — عَشْرُ vs عَشَرَةٌ :**\n- عَشَرَةٌ (avec ة et fatha sur shin) = pour noms masculins\n- عَشْرُ (sans ة, sukun sur shin) = pour noms féminins"
@@ -6895,6 +7156,54 @@
     "part_name": "Mathématiques et Structures complexes",
     "objective": null,
     "discovery_cards": [
+      {
+        "type": "rule",
+        "title_fr": "💡 Les Noms « Interdits de Tanwīn » (Diptotes)",
+        "content_fr": "Jusqu'ici, tous les noms indéfinis portaient le Tanwīn (ـٌ / ـً / ـٍ). Mais certains noms n'en prennent **jamais**. On les appelle les **diptotes** (المَمْنُوعُ مِنَ الصَّرْفِ).\n\n**Les deux signes d'un diptote :**\n1. **Pas de Tanwīn** : On dit أَحْمَدُ, pas *أَحْمَدٌ\n2. **Fathah au lieu de Kasrah au génitif** : مِنْ أَحْمَدَ (pas *مِنْ أَحْمَدِ)\n\nLe nominatif reste normal (Dammah) et l'accusatif aussi (Fathah). C'est seulement le génitif et le Tanwīn qui changent.",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "جَاءَ أَحْمَدُ",
+            "fr": "Ahmad est venu (nominatif normal)",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "ذَهَبْتُ إِلَى أَحْمَدَ",
+            "fr": "Je suis allé chez Ahmad (génitif → Fathah !)",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "📋 Quels noms sont diptotes ?",
+        "content_fr": "Les catégories les plus courantes de diptotes :\n\n**1. Les prénoms étrangers (non-arabes) :**\n- إِبْرَاهِيمُ, مَرْيَمُ, يُوسُفُ, بَارِيسُ\n\n**2. Les prénoms arabes sur le pattern أَفْعَلُ :**\n- أَحْمَدُ, أَسْعَدُ\n\n**3. Les adjectifs de couleur et de forme (pattern أَفْعَلُ / فَعْلَاءُ) :**\n- أَحْمَرُ (rouge, masc.), حَمْرَاءُ (rouge, fém.)\n- أَكْبَرُ (plus grand)\n\n**4. Certains pluriels brisés (pattern مَفَاعِلُ / مَفَاعِيلُ) :**\n- مَسَاجِدُ (mosquées), مَكَاتِبُ (bureaux)",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "مَرَرْتُ بِمَسَاجِدَ كَثِيرَةٍ",
+            "fr": "Je suis passé devant beaucoup de mosquées (Fathah au génitif)",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "🔄 Quand un diptote redevient normal",
+        "content_fr": "Un diptote retrouve le Tanwīn et la Kasrah dans deux cas :\n\n**1. Avec l'article الـ :** Le diptote redevient triptote → Kasrah au génitif.\n- فِي **الْمَسَاجِدِ** = dans les mosquées (Kasrah car الـ)\n\n**2. En annexion (المُضَاف) :** Le premier terme de l'annexion perd son Tanwīn de toute façon.\n- مَسَاجِدُ **الْمَدِينَةِ** = les mosquées de la ville\n\n**Astuce :** Si le mot est défini (par الـ ou par annexion), il se comporte normalement.",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "الْمَسَاجِدِ الْقَدِيمَةِ",
+            "fr": "Des anciennes mosquées (Kasrah car الـ)",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
       {
         "type": "expert_corner",
         "title_fr": "Le coin des experts",
@@ -7255,6 +7564,66 @@
     "objective": null,
     "discovery_cards": [
       {
+        "type": "rule",
+        "title_fr": "💡 Le Verbe au Présent — Les 4 Lettres Magiques",
+        "content_fr": "Pour transformer un verbe passé en présent, on ajoute un **préfixe** devant la racine. Les 4 préfixes possibles sont résumés par le mot mnémonique **أَنَيْتُ** :\n\n- **أَ** → أَنَا (je) : أَذْهَبُ = je vais\n- **نَ** → نَحْنُ (nous) : نَذْهَبُ = nous allons\n- **يَ** → هُوَ (il) : يَذْهَبُ = il va\n- **تَ** → أَنْتَ / هِيَ (tu / elle) : تَذْهَبُ = tu vas / elle va\n\n**La voyelle finale** du verbe au présent est toujours **Dammah** (ـُ) à l'état normal.",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "أَكْتُبُ الدَّرْسَ",
+            "fr": "J'écris la leçon",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "يَشْرَبُ الْمَاءَ",
+            "fr": "Il boit de l'eau",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "📐 Du passé au présent — La transformation",
+        "content_fr": "Prenons le verbe **ذَهَبَ** (il est allé, racine ذ-ه-ب) :\n\n1. On retire la voyelle du passé et on met un **Sukūn** sur la 1ère radicale : ذْ\n2. On ajoute le préfixe : يَ + ذْهَبُ = **يَذْهَبُ** (il va)\n\nMême logique pour les autres personnes :\n- أَذْهَبُ (je vais)\n- نَذْهَبُ (nous allons)\n- تَذْهَبُ (tu vas / elle va)\n\n**Note :** La voyelle de la 2ème radicale varie selon le verbe (Dammah, Fathah, ou Kasrah). Il faut l'apprendre pour chaque verbe, comme en français on apprend « je bois » et non *« je boive ».",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "كَتَبَ → يَكْتُبُ",
+            "fr": "Il a écrit → Il écrit",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "جَلَسَ → يَجْلِسُ",
+            "fr": "Il s'est assis → Il s'assied",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "🔮 Le Futur — Juste un préfixe de plus !",
+        "content_fr": "Pour exprimer le futur, il suffit d'ajouter **سَـ** ou **سَوْفَ** devant le verbe au présent :\n\n- يَذْهَبُ = il va → **سَيَذْهَبُ** = il ira\n- أَكْتُبُ = j'écris → **سَأَكْتُبُ** = j'écrirai\n\n**سَـ** = futur proche (bientôt). **سَوْفَ** = futur plus lointain (un jour).\n\nC'est tout ! Pas de nouvelle conjugaison à apprendre.",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "سَأَذْهَبُ إِلَى الْمَدْرَسَةِ",
+            "fr": "J'irai à l'école",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "سَوْفَ نَدْرُسُ الْقُرْآنَ",
+            "fr": "Nous étudierons le Coran (un jour)",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
         "type": "expert_corner",
         "title_fr": "Le coin des experts",
         "content_fr": "**Al-Fi'l al-Mudāri'** : Verbe présent/futur, caractérisé par :\n\n- **Hurūf al-Mudāra'ah** (حُرُوفُ الْمُضَارَعَةِ) : Les 4 lettres de préfixe ANAYTU\n- **Al-I'rāb** (état grammatical) : Le verbe au présent est toujours **Marfū'** (damma finale) sauf en cas de:\n  - **Nasb** (accusatif — après certaines particules comme أَنْ, لِـ)\n  - **Jazm** (jussif — après certaines particules de négation comme لَمْ)\n- **Ambiguïté du préfixe تَـ** : Peut signifier \"tu\" masc, \"tu\" fém, \"elle\", ou même \"il\" dans certains contextes archaïques (d'où l'importance du contexte)\n- **Sukūn sur la 1ère radicale** : Distingue le présent du passé qui a une voyelle\n- **Damma finale** : Signe du Marfū' (nominatif)"
@@ -7595,6 +7964,53 @@
     "part_name": "Le Temps Présent",
     "objective": null,
     "discovery_cards": [
+      {
+        "type": "rule",
+        "title_fr": "💡 Le Présent au Pluriel — Suffixes en plus",
+        "content_fr": "Au singulier, le verbe au présent n'a qu'un préfixe. Au pluriel, on ajoute aussi un **suffixe** :\n\n**Pluriel masculin :**\n- هُمْ (ils) → يَـ...ـُونَ : يَكْتُبُونَ = ils écrivent\n- أَنْتُمْ (vous masc.) → تَـ...ـُونَ : تَكْتُبُونَ = vous écrivez\n\n**Pluriel féminin :**\n- هُنَّ (elles) → يَـ...ـْنَ : يَكْتُبْنَ = elles écrivent\n- أَنْتُنَّ (vous fém.) → تَـ...ـْنَ : تَكْتُبْنَ = vous écrivez (fém.)\n\n**Nous** reste simple : نَكْتُبُ = nous écrivons (pas de suffixe).",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "الطُّلَّابُ يَدْرُسُونَ",
+            "fr": "Les étudiants étudient",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "الطَّالِبَاتُ يَدْرُسْنَ",
+            "fr": "Les étudiantes étudient",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "⚠️ Le piège du féminin pluriel : يَـ pas تَـ !",
+        "content_fr": "Attention au piège classique ! Pour « elles » (هُنَّ), le préfixe est **يَـ** (pas تَـ) :\n\n- هُنَّ **يَكْتُبْنَ** ✅ (elles écrivent)\n- هُنَّ *تَكْتُبْنَ ❌ (FAUX !)\n\n**Pourquoi ?** Parce que **تَـ** est réservé à « tu » (أَنْتَ/أَنْتِ), « elle » singulier (هِيَ), et « vous » (أَنْتُمْ/أَنْتُنَّ). Le « elles » pluriel utilise **يَـ** comme « ils ».\n\nC'est le **suffixe** qui fait la différence : ـُونَ (ils) vs ـْنَ (elles).",
+        "content_ar": null,
+        "examples": [
+          {
+            "ar": "هُمْ يَذْهَبُونَ",
+            "fr": "Ils vont (يَـ + ـُونَ)",
+            "translit": null,
+            "audio_id": ""
+          },
+          {
+            "ar": "هُنَّ يَذْهَبْنَ",
+            "fr": "Elles vont (يَـ + ـْنَ)",
+            "translit": null,
+            "audio_id": ""
+          }
+        ]
+      },
+      {
+        "type": "rule",
+        "title_fr": "📋 Tableau récapitulatif du présent",
+        "content_fr": "Avec le verbe **كَتَبَ** (écrire) :\n\n- أَنَا **أَكْتُبُ** (j'écris)\n- أَنْتَ **تَكْتُبُ** (tu écris, masc.)\n- أَنْتِ **تَكْتُبِينَ** (tu écris, fém.)\n- هُوَ **يَكْتُبُ** (il écrit)\n- هِيَ **تَكْتُبُ** (elle écrit)\n- نَحْنُ **نَكْتُبُ** (nous écrivons)\n- أَنْتُمْ **تَكْتُبُونَ** (vous écrivez, masc.)\n- أَنْتُنَّ **تَكْتُبْنَ** (vous écrivez, fém.)\n- هُمْ **يَكْتُبُونَ** (ils écrivent)\n- هُنَّ **يَكْتُبْنَ** (elles écrivent)\n\nRetiens le schéma : **préfixe** (qui parle) + **racine** + **suffixe** (singulier/pluriel/genre).",
+        "content_ar": null,
+        "examples": []
+      },
       {
         "type": "expert_corner",
         "title_fr": "Le coin des experts",

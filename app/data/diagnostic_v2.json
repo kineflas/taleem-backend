@@ -94,9 +94,9 @@
       "difficulty": 2,
       "skill_tested": "Nombres 3-10 et polarité",
       "question": "'Cinq stylos' en arabe (nombres 3-10) :",
-      "options": ["خَمْسَةُ أَقْلَامٍ", "خَمْسَ قَلَمٍ", "خَمْسَةٌ قِلَامٌ", "خَمْسِينَ أَقْلَام"],
+      "options": ["خَمْسَةُ أَقْلَامٍ", "خَمْسُ أَقْلَامٍ", "خَمْسَةُ قَلَمٍ", "خَمْسَةٌ أَقْلَامٌ"],
       "correct": 0,
-      "explanation": "Polarité : nombre masc. (خَمْسَةُ) + nom pluriel génitif (أَقْلَامٍ).",
+      "explanation": "Polarité : قَلَمٌ est masculin → nombre féminin خَمْسَةُ (avec ة). Le nom après est pluriel génitif (أَقْلَامٍ). خَمْسُ (sans ة) serait pour un nom féminin. قَلَمٍ (singulier) est faux après 3-10.",
       "adaptive_hint": "Si erreur → Leçon 18-20 (Nombres et polarité)"
     },
     {

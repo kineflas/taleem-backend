@@ -946,7 +946,7 @@
           "Comme le N"
         ],
         "correct": 1,
-        "explanation": "Le ر est un R roulé : la pointe de la langue vibre contre le palais, comme en espagnol ou italien."
+        "explanation": "Le ر est un R roulé : la pointe de la langue vibre contre la crête alvéolaire (juste derrière les dents du haut), comme en espagnol ou en italien."
       },
       {
         "id": "L2Q5",
@@ -1308,6 +1308,40 @@
               "ت"
             ],
             "correct": 2
+          }
+        ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "Classe ces lettres : sifflantes (souffle continu) ou non-sifflantes ?",
+        "categories": [
+          "Sifflantes",
+          "Non-sifflantes"
+        ],
+        "items": [
+          {
+            "word": "س",
+            "category": "Sifflantes"
+          },
+          {
+            "word": "ش",
+            "category": "Sifflantes"
+          },
+          {
+            "word": "ز",
+            "category": "Sifflantes"
+          },
+          {
+            "word": "ب",
+            "category": "Non-sifflantes"
+          },
+          {
+            "word": "ت",
+            "category": "Non-sifflantes"
+          },
+          {
+            "word": "ن",
+            "category": "Non-sifflantes"
           }
         ]
       }
@@ -1825,12 +1859,12 @@
         "question": "Que lit-on quand on combine فَ + مُ ?",
         "options": [
           "Famou",
-          "Koula",
-          "Firmi",
-          "Bani"
+          "Foumi",
+          "Moufou",
+          "Fami"
         ],
         "correct": 0,
-        "explanation": "فَمُ se lit 'Fa-Mou', qui signifie 'bouche' en arabe !"
+        "explanation": "فَ (Fa) + مُ (Mou) = فَمُ 'Fa-Mou', qui signifie 'bouche' en arabe ! Les autres options inversent l'ordre ou changent les voyelles."
       },
       {
         "id": "L4Q2",
@@ -1887,24 +1921,24 @@
         "front_ar": "ف",
         "back_fr": "Fā — Fa/Fou/Fi",
         "category": "Phase 1",
-        "example_ar": "فَ فُ فِ",
-        "example_fr": "Fa, Fou, Fi"
+        "example_ar": "فَمٌ (bouche)",
+        "example_fr": "Fa-Moun — bouche"
       },
       {
         "id": "FL4_kaf",
         "front_ar": "ك",
         "back_fr": "Kāf — Ka/Kou/Ki",
         "category": "Phase 1",
-        "example_ar": "كَ كُ كِ",
-        "example_fr": "Ka, Kou, Ki"
+        "example_ar": "كَلْبٌ (chien)",
+        "example_fr": "Kal-boun — chien"
       },
       {
         "id": "FL4_lam",
         "front_ar": "ل",
         "back_fr": "Lām — La/Lou/Li",
         "category": "Phase 1",
-        "example_ar": "لَ لُ لِ",
-        "example_fr": "La, Lou, Li"
+        "example_ar": "لَبَنٌ (lait)",
+        "example_fr": "La-ba-noun — lait"
       }
     ]
   },
@@ -2324,13 +2358,15 @@
       },
       {
         "id": "L5Q2",
-        "question": "L'Alif (ا) est-il connectant ?",
+        "question": "L'Alif (ا) est une lettre non-connectante. Quelle autre lettre partage cette propriété ?",
         "options": [
-          "Oui",
-          "Non"
+          "ب (Bā)",
+          "و (Wāw)",
+          "ي (Yā)",
+          "ل (Lām)"
         ],
         "correct": 1,
-        "explanation": "L'Alif est non-connectant. Il ne se lie jamais à la lettre suivante."
+        "explanation": "Le Wāw (و) et l'Alif (ا) sont tous les deux non-connectants : ils ne se lient pas à la lettre suivante. Les 6 non-connectantes sont : ا د ذ ر ز و."
       },
       {
         "id": "L5Q3",
@@ -2365,8 +2401,8 @@
           "15",
           "16"
         ],
-        "correct": 3,
-        "explanation": "Phase 1 complète : 3+3+3+3+3 = 15 lettres + le Alif = 16 !"
+        "correct": 2,
+        "explanation": "Phase 1 complète : 3+3+3+3+3 = 15 lettres (Bā à Alif). L'Alif fait déjà partie des 3 lettres de cette leçon !"
       }
     ],
     "flashcards": [
@@ -2375,24 +2411,24 @@
         "front_ar": "و",
         "back_fr": "Wāw — Wa/Wou/Wi",
         "category": "Phase 1",
-        "example_ar": "وَ وُ وِ",
-        "example_fr": "Wa, Wou, Wi"
+        "example_ar": "وَلَدٌ (garçon)",
+        "example_fr": "Wa-la-doun — garçon"
       },
       {
         "id": "FL5_ya",
         "front_ar": "ي",
         "back_fr": "Yā — Ya/You/Yi",
         "category": "Phase 1",
-        "example_ar": "يَ يُ يِ",
-        "example_fr": "Ya, You, Yi"
+        "example_ar": "يَدٌ (main)",
+        "example_fr": "Ya-doun — main"
       },
       {
         "id": "FL5_alif",
         "front_ar": "ا",
-        "back_fr": "Alif — A/Ou/I",
+        "back_fr": "Alif — Lettre-support (porte les voyelles)",
         "category": "Phase 1",
-        "example_ar": "اَ اُ اِ",
-        "example_fr": "A, Ou, I"
+        "example_ar": "أ�� أُ إِ (avec Hamza)",
+        "example_fr": "A, Ou, I — L'Alif porte la Hamza pour les sons initiaux"
       }
     ]
   },
@@ -2658,11 +2694,50 @@
             "correct": 0
           }
         ]
+      },
+      {
+        "type": "COMPLETER_SYLLABE",
+        "prompt_fr": "Complète avec la bonne syllabe interdentale !",
+        "items": [
+          {
+            "lettre": "ث",
+            "son_cible": "Tha",
+            "options": [
+              "ثَ",
+              "سَ",
+              "تَ",
+              "ذَ"
+            ],
+            "correct": "ثَ"
+          },
+          {
+            "lettre": "ذ",
+            "son_cible": "Dhi",
+            "options": [
+              "ذِ",
+              "دِ",
+              "زِ",
+              "ثِ"
+            ],
+            "correct": "ذِ"
+          },
+          {
+            "lettre": "ث",
+            "son_cible": "Thou",
+            "options": [
+              "ثُ",
+              "سُ",
+              "ذُ",
+              "تُ"
+            ],
+            "correct": "ثُ"
+          }
+        ]
       }
     ],
     "mini_lecture": {
       "type": "KARAOKE",
-      "instruction": "Lis ces mots avec le Soukoun — la dernière consonne est muette !",
+      "instruction": "Lis ces mots avec le Soukoun — la dernière consonne est prononcée sans voyelle !",
       "items": [
         {
           "text": "ثَ",
@@ -2674,37 +2749,37 @@
           "text": "لَ",
           "son": "La",
           "audio_id": "lam_fatha",
-          "delay_ms": 600
+          "delay_ms": 800
         },
         {
           "text": "ثْ",
-          "son": "(muet)",
+          "son": "th",
           "audio_id": "tha_soukoun",
-          "delay_ms": 1200
+          "delay_ms": 1600
         },
         {
           "text": " — ",
           "son": "",
-          "audio_id": " — _audio",
-          "delay_ms": 1800
+          "audio_id": "pause",
+          "delay_ms": 2400
         },
         {
           "text": "ذَ",
           "son": "Dha",
           "audio_id": "dhal_fatha",
-          "delay_ms": 2400
+          "delay_ms": 3200
         },
         {
-          "text": "هَ",
-          "son": "Ha",
-          "audio_id": "ha_light_fatha",
-          "delay_ms": 3000
+          "text": "كَ",
+          "son": "Ka",
+          "audio_id": "kaf_fatha",
+          "delay_ms": 4000
         },
         {
-          "text": "بَ",
-          "son": "Ba",
-          "audio_id": "ba_fatha",
-          "delay_ms": 3600
+          "text": "رْ",
+          "son": "r",
+          "audio_id": "ra_soukoun",
+          "delay_ms": 4800
         }
       ]
     },
@@ -2743,17 +2818,19 @@
           "Voyelle longue"
         ],
         "correct": 2,
-        "explanation": "Le Soukoun indique que la consonne n'a PAS de voyelle. Elle est muette et ferme la syllabe."
+        "explanation": "Le Soukoun indique l'absence de voyelle après la consonne. La consonne est toujours prononcée, mais sans voyelle. Elle ferme la syllabe."
       },
       {
         "id": "L6Q4",
-        "question": "Le ذ est-il connectant ?",
+        "question": "Parmi ces lettres, laquelle est connectante (se lie à gauche) ?",
         "options": [
-          "Oui",
-          "Non"
+          "ذ (Dhāl)",
+          "د (Dāl)",
+          "ث (Thā)",
+          "ر (Rā)"
         ],
-        "correct": 1,
-        "explanation": "Le ذ est non-connectant (comme le د dont il dérive). Il ne se lie pas à gauche."
+        "correct": 2,
+        "explanation": "Le ث (Thā) est connectant — il se lie à la lettre suivante. Les autres (ذ, د, ر) sont non-connectants : ils ne se lient jamais à gauche."
       }
     ],
     "flashcards": [
@@ -2762,16 +2839,16 @@
         "front_ar": "ث",
         "back_fr": "Thā — Tha/Thou/Thi",
         "category": "Phase 2",
-        "example_ar": "ثَ ثُ ثِ",
-        "example_fr": "Tha, Thou, Thi"
+        "example_ar": "ثَلَاثَةٌ (trois)",
+        "example_fr": "Tha-lā-tha-toun — trois"
       },
       {
         "id": "FL6_dhal",
         "front_ar": "ذ",
         "back_fr": "Dhāl — Dha/Dhou/Dhi",
         "category": "Phase 2",
-        "example_ar": "ذَ ذُ ذِ",
-        "example_fr": "Dha, Dhou, Dhi"
+        "example_ar": "ذَكَرَ (il a mentionné)",
+        "example_fr": "Dha-ka-ra — il a mentionné"
       }
     ]
   },
@@ -3043,31 +3120,31 @@
           "text": "مَ",
           "son": "Ma",
           "audio_id": "mim_fatha",
-          "delay_ms": 600
+          "delay_ms": 800
         },
         {
           "text": "لْ",
           "son": "(muet)",
           "audio_id": "lam_soukoun",
-          "delay_ms": 1200
+          "delay_ms": 1600
         },
         {
           "text": " — ",
           "son": "",
           "audio_id": " — _audio",
-          "delay_ms": 1800
+          "delay_ms": 2400
         },
         {
           "text": "هَ",
           "son": "Ha",
           "audio_id": "ha_light_fatha",
-          "delay_ms": 2400
+          "delay_ms": 3200
         },
         {
           "text": "وَ",
           "son": "Wa",
           "audio_id": "waw_fatha",
-          "delay_ms": 3000
+          "delay_ms": 4000
         }
       ]
     },
@@ -3101,12 +3178,12 @@
         "question": "Dans جَمَلْ, que fait le Soukoun sur le لْ ?",
         "options": [
           "Il allonge le son",
-          "Il rend le L muet",
+          "Il indique l'absence de voyelle après le L",
           "Il double le L",
           "Il ajoute un N"
         ],
         "correct": 1,
-        "explanation": "Le Soukoun rend la consonne muette. جَمَلْ se lit 'Djamal' avec le L final muet."
+        "explanation": "Le Soukoun signifie : pas de voyelle après cette consonne. Le لْ dans جَمَلْ est prononcé, mais sans voyelle. On dit 'Dja-mal' — le L ferme la syllabe."
       }
     ],
     "flashcards": [
@@ -3115,16 +3192,16 @@
         "front_ar": "ج",
         "back_fr": "Jīm — Dja/Djou/Dji",
         "category": "Phase 2",
-        "example_ar": "جَ جُ جِ",
-        "example_fr": "Dja, Djou, Dji"
+        "example_ar": "جَمَلٌ (chameau)",
+        "example_fr": "Dja-ma-loun — chameau"
       },
       {
         "id": "FL7_ha_light",
         "front_ar": "ه",
         "back_fr": "Hā — Ha/Hou/Hi",
         "category": "Phase 2",
-        "example_ar": "هَ هُ هِ",
-        "example_fr": "Ha, Hou, Hi"
+        "example_ar": "هُوَ (il/lui)",
+        "example_fr": "Hou-wa — il, lui"
       }
     ]
   },
@@ -3324,8 +3401,8 @@
             "audio_id": "ha_light_fatha",
             "lettre": "ه",
             "zone_correcte": "glotte",
-            "profondeur": 0.4,
-            "label": "Ha (glotte, léger)"
+            "profondeur": 0.9,
+            "label": "Ha (glotte, le plus profond)"
           }
         ]
       },
@@ -3374,6 +3451,98 @@
             "correct": 1
           }
         ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "Écoute et identifie : est-ce un خ (Khā) ou un غ (Ghayn) ?",
+        "items": [
+          {
+            "audio_id": "kha_fatha",
+            "son": "Kha",
+            "options": [
+              "خَ",
+              "غَ",
+              "كَ",
+              "قَ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ghayn_damma",
+            "son": "Ghou",
+            "options": [
+              "خُ",
+              "غُ",
+              "كُ",
+              "قُ"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "kha_kasra",
+            "son": "Khi",
+            "options": [
+              "خِ",
+              "غِ",
+              "كِ",
+              "هِ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ghayn_fatha",
+            "son": "Gha",
+            "options": [
+              "خَ",
+              "غَ",
+              "هَ",
+              "قَ"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "Shadda — Écoute : le son est-il simple ou doublé (avec Shadda) ?",
+        "items": [
+          {
+            "audio_id": "kha_shadda",
+            "son": "Khkha",
+            "options": [
+              "خَ (simple)",
+              "خَّ (Shadda)"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "ghayn_fatha",
+            "son": "Gha",
+            "options": [
+              "غَ (simple)",
+              "غَّ (Shadda)"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "ba_shadda",
+            "son": "Bbba",
+            "options": [
+              "بَ (simple)",
+              "بَّ (Shadda)"
+            ],
+            "correct": 1
+          },
+          {
+            "audio_id": "ra_fatha",
+            "son": "Ra",
+            "options": [
+              "رَ (simple)",
+              "رَّ (Shadda)"
+            ],
+            "correct": 0
+          }
+        ]
       }
     ],
     "mini_lecture": {
@@ -3390,37 +3559,37 @@
           "text": "بْ",
           "son": "(muet)",
           "audio_id": "ba_soukoun",
-          "delay_ms": 600
+          "delay_ms": 800
         },
         {
           "text": "زُ",
           "son": "Zou",
           "audio_id": "zay_damma",
-          "delay_ms": 1200
+          "delay_ms": 1600
         },
         {
           "text": " — ",
           "son": "",
           "audio_id": " — _audio",
-          "delay_ms": 1800
+          "delay_ms": 2400
         },
         {
           "text": "غَ",
           "son": "Gha",
           "audio_id": "ghayn_fatha",
-          "delay_ms": 2400
+          "delay_ms": 3200
         },
         {
           "text": "يْ",
           "son": "(muet)",
           "audio_id": "ya_soukoun",
-          "delay_ms": 3000
+          "delay_ms": 4000
         },
         {
           "text": "مُ",
           "son": "Mou",
           "audio_id": "mim_damma",
-          "delay_ms": 3600
+          "delay_ms": 4800
         }
       ]
     },
@@ -3480,16 +3649,16 @@
         "front_ar": "خ",
         "back_fr": "Khā — Kha/Khou/Khi",
         "category": "Phase 2",
-        "example_ar": "خَ خُ خِ",
-        "example_fr": "Kha, Khou, Khi"
+        "example_ar": "خَبَرٌ (nouvelle)",
+        "example_fr": "Kha-ba-roun — nouvelle"
       },
       {
         "id": "FL8_ghayn",
         "front_ar": "غ",
         "back_fr": "Ghayn — Gha/Ghou/Ghi",
         "category": "Phase 2",
-        "example_ar": "غَ غُ غِ",
-        "example_fr": "Gha, Ghou, Ghi"
+        "example_ar": "غَنِيٌ�� (riche)",
+        "example_fr": "Gha-niy-youn — riche"
       }
     ]
   },
@@ -3736,31 +3905,31 @@
           "text": "مَ",
           "son": "Ma",
           "audio_id": "mim_fatha",
-          "delay_ms": 600
+          "delay_ms": 800
         },
         {
           "text": "رُ",
           "son": "Rou",
           "audio_id": "ra_damma",
-          "delay_ms": 1200
+          "delay_ms": 1600
         },
         {
           "text": " — ",
           "son": "",
           "audio_id": " — _audio",
-          "delay_ms": 1800
+          "delay_ms": 2400
         },
         {
           "text": "قُ",
           "son": "Qou",
           "audio_id": "qaf_damma",
-          "delay_ms": 2400
+          "delay_ms": 3200
         },
         {
           "text": "رْ",
           "son": "(muet)",
           "audio_id": "ra_soukoun",
-          "delay_ms": 3000
+          "delay_ms": 4000
         }
       ]
     },
@@ -3808,8 +3977,8 @@
         "front_ar": "ق",
         "back_fr": "Qāf — Qa/Qou/Qi",
         "category": "Phase 2",
-        "example_ar": "قَ قُ قِ",
-        "example_fr": "Qa, Qou, Qi"
+        "example_ar": "قَلَمٌ (stylo)",
+        "example_fr": "Qa-la-moun — stylo"
       }
     ]
   },
@@ -4050,44 +4219,57 @@
           {
             "glyph": "غ",
             "name": "Ghayn"
+          },
+          {
+            "glyph": "ا",
+            "name": "Alif"
           }
         ]
       },
       {
         "type": "CLASSIFIER",
-        "prompt_fr": "Classe les sons : Gorge profonde ou Bouche ?",
+        "prompt_fr": "Classe les sons selon leur point d'articulation : gorge, palais ou lèvres ?",
         "categories": [
-          "Gorge profonde",
-          "Bouche / Lèvres"
+          "Gorge / Fond",
+          "Palais / Milieu",
+          "Lèvres / Avant"
         ],
         "items": [
           {
             "word": "خ",
-            "category": "Gorge profonde"
+            "category": "Gorge / Fond"
           },
           {
             "word": "غ",
-            "category": "Gorge profonde"
+            "category": "Gorge / Fond"
           },
           {
             "word": "ق",
-            "category": "Gorge profonde"
-          },
-          {
-            "word": "ك",
-            "category": "Bouche / Lèvres"
-          },
-          {
-            "word": "ف",
-            "category": "Bouche / Lèvres"
-          },
-          {
-            "word": "ب",
-            "category": "Bouche / Lèvres"
+            "category": "Gorge / Fond"
           },
           {
             "word": "ه",
-            "category": "Bouche / Lèvres"
+            "category": "Gorge / Fond"
+          },
+          {
+            "word": "ك",
+            "category": "Palais / Milieu"
+          },
+          {
+            "word": "ج",
+            "category": "Palais / Milieu"
+          },
+          {
+            "word": "ف",
+            "category": "Lèvres / Avant"
+          },
+          {
+            "word": "ب",
+            "category": "Lèvres / Avant"
+          },
+          {
+            "word": "م",
+            "category": "Lèvres / Avant"
           }
         ]
       }
@@ -4169,13 +4351,13 @@
         "id": "L10Q1",
         "question": "Combien de lettres as-tu apprises en Phase 1 + Phase 2 ?",
         "options": [
-          "16",
+          "15",
           "20",
-          "23",
+          "22",
           "28"
         ],
         "correct": 2,
-        "explanation": "Phase 1 : 16 lettres + Phase 2 : 7 nouvelles (ث ذ ج ه خ غ ق) = 23 lettres."
+        "explanation": "Phase 1 : 15 lettres + Phase 2 : 7 nouvelles (ث ذ ج ه خ غ ق) = 22 lettres."
       },
       {
         "id": "L10Q2",
@@ -4507,9 +4689,9 @@
           "delay_ms": 3000
         },
         {
-          "text": "ءُ",
-          "son": "'ou",
-          "audio_id": "hamza_damma",
+          "text": "صُ",
+          "son": "Ṣou",
+          "audio_id": "sad_damma",
           "delay_ms": 3600
         }
       ]
@@ -4558,16 +4740,16 @@
         "front_ar": "ص",
         "back_fr": "Ṣād — Ṣa/Ṣou/Ṣi",
         "category": "Phase 3",
-        "example_ar": "صَ صُ صِ",
-        "example_fr": "Ṣa, Ṣou, Ṣi"
+        "example_ar": "صَبْرٌ (patience)",
+        "example_fr": "Ṣa-broun — patience"
       },
       {
         "id": "FL11_dad",
         "front_ar": "ض",
         "back_fr": "Ḍād — Ḍa/Ḍou/Ḍi",
         "category": "Phase 3",
-        "example_ar": "ضَ ضُ ضِ",
-        "example_fr": "Ḍa, Ḍou, Ḍi"
+        "example_ar": "ضَرَبَ (il a frappé)",
+        "example_fr": "Ḍa-ra-ba — il a frappé"
       }
     ]
   },
@@ -5239,16 +5421,16 @@
         "front_ar": "ح",
         "back_fr": "Ḥā — Ḥa/Ḥou/Ḥi",
         "category": "Phase 3",
-        "example_ar": "حَ حُ حِ",
-        "example_fr": "Ḥa, Ḥou, Ḥi"
+        "example_ar": "حَمْدٌ (louange)",
+        "example_fr": "Ḥam-doun — louange"
       },
       {
         "id": "FL13_ayn",
         "front_ar": "ع",
         "back_fr": "ʿAyn — ʿA/ʿOu/ʿI",
         "category": "Phase 3",
-        "example_ar": "عَ عُ عِ",
-        "example_fr": "ʿA, ʿOu, ʿI"
+        "example_ar": "عِلْمٌ (science)",
+        "example_fr": "ʿIl-moun — science"
       }
     ]
   },
@@ -5258,7 +5440,7 @@
     "title_ar": "الهمزة والمدود",
     "phase_number": 3,
     "phase_name": "Les Sons Profonds",
-    "objective": "La Hamza (coup de glotte), le Tanwin (le 'n' final), et les voyelles longues avec les supports Alif/Waw/Ya !",
+    "objective": "Aujourd'hui, tu découvres la Hamza (ء) — le coup de glotte. C'est le son que tu fais naturellement au début de 'Ah !'. Tu verras aussi un aperçu du Tanwīn (le -n final) et des voyelles longues (ā, ū, ī) — deux concepts que tu approfondiras avec la pratique.",
     "letters": [
       {
         "id": "hamza",
@@ -5547,8 +5729,8 @@
         "front_ar": "ء",
         "back_fr": "Hamza — 'A/'Ou/'I",
         "category": "Phase 3",
-        "example_ar": "أَ أُ إِ",
-        "example_fr": "'A, 'Ou, 'I"
+        "example_ar": "أَمْرٌ (ordre)",
+        "example_fr": "Am-roun — ordre/commandement"
       }
     ]
   },
@@ -6011,7 +6193,64 @@
     "letters": [],
     "ecoute": {
       "instruction": "Regarde comment la même lettre change de forme selon sa position dans le mot : isolée, début, milieu, fin.",
-      "sequence": [],
+      "sequence": [
+        {
+          "audio_id": "ba_isolee",
+          "label": "ب — forme isolée"
+        },
+        {
+          "audio_id": "ba_debut",
+          "label": "بـ — forme début"
+        },
+        {
+          "audio_id": "ba_milieu",
+          "label": "ـبـ — forme milieu"
+        },
+        {
+          "audio_id": "ba_fin",
+          "label": "ـب — forme fin"
+        },
+        {
+          "audio_id": "pause",
+          "label": "—"
+        },
+        {
+          "audio_id": "sin_isolee",
+          "label": "س — forme isolée"
+        },
+        {
+          "audio_id": "sin_debut",
+          "label": "سـ — forme début"
+        },
+        {
+          "audio_id": "sin_milieu",
+          "label": "ـسـ — forme milieu"
+        },
+        {
+          "audio_id": "sin_fin",
+          "label": "ـس — forme fin"
+        },
+        {
+          "audio_id": "pause",
+          "label": "—"
+        },
+        {
+          "audio_id": "ha_isolee",
+          "label": "ه — forme isolée"
+        },
+        {
+          "audio_id": "ha_debut",
+          "label": "هـ — forme début"
+        },
+        {
+          "audio_id": "ha_milieu",
+          "label": "ـهـ — forme milieu"
+        },
+        {
+          "audio_id": "ha_fin",
+          "label": "ـه — forme fin"
+        }
+      ],
       "anatomie": []
     },
     "exercises": [
@@ -6214,6 +6453,40 @@
             "category": "Normales"
           }
         ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "Classe ces mots : avec Tā' Marbūṭa (ة) ou sans ?",
+        "categories": [
+          "Avec ة (féminin)",
+          "Sans ة (masculin)"
+        ],
+        "items": [
+          {
+            "word": "مَدْرَسَةٌ",
+            "category": "Avec ة (féminin)"
+          },
+          {
+            "word": "سَيَّارَةٌ",
+            "category": "Avec ة (féminin)"
+          },
+          {
+            "word": "طَالِبَةٌ",
+            "category": "Avec ة (féminin)"
+          },
+          {
+            "word": "كِتَابٌ",
+            "category": "Sans ة (masculin)"
+          },
+          {
+            "word": "قَلَمٌ",
+            "category": "Sans ة (masculin)"
+          },
+          {
+            "word": "بَيْتٌ",
+            "category": "Sans ة (masculin)"
+          }
+        ]
       }
     ],
     "mini_lecture": {
@@ -6288,9 +6561,31 @@
         ],
         "correct": 2,
         "explanation": "Le تَ est au milieu du mot كَتَبَ, donc il prend sa forme médiane (ـتـ)."
+      },
+      {
+        "id": "L16Q4",
+        "question": "Que signifie le ة (Tā' Marbūṭa) à la fin d'un mot ?",
+        "options": [
+          "C'est la marque du féminin",
+          "C'est un signe de pluriel",
+          "C'est une voyelle longue",
+          "C'est une marque d'exclamation"
+        ],
+        "correct": 0,
+        "explanation": "Le ة (Tā' Marbūṭa = tā attaché) marque le féminin en arabe. مَدْرَسَة (école), سَيَّارَة (voiture). En pause, il se prononce 'a'. En liaison, il se prononce 't'."
       }
     ],
-    "flashcards": []
+    "flashcards": [
+      {
+        "id": "FL16_ta_marbuta",
+        "front_ar": "ة",
+        "back_fr": "Tā' Marbūṭa — Marque du féminin",
+        "category": "Phase 4",
+        "example_ar": "مَدْرَسَةٌ (école) — طَالِبَةٌ (étudiante)",
+        "example_fr": "Se prononce 'a' en pause, 't' en liaison"
+      }
+    ],
+    "discovery_cards": []
   },
   "17": {
     "lesson_number": 17,
@@ -6408,6 +6703,134 @@
             "correct": 0
           }
         ]
+      },
+      {
+        "type": "COMPLETER_SYLLABE",
+        "prompt_fr": "Complète la syllabe manquante dans le mot !",
+        "items": [
+          {
+            "lettre": "مَدْرَسَةٌ",
+            "son_cible": "Ra",
+            "options": [
+              "رَ",
+              "رُ",
+              "رِ",
+              "د��"
+            ],
+            "correct": "رَ"
+          },
+          {
+            "lettre": "كِتَابٌ",
+            "son_cible": "Ta",
+            "options": [
+              "تَ",
+              "تُ",
+              "تِ",
+              "كَ"
+            ],
+            "correct": "تَ"
+          },
+          {
+            "lettre": "بِسْمِ",
+            "son_cible": "Bi",
+            "options": [
+              "بَ",
+              "بُ",
+              "بِ",
+              "سِ"
+            ],
+            "correct": "بِ"
+          },
+          {
+            "lettre": "قَلَمٌ",
+            "son_cible": "La",
+            "options": [
+              "لَ",
+              "لُ",
+              "لِ",
+              "مَ"
+            ],
+            "correct": "لَ"
+          }
+        ]
+      },
+      {
+        "type": "CAMELEON",
+        "prompt_fr": "Trouve la bonne forme de la lettre selon sa position !",
+        "items": [
+          {
+            "lettre": "ع",
+            "position": "milieu",
+            "options": [
+              "عـ",
+              "ـعـ",
+              "ـع",
+              "ع"
+            ],
+            "correct": "ـعـ"
+          },
+          {
+            "lettre": "ك",
+            "position": "debut",
+            "options": [
+              "كـ",
+              "ـكـ",
+              "ـك",
+              "ك"
+            ],
+            "correct": "كـ"
+          },
+          {
+            "lettre": "ه",
+            "position": "fin",
+            "options": [
+              "هـ",
+              "ـهـ",
+              "ـه",
+              "ه"
+            ],
+            "correct": "ـه"
+          },
+          {
+            "lettre": "ص",
+            "position": "milieu",
+            "options": [
+              "صـ",
+              "ـصـ",
+              "ـص",
+              "ص"
+            ],
+            "correct": "ـصـ"
+          }
+        ]
+      },
+      {
+        "type": "AUDIO_QUIZ",
+        "prompt_fr": "La ligature obligatoire : quand ل rencontre ا, ils fusionnent en لا !",
+        "items": [
+          {
+            "audio_id": "lam_alif",
+            "son": "Lā",
+            "options": [
+              "لا",
+              "لَ",
+              "لِ",
+              "لُ"
+            ],
+            "correct": 0
+          },
+          {
+            "audio_id": "lam_alif_word",
+            "son": "Lā",
+            "options": [
+              "لا",
+              "ال",
+              "لَا",
+              "اَل"
+            ],
+            "correct": 0
+          }
+        ]
       }
     ],
     "mini_lecture": {
@@ -6506,9 +6929,42 @@
         ],
         "correct": 1,
         "explanation": "مَكْتَبٌ : le ك porte un soukoun (مَكْ = mak). Ça ferme la première syllabe."
+      },
+      {
+        "id": "L17Q4",
+        "question": "Quelle est la différence entre ي (Yā) et ى (Alif Maqṣūra) ?",
+        "options": [
+          "Le Yā a deux points, l'Alif Maqṣūra n'en a pas",
+          "Ils se prononcent différemment",
+          "L'un est une voyelle, l'autre une consonne",
+          "Il n'y a aucune différence"
+        ],
+        "correct": 0,
+        "explanation": "Le ى (Alif Maqṣūra = alif raccourci) ressemble au Yā mais sans les deux points. Il se prononce toujours 'ā' (a long). Ex: عَلَى (sur), مُوسَى (Moïse)."
+      },
+      {
+        "id": "L17Q5",
+        "question": "Que se passe-t-il quand ل est suivi de ا ?",
+        "options": [
+          "Ils forment la ligature لا (obligatoire en arabe)",
+          "Ils restent séparés : ل + ا",
+          "Le ا disparaît",
+          "Le ل se transforme en ن"
+        ],
+        "correct": 0,
+        "explanation": "La ligature لا est obligatoire en arabe — ل et ا ne s'écrivent jamais séparément quand ils se suivent. On la trouve dans لَا (non) et dans اللَّه (Allāh)."
       }
     ],
-    "flashcards": []
+    "flashcards": [
+      {
+        "id": "FL17_alif_maqsura",
+        "front_ar": "ى",
+        "back_fr": "Alif Maqṣūra — Se prononce 'ā' (a long)",
+        "category": "Phase 4",
+        "example_ar": "عَلَى (sur) — مُوسَى (Moïse)",
+        "example_fr": "Ressemble au Yā (ي) mais SANS les deux points"
+      }
+    ]
   },
   "18": {
     "lesson_number": 18,
@@ -6667,6 +7123,36 @@
             "correct": 2
           }
         ]
+      },
+      {
+        "type": "CLASSIFIER",
+        "prompt_fr": "Le Tanwīn fatḥatan (ـًا) s'écrit avec un Alif sauf après ة et ء. Classe ces mots !",
+        "categories": [
+          "Tanwīn + Alif (ـًا)",
+          "Tanwīn sans Alif"
+        ],
+        "items": [
+          {
+            "word": "كِتَابًا",
+            "category": "Tanwīn + Alif (ـًا)"
+          },
+          {
+            "word": "قَلَمًا",
+            "category": "Tanwīn + Alif (ـًا)"
+          },
+          {
+            "word": "بَيْتًا",
+            "category": "Tanwīn + Alif (ـًا)"
+          },
+          {
+            "word": "مَدْرَسَةً",
+            "category": "Tanwīn sans Alif"
+          },
+          {
+            "word": "سَمَاءً",
+            "category": "Tanwīn sans Alif"
+          }
+        ]
       }
     ],
     "mini_lecture": {
@@ -6744,15 +7230,15 @@
       },
       {
         "id": "L18Q3",
-        "question": "Tu as terminé L'Odyssée des Lettres ! Tu peux maintenant...",
+        "question": "Dans le mot بِسْمِ, combien y a-t-il de syllabes ?",
         "options": [
-          "Écrire un roman en arabe",
-          "Lire n'importe quel texte arabe",
-          "Déchiffrer lentement tout mot arabe voyellé",
-          "Parler arabe couramment"
+          "1",
+          "2",
+          "3",
+          "4"
         ],
-        "correct": 2,
-        "explanation": "Tu peux déchiffrer lentement tout mot arabe voyellé. C'est la clé qui ouvre la porte du Coran, du Tome de Médine, et de toute lecture arabe !"
+        "correct": 1,
+        "explanation": "بِسْمِ = بِسْ + مِ = 2 syllabes. Le Soukoun sur le sīn ferme la première syllabe, le mīm avec kasra ouvre la seconde."
       },
       {
         "id": "L18Q4",
@@ -6765,8 +7251,37 @@
         ],
         "correct": 1,
         "explanation": "28 lettres + 7 catégories de harakat (Fatha, Damma, Kasra, Soukoun, Shadda, Tanwin, Voyelles longues). Bravo !"
+      },
+      {
+        "id": "L18Q5",
+        "question": "La Hamza (ء) peut s'écrire sur différents supports. Lequel est FAUX ?",
+        "options": [
+          "أ — Hamza sur Alif",
+          "ؤ — Hamza sur Wāw",
+          "ئ — Hamza sur Yā (sans points)",
+          "إب — Hamza sur Bā"
+        ],
+        "correct": 3,
+        "explanation": "La Hamza s'écrit sur 3 supports : Alif (أ/إ), Wāw (ؤ), ou Yā sans points (ئ). Elle peut aussi être isolée sur la ligne (ء). Jamais sur un Bā !"
       }
     ],
-    "flashcards": []
+    "flashcards": [
+      {
+        "id": "FL18_tanwin_fathatan",
+        "front_ar": "ـًا",
+        "back_fr": "Tanwīn fatḥatan — Le -an final avec Alif",
+        "category": "Phase 4",
+        "example_ar": "كِتَابًا (un livre, accusatif)",
+        "example_fr": "Toujours avec Alif sauf après ة (tā marbūṭa) et ء (hamza)"
+      },
+      {
+        "id": "FL18_hamza_positions",
+        "front_ar": "أ ؤ ئ ء",
+        "back_fr": "Les 4 positions de la Hamza",
+        "category": "Phase 4",
+        "example_ar": "أَمْرٌ / سُؤَالٌ / بِئْرٌ / سَمَاءٌ",
+        "example_fr": "Sur Alif / Sur Wāw / Sur Yā / Isolée sur la ligne"
+      }
+    ]
   }
 }
